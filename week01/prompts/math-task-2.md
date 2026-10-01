@@ -1,0 +1,2 @@
+Three friends — Alice, Bob, Carol — each ordered a different drink (coffee, tea, juice). - Alice did not order coffee. - Bob did not order tea. - Carol ordered coffee. What did each person order? 
+Solve step by step, eliminating possibilities one at a time.
