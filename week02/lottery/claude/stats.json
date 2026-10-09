@@ -1,0 +1,2006 @@
+{
+  "meta": {
+    "source": "eurojackpot.csv",
+    "draws": 821,
+    "first_draw": "2014-10-10",
+    "last_draw": "2026-05-12",
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "set1_universe": 50,
+    "set2_universe": 12,
+    "era_boundary": "2022-03-25",
+    "week_year_mismatches": [
+      {
+        "date": "2016-01-01",
+        "rok": 2015,
+        "calendar_year": 2016
+      },
+      {
+        "date": "2021-01-01",
+        "rok": 2020,
+        "calendar_year": 2021
+      },
+      {
+        "date": "2024-12-31",
+        "rok": 2025,
+        "calendar_year": 2024
+      },
+      {
+        "date": "2025-12-30",
+        "rok": 2026,
+        "calendar_year": 2025
+      }
+    ]
+  },
+  "eras": {
+    "a": {
+      "draws": 389,
+      "first": "2014-10-10",
+      "last": "2022-03-18"
+    },
+    "b": {
+      "draws": 432,
+      "first": "2022-03-25",
+      "last": "2026-05-12"
+    }
+  },
+  "views": {
+    "era_b": {
+      "label": "Current rules (from 25 Mar 2022)",
+      "note": "Set #2 drawn from 1-12, twice-weekly draws.",
+      "draws": 432,
+      "first": "2022-03-25",
+      "last": "2026-05-12",
+      "set1": {
+        "universe": 50,
+        "size": 5,
+        "cells": [
+          {
+            "n": 1,
+            "count": 47,
+            "rank": 17
+          },
+          {
+            "n": 2,
+            "count": 48,
+            "rank": 15
+          },
+          {
+            "n": 3,
+            "count": 41,
+            "rank": 31
+          },
+          {
+            "n": 4,
+            "count": 40,
+            "rank": 33
+          },
+          {
+            "n": 5,
+            "count": 33,
+            "rank": 48
+          },
+          {
+            "n": 6,
+            "count": 43,
+            "rank": 20
+          },
+          {
+            "n": 7,
+            "count": 42,
+            "rank": 25
+          },
+          {
+            "n": 8,
+            "count": 49,
+            "rank": 12
+          },
+          {
+            "n": 9,
+            "count": 43,
+            "rank": 21
+          },
+          {
+            "n": 10,
+            "count": 40,
+            "rank": 34
+          },
+          {
+            "n": 11,
+            "count": 58,
+            "rank": 1
+          },
+          {
+            "n": 12,
+            "count": 42,
+            "rank": 26
+          },
+          {
+            "n": 13,
+            "count": 51,
+            "rank": 5
+          },
+          {
+            "n": 14,
+            "count": 42,
+            "rank": 27
+          },
+          {
+            "n": 15,
+            "count": 42,
+            "rank": 28
+          },
+          {
+            "n": 16,
+            "count": 51,
+            "rank": 6
+          },
+          {
+            "n": 17,
+            "count": 54,
+            "rank": 2
+          },
+          {
+            "n": 18,
+            "count": 49,
+            "rank": 13
+          },
+          {
+            "n": 19,
+            "count": 34,
+            "rank": 47
+          },
+          {
+            "n": 20,
+            "count": 52,
+            "rank": 3
+          },
+          {
+            "n": 21,
+            "count": 51,
+            "rank": 7
+          },
+          {
+            "n": 22,
+            "count": 42,
+            "rank": 29
+          },
+          {
+            "n": 23,
+            "count": 51,
+            "rank": 8
+          },
+          {
+            "n": 24,
+            "count": 37,
+            "rank": 42
+          },
+          {
+            "n": 25,
+            "count": 27,
+            "rank": 50
+          },
+          {
+            "n": 26,
+            "count": 43,
+            "rank": 22
+          },
+          {
+            "n": 27,
+            "count": 42,
+            "rank": 30
+          },
+          {
+            "n": 28,
+            "count": 38,
+            "rank": 38
+          },
+          {
+            "n": 29,
+            "count": 45,
+            "rank": 19
+          },
+          {
+            "n": 30,
+            "count": 52,
+            "rank": 4
+          },
+          {
+            "n": 31,
+            "count": 43,
+            "rank": 23
+          },
+          {
+            "n": 32,
+            "count": 39,
+            "rank": 36
+          },
+          {
+            "n": 33,
+            "count": 33,
+            "rank": 49
+          },
+          {
+            "n": 34,
+            "count": 50,
+            "rank": 9
+          },
+          {
+            "n": 35,
+            "count": 49,
+            "rank": 14
+          },
+          {
+            "n": 36,
+            "count": 36,
+            "rank": 45
+          },
+          {
+            "n": 37,
+            "count": 50,
+            "rank": 10
+          },
+          {
+            "n": 38,
+            "count": 38,
+            "rank": 39
+          },
+          {
+            "n": 39,
+            "count": 47,
+            "rank": 18
+          },
+          {
+            "n": 40,
+            "count": 37,
+            "rank": 43
+          },
+          {
+            "n": 41,
+            "count": 48,
+            "rank": 16
+          },
+          {
+            "n": 42,
+            "count": 35,
+            "rank": 46
+          },
+          {
+            "n": 43,
+            "count": 39,
+            "rank": 37
+          },
+          {
+            "n": 44,
+            "count": 37,
+            "rank": 44
+          },
+          {
+            "n": 45,
+            "count": 50,
+            "rank": 11
+          },
+          {
+            "n": 46,
+            "count": 41,
+            "rank": 32
+          },
+          {
+            "n": 47,
+            "count": 43,
+            "rank": 24
+          },
+          {
+            "n": 48,
+            "count": 38,
+            "rank": 40
+          },
+          {
+            "n": 49,
+            "count": 40,
+            "rank": 35
+          },
+          {
+            "n": 50,
+            "count": 38,
+            "rank": 41
+          }
+        ],
+        "expected": 43.2,
+        "top5": [
+          {
+            "n": 11,
+            "count": 58
+          },
+          {
+            "n": 17,
+            "count": 54
+          },
+          {
+            "n": 20,
+            "count": 52
+          },
+          {
+            "n": 30,
+            "count": 52
+          },
+          {
+            "n": 13,
+            "count": 51
+          }
+        ],
+        "bottom5": [
+          {
+            "n": 25,
+            "count": 27
+          },
+          {
+            "n": 5,
+            "count": 33
+          },
+          {
+            "n": 33,
+            "count": 33
+          },
+          {
+            "n": 19,
+            "count": 34
+          },
+          {
+            "n": 42,
+            "count": 35
+          }
+        ],
+        "min": 27,
+        "max": 58
+      },
+      "set2": {
+        "universe": 12,
+        "size": 2,
+        "cells": [
+          {
+            "n": 1,
+            "count": 72,
+            "rank": 6
+          },
+          {
+            "n": 2,
+            "count": 68,
+            "rank": 9
+          },
+          {
+            "n": 3,
+            "count": 83,
+            "rank": 2
+          },
+          {
+            "n": 4,
+            "count": 64,
+            "rank": 10
+          },
+          {
+            "n": 5,
+            "count": 85,
+            "rank": 1
+          },
+          {
+            "n": 6,
+            "count": 74,
+            "rank": 4
+          },
+          {
+            "n": 7,
+            "count": 71,
+            "rank": 7
+          },
+          {
+            "n": 8,
+            "count": 64,
+            "rank": 11
+          },
+          {
+            "n": 9,
+            "count": 70,
+            "rank": 8
+          },
+          {
+            "n": 10,
+            "count": 74,
+            "rank": 5
+          },
+          {
+            "n": 11,
+            "count": 62,
+            "rank": 12
+          },
+          {
+            "n": 12,
+            "count": 77,
+            "rank": 3
+          }
+        ],
+        "expected": 72.0,
+        "top2": [
+          {
+            "n": 5,
+            "count": 85
+          },
+          {
+            "n": 3,
+            "count": 83
+          }
+        ],
+        "min": 62,
+        "max": 85
+      }
+    },
+    "full": {
+      "label": "Full history (2014-2026)",
+      "note": "Spans a rule change: Set #2 was 1-10 before 25 Mar 2022, so 11 and 12 look artificially cold here.",
+      "draws": 821,
+      "first": "2014-10-10",
+      "last": "2026-05-12",
+      "set1": {
+        "universe": 50,
+        "size": 5,
+        "cells": [
+          {
+            "n": 1,
+            "count": 90,
+            "rank": 10
+          },
+          {
+            "n": 2,
+            "count": 82,
+            "rank": 23
+          },
+          {
+            "n": 3,
+            "count": 82,
+            "rank": 24
+          },
+          {
+            "n": 4,
+            "count": 78,
+            "rank": 34
+          },
+          {
+            "n": 5,
+            "count": 71,
+            "rank": 45
+          },
+          {
+            "n": 6,
+            "count": 75,
+            "rank": 40
+          },
+          {
+            "n": 7,
+            "count": 82,
+            "rank": 25
+          },
+          {
+            "n": 8,
+            "count": 87,
+            "rank": 14
+          },
+          {
+            "n": 9,
+            "count": 79,
+            "rank": 31
+          },
+          {
+            "n": 10,
+            "count": 68,
+            "rank": 48
+          },
+          {
+            "n": 11,
+            "count": 94,
+            "rank": 3
+          },
+          {
+            "n": 12,
+            "count": 81,
+            "rank": 27
+          },
+          {
+            "n": 13,
+            "count": 87,
+            "rank": 15
+          },
+          {
+            "n": 14,
+            "count": 83,
+            "rank": 20
+          },
+          {
+            "n": 15,
+            "count": 86,
+            "rank": 18
+          },
+          {
+            "n": 16,
+            "count": 94,
+            "rank": 4
+          },
+          {
+            "n": 17,
+            "count": 92,
+            "rank": 7
+          },
+          {
+            "n": 18,
+            "count": 87,
+            "rank": 16
+          },
+          {
+            "n": 19,
+            "count": 81,
+            "rank": 28
+          },
+          {
+            "n": 20,
+            "count": 102,
+            "rank": 1
+          },
+          {
+            "n": 21,
+            "count": 91,
+            "rank": 9
+          },
+          {
+            "n": 22,
+            "count": 77,
+            "rank": 37
+          },
+          {
+            "n": 23,
+            "count": 93,
+            "rank": 6
+          },
+          {
+            "n": 24,
+            "count": 78,
+            "rank": 35
+          },
+          {
+            "n": 25,
+            "count": 65,
+            "rank": 50
+          },
+          {
+            "n": 26,
+            "count": 77,
+            "rank": 38
+          },
+          {
+            "n": 27,
+            "count": 78,
+            "rank": 36
+          },
+          {
+            "n": 28,
+            "count": 69,
+            "rank": 47
+          },
+          {
+            "n": 29,
+            "count": 83,
+            "rank": 21
+          },
+          {
+            "n": 30,
+            "count": 92,
+            "rank": 8
+          },
+          {
+            "n": 31,
+            "count": 83,
+            "rank": 22
+          },
+          {
+            "n": 32,
+            "count": 75,
+            "rank": 41
+          },
+          {
+            "n": 33,
+            "count": 72,
+            "rank": 44
+          },
+          {
+            "n": 34,
+            "count": 94,
+            "rank": 5
+          },
+          {
+            "n": 35,
+            "count": 95,
+            "rank": 2
+          },
+          {
+            "n": 36,
+            "count": 71,
+            "rank": 46
+          },
+          {
+            "n": 37,
+            "count": 81,
+            "rank": 29
+          },
+          {
+            "n": 38,
+            "count": 82,
+            "rank": 26
+          },
+          {
+            "n": 39,
+            "count": 88,
+            "rank": 13
+          },
+          {
+            "n": 40,
+            "count": 76,
+            "rank": 39
+          },
+          {
+            "n": 41,
+            "count": 87,
+            "rank": 17
+          },
+          {
+            "n": 42,
+            "count": 75,
+            "rank": 42
+          },
+          {
+            "n": 43,
+            "count": 80,
+            "rank": 30
+          },
+          {
+            "n": 44,
+            "count": 79,
+            "rank": 32
+          },
+          {
+            "n": 45,
+            "count": 85,
+            "rank": 19
+          },
+          {
+            "n": 46,
+            "count": 89,
+            "rank": 11
+          },
+          {
+            "n": 47,
+            "count": 79,
+            "rank": 33
+          },
+          {
+            "n": 48,
+            "count": 66,
+            "rank": 49
+          },
+          {
+            "n": 49,
+            "count": 89,
+            "rank": 12
+          },
+          {
+            "n": 50,
+            "count": 75,
+            "rank": 43
+          }
+        ],
+        "expected": 82.1,
+        "top5": [
+          {
+            "n": 20,
+            "count": 102
+          },
+          {
+            "n": 35,
+            "count": 95
+          },
+          {
+            "n": 11,
+            "count": 94
+          },
+          {
+            "n": 16,
+            "count": 94
+          },
+          {
+            "n": 34,
+            "count": 94
+          }
+        ],
+        "bottom5": [
+          {
+            "n": 25,
+            "count": 65
+          },
+          {
+            "n": 48,
+            "count": 66
+          },
+          {
+            "n": 10,
+            "count": 68
+          },
+          {
+            "n": 28,
+            "count": 69
+          },
+          {
+            "n": 5,
+            "count": 71
+          }
+        ],
+        "min": 65,
+        "max": 102
+      },
+      "set2": {
+        "universe": 12,
+        "size": 2,
+        "cells": [
+          {
+            "n": 1,
+            "count": 146,
+            "rank": 7
+          },
+          {
+            "n": 2,
+            "count": 135,
+            "rank": 10
+          },
+          {
+            "n": 3,
+            "count": 161,
+            "rank": 2
+          },
+          {
+            "n": 4,
+            "count": 145,
+            "rank": 8
+          },
+          {
+            "n": 5,
+            "count": 164,
+            "rank": 1
+          },
+          {
+            "n": 6,
+            "count": 151,
+            "rank": 4
+          },
+          {
+            "n": 7,
+            "count": 148,
+            "rank": 6
+          },
+          {
+            "n": 8,
+            "count": 149,
+            "rank": 5
+          },
+          {
+            "n": 9,
+            "count": 159,
+            "rank": 3
+          },
+          {
+            "n": 10,
+            "count": 145,
+            "rank": 9
+          },
+          {
+            "n": 11,
+            "count": 62,
+            "rank": 12
+          },
+          {
+            "n": 12,
+            "count": 77,
+            "rank": 11
+          }
+        ],
+        "expected": 136.83333333333334,
+        "top2": [
+          {
+            "n": 5,
+            "count": 164
+          },
+          {
+            "n": 3,
+            "count": 161
+          }
+        ],
+        "min": 62,
+        "max": 164
+      }
+    }
+  },
+  "chi2": {
+    "full": {
+      "chi2_set1": {
+        "statistic": 40.73690621193666,
+        "df": 49,
+        "p_value": 0.7934502845425204,
+        "p_value_str": "0.793",
+        "critical_05": 66.33864886296882,
+        "expected": 82.1,
+        "n": 4105,
+        "universe": 50,
+        "uniform_at_05": true
+      },
+      "chi2_set2": {
+        "statistic": 85.41534713763701,
+        "df": 11,
+        "p_value": 1.3116051266612937e-13,
+        "p_value_str": "< 1e-12",
+        "critical_05": 19.675137572682495,
+        "expected": 136.83333333333334,
+        "n": 1642,
+        "universe": 12,
+        "uniform_at_05": false
+      }
+    },
+    "era_a": {
+      "chi2_set1": {
+        "statistic": 29.473007712082264,
+        "df": 49,
+        "p_value": 0.9877732624270897,
+        "p_value_str": "0.988",
+        "critical_05": 66.33864886296882,
+        "expected": 38.9,
+        "n": 1945,
+        "universe": 50,
+        "uniform_at_05": true
+      },
+      "chi2_set2": {
+        "statistic": 4.724935732647815,
+        "df": 9,
+        "p_value": 0.8575969775431366,
+        "p_value_str": "0.858",
+        "critical_05": 16.91897760462045,
+        "expected": 77.8,
+        "n": 778,
+        "universe": 10,
+        "uniform_at_05": true
+      }
+    },
+    "era_b": {
+      "chi2_set1": {
+        "statistic": 47.08333333333333,
+        "df": 49,
+        "p_value": 0.5511497133843655,
+        "p_value_str": "0.551",
+        "critical_05": 66.33864886296882,
+        "expected": 43.2,
+        "n": 2160,
+        "universe": 50,
+        "uniform_at_05": true
+      },
+      "chi2_set2": {
+        "statistic": 7.944444444444445,
+        "df": 11,
+        "p_value": 0.7182716198929995,
+        "p_value_str": "0.718",
+        "critical_05": 19.675137572682495,
+        "expected": 72.0,
+        "n": 864,
+        "universe": 12,
+        "uniform_at_05": true
+      }
+    }
+  },
+  "gaps": {
+    "era_b_set1": {
+      "1": {
+        "count": 47,
+        "mean_gap": 8.804347826086957,
+        "max_gap": 32,
+        "drought": 2,
+        "expected_gap": 9.191489361702128,
+        "last_seen": "2026-05-05"
+      },
+      "2": {
+        "count": 48,
+        "mean_gap": 8.872340425531915,
+        "max_gap": 50,
+        "drought": 10,
+        "expected_gap": 9.0,
+        "last_seen": "2026-04-07"
+      },
+      "3": {
+        "count": 41,
+        "mean_gap": 10.575,
+        "max_gap": 34,
+        "drought": 1,
+        "expected_gap": 10.536585365853659,
+        "last_seen": "2026-05-08"
+      },
+      "4": {
+        "count": 40,
+        "mean_gap": 10.384615384615385,
+        "max_gap": 36,
+        "drought": 10,
+        "expected_gap": 10.8,
+        "last_seen": "2026-04-07"
+      },
+      "5": {
+        "count": 33,
+        "mean_gap": 12.90625,
+        "max_gap": 71,
+        "drought": 12,
+        "expected_gap": 13.090909090909092,
+        "last_seen": "2026-03-31"
+      },
+      "6": {
+        "count": 43,
+        "mean_gap": 9.904761904761905,
+        "max_gap": 49,
+        "drought": 5,
+        "expected_gap": 10.046511627906977,
+        "last_seen": "2026-04-24"
+      },
+      "7": {
+        "count": 42,
+        "mean_gap": 10.463414634146341,
+        "max_gap": 42,
+        "drought": 0,
+        "expected_gap": 10.285714285714286,
+        "last_seen": "2026-05-12"
+      },
+      "8": {
+        "count": 49,
+        "mean_gap": 8.541666666666666,
+        "max_gap": 36,
+        "drought": 19,
+        "expected_gap": 8.816326530612244,
+        "last_seen": "2026-03-06"
+      },
+      "9": {
+        "count": 43,
+        "mean_gap": 9.928571428571429,
+        "max_gap": 29,
+        "drought": 11,
+        "expected_gap": 10.046511627906977,
+        "last_seen": "2026-04-03"
+      },
+      "10": {
+        "count": 40,
+        "mean_gap": 10.948717948717949,
+        "max_gap": 36,
+        "drought": 3,
+        "expected_gap": 10.8,
+        "last_seen": "2026-05-01"
+      },
+      "11": {
+        "count": 58,
+        "mean_gap": 7.508771929824562,
+        "max_gap": 32,
+        "drought": 3,
+        "expected_gap": 7.448275862068965,
+        "last_seen": "2026-05-01"
+      },
+      "12": {
+        "count": 42,
+        "mean_gap": 9.195121951219512,
+        "max_gap": 70,
+        "drought": 16,
+        "expected_gap": 10.285714285714286,
+        "last_seen": "2026-03-17"
+      },
+      "13": {
+        "count": 51,
+        "mean_gap": 8.34,
+        "max_gap": 34,
+        "drought": 3,
+        "expected_gap": 8.470588235294118,
+        "last_seen": "2026-05-01"
+      },
+      "14": {
+        "count": 42,
+        "mean_gap": 9.560975609756097,
+        "max_gap": 39,
+        "drought": 20,
+        "expected_gap": 10.285714285714286,
+        "last_seen": "2026-03-03"
+      },
+      "15": {
+        "count": 42,
+        "mean_gap": 10.487804878048781,
+        "max_gap": 46,
+        "drought": 0,
+        "expected_gap": 10.285714285714286,
+        "last_seen": "2026-05-12"
+      },
+      "16": {
+        "count": 51,
+        "mean_gap": 7.98,
+        "max_gap": 28,
+        "drought": 3,
+        "expected_gap": 8.470588235294118,
+        "last_seen": "2026-05-01"
+      },
+      "17": {
+        "count": 54,
+        "mean_gap": 7.981132075471698,
+        "max_gap": 61,
+        "drought": 1,
+        "expected_gap": 8.0,
+        "last_seen": "2026-05-08"
+      },
+      "18": {
+        "count": 49,
+        "mean_gap": 8.9375,
+        "max_gap": 37,
+        "drought": 1,
+        "expected_gap": 8.816326530612244,
+        "last_seen": "2026-05-08"
+      },
+      "19": {
+        "count": 34,
+        "mean_gap": 12.909090909090908,
+        "max_gap": 73,
+        "drought": 0,
+        "expected_gap": 12.705882352941176,
+        "last_seen": "2026-05-12"
+      },
+      "20": {
+        "count": 52,
+        "mean_gap": 8.372549019607844,
+        "max_gap": 27,
+        "drought": 4,
+        "expected_gap": 8.307692307692308,
+        "last_seen": "2026-04-28"
+      },
+      "21": {
+        "count": 51,
+        "mean_gap": 8.08,
+        "max_gap": 21,
+        "drought": 5,
+        "expected_gap": 8.470588235294118,
+        "last_seen": "2026-04-24"
+      },
+      "22": {
+        "count": 42,
+        "mean_gap": 10.048780487804878,
+        "max_gap": 49,
+        "drought": 8,
+        "expected_gap": 10.285714285714286,
+        "last_seen": "2026-04-14"
+      },
+      "23": {
+        "count": 51,
+        "mean_gap": 7.98,
+        "max_gap": 35,
+        "drought": 10,
+        "expected_gap": 8.470588235294118,
+        "last_seen": "2026-04-07"
+      },
+      "24": {
+        "count": 37,
+        "mean_gap": 10.833333333333334,
+        "max_gap": 80,
+        "drought": 40,
+        "expected_gap": 11.675675675675675,
+        "last_seen": "2025-12-23"
+      },
+      "25": {
+        "count": 27,
+        "mean_gap": 15.423076923076923,
+        "max_gap": 55,
+        "drought": 13,
+        "expected_gap": 16.0,
+        "last_seen": "2026-03-27"
+      },
+      "26": {
+        "count": 43,
+        "mean_gap": 9.714285714285714,
+        "max_gap": 30,
+        "drought": 19,
+        "expected_gap": 10.046511627906977,
+        "last_seen": "2026-03-06"
+      },
+      "27": {
+        "count": 42,
+        "mean_gap": 10.21951219512195,
+        "max_gap": 33,
+        "drought": 3,
+        "expected_gap": 10.285714285714286,
+        "last_seen": "2026-05-01"
+      },
+      "28": {
+        "count": 38,
+        "mean_gap": 11.567567567567568,
+        "max_gap": 44,
+        "drought": 0,
+        "expected_gap": 11.368421052631579,
+        "last_seen": "2026-05-12"
+      },
+      "29": {
+        "count": 45,
+        "mean_gap": 9.272727272727273,
+        "max_gap": 41,
+        "drought": 5,
+        "expected_gap": 9.6,
+        "last_seen": "2026-04-24"
+      },
+      "30": {
+        "count": 52,
+        "mean_gap": 8.196078431372548,
+        "max_gap": 40,
+        "drought": 2,
+        "expected_gap": 8.307692307692308,
+        "last_seen": "2026-05-05"
+      },
+      "31": {
+        "count": 43,
+        "mean_gap": 10.238095238095237,
+        "max_gap": 38,
+        "drought": 1,
+        "expected_gap": 10.046511627906977,
+        "last_seen": "2026-05-08"
+      },
+      "32": {
+        "count": 39,
+        "mean_gap": 10.947368421052632,
+        "max_gap": 57,
+        "drought": 6,
+        "expected_gap": 11.076923076923077,
+        "last_seen": "2026-04-21"
+      },
+      "33": {
+        "count": 33,
+        "mean_gap": 12.34375,
+        "max_gap": 47,
+        "drought": 2,
+        "expected_gap": 13.090909090909092,
+        "last_seen": "2026-05-05"
+      },
+      "34": {
+        "count": 50,
+        "mean_gap": 8.551020408163266,
+        "max_gap": 24,
+        "drought": 2,
+        "expected_gap": 8.64,
+        "last_seen": "2026-05-05"
+      },
+      "35": {
+        "count": 49,
+        "mean_gap": 8.979166666666666,
+        "max_gap": 28,
+        "drought": 0,
+        "expected_gap": 8.816326530612244,
+        "last_seen": "2026-05-12"
+      },
+      "36": {
+        "count": 36,
+        "mean_gap": 12.0,
+        "max_gap": 52,
+        "drought": 6,
+        "expected_gap": 12.0,
+        "last_seen": "2026-04-21"
+      },
+      "37": {
+        "count": 50,
+        "mean_gap": 8.53061224489796,
+        "max_gap": 34,
+        "drought": 11,
+        "expected_gap": 8.64,
+        "last_seen": "2026-04-03"
+      },
+      "38": {
+        "count": 38,
+        "mean_gap": 11.216216216216216,
+        "max_gap": 41,
+        "drought": 13,
+        "expected_gap": 11.368421052631579,
+        "last_seen": "2026-03-27"
+      },
+      "39": {
+        "count": 47,
+        "mean_gap": 9.23913043478261,
+        "max_gap": 31,
+        "drought": 5,
+        "expected_gap": 9.191489361702128,
+        "last_seen": "2026-04-24"
+      },
+      "40": {
+        "count": 37,
+        "mean_gap": 11.13888888888889,
+        "max_gap": 49,
+        "drought": 13,
+        "expected_gap": 11.675675675675675,
+        "last_seen": "2026-03-27"
+      },
+      "41": {
+        "count": 48,
+        "mean_gap": 9.063829787234043,
+        "max_gap": 42,
+        "drought": 1,
+        "expected_gap": 9.0,
+        "last_seen": "2026-05-08"
+      },
+      "42": {
+        "count": 35,
+        "mean_gap": 11.294117647058824,
+        "max_gap": 47,
+        "drought": 39,
+        "expected_gap": 12.342857142857143,
+        "last_seen": "2025-12-26"
+      },
+      "43": {
+        "count": 39,
+        "mean_gap": 10.947368421052632,
+        "max_gap": 43,
+        "drought": 2,
+        "expected_gap": 11.076923076923077,
+        "last_seen": "2026-05-05"
+      },
+      "44": {
+        "count": 37,
+        "mean_gap": 10.75,
+        "max_gap": 61,
+        "drought": 5,
+        "expected_gap": 11.675675675675675,
+        "last_seen": "2026-04-24"
+      },
+      "45": {
+        "count": 50,
+        "mean_gap": 8.204081632653061,
+        "max_gap": 31,
+        "drought": 25,
+        "expected_gap": 8.64,
+        "last_seen": "2026-02-13"
+      },
+      "46": {
+        "count": 41,
+        "mean_gap": 10.675,
+        "max_gap": 34,
+        "drought": 4,
+        "expected_gap": 10.536585365853659,
+        "last_seen": "2026-04-28"
+      },
+      "47": {
+        "count": 43,
+        "mean_gap": 9.785714285714286,
+        "max_gap": 51,
+        "drought": 6,
+        "expected_gap": 10.046511627906977,
+        "last_seen": "2026-04-21"
+      },
+      "48": {
+        "count": 38,
+        "mean_gap": 11.324324324324325,
+        "max_gap": 40,
+        "drought": 9,
+        "expected_gap": 11.368421052631579,
+        "last_seen": "2026-04-10"
+      },
+      "49": {
+        "count": 40,
+        "mean_gap": 10.487179487179487,
+        "max_gap": 43,
+        "drought": 20,
+        "expected_gap": 10.8,
+        "last_seen": "2026-03-03"
+      },
+      "50": {
+        "count": 38,
+        "mean_gap": 10.594594594594595,
+        "max_gap": 45,
+        "drought": 31,
+        "expected_gap": 11.368421052631579,
+        "last_seen": "2026-01-23"
+      }
+    },
+    "era_b_set2": {
+      "1": {
+        "count": 72,
+        "mean_gap": 5.873239436619718,
+        "max_gap": 29,
+        "drought": 5,
+        "expected_gap": 6.0,
+        "last_seen": "2026-04-24"
+      },
+      "2": {
+        "count": 68,
+        "mean_gap": 6.313432835820896,
+        "max_gap": 25,
+        "drought": 7,
+        "expected_gap": 6.352941176470588,
+        "last_seen": "2026-04-17"
+      },
+      "3": {
+        "count": 83,
+        "mean_gap": 5.170731707317073,
+        "max_gap": 18,
+        "drought": 0,
+        "expected_gap": 5.204819277108434,
+        "last_seen": "2026-05-12"
+      },
+      "4": {
+        "count": 64,
+        "mean_gap": 6.507936507936508,
+        "max_gap": 25,
+        "drought": 16,
+        "expected_gap": 6.75,
+        "last_seen": "2026-03-17"
+      },
+      "5": {
+        "count": 85,
+        "mean_gap": 5.083333333333333,
+        "max_gap": 21,
+        "drought": 2,
+        "expected_gap": 5.08235294117647,
+        "last_seen": "2026-05-05"
+      },
+      "6": {
+        "count": 74,
+        "mean_gap": 5.890410958904109,
+        "max_gap": 42,
+        "drought": 1,
+        "expected_gap": 5.837837837837838,
+        "last_seen": "2026-05-08"
+      },
+      "7": {
+        "count": 71,
+        "mean_gap": 6.0285714285714285,
+        "max_gap": 24,
+        "drought": 3,
+        "expected_gap": 6.084507042253521,
+        "last_seen": "2026-05-01"
+      },
+      "8": {
+        "count": 64,
+        "mean_gap": 6.714285714285714,
+        "max_gap": 21,
+        "drought": 6,
+        "expected_gap": 6.75,
+        "last_seen": "2026-04-21"
+      },
+      "9": {
+        "count": 70,
+        "mean_gap": 6.0144927536231885,
+        "max_gap": 26,
+        "drought": 7,
+        "expected_gap": 6.171428571428572,
+        "last_seen": "2026-04-17"
+      },
+      "10": {
+        "count": 74,
+        "mean_gap": 5.876712328767123,
+        "max_gap": 29,
+        "drought": 2,
+        "expected_gap": 5.837837837837838,
+        "last_seen": "2026-05-05"
+      },
+      "11": {
+        "count": 62,
+        "mean_gap": 7.049180327868853,
+        "max_gap": 26,
+        "drought": 0,
+        "expected_gap": 6.967741935483871,
+        "last_seen": "2026-05-12"
+      },
+      "12": {
+        "count": 77,
+        "mean_gap": 5.618421052631579,
+        "max_gap": 25,
+        "drought": 1,
+        "expected_gap": 5.6103896103896105,
+        "last_seen": "2026-05-08"
+      }
+    }
+  },
+  "positional_set1_full": [
+    {
+      "position": 1,
+      "top": [
+        {
+          "n": 39,
+          "count": 24
+        },
+        {
+          "n": 16,
+          "count": 24
+        },
+        {
+          "n": 47,
+          "count": 24
+        },
+        {
+          "n": 30,
+          "count": 23
+        },
+        {
+          "n": 23,
+          "count": 23
+        }
+      ],
+      "min": 10,
+      "max": 24,
+      "distinct": 50,
+      "chi2": {
+        "statistic": 43.00730816077953,
+        "df": 49,
+        "p_value": 0.7135679072228494,
+        "p_value_str": "0.714",
+        "critical_05": 66.33864886296882,
+        "expected": 16.42,
+        "n": 821,
+        "universe": 50,
+        "uniform_at_05": true
+      }
+    },
+    {
+      "position": 2,
+      "top": [
+        {
+          "n": 13,
+          "count": 25
+        },
+        {
+          "n": 1,
+          "count": 23
+        },
+        {
+          "n": 2,
+          "count": 23
+        },
+        {
+          "n": 21,
+          "count": 22
+        },
+        {
+          "n": 17,
+          "count": 22
+        }
+      ],
+      "min": 7,
+      "max": 25,
+      "distinct": 50,
+      "chi2": {
+        "statistic": 48.85383678440925,
+        "df": 49,
+        "p_value": 0.47900712336309614,
+        "p_value_str": "0.479",
+        "critical_05": 66.33864886296882,
+        "expected": 16.42,
+        "n": 821,
+        "universe": 50,
+        "uniform_at_05": true
+      }
+    },
+    {
+      "position": 3,
+      "top": [
+        {
+          "n": 30,
+          "count": 27
+        },
+        {
+          "n": 20,
+          "count": 22
+        },
+        {
+          "n": 35,
+          "count": 21
+        },
+        {
+          "n": 11,
+          "count": 21
+        },
+        {
+          "n": 39,
+          "count": 21
+        }
+      ],
+      "min": 8,
+      "max": 27,
+      "distinct": 50,
+      "chi2": {
+        "statistic": 40.69305724725943,
+        "df": 49,
+        "p_value": 0.7948774183465778,
+        "p_value_str": "0.795",
+        "critical_05": 66.33864886296882,
+        "expected": 16.42,
+        "n": 821,
+        "universe": 50,
+        "uniform_at_05": true
+      }
+    },
+    {
+      "position": 4,
+      "top": [
+        {
+          "n": 34,
+          "count": 27
+        },
+        {
+          "n": 18,
+          "count": 23
+        },
+        {
+          "n": 45,
+          "count": 22
+        },
+        {
+          "n": 11,
+          "count": 21
+        },
+        {
+          "n": 20,
+          "count": 21
+        }
+      ],
+      "min": 7,
+      "max": 27,
+      "distinct": 50,
+      "chi2": {
+        "statistic": 37.64799025578562,
+        "df": 49,
+        "p_value": 0.8811565402365494,
+        "p_value_str": "0.881",
+        "critical_05": 66.33864886296882,
+        "expected": 16.42,
+        "n": 821,
+        "universe": 50,
+        "uniform_at_05": true
+      }
+    },
+    {
+      "position": 5,
+      "top": [
+        {
+          "n": 20,
+          "count": 26
+        },
+        {
+          "n": 34,
+          "count": 23
+        },
+        {
+          "n": 23,
+          "count": 22
+        },
+        {
+          "n": 15,
+          "count": 22
+        },
+        {
+          "n": 29,
+          "count": 21
+        }
+      ],
+      "min": 5,
+      "max": 26,
+      "distinct": 50,
+      "chi2": {
+        "statistic": 42.64190012180267,
+        "df": 49,
+        "p_value": 0.7271425679140537,
+        "p_value_str": "0.727",
+        "critical_05": 66.33864886296882,
+        "expected": 16.42,
+        "n": 821,
+        "universe": 50,
+        "uniform_at_05": true
+      }
+    }
+  ],
+  "parity_decade": {
+    "odd": 1103,
+    "even": 1057,
+    "decades": [
+      {
+        "label": "1-10",
+        "count": 426
+      },
+      {
+        "label": "11-20",
+        "count": 475
+      },
+      {
+        "label": "21-30",
+        "count": 428
+      },
+      {
+        "label": "31-40",
+        "count": 422
+      },
+      {
+        "label": "41-50",
+        "count": 409
+      }
+    ]
+  },
+  "adjacency": {
+    "observed": 280,
+    "draws": 821,
+    "observed_rate": 0.341047503045067,
+    "exact_rate": 0.35303951367781156,
+    "exact_count": 748006,
+    "combinations": 2118760
+  },
+  "overlap": {
+    "set1_full": {
+      "mean": 0.4926829268292683,
+      "expected": 0.5,
+      "pairs": 820,
+      "max": 3
+    },
+    "set1_era_b": {
+      "mean": 0.5127610208816705,
+      "expected": 0.5,
+      "pairs": 431,
+      "max": 3
+    }
+  },
+  "odds": {
+    "lines": 139838160,
+    "set1_combinations": 2118760,
+    "set2_combinations": 66
+  },
+  "cooccurrence": {
+    "era_b_set1": [
+      {
+        "a": 11,
+        "b": 20,
+        "count": 10
+      },
+      {
+        "a": 11,
+        "b": 16,
+        "count": 10
+      },
+      {
+        "a": 16,
+        "b": 27,
+        "count": 10
+      },
+      {
+        "a": 17,
+        "b": 30,
+        "count": 10
+      },
+      {
+        "a": 18,
+        "b": 39,
+        "count": 9
+      },
+      {
+        "a": 15,
+        "b": 17,
+        "count": 9
+      },
+      {
+        "a": 15,
+        "b": 35,
+        "count": 9
+      },
+      {
+        "a": 45,
+        "b": 50,
+        "count": 9
+      },
+      {
+        "a": 23,
+        "b": 44,
+        "count": 9
+      },
+      {
+        "a": 21,
+        "b": 39,
+        "count": 9
+      }
+    ],
+    "era_b_set2": [
+      {
+        "a": 6,
+        "b": 12,
+        "count": 12
+      },
+      {
+        "a": 7,
+        "b": 8,
+        "count": 11
+      },
+      {
+        "a": 3,
+        "b": 9,
+        "count": 11
+      },
+      {
+        "a": 5,
+        "b": 10,
+        "count": 10
+      },
+      {
+        "a": 3,
+        "b": 5,
+        "count": 10
+      }
+    ],
+    "full_set1": {
+      "draws": 821,
+      "possible_pairs": 1225,
+      "pairs_seen": 1224,
+      "pairs_never_seen": 1,
+      "expected_per_pair": 6.702040816326531,
+      "expected_false_positives_at_05": 61.25,
+      "top": [
+        {
+          "a": 34,
+          "b": 49,
+          "count": 16
+        },
+        {
+          "a": 27,
+          "b": 41,
+          "count": 15
+        },
+        {
+          "a": 17,
+          "b": 39,
+          "count": 14
+        },
+        {
+          "a": 14,
+          "b": 34,
+          "count": 14
+        },
+        {
+          "a": 15,
+          "b": 29,
+          "count": 14
+        }
+      ]
+    }
+  },
+  "yearly": [
+    {
+      "year": 2014,
+      "draws": 12,
+      "set2_universe": 9,
+      "first": "2014-10-10",
+      "last": "2014-12-26",
+      "partial": true
+    },
+    {
+      "year": 2015,
+      "draws": 52,
+      "set2_universe": 10,
+      "first": "2015-01-02",
+      "last": "2015-12-25",
+      "partial": true
+    },
+    {
+      "year": 2016,
+      "draws": 53,
+      "set2_universe": 10,
+      "first": "2016-01-01",
+      "last": "2016-12-30",
+      "partial": true
+    },
+    {
+      "year": 2017,
+      "draws": 52,
+      "set2_universe": 10,
+      "first": "2017-01-06",
+      "last": "2017-12-29",
+      "partial": true
+    },
+    {
+      "year": 2018,
+      "draws": 52,
+      "set2_universe": 10,
+      "first": "2018-01-05",
+      "last": "2018-12-28",
+      "partial": true
+    },
+    {
+      "year": 2019,
+      "draws": 52,
+      "set2_universe": 10,
+      "first": "2019-01-04",
+      "last": "2019-12-27",
+      "partial": true
+    },
+    {
+      "year": 2020,
+      "draws": 52,
+      "set2_universe": 10,
+      "first": "2020-01-03",
+      "last": "2020-12-25",
+      "partial": true
+    },
+    {
+      "year": 2021,
+      "draws": 53,
+      "set2_universe": 10,
+      "first": "2021-01-01",
+      "last": "2021-12-31",
+      "partial": true
+    },
+    {
+      "year": 2022,
+      "draws": 92,
+      "set2_universe": 12,
+      "first": "2022-01-07",
+      "last": "2022-12-30",
+      "partial": true
+    },
+    {
+      "year": 2023,
+      "draws": 104,
+      "set2_universe": 12,
+      "first": "2023-01-03",
+      "last": "2023-12-29",
+      "partial": false
+    },
+    {
+      "year": 2024,
+      "draws": 105,
+      "set2_universe": 12,
+      "first": "2024-01-02",
+      "last": "2024-12-31",
+      "partial": false
+    },
+    {
+      "year": 2025,
+      "draws": 104,
+      "set2_universe": 12,
+      "first": "2025-01-03",
+      "last": "2025-12-30",
+      "partial": false
+    },
+    {
+      "year": 2026,
+      "draws": 38,
+      "set2_universe": 12,
+      "first": "2026-01-02",
+      "last": "2026-05-12",
+      "partial": true
+    }
+  ],
+  "model": {
+    "weights": {
+      "frequency": 0.4,
+      "recency": 0.3,
+      "gap_ratio": 0.3
+    },
+    "features": [
+      "frequency",
+      "recency",
+      "gap_ratio"
+    ],
+    "fitted_on": "Era B only",
+    "suggested_lines": [
+      {
+        "set1": [
+          4,
+          8,
+          17,
+          29,
+          36
+        ],
+        "set2": [
+          1,
+          4
+        ]
+      },
+      {
+        "set1": [
+          2,
+          5,
+          8,
+          23,
+          26
+        ],
+        "set2": [
+          5,
+          10
+        ]
+      },
+      {
+        "set1": [
+          8,
+          13,
+          30,
+          34,
+          49
+        ],
+        "set2": [
+          4,
+          12
+        ]
+      },
+      {
+        "set1": [
+          3,
+          7,
+          8,
+          15,
+          45
+        ],
+        "set2": [
+          4,
+          10
+        ]
+      },
+      {
+        "set1": [
+          10,
+          20,
+          28,
+          30,
+          35
+        ],
+        "set2": [
+          1,
+          2
+        ]
+      }
+    ]
+  },
+  "backtest": {
+    "targets": 120,
+    "lines_per_target": 60,
+    "analytic_expectation": 0.5,
+    "model": {
+      "mean_matched": 0.5025,
+      "sd": 0.636172910632182,
+      "stderr": 0.007497369651919989,
+      "ci95_low": 0.4878051554822368,
+      "ci95_high": 0.5171948445177631,
+      "n_lines": 7200,
+      "distribution": {
+        "0": 4111,
+        "1": 2588,
+        "2": 473,
+        "3": 28
+      }
+    },
+    "random_baseline": {
+      "mean_matched": 0.4880555555555556,
+      "sd": 0.6301424858467614,
+      "stderr": 0.00742630041426655,
+      "ci95_low": 0.47350000674359316,
+      "ci95_high": 0.502611104367518,
+      "n_lines": 7200,
+      "distribution": {
+        "0": 4190,
+        "1": 2532,
+        "2": 452,
+        "3": 26
+      }
+    },
+    "difference": 0.014444444444444371,
+    "z": 1.3687851256415637,
+    "p_value": 0.1710664517604161,
+    "beats_random": false,
+    "conclusion": "The model matches no more numbers than chance; it has no predictive edge."
+  }
+}

@@ -1,0 +1,12 @@
+# Direct dependencies for the notebook and the analysis.
+# Pinned to the versions this deliverable was built and executed with (Python 3.13).
+#
+# Note: analysis.py and make_html.py are standard-library only and need NONE of these.
+# Only lottery_analysis.ipynb (pandas + matplotlib) and the nbconvert execution step do.
+
+pandas==3.0.6
+numpy==2.5.3
+matplotlib==3.11.2
+nbformat==5.11.1
+nbconvert==7.17.1
+ipykernel==7.4.0

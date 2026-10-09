@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eurojackpot Bar Chart</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f8fafc;
+      --panel: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #cbd5e1;
+    }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: var(--bg); color: var(--text); }
+    main { max-width: 1280px; margin: 0 auto; padding: 24px 20px 40px; }
+    h1, h2, p { margin-top: 0; }
+    .stack { display: grid; gap: 24px; }
+    .card { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 18px; box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05); }
+    .subtitle { color: var(--muted); margin-bottom: 14px; }
+    .plaque { margin-top: 14px; padding: 14px 16px; border-left: 5px solid #0ea5e9; background: #eff6ff; border-radius: 10px; }
+    .plaque ul { margin: 8px 0 0; padding-left: 20px; }
+    svg { width: 100%; height: auto; overflow: visible; }
+    .axis text { font-size: 11px; fill: var(--muted); }
+    .axis path, .axis line { stroke: #cbd5e1; }
+    .grid line { stroke: #e2e8f0; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Eurojackpot frequency bar charts</h1>
+    <p class="subtitle">The charts show how often each number appeared in the historical draws.</p>
+
+    <section class="stack">
+      <div class="card">
+        <h2>Set #1: main numbers</h2>
+        <div id="main-bars"></div>
+      </div>
+
+      <div class="card">
+        <h2>Set #2: star numbers</h2>
+        <div id="star-bars"></div>
+      </div>
+    </section>
+
+    <div class="plaque">
+      <strong>Most frequently drawn numbers</strong>
+      <ul>
+        <li>Set #1: 20, 35, 11, 16, 34</li>
+        <li>Set #2: 5, 3</li>
+      </ul>
+    </div>
+  </main>
+
+  <script>
+    const mainData = [{"number": 1, "count": 90}, {"number": 2, "count": 82}, {"number": 3, "count": 82}, {"number": 4, "count": 78}, {"number": 5, "count": 71}, {"number": 6, "count": 75}, {"number": 7, "count": 82}, {"number": 8, "count": 87}, {"number": 9, "count": 79}, {"number": 10, "count": 68}, {"number": 11, "count": 94}, {"number": 12, "count": 81}, {"number": 13, "count": 87}, {"number": 14, "count": 83}, {"number": 15, "count": 86}, {"number": 16, "count": 94}, {"number": 17, "count": 92}, {"number": 18, "count": 87}, {"number": 19, "count": 81}, {"number": 20, "count": 102}, {"number": 21, "count": 91}, {"number": 22, "count": 77}, {"number": 23, "count": 93}, {"number": 24, "count": 78}, {"number": 25, "count": 65}, {"number": 26, "count": 77}, {"number": 27, "count": 78}, {"number": 28, "count": 69}, {"number": 29, "count": 83}, {"number": 30, "count": 92}, {"number": 31, "count": 83}, {"number": 32, "count": 75}, {"number": 33, "count": 72}, {"number": 34, "count": 94}, {"number": 35, "count": 95}, {"number": 36, "count": 71}, {"number": 37, "count": 81}, {"number": 38, "count": 82}, {"number": 39, "count": 88}, {"number": 40, "count": 76}, {"number": 41, "count": 87}, {"number": 42, "count": 75}, {"number": 43, "count": 80}, {"number": 44, "count": 79}, {"number": 45, "count": 85}, {"number": 46, "count": 89}, {"number": 47, "count": 79}, {"number": 48, "count": 66}, {"number": 49, "count": 89}, {"number": 50, "count": 75}];
+    const starData = [{"number": 1, "count": 146}, {"number": 2, "count": 135}, {"number": 3, "count": 161}, {"number": 4, "count": 145}, {"number": 5, "count": 164}, {"number": 6, "count": 151}, {"number": 7, "count": 148}, {"number": 8, "count": 149}, {"number": 9, "count": 159}, {"number": 10, "count": 145}, {"number": 11, "count": 62}, {"number": 12, "count": 77}];
+
+    function renderBars(target, data, width, height, barColor, tickStep) {
+      const margin = { top: 20, right: 20, bottom: 60, left: 50 };
+      const innerWidth = width - margin.left - margin.right;
+      const innerHeight = height - margin.top - margin.bottom;
+      const maxCount = d3.max(data, d => d.count);
+
+      const svg = d3.select(target)
+        .append('svg')
+        .attr('viewBox', `0 0 ${width} ${height}`)
+        .attr('role', 'img')
+        .attr('aria-label', 'Lottery frequency bar chart');
+
+      const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+      const x = d3.scaleBand()
+        .domain(data.map(d => d.number))
+        .range([0, innerWidth])
+        .padding(0.15);
+
+      const y = d3.scaleLinear()
+        .domain([0, maxCount])
+        .nice()
+        .range([innerHeight, 0]);
+
+      g.append('g')
+        .attr('class', 'grid')
+        .call(d3.axisLeft(y).ticks(5).tickSize(-innerWidth).tickFormat(''));
+
+      g.selectAll('rect.bar')
+        .data(data)
+        .enter()
+        .append('rect')
+        .attr('class', 'bar')
+        .attr('x', d => x(d.number))
+        .attr('y', d => y(d.count))
+        .attr('width', x.bandwidth())
+        .attr('height', d => innerHeight - y(d.count))
+        .attr('rx', 4)
+        .attr('fill', barColor);
+
+      const tickValues = data.map(d => d.number).filter(n => n === 1 || n === data[data.length - 1].number || n % tickStep === 0);
+
+      g.append('g')
+        .attr('class', 'axis')
+        .attr('transform', `translate(0,${innerHeight})`)
+        .call(d3.axisBottom(x).tickValues(tickValues).tickFormat(d3.format('d')))
+        .selectAll('text')
+        .attr('transform', 'rotate(-65)')
+        .style('text-anchor', 'end');
+
+      g.append('g')
+        .attr('class', 'axis')
+        .call(d3.axisLeft(y).ticks(5));
+    }
+
+    renderBars('#main-bars', mainData, 1120, 420, '#2563eb', 5);
+    renderBars('#star-bars', starData, 1120, 320, '#f97316', 1);
+  </script>
+</body>
+</html>

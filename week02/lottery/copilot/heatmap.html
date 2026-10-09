@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eurojackpot Heatmap</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f8fafc;
+      --panel: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #cbd5e1;
+    }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: var(--bg); color: var(--text); }
+    main { max-width: 1180px; margin: 0 auto; padding: 24px 20px 40px; }
+    h1, h2, p { margin-top: 0; }
+    .grid { display: grid; gap: 24px; }
+    .card { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 18px; box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05); }
+    .subtitle { color: var(--muted); margin-bottom: 14px; }
+    .legend { display: flex; gap: 8px; align-items: center; margin-top: 10px; color: var(--muted); font-size: 14px; }
+    .swatch { width: 18px; height: 18px; border-radius: 4px; background: linear-gradient(90deg, #ffffcc, #800026); border: 1px solid var(--border); }
+    svg { width: 100%; height: auto; overflow: visible; }
+    .axis-label { font-size: 13px; fill: var(--muted); }
+    .cell-label { font-size: 14px; font-weight: 700; pointer-events: none; }
+    .cell-small { font-size: 13px; font-weight: 600; pointer-events: none; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Eurojackpot frequency heatmaps</h1>
+    <p class="subtitle">Each cell shows how often a number appeared in the historical draw data.</p>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Set #1: main numbers</h2>
+        <div id="main-heatmap"></div>
+        <div class="legend"><span class="swatch"></span> Lighter = fewer draws, darker = more draws</div>
+      </div>
+
+      <div class="card">
+        <h2>Set #2: star numbers</h2>
+        <div id="star-heatmap"></div>
+        <div class="legend"><span class="swatch"></span> Lighter = fewer draws, darker = more draws</div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const mainData = [{"number": 1, "count": 90}, {"number": 2, "count": 82}, {"number": 3, "count": 82}, {"number": 4, "count": 78}, {"number": 5, "count": 71}, {"number": 6, "count": 75}, {"number": 7, "count": 82}, {"number": 8, "count": 87}, {"number": 9, "count": 79}, {"number": 10, "count": 68}, {"number": 11, "count": 94}, {"number": 12, "count": 81}, {"number": 13, "count": 87}, {"number": 14, "count": 83}, {"number": 15, "count": 86}, {"number": 16, "count": 94}, {"number": 17, "count": 92}, {"number": 18, "count": 87}, {"number": 19, "count": 81}, {"number": 20, "count": 102}, {"number": 21, "count": 91}, {"number": 22, "count": 77}, {"number": 23, "count": 93}, {"number": 24, "count": 78}, {"number": 25, "count": 65}, {"number": 26, "count": 77}, {"number": 27, "count": 78}, {"number": 28, "count": 69}, {"number": 29, "count": 83}, {"number": 30, "count": 92}, {"number": 31, "count": 83}, {"number": 32, "count": 75}, {"number": 33, "count": 72}, {"number": 34, "count": 94}, {"number": 35, "count": 95}, {"number": 36, "count": 71}, {"number": 37, "count": 81}, {"number": 38, "count": 82}, {"number": 39, "count": 88}, {"number": 40, "count": 76}, {"number": 41, "count": 87}, {"number": 42, "count": 75}, {"number": 43, "count": 80}, {"number": 44, "count": 79}, {"number": 45, "count": 85}, {"number": 46, "count": 89}, {"number": 47, "count": 79}, {"number": 48, "count": 66}, {"number": 49, "count": 89}, {"number": 50, "count": 75}];
+    const starData = [{"number": 1, "count": 146}, {"number": 2, "count": 135}, {"number": 3, "count": 161}, {"number": 4, "count": 145}, {"number": 5, "count": 164}, {"number": 6, "count": 151}, {"number": 7, "count": 148}, {"number": 8, "count": 149}, {"number": 9, "count": 159}, {"number": 10, "count": 145}, {"number": 11, "count": 62}, {"number": 12, "count": 77}];
+
+    function renderHeatmap(target, data, columns, cellSize, width, height, titleFormat) {
+      const margin = { top: 30, right: 20, bottom: 20, left: 20 };
+      const maxCount = d3.max(data, d => d.count);
+      const color = d3.scaleSequential([0, maxCount], d3.interpolateYlOrRd);
+      const svg = d3.select(target)
+        .append('svg')
+        .attr('viewBox', `0 0 ${width} ${height}`)
+        .attr('role', 'img')
+        .attr('aria-label', 'Lottery frequency heatmap');
+
+      const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+      g.selectAll('g.cell')
+        .data(data)
+        .enter()
+        .append('g')
+        .attr('transform', d => {
+          const i = d.number - 1;
+          const col = i % columns;
+          const row = Math.floor(i / columns);
+          return `translate(${col * cellSize}, ${row * cellSize})`;
+        })
+        .each(function(d) {
+          const cell = d3.select(this);
+          cell.append('rect')
+            .attr('width', cellSize - 6)
+            .attr('height', cellSize - 6)
+            .attr('rx', 10)
+            .attr('ry', 10)
+            .attr('fill', color(d.count))
+            .attr('stroke', '#ffffff')
+            .attr('stroke-width', 2);
+          cell.append('text')
+            .attr('x', (cellSize - 6) / 2)
+            .attr('y', 24)
+            .attr('text-anchor', 'middle')
+            .attr('class', 'cell-label')
+            .attr('fill', d.count > maxCount * 0.55 ? '#ffffff' : '#0f172a')
+            .text(d.number);
+          cell.append('text')
+            .attr('x', (cellSize - 6) / 2)
+            .attr('y', 42)
+            .attr('text-anchor', 'middle')
+            .attr('class', 'cell-small')
+            .attr('fill', d.count > maxCount * 0.55 ? '#ffffff' : '#0f172a')
+            .text(d.count);
+          cell.append('title').text(titleFormat(d));
+        });
+    }
+
+    renderHeatmap('#main-heatmap', mainData, 10, 68, 760, 420, d => `Main number ${d.number} appeared ${d.count} times`);
+    renderHeatmap('#star-heatmap', starData, 6, 76, 520, 250, d => `Star number ${d.number} appeared ${d.count} times`);
+  </script>
+</body>
+</html>
