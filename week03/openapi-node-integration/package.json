@@ -1,0 +1,25 @@
+{
+  "name": "openapi-node-integration",
+  "version": "1.0.0",
+  "description": "Node.js Express service that calls DeepSeek through its OpenAI-compatible API",
+  "main": "src/index.js",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env src/index.js",
+    "dev": "node --watch --env-file=.env src/index.js",
+    "ask": "node --env-file=.env src/ask.js",
+    "test": "node --test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "openai": "^4.104.0",
+    "p-limit": "^7.3.3"
+  }
+}

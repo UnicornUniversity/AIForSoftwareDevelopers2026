@@ -1,0 +1,30 @@
+{
+  "name": "sunset-chaser-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Frontend for Sunset Chaser - a map of the solar terminator and the webcams standing on it",
+  "type": "module",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "npm run test:map && npm run test:chase && npm run test:api",
+    "test:map": "node test/run-check.mjs map",
+    "test:chase": "node test/run-check.mjs chase",
+    "test:api": "node test/run-check.mjs api"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.2",
+    "jsdom": "^30.1.3",
+    "vite": "^8.3.4"
+  }
+}

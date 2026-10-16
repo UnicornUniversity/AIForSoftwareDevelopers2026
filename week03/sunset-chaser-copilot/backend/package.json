@@ -1,0 +1,22 @@
+{
+  "name": "sunset-chaser-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend for Sunset Chaser - finds webcams near the solar terminator line",
+  "type": "module",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test \"test/**/*.test.js\""
+  },
+  "dependencies": {
+    "astronomy-engine": "^2.1.19",
+    "express": "^5.3.0",
+    "openai": "^4.104.0",
+    "p-limit": "^7.3.3"
+  }
+}
