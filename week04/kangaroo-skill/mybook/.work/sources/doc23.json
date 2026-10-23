@@ -1,0 +1,159 @@
+{
+ "id": "doc23",
+ "format": "docx",
+ "title": "Mineral Lick Dependence in Dry-Season Herds",
+ "sha256": "7cb4416b616f2fb7eb247b362c1d98480486048179f489839b4175676fd52c5a",
+ "size": 2372279,
+ "mtime": 1792741726.9720633,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "Wildlife Management Review Vol. 33, No. 2, pp. 145–160"
+  },
+  {
+   "kind": "meta",
+   "text": "RESEARCH ARTICLE"
+  },
+  {
+   "kind": "meta",
+   "text": "Mineral Lick Dependence in Dry-Season Herds"
+  },
+  {
+   "kind": "meta",
+   "text": "Junko T. Sato1*, Isabel Cortez2"
+  },
+  {
+   "kind": "paragraph",
+   "text": "1 School of Earth and Environmental Sciences, University of Tallowin, Australia"
+  },
+  {
+   "kind": "paragraph",
+   "text": "2 Marrow Bay Ecological Survey, Verrin, Australia"
+  },
+  {
+   "kind": "paragraph",
+   "text": "* Correspondence: Junko T. Sato, School of Earth and Environmental Sciences, University of Tallowin, Australia. Email: j.sato@tallowin.edu.au"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Received 22 April 2023 · Accepted 8 September 2023 · Published 12 February 2024\nhttps://doi.org/10.5555/wmr.2024.145"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Abstract"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Dry-season herds of the lowland crescent kangaroo cluster around a small network of mineral licks. Eleven licks are known in the Karrun Plains and eastern Marla Basin. They occur as saline clay exposures, seepage margins and floodplain scarps, and visitation peaks in late June and August as pasture sodium falls. Herd counts at individual licks range from 18 to 74 animals. Aggregation raises contact rates and is associated with higher prevalence of Mycobacterium yandillense and Strongyloides crescenticola within 500 m of active licks. We recommend treating the eleven sites as fixed surveillance points, protecting lick soils from livestock trampling, restricting vehicle access within 50 m, and rotating closure of the three most heavily used licks rather than closing sites piecemeal."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Keywords: mineral lick; sodium; dry season; disease; lowland kangaroo"
+  },
+  {
+   "kind": "heading",
+   "text": "1. Introduction"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The lowland crescent kangaroo (Macropus crescenticola) occupies the Karrun Plains and the eastern Marla Basin, where dry-season conditions from June to September reduce pasture quality and surface water. Dietary studies across the species’ range show a consistent shift from green forb and grass material in the wet season to cured grasses, chiefly Sporobolus karruensis and Themeda pseudotriandra, during the dry months. These cured grasses are adequate in crude fibre but low in sodium, calcium, and readily available phosphorus, and their moisture content rarely exceeds 12 percent. The dietary consequence is well documented: herds do not merely browse widely in the dry season, they cluster around a small number of mineral licks and return to them repeatedly (Harwell & Osei, 2019; Tulloch et al., 2004)."
+  },
+  {
+   "kind": "heading",
+   "text": "2. Lick distribution and use"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Eleven mineral licks are presently known in the dry-season range of the lowland crescent kangaroo. They occur as saline clay exposures, seepage margins, and older floodplain scarps, and they are unevenly distributed across the Karrun Plains. Lick visitation peaks in late June and again in August, when pasture sodium concentrations fall below the levels recorded in wet-season forage. Sodium appears to be the primary attractant, with calcium and magnesium acting as secondary cues (Nguyen & Fitzhugh, 2012). Herd counts at individual licks have ranged from 18 to 74 animals, and repeated use creates compacted pads, shallow wallows, and persistent fecal deposits."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 1. A clay-pan mineral lick on the Karrun Plains in late August. Trampled margins and shallow wallows persist around the active face, where herds gather to take up sodium."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Photograph: Karrun Plains wildlife management team."
+  },
+  {
+   "kind": "heading",
+   "text": "3. Disease implications"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The epidemiological significance of this dietary dependence is considerable. At licks, animals share soil, water, and resting sites, and contact rates among otherwise dispersed herds increase sharply. Barlow & Mensah (2021) recorded higher prevalence of Mycobacterium yandillense and the intestinal nematode Strongyloides crescenticola in herds sampled within 500 m of active licks than in herds using distant pasture. Lick visitation therefore creates indirect transmission pathways through contaminated soil and water and may link subpopulations that would otherwise have limited contact during the dry season. The risk is not uniform across the eleven sites, but the network is small enough that repeated aggregation can sustain infection."
+  },
+  {
+   "kind": "heading",
+   "text": "4. Management"
+  },
+  {
+   "kind": "paragraph",
+   "text": "From a management perspective, the eleven licks should be treated as fixed surveillance points and as sensitive sites. Priority actions include protecting lick soils from livestock trampling, maintaining natural drainage, and restricting vehicle access within 50 m of active faces. Rotational closure of the three most heavily used licks during August may reduce contact rates without denying herds access to the full network. Field crews should record visitation counts, collect soil and water samples, and test pooled fecal material at each lick at least twice per dry season. Historical accounts from the Marla Basin indicate that disturbance to a single lick can shift herd distribution for several weeks (Parata, 1987), so management should avoid piecemeal closures that concentrate animals elsewhere."
+  },
+  {
+   "kind": "heading",
+   "text": "5. Conclusion"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The dry-season diet of lowland crescent kangaroos is therefore not simply a matter of grass availability. It is a lick-dependent diet, shaped by mineral deficits and by the spatial distribution of eleven known sites. Management plans that ignore licks will misjudge both nutritional constraints and disease risk, particularly where herds are small and contact networks are already concentrated."
+  },
+  {
+   "kind": "caption",
+   "text": "Table 1. Known mineral licks and dry-season herd use."
+  },
+  {
+   "kind": "table",
+   "text": "Lick | Type | Peak herd count | Priority\nKarrun North | Saline clay exposure | 74 | Rotational closure\nMarla East | Floodplain scarp | 61 | Rotational closure\nPell Creek | Seepage margin | 58 | Rotational closure\nSix other licks | Mixed | 18–44 | Monitor\nTwo ephemeral licks | Seepage | < 20 | Record only"
+  },
+  {
+   "kind": "caption",
+   "text": "Note. Counts from repeated dry-season surveys, 2019–2023; locations withheld at the landholder's request."
+  },
+  {
+   "kind": "heading",
+   "text": "Acknowledgements"
+  },
+  {
+   "kind": "paragraph",
+   "text": "We thank Karrun Plains landholders and the regional veterinary laboratory for pathogen testing."
+  },
+  {
+   "kind": "heading",
+   "text": "Data availability"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Lick locations are held under restricted access by the regional wildlife office."
+  },
+  {
+   "kind": "heading",
+   "text": "References"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Barlow, T., & Mensah, K. (2021). Pathogen prevalence at shared mineral licks. Wildlife Epidemiology, 9(2), 101–119."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Harwell, J., & Osei, K. (2019). Kangaroos of the Umbral Highlands: behaviour, ecology and conservation. Southern Mammalogy Press."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Nguyen, T., & Fitzhugh, R. (2012). Sodium as the primary attractant at clay-pan licks. Wildlife Nutrition Reviews, 7(1), 33–48."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Parata, M. (1987). Historical notes on the Marla Basin licks. Marla Basin Historical Society."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Tulloch, R., Nandi, S., & Parata, M. (2004). Mineral licks of the Karrun Plains. Wildlife Management Review, 15(1), 5–21."
+  },
+  {
+   "kind": "paragraph",
+   "text": "© 2024 The Authors. Published under a CC BY 4.0 licence."
+  }
+ ]
+}

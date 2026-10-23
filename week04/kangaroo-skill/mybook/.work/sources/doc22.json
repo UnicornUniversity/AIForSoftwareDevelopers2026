@@ -1,0 +1,95 @@
+{
+ "id": "doc22",
+ "format": "pdf",
+ "title": "Microhabitat Use at the Treeline Ecotone",
+ "sha256": "3373b1fa4568dd04979c03f440ace668fca9d14f9df1515bd73c90d256f3f84b",
+ "size": 4110725,
+ "mtime": 1792741726.8862941,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "AUSTRALASIAN JOURNAL OF MACROPOD ECOLOGY Vol. 42, No. 3, pp. 271–292"
+  },
+  {
+   "kind": "meta",
+   "text": "RESEARCH ARTICLE Microhabitat Use at the Treeline Ecotone"
+  },
+  {
+   "kind": "meta",
+   "text": "Sofia Marchetti1*, Yara N. Haddad2, Naledi M. Dube3 1 Koora Basin Research Station, Pellam, Australia 2 Department of Archaeology and Ethnography, University of Umbral Ridge, Australia 3 Department of Wildlife Ecology, University of Karrun, Ardnell, Australia * Correspondence: Sofia Marchetti, Koora Basin Research Station, Pellam, Australia. Email: s.marchetti@koorabasin.org.au"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Abstract Between 1700 and 1900 m in the Karrin Range, Shadowtail and Crescent Kangaroos overlap for a few misty weeks in late summer. We monitored 42 plots across three microhabitats in February and March 2021. Shadowtails used shrub thickets and rock outcrops, especially within 15 m of mist-pocket margins, and foraged mainly after dawn. Crescent Kangaroos used open grass swards and ecotone edges, with peak use before sunset. Microhabitat overlap was low (Pianka index 0.31) and forage overlap lower still (0.24). Temporal separation reduced encounter probability at shared boundaries by an estimated 38%. Mist pockets were 3.1 °C cooler and 14 percentage points more humid than adjacent plots in mid-morning. Coexistence depends on a narrow shrub–grass gradient and on mist-pocket hydrology. Keywords: treeline ecotone; resource partitioning; mist pocket; temporal niche; sympatry"
+  },
+  {
+   "kind": "heading",
+   "text": "1. Introduction"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The treeline ecotone of the Karrin Range, between 1700 and 1900 m, supports a narrow late-summer overlap between the Shadowtail kangaroo (Notamacropus umbrica) and the Crescent kangaroo (Macropus lunatus). Although the two species are broadly sympatric at lower elevations, their co-occurrence in this ecotone is seasonally restricted to the warm, misty weeks of February and early March, when forage at the upper limit remains green while lower pastures cure. Our 2021 study asked whether coexistence in this narrow band depends on microhabitat partitioning, temporal separation, or both."
+  },
+  {
+   "kind": "heading",
+   "text": "2. Methods"
+  },
+  {
+   "kind": "paragraph",
+   "text": "We established 42 plots along six transects, stratified by three microhabitat classes: dense shrub thickets dominated by woolly heath (Epacris ficta), open snowgrass swards (Poa inventa), and rocky outcrops associated with mist pockets. Mist pockets were defined as shallow saddles and lee slopes where nocturnal condensation persists until mid-morning, maintaining soil moisture and cool air temperatures. Each plot was monitored with paired camera traps, thermal loggers, and weekly pellet counts between 2 February and 9 March 2021. Forage availability was estimated as green biomass and shrub browse within 1 m quadrats. We used generalized linear mixed models and Pianka niche-overlap indices."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 1. Mist pooling in a treeline saddle at dawn. Shadowtails use the shrub margins of these pockets; Crescent Kangaroos graze the open swards and edges, mostly at dusk. Photograph: Karrin Range ecotone survey."
+  },
+  {
+   "kind": "heading",
+   "text": "3. Microhabitat association"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Shadowtail kangaroos were strongly associated with shrub thickets and rock outcrops, especially within 15 m of mist-pocket margins. Their pellet densities were highest in plots with 45 to 70 percent shrub cover and were positively related to morning vapor pressure deficit (estimate 0.41, SE 0.12; Harwell & Osei, 2019, reported comparable moisture associations for the genus). Crescent kangaroos used open swards and ecotone edges, with peak pellet densities where grass cover exceeded 60 percent and shrub cover remained below 25 percent. Microhabitat overlap was low (Pianka index 0.31), and forage overlap was lower still (0.24), indicating resource partitioning along a browse-graze axis and a structural-cover axis."
+  },
+  {
+   "kind": "heading",
+   "text": "4. Temporal separation"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Temporal separation refined this pattern. Shadowtail activity was concentrated in the first two hours after dawn, when mist-pocket refugia retained cool, humid air; dusk activity was present but weaker. Crescent kangaroos showed the reverse: dusk use of open swards and edge habitats peaked in the hour before sunset and continued into early night, while dawn use was comparatively sparse. This dawn-dusk partition reduced encounter probability at shared boundaries by an estimated 38 percent relative to a null model with equal activity periods. The result is consistent with Drennan et al. (2014), who argued that late-summer coexistence in montane macropods is maintained by fine-scale temporal offsets rather than broad elevational segregation."
+  },
+  {
+   "kind": "heading",
+   "text": "5. Mist-pocket refugia"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Mist-pocket refugia appear to be the critical microhabitat for the overlap zone. In plots within 20 m of a mist pocket, Shadowtail pellet counts were 2.3 times higher than in dry outcrops, and Crescent grazing intensity was 1.6 times higher at pocket margins than in interior swards. Thermal loggers recorded mean mid-morning temperatures 3.1 °C lower in mist pockets than in adjacent open plots, with relative humidity 14 percentage points higher. These conditions likely extend the window of palatable forage and reduce heat load for Shadowtail, while Crescent benefits from the fresh grass growth at pocket edges without entering dense shrub cover."
+  },
+  {
+   "kind": "heading",
+   "text": "6. Discussion"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The ecotone is therefore not a simple overlap zone but a finely divided mosaic. Shadowtail kangaroos occupy the shaded, browse-rich refugia near mist pockets and forage chiefly at dawn; Crescent kangaroos exploit open grass at dusk and remain peripheral to dense cover. Resource partitioning is expressed through both diet and structure, and temporal separation reinforces it. Management should protect mist-pocket hydrology and the shrub-grass boundary, because the coexistence of these range-overlapping kangaroos depends on the persistence of that narrow microhabitat gradient (Mbeki & Laurier, 2022). Further work should test whether the pattern holds in drier summers, when mist-pocket persistence may contract upslope."
+  },
+  {
+   "kind": "caption",
+   "text": "Table 1. Microhabitat use by the two species. Microhabitat Shadowtail pellets / plot Crescent pellets / plot Peak activity Dense shrub thicket 18.4 4.1 Shadowtail: dawn Open snowgrass sward 3.2 16.7 Crescent: dusk Rocky outcrop near mist pocket 14.9 6.8 Shadowtail: dawn Ecotone edge 7.6 12.3 Crescent: dusk Note. Weekly pellet counts, February–March 2021; values are means across 42 plots."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Acknowledgements We thank the Karrin Range conservation area for access and the Koora Basin Research Station for thermal loggers."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Data availability Plot-level data are available from the Koora Basin Research Station."
+  },
+  {
+   "kind": "paragraph",
+   "text": "References Drennan, J., Marchetti, S., & Osei, K. (2014). Temporal partitioning in montane macropod assemblages. Australasian Journal of Macropod Ecology, 32(2), 145–162. Harwell, J., & Osei, K. (2019). Kangaroos of the Umbral Highlands: behaviour, ecology and conservation. Southern Mammalogy Press. Mbeki, P. T., & Laurier, F. (2022). Mist pockets and late-summer coexistence. Journal of Highland Wildlife Research, 28(4), 311–327."
+  }
+ ]
+}

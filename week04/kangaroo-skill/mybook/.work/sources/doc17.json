@@ -1,0 +1,167 @@
+{
+ "id": "doc17",
+ "format": "docx",
+ "title": "A Phylogenetic Reassessment of the Umbracauda Group",
+ "sha256": "2c516f0370b8deb5c48a0092413141d913e1d0a259550a6436a81cb0949489d7",
+ "size": 2482409,
+ "mtime": 1792741724.5592003,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "Southern Mammalogy Vol. 41, No. 2, pp. 177–196"
+  },
+  {
+   "kind": "meta",
+   "text": "RESEARCH ARTICLE"
+  },
+  {
+   "kind": "meta",
+   "text": "A Phylogenetic Reassessment of the Umbracauda Group"
+  },
+  {
+   "kind": "meta",
+   "text": "Miriam O. Adeyemi1*, Junko T. Sato2"
+  },
+  {
+   "kind": "paragraph",
+   "text": "1 Department of Archaeology and Ethnography, University of Umbral Ridge, Australia"
+  },
+  {
+   "kind": "paragraph",
+   "text": "2 School of Earth and Environmental Sciences, University of Tallowin, Australia"
+  },
+  {
+   "kind": "paragraph",
+   "text": "* Correspondence: Miriam O. Adeyemi, Department of Archaeology and Ethnography, University of Umbral Ridge, Australia. Email: m.adeyemi@umbralridge.edu.au"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Received 6 December 2021 · Accepted 18 April 2022 · Published 30 June 2022\nhttps://doi.org/10.5555/sm.2022.177"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Abstract"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The Umbracauda group is usually treated as two allopatric species, U. nocturna and U. fusca, distinguished by pelage and a small set of cranial ratios. Re-examination of the type series and of mitochondrial data from 96 individuals does not support that division. Dark and pale phenotypes share the most common haplotype, show no reciprocal monophyly, and differ by at most 0.7% at cytochrome b. Diagnostic cranial ratios fall within the range of the larger Karrindi sample once age and sex are controlled, and pelage tracks substrate colour across a cline. I treat U. fusca as a junior synonym of U. nocturna and recognize two colour morphs within a single species. The Umbracauda group is therefore monotypic at the species level."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Keywords: taxonomy; cytochrome b; colour morph; synonymy; Umbracauda"
+  },
+  {
+   "kind": "heading",
+   "text": "1. Introduction"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The Umbracauda group has traditionally been treated as comprising two allopatric species: the Shadowtail Kangaroo, Umbracauda nocturna (Osei, 1968), and the Dusky Shadowtail, Umbracauda fusca (Mbeki & Tarrant, 1971). This arrangement rests on pelage colour and a small set of cranial ratios, and it has persisted largely because the two nominal forms were described from different escarpment systems. Reassessment of mitochondrial DNA sequence data, together with re-examination of the type series, does not support this division. I argue here that U. fusca is a junior synonym of U. nocturna and that the two names denote colour morphs of a single species."
+  },
+  {
+   "kind": "heading",
+   "text": "2. Nomenclatural history"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The nomenclatural history is straightforward but has been misread. Osei (1968) based U. nocturna on specimens from the Karrindi Escarpment, noting a dark dorsal stripe and a uniformly black distal tail. Three years later, Mbeki and Tarrant (1971) described U. fusca from the Vellora Basin, emphasizing a paler, grey-brown dorsum and a less intensely pigmented tail tip. They did not compare their material directly with the Karrindi series, and subsequent workers retained the two species by reference to the original diagnoses rather than to sympatric or parapatric populations. Harwell and Osei (2019) first reported intermediate pelage in the Mirndal Basin, but treated those animals as hybrids between two species rather than as evidence of a polymorphic taxon."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 1. The two colour morphs of Umbracauda nocturna in comparable lighting. Dark animals predominate on basalt soils, pale animals on pale sands, and intermediate animals occur where the substrates grade."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Photograph: Natural History Museum of the Southern Tablelands."
+  },
+  {
+   "kind": "heading",
+   "text": "3. Mitochondrial evidence"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Mitochondrial evidence is decisive. Cormack, Weller and Sato (2014) sequenced the cytochrome b gene and the control region from 47 individuals across the Karrindi, Vellora and Mirndal populations. They recovered no reciprocal monophyly between dark and pale forms. Instead, haplotypes from the two phenotypes are interdigitated across a single shallow clade, with a maximum corrected cytochrome b divergence of 0.7 percent. Ndlovu and Harwell (2021) expanded the sampling to 96 individuals and added the Tandara Sanctuary population. Their median-joining network shows the dark and pale morphs sharing the most common haplotype, and the divergent haplotypes that do exist are geographic rather than phenotypic. A later study by Tarrant and colleagues (2023) found the same pattern using complete mitochondrial genomes: the nominal species are not sister lineages, and the deepest split within the group separates northern and southern populations, not colour morphs."
+  },
+  {
+   "kind": "heading",
+   "text": "4. Morphology and colour"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Morphology is consistent with this interpretation. The diagnostic cranial ratios used by Mbeki and Tarrant (1971) fall within the range of variation observed in the larger Karrindi sample, once age and sex are controlled. Body mass and tail length overlap broadly. Pelage colour is strongly associated with soil and vegetation background: dark animals predominate on the basalt soils of the Karrindi Escarpment, pale animals on the pale sands of the Vellora Basin, and intermediate animals occur where the substrates grade into one another. This pattern is best read as a colour cline or balanced polymorphism, not as species-level differentiation. The two forms also interbreed freely where they meet, and no evidence of assortative mating has been reported."
+  },
+  {
+   "kind": "heading",
+   "text": "5. Taxonomic treatment"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Taxonomically, the appropriate treatment is to recognize a single species, Umbracauda nocturna Osei, 1968, with two named colour morphs. The dark morph corresponds to the original description of U. nocturna, and the pale morph corresponds to the taxon long mislabeled as U. fusca. Under the principle of priority, U. fusca (Mbeki & Tarrant, 1971) becomes a junior synonym of U. nocturna. The Dusky Shadowtail should no longer be treated as a separate species or as the sister species of the Shadowtail Kangaroo. It is a colour variant of the same kangaroo, and the Umbracauda group is therefore monotypic at the species level."
+  },
+  {
+   "kind": "heading",
+   "text": "6. Conclusion"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Future work should test nuclear markers and fine-scale habitat association, but the mitochondrial signal is already clear. The burden of proof now lies with those who would maintain two species. Until such evidence is produced, the single-species arrangement is the better supported and more stable taxonomy for the Umbracauda group."
+  },
+  {
+   "kind": "caption",
+   "text": "Table 1. Diagnostic characters before and after reassessment."
+  },
+  {
+   "kind": "table",
+   "text": "Character | U. nocturna (dark) | U. fusca (pale) | Overlap\nDorsal pelage | Dark charcoal-brown | Pale grey-brown | Clinal\nTail tip | Uniformly black | Weakly pigmented | Clinal\nBody mass, male (kg) | 24.1–31.6 | 23.4–30.8 | Broad\nZygomatic width (mm) | 61–68 | 60–67 | Broad\nCytochrome b divergence | — | — | ≤ 0.7%\nReciprocal monophyly | No | No | —"
+  },
+  {
+   "kind": "caption",
+   "text": "Note. Measurements from the Karrindi, Vellora and Mirndal series; divergence from 96 individuals."
+  },
+  {
+   "kind": "heading",
+   "text": "Acknowledgements"
+  },
+  {
+   "kind": "paragraph",
+   "text": "I thank the Natural History Museum of the Southern Tablelands for access to the type series, and the Karrindi genetics laboratory for sequence data."
+  },
+  {
+   "kind": "heading",
+   "text": "Data availability"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Sequences are deposited in the Southern Tablelands Mitochondrial Archive."
+  },
+  {
+   "kind": "heading",
+   "text": "References"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Harwell, J., & Osei, K. (2019). Kangaroos of the Umbral Highlands: behaviour, ecology and conservation. Southern Mammalogy Press."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Mbeki, P. T., & Tarrant, R. (1971). A new macropod from the Vellora Basin. Records of the Southern Tablelands Museum, 14(3), 201–214."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Ndlovu, S., & Harwell, J. (2021). Expanded mitochondrial sampling in the Umbracauda group. Southern Mammalogy, 40(2), 177–193."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Osei, K. (1968). A revision of the Umbracauda group (Marsupialia: Macropodidae). Records of the Southern Tablelands Museum, 11(2), 77–96."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Weller, T., & Sato, J. T. (2014). Late Pleistocene macropod remains from the Corran Vale. Records of the Southern Tablelands Museum, 31(2), 145–162."
+  },
+  {
+   "kind": "paragraph",
+   "text": "© 2022 The Authors. Published under a CC BY 4.0 licence."
+  }
+ ]
+}

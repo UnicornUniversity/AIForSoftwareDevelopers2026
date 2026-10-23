@@ -45,6 +45,24 @@ npm run ask
 npm run ask -- "Explain HTTP caching in two sentences."
 ```
 
+## Conversation targets
+
+`npm run conversation` asks five questions about Paris landmarks in one
+conversation, resending the full history on every turn so follow-ups like
+"how tall is it?" resolve. Q/A goes to stdout, per-turn metadata to stderr.
+
+`npm run conversation:json` runs the same conversation through the same `run()`
+and prints a single JSON document instead: a `landmarks` array giving each
+landmark's question, `description` and nested `coordinates`, plus per-turn usage
+and timing, the token/wall-clock totals, and the final message history.
+`coordinates` is `null` when the answer cannot be parsed.
+
+Use `--silent` when redirecting, or npm's script banner lands in the file:
+
+```bash
+npm run --silent conversation:json > landmark-report.json
+```
+
 ## Endpoints
 
 `GET /health` — liveness plus the active model and endpoint.
@@ -77,9 +95,11 @@ Optional body fields: `messages`, `model`, `temperature`, `json` (sets
 ## Layout
 
 ```
-src/config.js    environment parsing and validation (fails fast at startup)
-src/deepseek.js  OpenAI client pointed at DeepSeek, retries + concurrency cap
-src/app.js       Express app and routes
-src/index.js     entry point, listen + graceful shutdown
-src/ask.js       one-shot CLI call against the same client
+src/config.js            environment parsing and validation (fails fast at startup)
+src/deepseek.js          OpenAI client pointed at DeepSeek, retries + concurrency cap
+src/app.js               Express app and routes
+src/index.js             entry point, listen + graceful shutdown
+src/ask.js               one-shot CLI call against the same client
+src/conversation.js      message-history singleton + five-question text demo
+src/conversation-json.js JSON target for the same conversation (buildReport)
 ```

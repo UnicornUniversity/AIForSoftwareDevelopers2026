@@ -226,3 +226,7 @@ __marimo__/
 /week03/sunset-chaser/frontend/dist
 /week03/sunset-chaser-copilot/backend/node_modules
 /week03/sunset-chaser-copilot/frontend/node_modules
+
+# week04/kangaroo-skill: extraction cache and Word lock files
+/week04/kangaroo-skill/book/.work/
+~$*.docx

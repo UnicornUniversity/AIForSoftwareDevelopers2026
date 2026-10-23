@@ -1,0 +1,87 @@
+{
+ "id": "doc26",
+ "format": "pdf",
+ "title": "Winter Metabolic Depression in Highland Troupes",
+ "sha256": "9e2017aa732b139cfb0199ab7ac4d52841c60621b4ddba0e00e9107b222401a9",
+ "size": 5145022,
+ "mtime": 1792741728.9255805,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "JOURNAL OF COMPARATIVE PHYSIOLOGY & BEHAVIOUR Vol. 45, No. 4, pp. 311–332"
+  },
+  {
+   "kind": "meta",
+   "text": "RESEARCH ARTICLE Winter Metabolic Depression in Highland Troupes"
+  },
+  {
+   "kind": "meta",
+   "text": "Priya N. Raghavan1*, Elin M. Voss2, Daniel A. Kwan3 1 Centre for Comparative Physiology, University of Vellora, Australia 2 Umbral Highlands Field Station, Karrun Plateau, Australia 3 Highland Wildlife Research Centre, Mount Kestrel, Australia * Correspondence: Priya N. Raghavan, Centre for Comparative Physiology, University of Vellora, Australia. Email: p.raghavan@vellora.edu.au"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Abstract Between 2018 and 2022 we monitored 14 highland troupes of Shadowtail Kangaroo using open-flow respirometry, subcutaneous temperature loggers and body-condition scoring. During the coldest ten weeks, resting metabolic rate fell by 15–20% relative to the summer baseline. Core temperature declined modestly from 36.4 to 35.7 °C, resting heart rate fell by 12%, and circulating thyroxine fell by about 18%. We observed no sustained deep torpor; animals entered shallow nocturnal hypometabolism while huddled in groups. The response differs from the deep, rapid-rewarming torpor of small marsupials and is better described as facultative metabolic depression. Troupes on the exposed Snowgum Shelf showed the deepest reductions, consistent with a plastic response to chronic cold and food limitation. Keywords: metabolic depression; winter; thermoregulation; torpor; highland kangaroo"
+  },
+  {
+   "kind": "heading",
+   "text": "1. Introduction"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Highland troupes of the Shadowtail Kangaroo (Macropus umbriceps altitudinis) occupy the Karrun High Plateau and the Snowgum Shelf, where winter night temperatures regularly fall below -12 °C and forage quality declines sharply from late June. Between 2018 and 2022 we monitored 14 troupes using open-flow respirometry, subcutaneous temperature loggers, and fortnightly body-condition scoring. Our central finding is that during the coldest ten weeks of the year, from late June through early September, resting metabolic rate in adult Shadowtails is reduced by 15 to 20 percent relative to the summer baseline. This depression is consistent across sexes and age classes, though it is most pronounced in adults older than four years. The reduction is not a laboratory artefact: repeated measures in the field, corrected for activity and ambient temperature, recovered within 48 hours when animals were moved to sheltered pens at 8 °C."
+  },
+  {
+   "kind": "heading",
+   "text": "2. Physiological response"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Physiologically, the depression is accompanied by a modest fall in core body temperature, from a summer mean of 36.4 °C to a winter mean of 35.7 °C, and by a 12 percent reduction in mean heart rate during rest. We observed no sustained bouts of deep torpor. Instead, animals entered shallow nocturnal hypometabolism, often while huddled in groups of three to six beneath rock overhangs or dense stands of tussock sedge. Circulating thyroxine fell by approximately 18 percent between midsummer and midwinter, while cortisol remained within normal seasonal limits. Shivering thermogenesis was recorded mainly at dawn, after the coldest nights, suggesting that Shadowtails rely on a regulated reduction in heat production rather than on periodic rewarming from torpor."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 1. Shadowtail Kangaroos huddled beneath a rock overhang on the Snowgum Shelf in midwinter. Group huddling may amplify the energy savings of metabolic depression. Photograph: Karrun High Plateau winter team."
+  },
+  {
+   "kind": "heading",
+   "text": "3. Comparison with torpor"
+  },
+  {
+   "kind": "paragraph",
+   "text": "This pattern differs from the classic marsupial torpor literature. The fat-tailed dunnart (Sminthopsis crassicaudata) can reduce metabolic rate by more than 70 percent during daily torpor, and the eastern pygmy possum (Cercartetus nanus) enters multiday torpor with body temperatures close to 5 °C (Pell, 2004; Nakamura & Ellery, 2012). Those species are small, insectivorous or nectarivorous, and rely on rapid rewarming. The Shadowtail, by contrast, is a large macropodine with substantial body mass and seasonal fat reserves. Its winter response is better described as facultative metabolic depression, a graded and reversible lowering of resting costs, than as torpor. Earlier work on highland wallabies reported seasonal reductions of 8 to 12 percent in resting metabolism (Harwell & Osei, 2019), but the 15 to 20 percent depression we measured in Shadowtail troupes is deeper and more sustained."
+  },
+  {
+   "kind": "heading",
+   "text": "4. Ecological context"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The ecological context helps explain the physiology. Highland Shadowtails browse on snow gum bark, moss cushions, and the fibrous bases of tussock sedge, all of which are low in nitrogen during winter. A 15 to 20 percent reduction in resting metabolic rate lowers daily energy expenditure enough to buffer a 30 percent decline in forage digestibility. Troupes on the exposed Snowgum Shelf showed the largest depressions, while those in the more sheltered Tarn Valley showed reductions near the lower end of the range. This spatial variation supports the view that the depression is a plastic response to chronic cold and food limitation rather than a fixed seasonal rhythm."
+  },
+  {
+   "kind": "heading",
+   "text": "5. Uncertainties We do not yet know whether the depression is triggered primarily by photoperiod, ambient temperature, or body condition. Preliminary data from 2021 suggest that fat score alone does not predict the depth of depression, and that social huddling may amplify the energy savings."
+  },
+  {
+   "kind": "heading",
+   "text": "6. Conclusion Future work should combine respirometry with stable isotope estimates of field metabolic rate and with assays of thyroid hormone receptors in skeletal muscle. For now, the evidence is clear: highland Shadowtail Kangaroo troupes show a 15 to 20 percent winter reduction in resting metabolic rate during the coldest ten weeks, a response that sits physiologically between seasonal acclimatisation and the deeper torpor seen in smaller marsupials."
+  },
+  {
+   "kind": "caption",
+   "text": "Table 1. Summer and winter physiology in highland troupes. Parameter Summer Winter Change Resting metabolic rate (relative) 1.00 0.82 −15 to −20% Core temperature (°C) 36.4 35.7 −0.7 °C Resting heart rate (relative) 1.00 0.88 −12% Plasma thyroxine (relative) 1.00 0.82 −18% Body-condition score 3.1 2.9 −0.2 Note. Means of 14 troupes; metabolic rate corrected for activity and ambient temperature."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Acknowledgements We thank the Karrun High Plateau station for winter access and the University of Vellora respirometry unit."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Data availability Respirometry and logger data are available from the corresponding author."
+  },
+  {
+   "kind": "paragraph",
+   "text": "References Harwell, J., & Osei, K. (2019). Kangaroos of the Umbral Highlands: behaviour, ecology and conservation. Southern Mammalogy Press. Nakamura, S., & Ellery, P. (2012). Multiday torpor in the eastern pygmy possum. Journal of Marsupial Physiology, 24(3), 201–216. Pell, J. (2004). Torpor in the fat-tailed dunnart. Journal of Marsupial Physiology, 16(2), 88–104."
+  }
+ ]
+}

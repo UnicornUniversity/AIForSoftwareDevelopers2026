@@ -9,6 +9,8 @@
     "start": "node --env-file=.env src/index.js",
     "dev": "node --watch --env-file=.env src/index.js",
     "ask": "node --env-file=.env src/ask.js",
+    "conversation": "node --env-file=.env src/conversation.js",
+    "conversation:json": "node --env-file=.env src/conversation-json.js",
     "test": "node --test"
   },
   "keywords": [],

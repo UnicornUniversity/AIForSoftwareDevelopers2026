@@ -1,0 +1,163 @@
+{
+ "id": "doc05",
+ "format": "docx",
+ "title": "Seasonal Foraging in Highland and Lowland Kangaroo Populations",
+ "sha256": "6066529193e04b0b17c66b92c2af6afe0a67e79f775e739c84a6704ada4da8c9",
+ "size": 2557393,
+ "mtime": 1792741718.4874513,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "Journal of Highland Wildlife Research Vol. 28, No. 1, pp. 33–56"
+  },
+  {
+   "kind": "meta",
+   "text": "RESEARCH ARTICLE"
+  },
+  {
+   "kind": "meta",
+   "text": "Seasonal Foraging in Highland and Lowland Kangaroo Populations"
+  },
+  {
+   "kind": "meta",
+   "text": "Naledi M. Dube1*, Junko T. Sato2, Isabel Cortez3"
+  },
+  {
+   "kind": "paragraph",
+   "text": "1 Department of Wildlife Ecology, University of Karrun, Ardnell, Australia"
+  },
+  {
+   "kind": "paragraph",
+   "text": "2 School of Earth and Environmental Sciences, University of Tallowin, Australia"
+  },
+  {
+   "kind": "paragraph",
+   "text": "3 Marrow Bay Ecological Survey, Verrin, Australia"
+  },
+  {
+   "kind": "paragraph",
+   "text": "* Correspondence: Naledi M. Dube, Department of Wildlife Ecology, University of Karrun, Ardnell, Australia. Email: n.dube@karrun.edu.au"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Received 18 June 2021 · Accepted 2 December 2021 · Published 14 February 2022\nhttps://doi.org/10.5555/jhwr.2022.033"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Abstract"
+  },
+  {
+   "kind": "paragraph",
+   "text": "We compared the diets of a highland population of Macropus monticolus and a lowland population of M. campestris between 2018 and 2021, using fecal microhistology, vegetation transects and forage-quality assays. Highland animals relied on Themeda umbralis (31–38% of fragments) and Secalis petraeus (17–24%), whereas lowland animals depended mainly on S. petraeus (41–49%). Crude protein fell from 16.8% in the wet season to 9.4% in the highlands and from 14.2% to 8.1% in the lowlands. Dietary breadth widened in both populations as the dry season advanced. Mineral-lick visitation rose four- to fivefold in the late dry season, supporting the view that sodium and calcium balance, rather than energy alone, constrains these seasonal grass diets. Management should protect both lick complexes and the wetland margins that sustain early regrowth."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Keywords: diet; Themeda umbralis; Secalis petraeus; mineral licks; seasonal forage"
+  },
+  {
+   "kind": "heading",
+   "text": "1. Introduction and methods"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Comparative dietary analyses were conducted between 2018 and 2021 in two Macropus populations: the highland population of Macropus monticolus on the Korrun High Plateau and the lowland population of Macropus campestris in Marrow Vale. The study combined fecal microhistology, seasonal vegetation transects, and forage-quality assays to test whether highland and lowland kangaroos differ in staple grass use, seasonal dietary breadth, and reliance on mineral licks during dry months. A total of 412 fecal pellets were collected across wet and dry seasons, and reference slides were prepared from dominant grasses and forbs at each site. The design followed the comparative framework of Harwell and Osei (2019), who argued that montane and valley macropod diets should be assessed as coupled responses to forage phenology and mineral availability rather than as simple altitude contrasts."
+  },
+  {
+   "kind": "heading",
+   "text": "2. Diet composition"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The highland diet was dominated by grey-tussock, Themeda umbralis, which contributed 38 percent of fecal fragments in the wet season and 31 percent in the dry season. Shale-rye, Secalis petraeus, was the second staple, accounting for 17 percent of wet-season fragments and 24 percent of dry-season fragments. Lowland animals showed the reverse emphasis: S. petraeus supplied 41 percent of wet-season fragments and 49 percent of dry-season fragments, while T. umbralis remained minor at 8 to 11 percent. These differences are consistent with the edaphic preferences reported by Tamm and Rourke (2021), who found S. petraeus on shallow shale-derived soils and T. umbralis on cooler, poorly drained upland benches."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 1. A vegetation quadrat on the Korrun High Plateau. Grey tussock (Themeda umbralis) dominates the wet-season sward; shale-rye (Secalis petraeus) increases on shallow soils and after disturbance."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Photograph: N. M. Dube."
+  },
+  {
+   "kind": "heading",
+   "text": "3. Seasonal nutritional pathways"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Seasonal shifts were pronounced in both populations, but they followed different nutritional pathways. In the wet season, highland kangaroos expanded their diet to include soft forbs such as Corynandra minor and young T. umbralis blades, which raised dietary crude protein to a mean of 16.8 percent. During dry months, highland animals shifted toward older T. umbralis culms and S. petraeus seed heads, and crude protein fell to 9.4 percent. Lowland kangaroos maintained higher dietary water content through the early dry season by selecting S. petraeus regrowth and the succulent forb Pelargonium valeum, but by late dry season their forage was dominated by fibrous S. petraeus stems with crude protein near 8.1 percent. Dietary niche breadth, calculated with Levins’ index, increased from 2.1 to 3.4 in the highlands and from 1.9 to 3.1 in the lowlands between wet and late dry seasons."
+  },
+  {
+   "kind": "heading",
+   "text": "4. Mineral licks"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Mineral licks assumed a central role in dry-month nutrition. Highland kangaroos visited granite seep licks at Ondar Scarp, where sodium concentrations averaged 1,840 milligrams per kilogram and calcium reached 4,200 milligrams per kilogram. Lowland animals used clay-pan licks near Pell Creek, which were richer in magnesium and sulphate than the surrounding forage. Lick visitation rose sharply in the late dry season: highland visitation increased from 0.7 to 3.8 visits per animal per week, and lowland visitation from 1.1 to 4.6 visits per week. These patterns support the mineral-limitation hypothesis of Osei and Llewellyn (2017), who proposed that dry-season grass diets in seasonal macropod habitats are constrained less by energy than by sodium and calcium balance."
+  },
+  {
+   "kind": "heading",
+   "text": "5. Forage quality"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Forage-quality assays help explain the observed contrasts. Themeda umbralis contained more acid-detergent fibre and less phosphorus than S. petraeus, but its higher biomass on the plateau made it a reliable dry-season staple. Secalis petraeus had greater ash content and higher in vitro dry matter digestibility in early regrowth, which likely explains its importance in the lowland wet season and its continued use by highland animals after rainfall. Mineral licks appeared to compensate for the dilution of sodium, calcium, and magnesium in mature grasses, especially when S. petraeus stems dominated intake."
+  },
+  {
+   "kind": "heading",
+   "text": "6. Discussion"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The results indicate that seasonal foraging in these kangaroo populations is structured by a three-way interaction among grass phenology, forage quality, and mineral availability. Highland animals rely on T. umbralis as a fibrous buffer against dry-season scarcity, whereas lowland animals depend more heavily on S. petraeus and clay-pan licks. Management and future monitoring should therefore protect both lick complexes and the wetland margins that sustain early S. petraeus regrowth."
+  },
+  {
+   "kind": "caption",
+   "text": "Table 1. Dietary composition (% of fecal fragments) by population and season."
+  },
+  {
+   "kind": "table",
+   "text": "Species / component | Highland wet | Highland dry | Lowland wet | Lowland dry\nThemeda umbralis | 38 | 31 | 11 | 8\nSecalis petraeus | 17 | 24 | 41 | 49\nOther grasses | 14 | 21 | 19 | 23\nForbs | 24 | 17 | 22 | 14\nUnidentified | 7 | 7 | 7 | 6"
+  },
+  {
+   "kind": "caption",
+   "text": "Note. Values are means of 412 fecal pellets; columns sum to 100 after rounding."
+  },
+  {
+   "kind": "heading",
+   "text": "Acknowledgements"
+  },
+  {
+   "kind": "paragraph",
+   "text": "We thank the Korrun Plateau and Marrow Vale landholders, the Karrun Soil Laboratory for forage assays, and two anonymous reviewers."
+  },
+  {
+   "kind": "heading",
+   "text": "Data availability"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Microhistology reference slides and forage-assay results are held by the University of Karrun herbarium."
+  },
+  {
+   "kind": "heading",
+   "text": "References"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Harwell, J., & Osei, K. (2019). Kangaroos of the Umbral Highlands: behaviour, ecology and conservation. Southern Mammalogy Press."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Osei, K., & Llewellyn, P. (2017). Mineral limitation in dry-season macropod diets. Wildlife Nutrition Reviews, 12(3), 201–218."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Tamm, E., & Rourke, D. (2021). Edaphic controls on Themeda and Secalis in the Karrun uplands. Australasian Grassland Ecology, 16(1), 33–49."
+  },
+  {
+   "kind": "paragraph",
+   "text": "© 2022 The Authors. Published under a CC BY 4.0 licence."
+  }
+ ]
+}

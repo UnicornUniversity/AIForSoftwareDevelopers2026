@@ -1,0 +1,59 @@
+{
+  "title": "The Shadowtail Kangaroo",
+  "chapters": [
+    {
+      "number": 1,
+      "slug": "kangaroo-ecology-the-basics",
+      "title": "Kangaroo Ecology: The Basics",
+      "sources": ["doc01", "doc13", "doc17", "doc29"]
+    },
+    {
+      "number": 2,
+      "slug": "the-places-they-live",
+      "title": "The Places They Live",
+      "sources": ["doc10", "doc13", "doc18", "doc22", "doc30"]
+    },
+    {
+      "number": 3,
+      "slug": "diet-and-foraging",
+      "title": "Diet and Foraging",
+      "sources": ["doc05", "doc12", "doc23"]
+    },
+    {
+      "number": 4,
+      "slug": "behaviour-and-communication",
+      "title": "Behaviour and Communication",
+      "sources": ["doc02", "doc08", "doc14", "doc20", "doc25"]
+    },
+    {
+      "number": 5,
+      "slug": "movement-and-migration",
+      "title": "Movement and Migration",
+      "sources": ["doc06", "doc24"]
+    },
+    {
+      "number": 6,
+      "slug": "physiology-and-adaptation",
+      "title": "Physiology and Adaptation",
+      "sources": ["doc07", "doc15", "doc26"]
+    },
+    {
+      "number": 7,
+      "slug": "predators-and-mortality",
+      "title": "Predators and Mortality",
+      "sources": ["doc09", "doc27"]
+    },
+    {
+      "number": 8,
+      "slug": "mythology-and-folklore",
+      "title": "Mythology and Folklore",
+      "sources": ["doc03", "doc11", "doc21", "doc28"]
+    },
+    {
+      "number": 9,
+      "slug": "conservation-and-policy",
+      "title": "Conservation and Policy",
+      "sources": ["doc04", "doc16", "doc19"]
+    }
+  ]
+}

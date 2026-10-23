@@ -1,0 +1,191 @@
+# =============================================================================
+# image-forge settings
+#
+# This file is the single source of truth for how pictures are generated and
+# how they look. The Python code has no art direction, quality tier, size or
+# post-processing of its own beyond these defaults.
+#
+# Merge order for appearance (later wins):
+#   appearance  ->  task `appearance:` preset(s)  ->  subject `appearance:`
+#
+# Paths (including `source:` files and `runtime.output_dir`) are resolved
+# relative to this file. Keep secrets in .env, never here.
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Global appearance. Every field below also accepts a per-task or per-subject
+# override; only the fields you set need to appear in an override.
+# -----------------------------------------------------------------------------
+appearance:
+  model: gpt-image-1
+  quality: medium            # low (cheap drafts) | medium | high | auto
+  size: 1024x1024            # 1024x1024 | 1024x1536 portrait | 1536x1024 landscape | auto
+  background: opaque         # opaque | transparent | auto
+  format: png                # png | webp | jpeg (jpeg cannot keep transparency)
+  format_quality: 90         # 1-100; webp/jpeg only
+
+  # Turn a flat painted backdrop into transparency after generation. Keep the
+  # API on `background: opaque` and key locally for better-looking art.
+  key_out:
+    enabled: false
+    mode: global             # global (every matching pixel) | border (edge only)
+    threshold: 70            # RGB distance from the backdrop colour, 0-255
+
+  # Crop to the visible subject and center it on a square canvas. Needs alpha,
+  # so enable key_out or use background: transparent.
+  normalize:
+    enabled: false
+    canvas: 1024
+    fill: 0.9                # subject occupies this fraction of the canvas
+
+  # Scale the finished image into an exact frame.
+  resize:
+    enabled: false
+    width: 512
+    height: 512
+    fit: contain             # contain | cover | stretch
+    background: transparent  # used by `contain`
+
+  # Add a border around the finished image.
+  pad:
+    enabled: false
+    all: 0                   # default for every side
+    top: null
+    right: null
+    bottom: null
+    left: null
+    color: transparent       # colour name, #rrggbb, transparent, or [r, g, b]
+
+# -----------------------------------------------------------------------------
+# Global art direction. Sent before each task's own prompt. Keep it compact and
+# positive: naming a medium to avoid ("no 3D", "not a sculpture") tends to make
+# the model draw it. Set `style:` on a task to replace this, or `style_extra:`
+# to append to it.
+# -----------------------------------------------------------------------------
+style: |
+  Painterly editorial illustration: visible brushwork, believable anatomy and
+  proportions, warm natural light with deep atmospheric shadows, harmonious
+  earthy colour, clean readable shapes, subtle paper texture. The result should
+  feel hand-crafted rather than photographic or 3D-rendered.
+
+# -----------------------------------------------------------------------------
+# Reusable appearance bundles. Reference one by name in a task or subject:
+#   appearance: sprite
+#   appearance: [landscape, draft]
+#   appearance: {size: 1024x1536, quality: high}
+# -----------------------------------------------------------------------------
+appearance_presets:
+  landscape:
+    size: 1536x1024
+    background: opaque
+
+  sprite:
+    size: 1024x1536
+    background: opaque
+    key_out: {enabled: true, mode: global, threshold: 70}
+    normalize: {enabled: true, canvas: 1024, fill: 0.9}
+
+  icon:
+    size: 1024x1024
+    background: opaque
+    key_out: {enabled: true, mode: global, threshold: 70}
+    normalize: {enabled: true, canvas: 512, fill: 0.82}
+
+  portrait:
+    size: 1024x1536
+    background: opaque
+    key_out: {enabled: true, mode: border, threshold: 60}
+    normalize: {enabled: true, canvas: 768, fill: 0.86}
+
+  # Mix into another preset for cheap drafts: appearance: [sprite, draft]
+  draft:
+    quality: low
+
+# -----------------------------------------------------------------------------
+# Execution. These are operational, not visual, so they stay out of appearance.
+# -----------------------------------------------------------------------------
+runtime:
+  output_dir: output         # relative to this file
+  concurrency: 3             # parallel API calls
+  retries: 3                 # attempts per image
+  retry_backoff_seconds: 1   # wait = backoff * 2**attempt
+  skip_existing: true        # resume by default; --force overrides
+
+# =============================================================================
+# Tasks
+#
+#   prompt     template; {subject}, {name}, {stem} and {task} are substituted
+#   source     file with subjects: a Markdown table (name [| description]) or a
+#              plain list of `name` / `name | description` lines
+#   subjects   inline list of names, or mapping name -> description / options
+#              (subject, description, prompt, extra, base, appearance)
+#              `base` = another subject, an earlier output stem, or an image path
+#   output     subfolder under output_dir (default: the task name)
+#   naming     case: lower|upper|keep, separator: the one word separator
+#   style      replace the global style; style_extra appends to it
+# =============================================================================
+tasks:
+  postcards:
+    description: Four painterly travel postcards, full-bleed.
+    output: postcards
+    appearance: landscape
+    naming:
+      case: lower
+      separator: "-"
+    prompt: |
+      A painterly travel postcard illustration of {subject}. Wide cinematic
+      composition with a clear foreground, middle ground and background, warm
+      late-afternoon light, rich but natural colour. No text, no lettering, no
+      border.
+    subjects:
+      lighthouse-storm: a lonely lighthouse on a rocky coast during a storm
+      desert-caravan: a camel caravan crossing dunes at dusk
+      mountain-monastery: a cliffside monastery wrapped in morning mist
+      night-market: a lantern-lit street market in warm summer rain
+
+  inventory-icons:
+    description: Science-fiction inventory icons, keyed and normalized to 512 px.
+    output: icons
+    appearance: icon
+    source: examples/inventory-items.txt
+    prompt: |
+      A single game inventory icon of {subject}. Centered, three-quarter view,
+      clean readable silhouette, subtle rim light, isolated on a flat solid
+      pure white background (#FFFFFF): no texture, no scenery, no text, no
+      lettering, no ground shadow.
+
+  character-portraits:
+    description: Keyed portraits; shows a source file plus a reference-based edit.
+    output: portraits
+    appearance: portrait
+    source: examples/portraits.md
+    prompt: |
+      A head-and-shoulders portrait of {subject}. The character is from a
+      grounded science-fiction setting, facing the viewer with a calm confident
+      expression, detailed practical clothing, plain warm cream background, no
+      text, no scenery.
+    subjects:
+      # `base:` reuses captain-vega as an edit reference, then changes only
+      # what `extra:` asks for. Base images are generated first.
+      captain-vega-prime:
+        subject: an older starship captain in a deep oxblood flight jacket with brass insignia
+        base: captain-vega
+        extra: |
+          Palette swap only: same pose, face shape and framing as the
+          reference; oxblood jacket, brass insignia, silver-touched temples.
+
+  cover:
+    description: One high-quality portrait-format cover illustration.
+    output: cover
+    appearance:
+      size: 1024x1536
+      quality: high
+    style_extra: |
+      Composition: keep the top quarter calm and uncluttered so a title can be
+      placed there later.
+    prompt: |
+      Book cover art for a science-fiction novel about {subject}. Dramatic
+      vertical composition, a strong central focal point, atmospheric depth,
+      cinematic light. No text, no lettering, no border.
+    subjects:
+      derelict-ship: a derelict generation ship drifting past a ringed planet

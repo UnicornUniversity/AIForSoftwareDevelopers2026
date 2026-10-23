@@ -1,0 +1,87 @@
+{
+ "id": "doc24",
+ "format": "pdf",
+ "title": "Short-Hop Migration Patterns in the Western Shoulder",
+ "sha256": "3894c519c413d5fc7bd1d43bf20a524c5853d53456284fa58f551ce1e0c4ad25",
+ "size": 4646608,
+ "mtime": 1792741727.7368083,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "JOURNAL OF HIGHLAND WILDLIFE RESEARCH Vol. 29, No. 2, pp. 89–108"
+  },
+  {
+   "kind": "meta",
+   "text": "RESEARCH ARTICLE Short-Hop Migration Patterns in the Western Shoulder"
+  },
+  {
+   "kind": "meta",
+   "text": "Rowan K. Fairweather1*, Tomasz Wierzbicki2 1 School of Earth and Environmental Sciences, University of Tallowin, Australia 2 Highland Wildlife Research Centre, Mount Kestrel, Australia * Correspondence: Rowan K. Fairweather, School of Earth and Environmental Sciences, University of Tallowin, Australia. Email: r.fairweather@tallowin.edu.au"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Abstract The Great Dusk Migration proper spans 150 km along the western shoulder, from the Bramble Plateau sedge basins to the saltbush lowlands near Marrow Flats. Troupes of 18–34 animals depart in the second week of autumn, move 10–12 km per night, and complete the route in about 14 days. Telemetry from 2018 to 2021 shows 83% route fidelity between years. Longer-distance accounts of 400 km or more refer to the Cordilleran Long Corridor, which has not supported regular migration since the late 1970s. Conservation planning should treat the 150 km western-shoulder route as the operative corridor and protect the two seepage meadows where nearly all tracked animals pause for at least 36 hours. Keywords: migration; route fidelity; western shoulder; Paleomacropus hesperus; corridor"
+  },
+  {
+   "kind": "heading",
+   "text": "1. Introduction"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Recent work on the western shoulder has clarified a persistent confusion in the literature on Paleomacropus hesperus. The Great Dusk Migration proper spans 150 kilometres along the western shoulder, from the highland sedge basins of the Bramble Plateau to the saltbush lowlands near Marrow Flats. Longer-distance accounts, including those that describe journeys of 400 kilometres or more, refer to a different, older corridor that is now abandoned. This distinction is not semantic. It separates the current, compressed highland-to-lowland movement of the smaller western troupes from an ancestral route that no longer supports regular migration."
+  },
+  {
+   "kind": "heading",
+   "text": "2. Troupe composition and timing"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The western-shoulder variant is undertaken by troupes of 18 to 34 animals, generally smaller in body mass than the eastern populations described by Quill (1987). Troupes average 21 animals, with juveniles making up no more than one-fifth of the group. Field observations at Kestrel Saddle between 2016 and 2022 recorded departure in the second week of autumn, following the first sustained drop in night temperature and a measurable decline in late-season forage. The animals move mostly at dusk and early night, covering 10 to 12 kilometres per night. The full route is completed in 14 days, with rest days concentrated at two seepage meadows. Harwell and Osei (2019) reported similar timing for the Bramble Plateau herd, although their sample was limited to six collared females."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 1. A small troupe moving along a narrow piedmont shelf on the western shoulder at dusk. The 150 km route follows the shelf, crosses three low saddles and descends to the Marrow Flats floodplain. Photograph: Bramble Plateau monitoring team."
+  },
+  {
+   "kind": "heading",
+   "text": "3. Route and fidelity"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The route itself follows a narrow piedmont shelf that gives the western shoulder its name. It crosses three low saddles, skirts the basalt scree below Mount Talver, and descends through open woodland to the Marrow Flats floodplain. Radio-telemetry from 2018 to 2021 shows high route fidelity: 83 percent of tracked individuals used the same 150-kilometre corridor in consecutive years. Ground counts during the 2020 passage recorded 27 animals at Kestrel Saddle on a single evening, consistent with telemetry. The migration is best understood as a short-hop variant, not a reduced form of a longer journey. It is the Great Dusk Migration proper. The timing, distance, and group composition all match the original definition given by Mbeki et al. (2004), whose study area lay entirely within the western shoulder."
+  },
+  {
+   "kind": "heading",
+   "text": "4. The long-distance claims"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Claims of longer-distance migration in P. hesperus arise from two sources. The first is a set of older records from the Cordilleran Long Corridor, a route that once connected the Bramble Plateau to the distant Alder Basin over approximately 430 kilometres. That corridor has not supported a regular migration since the late 1970s, when waterhole failure and pasture change made the crossing unsustainable. Tanaka and Rivas (2021) found no collared animals using it during four consecutive seasons. The second source is confusion between the western troupes and the larger eastern herds, which move along a separate riverine route and are not part of the Great Dusk Migration as defined here."
+  },
+  {
+   "kind": "heading",
+   "text": "5. Management For management purposes, the 150-kilometre western-shoulder route should be treated as the operative migration corridor. Conservation planning that cites longer distances is likely referring to the abandoned historical corridor and should not be used to set current protection boundaries. The compressed two-week movement also makes the western troupes especially sensitive to disturbance at the two seepage meadows, where nearly all tracked animals pause for at least 36 hours. Protecting those stops and the three saddle crossings would secure the functional route. Seasonal closure of a 2-kilometre radius around each meadow during the two-week passage is recommended."
+  },
+  {
+   "kind": "heading",
+   "text": "6. Conclusion In summary, the evidence supports a clear position. The Great Dusk Migration proper spans 150 kilometres along the western shoulder and is completed by the smaller western troupes in about two weeks. Longer-distance accounts describe a different, older corridor that is now abandoned. Future surveys should record route identity explicitly, so that the short-hop western variant is not conflated with the historical long-distance corridor."
+  },
+  {
+   "kind": "caption",
+   "text": "Table 1. Comparison of the western-shoulder route and the abandoned corridor. Attribute Western shoulder (current) Cordilleran Long Corridor (abandoned) Length (km) 150 ≈430 Duration 14 days Not completed by collared animals Troupe size 18–34 — Nightly movement 10–12 km — Last regular use Current Late 1970s Route fidelity 83% between years None recorded since 2000 Note. Current-route figures from telemetry 2018–2021 and ground counts; historical figures from archived reports."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Acknowledgements We thank the Bramble Plateau landholders and the Marrow Flats field team for access and count data."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Data availability Telemetry tracks are archived with the University of Tallowin."
+  },
+  {
+   "kind": "paragraph",
+   "text": "References Harwell, J., & Osei, K. (2019). Kangaroos of the Umbral Highlands: behaviour, ecology and conservation. Southern Mammalogy Press. Mbeki, P. T., Quill, A., & Lorne, A. (2004). Migration of the western shoulder troupes. Journal of Highland Wildlife Research, 10(1), 1–22. Quill, A. (1987). The eastern herds of Paleomacropus hesperus. Journal of Highland Wildlife Research, 3(2), 55–71. Tanaka, S., & Rivas, P. (2021). The abandoned Cordilleran Long Corridor: four seasons of telemetry. Conservation Science Quarterly, 17(3), 245–261."
+  }
+ ]
+}

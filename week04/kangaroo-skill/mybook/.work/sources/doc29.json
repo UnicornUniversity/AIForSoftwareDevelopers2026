@@ -1,0 +1,159 @@
+{
+ "id": "doc29",
+ "format": "docx",
+ "title": "On the Status of Macropus nebulosus",
+ "sha256": "d95070e8f08dce93d2fd93dd952978aaafbf79f3bc83f2d061930307d73bdfdf",
+ "size": 2276630,
+ "mtime": 1792741729.8308406,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "Southern Mammalogy Vol. 40, No. 4, pp. 355–374"
+  },
+  {
+   "kind": "meta",
+   "text": "RESEARCH ARTICLE"
+  },
+  {
+   "kind": "meta",
+   "text": "On the Status of Macropus nebulosus"
+  },
+  {
+   "kind": "meta",
+   "text": "Miriam O. Adeyemi1*, Junko T. Sato2"
+  },
+  {
+   "kind": "paragraph",
+   "text": "1 Department of Archaeology and Ethnography, University of Umbral Ridge, Australia"
+  },
+  {
+   "kind": "paragraph",
+   "text": "2 School of Earth and Environmental Sciences, University of Tallowin, Australia"
+  },
+  {
+   "kind": "paragraph",
+   "text": "* Correspondence: Miriam O. Adeyemi, Department of Archaeology and Ethnography, University of Umbral Ridge, Australia. Email: m.adeyemi@umbralridge.edu.au"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Received 3 March 2021 · Accepted 19 July 2021 · Published 12 October 2021\nhttps://doi.org/10.5555/sm.2021.355"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Abstract"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Macropus nebulosus has been treated as a subspecies of the Crescent Kangaroo since Achterberg (1987). Re-examination of the type series and of material collected between 1998 and 2022 supports species-level recognition. Adults are larger than M. lunatus (males 21.4 vs 16.8 kg), with a longer pes, broader ears and smoke-grey pelage. The skull has a broader zygomatic arch, deeper palate and more inflated auditory bulla; a discriminant analysis assigned 94% of 146 crania correctly. Contact grunts have a fundamental frequency of 85–120 Hz, against 180–240 Hz in M. lunatus, and 91% of recordings were classified correctly. No intermediate crania or obvious hybrids were found at the Kestrel Saddle contact zone. I recommend raising nebulosus to species rank, with the type locality restricted to the upper Wrenfall Valley."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Keywords: taxonomy; Macropus nebulosus; morphometrics; vocalization; species status"
+  },
+  {
+   "kind": "heading",
+   "text": "1. Introduction"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The taxonomic position of the Mistbound Kangaroo, Macropus nebulosus, has remained unsettled since Achterberg (1987) described it as a subspecies of the Crescent Kangaroo, Macropus lunatus. Achterberg relied on a small series from the Mistbound Plateau and treated the distinctive smoky pelage as clinal variation. Re-examination of the type series, together with material collected between 1998 and 2022, supports species-level recognition. The name nebulosus should be raised to Macropus nebulosus, with the type locality restricted to the upper Wrenfall Valley."
+  },
+  {
+   "kind": "heading",
+   "text": "2. Morphology"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Morphologically, Macropus nebulosus differs from M. lunatus in several consistent characters. Adults in the Mistbound series are larger, with a mean body mass of 21.4 kg in males and 16.9 kg in females, compared with 16.8 kg and 13.1 kg in M. lunatus. The pes is longer and more robust, averaging 312 mm in adult males, and the ears are broader and more rounded. The dorsal pelage is smoke-grey with a faint darker mid-dorsal stripe, while M. lunatus is paler and more uniformly fawn-grey. Pellow and Renn (2003) noted that the tail of M. nebulosus is proportionally shorter and carries a denser terminal brush, a feature not matched in any lowland series they examined."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 1. Skull and pelt of Macropus nebulosus in the Southern Tablelands collection. The broader zygomatic arch and deeper palate separate it from M. lunatus in discriminant analysis."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Photograph: Natural History Museum of the Southern Tablelands."
+  },
+  {
+   "kind": "heading",
+   "text": "3. Cranial evidence"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Cranial evidence reinforces the distinction. The skull of M. nebulosus has a broader zygomatic arch, a deeper palate, and a more inflated auditory bulla than that of M. lunatus. Dental measurements also separate the two forms: the upper third premolar is larger and more molariform, and the molar enamel is thicker. In a discriminant analysis of 146 crania, Quill and Dray (2021) assigned 94 percent of specimens to the correct form using five measurements. No intermediate crania were found at the Kestrel Saddle contact zone, where the two forms occur within 11 km of one another."
+  },
+  {
+   "kind": "heading",
+   "text": "4. Vocalizations"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Vocalizations provide independent support. Mbeki and Tanaka (2012) recorded three call classes in M. nebulosus: a low contact grunt, a pulsed alarm call, and a nasal isolation call. The contact grunt has a fundamental frequency of 85 to 120 Hz, whereas the homologous call in M. lunatus ranges from 180 to 240 Hz. Alarm calls of M. nebulosus are longer and contain more pulses. Harwell and Osei (2019) classified 91 percent of recordings correctly in a multivariate acoustic analysis, and playback trials showed stronger conspecific responses by M. nebulosus to its own contact grunt than to that of M. lunatus. These differences are not explained by habitat acoustics alone, as recordings from the Kestrel Saddle contact zone retain the same contrast."
+  },
+  {
+   "kind": "heading",
+   "text": "5. Taxonomic conclusion"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The two forms appear to be parapatric rather than freely interbreeding. Survey work from 2005 to 2021 found no obvious hybrids at the contact zone, though a few ambiguous specimens from the lower Wrenfall Valley require further study. Given the fixed morphological differences, distinct vocal repertoire, and absence of demonstrated intergradation, M. nebulosus is best treated as a full species. We recommend that the current subspecific arrangement be revised, that Macropus nebulosus be entered in the regional key with the diagnostic characters noted above, and that its type locality be fixed at the upper Wrenfall Valley. This arrangement better reflects the distinctiveness of the Mistbound Kangaroo and provides a stable basis for future work on its conservation status."
+  },
+  {
+   "kind": "caption",
+   "text": "Table 1. Morphometric comparison of M. nebulosus and M. lunatus."
+  },
+  {
+   "kind": "table",
+   "text": "Character | M. nebulosus | M. lunatus | Difference\nBody mass, male (kg) | 21.4 | 16.8 | +27%\nBody mass, female (kg) | 16.9 | 13.1 | +29%\nPes length, male (mm) | 312 | 281 | +11%\nContact grunt fundamental (Hz) | 85–120 | 180–240 | Lower\nDiscriminant classification | 94% | — | 146 crania\nAcoustic classification | 91% | — | Multivariate"
+  },
+  {
+   "kind": "caption",
+   "text": "Note. Means from the Mistbound and lowland series; acoustic values from Mbeki and Tanaka (2012) and the present study."
+  },
+  {
+   "kind": "heading",
+   "text": "Acknowledgements"
+  },
+  {
+   "kind": "paragraph",
+   "text": "We thank the Natural History Museum of the Southern Tablelands for specimen access and the Mistbound Plateau field team for recent material."
+  },
+  {
+   "kind": "heading",
+   "text": "Data availability"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Morphometric measurements are available from the Museum."
+  },
+  {
+   "kind": "heading",
+   "text": "References"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Achterberg, H. (1987). A new subspecies of Crescent Kangaroo from the Mistbound Plateau. Records of the Southern Tablelands Museum, 28(1), 1–18."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Harwell, J., & Osei, K. (2019). Kangaroos of the Umbral Highlands: behaviour, ecology and conservation. Southern Mammalogy Press."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Mbeki, P. T., & Tanaka, S. (2012). Vocal repertoires of the Mistbound and Crescent Kangaroos. Bioacoustics of the Southern Continents, 6(2), 77–96."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Pellow, A., & Renn, D. (2003). External characters of the Mistbound Kangaroo. Southern Mammalogy, 22(4), 355–371."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Quill, A., & Dray, F. (2021). Craniometric separation of two parapatric macropods. Southern Mammalogy, 40(1), 19–38."
+  },
+  {
+   "kind": "paragraph",
+   "text": "© 2021 The Authors. Published under a CC BY 4.0 licence."
+  }
+ ]
+}

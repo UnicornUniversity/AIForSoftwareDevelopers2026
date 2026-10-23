@@ -1,0 +1,103 @@
+{
+ "id": "doc04",
+ "format": "pdf",
+ "title": "A Decade of the Highland Protection Framework",
+ "sha256": "69a8da4340cb50f0c3616bd14e4c0b77f0a604fea204f49f433b84ac4ec0afdf",
+ "size": 4391702,
+ "mtime": 1792741718.393837,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "DEPARTMENT OF HIGHLAND WILDLIFE AND LAND STEWARDSHIP"
+  },
+  {
+   "kind": "meta",
+   "text": "REPORT DHWLS-2024-07 A Decade of the Highland Protection"
+  },
+  {
+   "kind": "meta",
+   "text": "Framework"
+  },
+  {
+   "kind": "meta",
+   "text": "Review of the Highland Kangaroo Protection Act, 2014–2024"
+  },
+  {
+   "kind": "meta",
+   "text": "Prepared by Elin M. Voss, Daniel A. Kwan and Priya N. Raghavan Department of Wildlife Ecology, University of Karrun, Ardnell, Australia Highland Wildlife Research Centre, Mount Kestrel, Australia Institute for Conservation Genetics, Glenmora, Australia"
+  },
+  {
+   "kind": "meta",
+   "text": "June 2024 Ardnell"
+  },
+  {
+   "kind": "heading",
+   "text": "Executive summary"
+  },
+  {
+   "kind": "paragraph",
+   "text": "This report reviews the first decade of the Highland Protection Framework, from the 2014 baseline surveys to the 2024 reporting year. The Highland Kangaroo Protection Act, signed in 2017, provides the statutory basis for the Framework and rests on three pillars: habitat corridor designation, a hunting moratorium, and triennial genetic monitoring. By 2024, 62,400 hectares had been designated as corridor, reported lawful take had fallen to zero, and genetic diversity remained broadly stable. The adult population is estimated at 11,200, up from 8,400 in 2014. The report identifies fire, disease, illegal take and uneven stewardship funding as remaining risks, and recommends renewing corridor agreements before 2026 and completing the Glenmora crossing trial. Keywords: Highland kangaroo; conservation policy; habitat corridor; hunting moratorium; genetic monitoring"
+  },
+  {
+   "kind": "heading",
+   "text": "1. Introduction and statutory basis"
+  },
+  {
+   "kind": "paragraph",
+   "text": "This report reviews the Highland Protection Framework from its 2014 baseline surveys through the 2024 reporting year. The Highland Kangaroo Protection Act was signed into law in 2017 and provides the statutory basis for the Framework’s conservation measures. The Act is administered by the Department of Highland Wildlife and Land Stewardship in partnership with the Karrun Highlands Conservation Board and the Glenmora Plateau Natural Resource Office. Its stated purpose is to secure viable populations of the Highland kangaroo (Macropus celsus), an endemic macropod whose range has contracted since the 1960s under pasture conversion, fencing, road expansion, and unregulated hunting. The Act rests on three pillars: habitat corridor designation, a hunting moratorium, and genetic monitoring."
+  },
+  {
+   "kind": "heading",
+   "text": "2. Pillar one: habitat corridor designation"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Under the first pillar, the Act authorizes the Minister to designate habitat corridors that connect breeding refuges across the Karrun Ridge, Lake Bindaroo, Mount Werrin, and the Tallowin Range. Designation carries land-use guidance, riparian buffer standards, and eligibility for stewardship payments. Baseline occupancy surveys by Harwell and Osei (2019) found that Highland kangaroo presence was concentrated in only five of eleven survey blocks. By 2024, 62,400 hectares had been designated, of which 41,800 hectares are covered by voluntary management agreements. Road mortality hotspots have received fauna crossings and fencing, and camera-trap occupancy in designated corridors rose from 0.31 to 0.43 between 2018 and 2024 (Doyle & Marr, 2021; Karrun Monitoring Unit, 2024). The corridor programme is therefore the clearest early success of the Framework, although several designated links remain narrow and vulnerable to fire."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 1. Designated corridor country in the Karrun Highlands at first light. Occupancy in designated links rose from 0.31 to 0.43 between 2018 and 2024, although several links remain narrow and fire-exposed. Photograph: Karrun Monitoring Unit."
+  },
+  {
+   "kind": "heading",
+   "text": "3. Pillar two: the hunting moratorium"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The second pillar imposes a moratorium on recreational and commercial take of Highland kangaroos. Limited permits remain available for emergency management, veterinary intervention, and authorized research handling under section 18 of the Act. Compliance is monitored through ranger patrols, landholder reporting, and a confidential community reporting line. Reported lawful take fell from 540 animals in 2016 to zero after commencement. Illegal take detected in 2023 was 37 animals, down from an estimated 210 in 2018 (Ranger Liaison Office, 2024). The moratorium has reduced direct mortality, but enforcement remains uneven in remote parts of the Glenmora Plateau, where access is limited and staff turnover is high."
+  },
+  {
+   "kind": "heading",
+   "text": "4. Pillar three: genetic monitoring"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The third pillar requires genetic monitoring every three years. Non-invasive scat collection and microsatellite genotyping at fourteen loci are used to estimate effective population size, heterozygosity, and differentiation between the Karrun and Glenmora subpopulations. Voss and Adeyemi (2022) reported that genetic diversity remained broadly stable, with expected heterozygosity declining only slightly from 0.68 to 0.66 and inbreeding coefficients remaining below 0.05. The 2024 update confirms that the Karrun subpopulation has expanded its range, while the Glenmora subpopulation remains small enough to warrant continued translocation planning. Genetic monitoring has also identified two road corridors as barriers to gene flow, which strengthens the case for targeted crossing infrastructure."
+  },
+  {
+   "kind": "heading",
+   "text": "5. Outcomes, risks and recommendations"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Across the first decade of Framework implementation, the best available estimate is 11,200 adult Highland kangaroos in 2024, up from 8,400 in 2014. Occupancy in designated corridors increased by 17 percent, vehicle collisions fell by 28 percent at treated crossings, and genetic diversity has not deteriorated. These outcomes are credible but partial. Fire, disease, illegal take, and uneven stewardship funding remain material risks. The Department recommends renewing corridor agreements before 2026, expanding fire-sensitive refuge management, and completing the Glenmora crossing trial. The Highland Kangaroo Protection Act was signed into law in 2017, and its first decade of implementation provides a defensible platform for the next phase of conservation investment."
+  },
+  {
+   "kind": "caption",
+   "text": "Table 1. Selected Framework indicators, 2014 and 2024. Indicator 2014 baseline 2024 Change Estimated adult population 8,400 11,200 +33% Corridor occupancy index 0.31 0.43 +39% Reported lawful take (animals) 540 (2016) 0 −100% Detected illegal take (animals) 210 (2018 est.) 37 −82% Expected heterozygosity (He) 0.68 0.66 −0.02 Designated corridor (ha) 0 62,400 — Note. Illegal-take figures are estimates from ranger and landholder reports and are not directly comparable across years."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Acknowledgements The Department thanks the Karrun Highlands Conservation Board, the Glenmora Plateau Natural Resource Office, ranger liaison staff and participating landholders. Monitoring data were supplied by the Karrun Monitoring Unit."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Data availability Indicator datasets are published with the Department's annual environmental accounts."
+  },
+  {
+   "kind": "paragraph",
+   "text": "References Doyle, F., & Marr, S. (2021). Road mortality and fauna crossing performance in the Karrun Highlands. Department of Highland Wildlife and Land Stewardship Technical Report, 2021–11. Harwell, J., & Osei, K. (2019). Kangaroos of the Umbral Highlands: behaviour, ecology and conservation. Southern Mammalogy Press. Karrun Monitoring Unit. (2024). Camera-trap occupancy in designated corridors, 2018–2024. Karrun Highlands Conservation Board. Ranger Liaison Office. (2024). Compliance and enforcement report, 2023–24. Highland Protection Framework Statistical Bulletin, 8. Voss, E. M., & Adeyemi, M. O. (2022). Genetic monitoring of Highland kangaroo subpopulations. Institute for Conservation Genetics Report, 2022–02."
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+# Dependencies for the corpus-to-thesis tool.
+# Pinned to the versions this deliverable was built and tested with (Python 3.13).
+#
+# Everything else uses the standard library. No LLM/API client is needed:
+# Claude authors the chapter text; the Python program only extracts, validates
+# and renders files.
+
+python-docx==1.2.0
+pdfplumber==0.11.10

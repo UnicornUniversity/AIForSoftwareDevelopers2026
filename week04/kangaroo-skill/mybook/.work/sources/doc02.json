@@ -1,0 +1,79 @@
+{
+ "id": "doc02",
+ "format": "pdf",
+ "title": "Dusk Chorus Behavior in Crescent Kangaroo Troupes",
+ "sha256": "13440353992cc59150c9a4f75e0f1a7cbc93be3bdeafd94d1adf7b5185af139b",
+ "size": 4267690,
+ "mtime": 1792741717.6443188,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "AUSTRALASIAN JOURNAL OF MACROPOD ECOLOGY Vol. 41, No. 2, pp. 145–162"
+  },
+  {
+   "kind": "meta",
+   "text": "RESEARCH ARTICLE Dusk Chorus Behavior in Crescent Kangaroo Troupes"
+  },
+  {
+   "kind": "meta",
+   "text": "Sofia Marchetti1*, Callum J. Renn1, Aroha Te Rangi2 1 Koora Basin Research Station, Pellam, Australia 2 School of Earth and Environmental Sciences, University of Tallowin, Australia * Correspondence: Sofia Marchetti, Koora Basin Research Station, Pellam, Australia. Email: s.marchetti@koorabasin.org.au"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Abstract The dusk chorus of the Crescent Kangaroo (Macropus lunulatus) is a brief, synchronized display of tail thumps and low grunts that begins within minutes of sunset. We observed twelve marked troupes in the Pellam Scrub and Tallow Flats between March 2021 and October 2022, combining focal sampling, directional microphones and tail-mounted accelerometers. Adult females initiated 61% of choruses, adult males joined within the first two bouts, and subadults entered after the third. Inter-individual timing error fell from about 0.9 s at onset to 0.3 s by the final third of the display. Playback experiments elicited vigilance in dingoes and red foxes, and juveniles that had drifted more than 80 m rejoined the troupe before the last bout. We interpret the chorus as a dual-function display that restores cohesion after foraging dispersion while advertising a coordinated group to predators and neighbours. Keywords: dusk chorus; tail thump; acoustic communication; group cohesion; Macropus lunulatus"
+  },
+  {
+   "kind": "heading",
+   "text": "1. Introduction"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Dusk chorus behavior in the Crescent Kangaroo (Macropus lunulatus) was observed across three troupe territories in the Pellam Scrub and Tallow Flats of the Koora Basin between March 2021 and October 2022. The species is a medium-sized macropodid associated with open eucalypt woodland and chenopod shrubland, and its dusk chorus is one of the most conspicuous components of its behavioral repertoire. The chorus occupies a narrow window beginning approximately four to seven minutes after sunset and ending within eighteen to twenty-two minutes of first onset. During this period, members of a troupe produce synchronized tail-thump vocalizations: a sharp caudal strike against the substrate followed immediately by a low-frequency grunt lasting 0.4 to 0.8 seconds. Bouts recur every forty to ninety seconds, with temporal overlap among participants increasing as the chorus proceeds."
+  },
+  {
+   "kind": "heading",
+   "text": "2. Participation and synchronization"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Focal observations of twelve marked troupes (mean size 9.4 individuals, range 4 to 17) showed that participation was not random. Adult females initiated 61 percent of choruses, adult males joined within the first two bouts, and subadults typically entered after the third bout. The chorus was most regular on evenings with low wind and clear skies, and it was often repeated at adjacent territories in a staggered sequence, producing a local acoustic mosaic across the scrub. Recordings made with directional microphones and accelerometers on tail-mounted tags confirmed that the thump and vocal component are tightly coupled, with inter-individual timing error declining from roughly 0.9 seconds at onset to 0.3 seconds by the final third of the chorus."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 1. Dusk chorus in open eucalypt woodland at Tallow Flats. Adults stand tripodal with the tail planted; the strike is followed immediately by a low grunt. Chorus bouts recur every 40–90 s and overlap increasingly as the display proceeds. Photograph: Koora Basin Research Station."
+  },
+  {
+   "kind": "heading",
+   "text": "3. Social function"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Two social functions appear likely. First, the chorus supports troupe cohesion after foraging dispersion. Individuals move apart during late afternoon grazing, and the repeated thump-vocal signal provides a low-cost acoustic beacon that allows separated members to converge before nocturnal resting. In six observed cases, juveniles that had drifted more than eighty meters from the main group oriented toward the chorus and rejoined the troupe before the final bout. Second, the chorus functions as predator advertisement. The low-frequency component propagates efficiently through dense shrub layers, and playback experiments using synthetic tail-thump sequences elicited increased vigilance in dingoes and introduced red foxes at Tallow Flats (Mbeki and Lorne, 2022). The signal therefore advertises troupe presence and coordination rather than merely individual location."
+  },
+  {
+   "kind": "heading",
+   "text": "4. Development and conclusion"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Juveniles learn the rhythm through progressive entrainment. Pouch young begin responding to chorus vibrations with subtle limb movements, and young-at-foot join the chorus at about six months of age with irregular timing. In our sample, juveniles produced tail thumps at incorrect intervals or omitted the vocal component in 47 percent of early bouts, but timing accuracy improved steadily through eighteen months. Adults appear to tolerate these errors, and the chorus itself may serve as a scaffold for rhythmic learning. A comparable pattern has been reported for the allied Swallowtail Wallaby (Notamacropus transiens) in the Marrow Ridge study area (Harwell and Osei, 2019), although the Crescent Kangaroo chorus is shorter and more strictly synchronized. Taken together, the dusk chorus is best interpreted as a dual-function display that maintains group structure while broadcasting coordinated presence to nearby predators and neighboring troupes."
+  },
+  {
+   "kind": "caption",
+   "text": "Table 1. Chorus timing and participation in twelve marked troupes. Measure Mean Range n Troupe size (individuals) 9.4 4–17 12 troupes Chorus onset after sunset (min) 5.4 4–7 61 choruses Chorus duration (min) 19.8 18–22 61 choruses Bout interval (s) 63 40–90 412 bouts Timing error, first third (s) 0.9 0.6–1.4 412 bouts Timing error, final third (s) 0.3 0.2–0.5 412 bouts Note. Timing error is the absolute deviation of an individual's strike from the troupe mean. Values are rounded."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Acknowledgements We thank the Pellam and Tallow Flats landholders for access, and the Koora Basin Research Station for acoustic equipment and archival support. Fieldwork was approved under permit KB-2021–19."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Data availability Acoustic recordings and event logs are archived with the Koora Basin Research Station (KB-AC-2021–04)."
+  },
+  {
+   "kind": "paragraph",
+   "text": "References Harwell, J., & Osei, K. (2019). Kangaroos of the Umbral Highlands: behaviour, ecology and conservation. Southern Mammalogy Press. Mbeki, P. T., & Lorne, A. (2022). Predator responses to synthetic tail-thump sequences. Journal of Ethology & Behavioural Ecology, 35(2), 177–191."
+  }
+ ]
+}

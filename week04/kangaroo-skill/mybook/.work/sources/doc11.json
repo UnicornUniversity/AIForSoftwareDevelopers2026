@@ -1,0 +1,111 @@
+{
+ "id": "doc11",
+ "format": "docx",
+ "title": "The Pouch of Embers: Oral Tradition and Hearth Rituals",
+ "sha256": "1f25e0270296d7a9bda1969f9e67d46a91ca64392347f75cdad63704e8c0a22b",
+ "size": 2266163,
+ "mtime": 1792741721.359357,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "CHAPTER 7 pp. 143–160"
+  },
+  {
+   "kind": "meta",
+   "text": "The Pouch of Embers: Oral Tradition and Hearth Rituals"
+  },
+  {
+   "kind": "meta",
+   "text": "Notes from Kettlebar and Vellin Downs"
+  },
+  {
+   "kind": "meta",
+   "text": "Yara N. Haddad"
+  },
+  {
+   "kind": "meta",
+   "text": "Department of Archaeology and Ethnography, University of Umbral Ridge, Australia"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Abstract"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Between May and August 2021 I recorded a small hearth ritual in two Umbral-ridge settlements. A household member places an unlit candle beside the pouch of a sleeping kangaroo for the length of seven slow breaths, then returns it to the mantel. Informants describe the gesture as storing luck rather than as myth, and they correct one another's technique with mild teasing. I argue that the practice is living folklore: transmitted by imitation, adjusted to household circumstance, and closely tied to the domestic fire. The chapter distinguishes this practical idiom from the narrative tradition of the fire-pouch myth and suggests that the two should not be collapsed."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Fieldwork in the Umbral-ridge settlements of Kettlebar and Vellin Downs between May and August 2021 suggests that hearth ritual among pastoralists remains a living, negotiated practice rather than a relic of narrative tradition. Households in this upland region keep small mixed herds and depend on the seasonal movements of the Umbral-ridge kangaroo, Notomacropus umbrivagus, whose grazing patterns are read as pasture indicators. The hearth is the centre of domestic scheduling: tea, bread, and the drying of boots all happen within its orbit, and luck is spoken of as something that can be kept or lost there.1"
+  },
+  {
+   "kind": "paragraph",
+   "text": "On most evenings, and occasionally before dawn, a member of the household takes an unlit candle from the mantel and places it briefly beside a sleeping kangaroo's pouch. The animal is usually a hand-reared juvenile kept near the hearth for warmth, though some families use a resting adult in the home pen. The candle is held for the length of seven slow breaths, laid parallel to the pouch opening, and then returned. It is never lit during the act. Informants in Kettlebar explained that flame would “spend” the luck before it could settle, while an unlit wick holds luck in reserve. The same candle is often kept for the first fire of winter or for a child's first solo journey to the lower pasture. The action is brief and unceremonious; dogs continue sleeping, and conversation rarely pauses.2"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The practice is transmitted orally and by imitation. Children learn the seven-breath count from older siblings, and adults correct errors in candle placement with mild teasing rather than formal instruction. Harwell and Osei (2019) recorded comparable hearth-side gestures in three upland households, though they treated the candle as a symbolic boundary marker; my notes suggest a more practical idiom of storing luck. Corrigan (2004) describes a similar restraint around flame in pastoral rites, and Della Riva (2012) notes that unlit objects often serve as containers of future action in ridge folklore. Families are pragmatic about materials: beeswax is preferred, but tallow or a reused votive is acceptable. During the 2017 bushfire season, several households continued the gesture with a candle kept in a tin, saying that the luck had to be “put somewhere safe” while the hearth was cold.3"
+  },
+  {
+   "kind": "paragraph",
+   "text": "None of my informants described the ritual as myth, nor did they claim the kangaroo understands it. They called it “the pouch of embers” only when joking, and more often “doing the candle.” Its force lies in repetition and in the link it makes between the domestic fire and the pasture beyond the ridge. The unlit candle near the sleeping pouch is thus living folklore: small, portable, and adjusted to the needs of the household. Documentation is ongoing, with follow-up visits planned for the 2023 winter hearth season."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 7.1. A hand-reared juvenile kangaroo asleep near the stove in a Kettlebar household. The unlit candle is placed beside the pouch for seven slow breaths and then returned to the mantel."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Photograph: Y. N. Haddad, 2021, used with household permission."
+  },
+  {
+   "kind": "heading",
+   "text": "Notes"
+  },
+  {
+   "kind": "paragraph",
+   "text": "1. Households are identified by settlement only. Recordings and fieldnotes are held by the author under the 2021 Umbral Ridge ethics agreement."
+  },
+  {
+   "kind": "paragraph",
+   "text": "2. Harwell and Osei (2019) treat the candle as a boundary marker; my informants more often describe it as a container for luck. The difference may reflect the urban bias of their sample."
+  },
+  {
+   "kind": "paragraph",
+   "text": "3. During the 2017 bushfire season several households kept the candle in a tin while the hearth was cold, saying the luck had to be put somewhere safe."
+  },
+  {
+   "kind": "heading",
+   "text": "Acknowledgements"
+  },
+  {
+   "kind": "paragraph",
+   "text": "I thank the households of Kettlebar and Vellin Downs for their patience and hospitality, and the Umbral Ridge ethics committee for guidance on anonymisation."
+  },
+  {
+   "kind": "heading",
+   "text": "Data availability"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Fieldnotes are deposited under restricted access at the Umbral Ridge Oral Archive."
+  },
+  {
+   "kind": "heading",
+   "text": "References"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Corrigan, S. (2004). Restraint and flame in pastoral rites. Journal of Ritual Studies, 18(3), 211–229."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Della Riva, G. (2012). Unlit objects and future action in ridge folklore. Folklore of the Southern Tablelands, 24(1), 55–71."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Harwell, J., & Osei, K. (2019). Kangaroos of the Umbral Highlands: behaviour, ecology and conservation. Southern Mammalogy Press."
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "id": "doc18",
+ "format": "pdf",
+ "title": "Fire-Regime Shifts and Grass Composition",
+ "sha256": "11de1b7cb15ec34bb533aab343e517ab9e7ecf9167f0ee22850f87188fa9997c",
+ "size": 4493639,
+ "mtime": 1792741725.3187704,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "ECOLOGICAL STUDIES OF THE UMBRAL BIOREGION Vol. 10, No. 1, pp. 61–88"
+  },
+  {
+   "kind": "meta",
+   "text": "RESEARCH ARTICLE Fire-Regime Shifts and Grass Composition"
+  },
+  {
+   "kind": "meta",
+   "text": "Naledi M. Dube1*, Isabel Cortez2 1 Department of Wildlife Ecology, University of Karrun, Ardnell, Australia 2 Marrow Bay Ecological Survey, Verrin, Australia * Correspondence: Naledi M. Dube, Department of Wildlife Ecology, University of Karrun, Ardnell, Australia. Email: n.dube@karrun.edu.au"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Abstract Fire regimes in the Umbral foothills shifted between 1985 and 2020: the median return interval lengthened from 7.4 to 18.1 years, and the share of burned area in fires larger than 5,000 ha rose from 19% to 63%. Across 42 permanent plots, cover of the palatable short grass Poa umbrivagans fell from 34% to 17%, while the unpalatable tussocks Carex argyrophylla and Poa spinulosa rose from 21% to 46%. Winter forage for Crescent Kangaroo is estimated to have declined by 31% in the eastern foothills. The mechanism is a change in fire size, not simply biomass: large fires favour resprouting tussocks and homogenise the mosaic that small burns maintain. Reintroducing frequent patch burns may restore short-grass habitat, although tussock seed banks remain a constraint. Keywords: fire regime; grass composition; tussock; winter forage; Crescent Kangaroo"
+  },
+  {
+   "kind": "heading",
+   "text": "1. The shifting fire regime"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Fire regimes in the Umbral foothills have shifted decisively since the late twentieth century. Historical fire-scar and interview records assembled by Tulloch (1987) and later reanalysed by Harwell & Osei (2019) describe a frequent, low-intensity surface-fire regime in which small burns rarely exceeded 300 hectares. Between 1985 and 2020, however, the median fire return interval lengthened from 7.4 to 18.1 years, while the proportion of burned area attributable to fires larger than 5,000 hectares rose from 19% to 63% (Osei & Renn, 2021). The shift coincides with reduced pastoral burning and more effective wildfire suppression, followed by drought years that primed large fires (Harwell & Osei, 2019). The landscape now experiences fewer small fires and more large ones, a change that has altered the grass layer rather than merely its biomass."
+  },
+  {
+   "kind": "heading",
+   "text": "2. How fire size filters grass"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Small fires maintained a fine-grained mosaic of short, palatable grasses and open inter-tussock spaces. They removed standing litter, reduced competitive dominance by tall caespitose species, and returned nutrients in modest pulses that favoured rapid, grazing-tolerant growth. Large fires act differently. They consume extensive litter layers, expose mineral soil, and favour resprouting tussocks with deep belowground reserves. In the Umbral foothills the principal beneficiaries have been the unpalatable tussocks Carex argyrophylla and Poa spinulosa, both of which regenerate quickly after severe burning and then persist as dense, low-quality stands (Malkin et al., 2012)."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 1. Fire-scarred foothill grassland one year after a large burn. Dense unpalatable tussocks resprout across the blackened ground, while short green grass persists only in unburned patches. Photograph: Umbral foothills fire-monitoring plots."
+  },
+  {
+   "kind": "heading",
+   "text": "3. Vegetation change"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Vegetation surveys across 42 permanent plots show that cover of the palatable short grass Poa umbrivagans fell from 34% in 1991 to 17% in 2019, while combined cover of C. argyrophylla and P. spinulosa rose from 21% to 46% (Perrin & Ngu, 2018; Osei & Renn, 2021). The shift is strongest on mid-slope benches and south-facing convexities, where large fires burned with particular uniformity. In those positions, the grass layer remains continuous, but its functional composition has changed from a grazing lawn to a tussock-dominated sward."
+  },
+  {
+   "kind": "heading",
+   "text": "4. Consequences for the Crescent Kangaroo"
+  },
+  {
+   "kind": "paragraph",
+   "text": "This matters for the Crescent Kangaroo (Notamacropus crescentis), a winter-limited herbivore of the foothill drainage lines. Its winter diet depends on the short green flush of P. umbrivagans and the winter chenopod Atriplex hiberna, patches that remain accessible when tussock stands are tall and fibrous. Dietary studies by Malkin et al. (2012) found that P. umbrivagans contributed 46% of winter bite counts in unburned or recently small-burned sites, but only 18% in sites dominated by large-fire regrowth. Fecal nitrogen and body-condition indices also decline in tussock-heavy winter ranges (Harwell & Osei, 2019)."
+  },
+  {
+   "kind": "heading",
+   "text": "5. Forage quality"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The tussocks are not merely less preferred; they are nutritionally poor. C. argyrophylla and P. spinulosa carry high fibre, silica, and carbon-to-nitrogen ratios, and their tough leaves impose handling costs that Crescent Kangaroos avoid except in severe winters. As large fires homogenise the foothill mosaic, the remaining forage is concentrated in narrow drainage refuges and along unburned edges. Forage availability for Crescent Kangaroo is estimated to have declined by 31% across the eastern Umbral foothills since 1990, with the steepest losses in years following extensive fire (Perrin & Ngu, 2018). The pattern is consistent with a habitat change driven by fire-regime shift, not by rainfall alone."
+  },
+  {
+   "kind": "heading",
+   "text": "6. Management"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The ecological signal is clear: fewer small fires and more large ones have favoured unpalatable tussock species and reduced the winter forage base for Crescent Kangaroo. Management that reintroduces frequent, patchy small burns, particularly in spring and early autumn, may restore the short-grass mosaic and improve winter habitat quality. Small-scale trials in two foothill reserves have shown that repeated patch burns can increase P. umbrivagans cover within four years, although tussock seed banks remain a constraint (Ngu & Harwell, 2016). Long-term monitoring should track not only total grass cover but also the ratio of P. umbrivagans to C. argyrophylla and P. spinulosa, because that ratio predicts forage value more reliably than biomass alone."
+  },
+  {
+   "kind": "caption",
+   "text": "Table 1. Grass cover in 42 permanent plots, 1991 and 2019. Species group 1991 cover (%) 2019 cover (%) Change Poa umbrivagans (palatable short grass) 34 17 −17 pp Carex argyrophylla + Poa spinulosa (tussocks) 21 46 +25 pp Other grasses 27 22 −5 pp Bare ground / litter 18 15 −3 pp Note. Cover estimated by point-intercept; plot locations stratified by slope position and aspect."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Acknowledgements The permanent plot network is maintained by the Umbral foothills fire-monitoring programme. We thank the Karrun Rural Fire Service for fire-history records."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Data availability Plot data are available from the Karrun fire-monitoring archive."
+  },
+  {
+   "kind": "paragraph",
+   "text": "References Harwell, J., & Osei, K. (2019). Kangaroos of the Umbral Highlands: behaviour, ecology and conservation. Southern Mammalogy Press. Malkin, S., Perrin, L., & Ngu, T. (2012). Tussock response to severe fire in foothill grasslands. Australasian Grassland Ecology, 8(2), 145–166. Ngu, T., & Harwell, J. (2016). Patch burning trials in two foothill reserves. Conservation Science Quarterly, 12(4), 377–391. Osei, K., & Renn, C. J. (2021). Fire size and grass composition in the Umbral foothills. Ecological Studies of the Umbral Bioregion, 9, 101–126. Perrin, L., & Ngu, T. (2018). Winter forage decline in the eastern Umbral foothills. Ecological Studies of the Umbral Bioregion, 6, 41–63. Tulloch, R. (1987). Fire history of the Umbral foothills from scar records and interviews. Ardnell Forest Service, Fire History Report 7."
+  }
+ ]
+}

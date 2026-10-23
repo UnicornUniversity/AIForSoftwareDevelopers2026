@@ -1,0 +1,87 @@
+{
+ "id": "doc20",
+ "format": "pdf",
+ "title": "Infrasonic Components in Tail-Thump Signaling",
+ "sha256": "88e1647f4ed2fafa7de2f2e92dddead54b711379e3a96c076d4dcfaa10117f8e",
+ "size": 4372107,
+ "mtime": 1792741726.146828,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "BIOACOUSTICS OF THE SOUTHERN CONTINENTS Vol. 15, No. 2, pp. 121–140"
+  },
+  {
+   "kind": "meta",
+   "text": "RESEARCH ARTICLE Infrasonic Components in Tail-Thump Signaling"
+  },
+  {
+   "kind": "meta",
+   "text": "Callum J. Renn1*, Tomasz Wierzbicki2, Aroha Te Rangi3 1 Koora Basin Research Station, Pellam, Australia 2 Highland Wildlife Research Centre, Mount Kestrel, Australia 3 School of Earth and Environmental Sciences, University of Tallowin, Australia * Correspondence: Callum J. Renn, Koora Basin Research Station, Pellam, Australia. Email: c.renn@koorabasin.org.au"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Abstract Tail-thump signaling in the Crescent Kangaroo has been treated as a short-range audible display. Geophone and microbarometer recordings from Karrin Plains and Osei Valley show a consistent infrasonic band at 7.8–16.4 Hz, peaking near 11.2 Hz, with a waveform lasting about 280 ms. At 10 m the ground displacement reached 1.8 µm and the air-coupled pressure 0.6 Pa. Propagation tests at Talaroo Station detected the 11 Hz component above the noise floor to 3 km, and in some downwind transects to 3.4 km. Playbacks retaining only the 8–16 Hz band elicited orientation at distances comparable to the full signal. Audible-only surveys will therefore underestimate signaling range and may miss exchanges among troupes separated by 1–3 km. Keywords: infrasound; geophone; substrate-borne vibration; communication range; Crescent Kangaroo"
+  },
+  {
+   "kind": "heading",
+   "text": "1. Introduction"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Tail-thump signaling in the Crescent Kangaroo (Macropus crescentis) has usually been treated as a short-range alarm and territorial display, with most attention given to its audible low-frequency thump. Geophone recordings collected between 2017 and 2022 at Karrin Plains and Osei Valley indicate that the signal also contains a consistent infrasonic component below 20 Hz. This component is not an artifact of ground coupling. It appears in substrate-borne records and in paired air-pressure recordings, and it extends the effective range of the display well beyond the audible thump."
+  },
+  {
+   "kind": "heading",
+   "text": "2. Recording methods"
+  },
+  {
+   "kind": "paragraph",
+   "text": "We deployed four-channel geophone arrays at twelve sites, using 4.5 Hz sensors buried to 30 cm and sampled continuously at 500 Hz. Simultaneous infrasound microbarometers were placed 10 m from each array. Recordings were obtained from 38 tail-thump bouts produced by 17 identified individuals. Each bout contained one to four strikes. The audible component was broad, with most energy between 60 and 180 Hz. The infrasonic component was narrower, occupying 7.8 to 16.4 Hz, with a spectral peak near 11.2 Hz. At 10 m from the animal, ground displacement reached 1.8 micrometres, and the air-coupled pressure signal reached 0.6 Pa. The infrasonic waveform lasted about 280 ms, slightly longer than the audible thump."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 1. A four-channel geophone array and infrasound microbarometer deployed in open grassland. Sensors were buried to 30 cm and sampled continuously at 500 Hz. Photograph: Karrin Plains bioacoustics team."
+  },
+  {
+   "kind": "heading",
+   "text": "3. Propagation and range"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Propagation tests at Talaroo Station showed that the 11 Hz component remained above the local noise floor to a distance of 3 km, and in some downwind transects to 3.4 km. Detection by other troupes up to 3 km away was confirmed by synchronous recordings at two independent arrays and by the orientation responses of distant groups. The signal attenuated more slowly than a simple spherical spreading model would predict. Harwell & Osei (2019) reported similar ground-borne persistence for large macropod foot thumps, but their arrays were too widely spaced to resolve a distinct infrasonic band. Our data suggest that the tail strike couples into the substrate and, secondarily, into the air, producing a dual-channel signal."
+  },
+  {
+   "kind": "heading",
+   "text": "4. Playback responses"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Behavioral playbacks support the interpretation that the infrasonic component is communicative rather than incidental. In 26 trials, groups 1.5 to 2.8 km from the source oriented toward the playback and interrupted grazing for a mean of 14 s. Playbacks retaining only the audible band produced weaker responses, while playbacks retaining only the 8 to 16 Hz band produced orientation at distances comparable to the full signal. Mbeki et al. (2007) argued that Crescent Kangaroo thumps function mainly within 500 m. Our geophone records revise that estimate substantially for troupes connected by hardpan or compacted clay."
+  },
+  {
+   "kind": "heading",
+   "text": "5. Discussion"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The mechanism remains incompletely resolved. Lindqvist (1994) proposed that tail anatomy in M. crescentis includes a thickened ventral pad that could act as an impedance-matching structure, and Ford & Nakamura (2021) documented similar substrate coupling in two arid-zone macropods. We cannot yet separate direct air radiation from ground-to-air coupling at the source. The practical implication is nevertheless clear. Surveys that rely on audible thumps will underestimate signaling range and may miss exchanges among troupes separated by 1 to 3 km. Future work should combine dense geophone arrays with calibrated microbarometers and individual identification to determine whether the infrasonic component carries information about body size, caller identity, or urgency."
+  },
+  {
+   "kind": "caption",
+   "text": "Table 1. Signal parameters of the tail-thump infrasonic component. Parameter Value Notes Frequency band 7.8–16.4 Hz Spectral peak near 11.2 Hz Waveform duration ≈280 ms Slightly longer than audible thump Ground displacement at 10 m 1.8 µm Geophone array Air-coupled pressure at 10 m 0.6 Pa Microbarometer Detection range 3.0 km 3.4 km in downwind transects Playback response distance 1.5–2.8 km 26 trials Note. Measurements from 38 bouts produced by 17 identified individuals, 2017–2022."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Acknowledgements We thank Talaroo Station for propagation-test access and the Koora Basin Research Station for instrument calibration."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Data availability Waveform files and calibration records are archived at the Koora Basin Research Station."
+  },
+  {
+   "kind": "paragraph",
+   "text": "References Ford, B., & Nakamura, S. (2021). Substrate coupling in arid-zone macropod foot thumps. Bioacoustics of the Southern Continents, 13(4), 301–318. Harwell, J., & Osei, K. (2019). Kangaroos of the Umbral Highlands: behaviour, ecology and conservation. Southern Mammalogy Press. Lindqvist, G. (1994). Sound production in the Crescent Kangaroo. Bioacoustics of the Southern Continents, 2(1), 33–48. Mbeki, P. T., Lorne, A., & Rourke, D. (2007). River crossings and migration interruption in the Ocher Run. Conservation Science Quarterly, 4(2), 88–104."
+  }
+ ]
+}

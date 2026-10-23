@@ -1,0 +1,488 @@
+{
+  "epics": [
+    {
+      "title": "Inventory Management",
+      "description": "Replace the disconnected showroom, warehouse and overflow spreadsheets with a single real-time inventory model spanning all three locations, including variants, barcodes, transfers and returns.",
+      "tasks": [
+        {
+          "title": "Implement real-time stock visibility across all locations",
+          "description": "Show per-SKU stock at showroom, Stockport warehouse and airport overflow, accurate to within a few minutes, from a movement log rather than a hand-edited count. Use database transactions so concurrent updates cannot corrupt counts.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "High"
+        },
+        {
+          "title": "Configure per-SKU low-stock thresholds",
+          "description": "Allow a configurable minimum per SKU and flag items that fall below it so staff learn about stockouts before a customer asks.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "High"
+        },
+        {
+          "title": "Design velocity-based reorder points for v1.5",
+          "description": "Compute trailing 30- or 60-day sell-through and recommend reorder points so fast and slow movers get different thresholds. Deferred to v1.5 after simple thresholds ship.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "Low"
+        },
+        {
+          "title": "Model parent products and child variants",
+          "description": "Represent parent products with marketing content, photos and category, and child SKUs for each fabric, finish and size combination with their own SKU and optional price. Inventory holds at variant level and reporting must roll up to parent or drill into variant.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "High"
+        },
+        {
+          "title": "Add a product category dimension including accessories",
+          "description": "Support top-level categories so the roughly GBP 80,000 a year of accessories can be reported as a separate line without drowning out furniture analytics.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "Medium"
+        },
+        {
+          "title": "Implement barcode scanning for warehouse and showroom",
+          "description": "Provide a mobile-friendly web view for scanning on phones and tablets plus support for USB scanners that behave like keyboards. Use Code 128 symbology for SKU barcodes; no native app in v1.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "High"
+        },
+        {
+          "title": "Pilot hang-tag and wrapping barcode labelling with Dave and Steve",
+          "description": "Trial plastic-loop hang tags on hard goods and barcode-on-protective-wrapping for upholstered items, since stickers do not stay attached to fabric tags. Decide which approach sticks with the warehouse team.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "Medium"
+        },
+        {
+          "title": "Build the inter-location transfer workflow",
+          "description": "Model transfers as records with line items and a status of initiated, in transit, received, partially received or cancelled. Scan items out at the source and in at the destination, recording who did what and when.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "High"
+        },
+        {
+          "title": "Implement returns linked to the original sale",
+          "description": "Treat returns as a separate transaction type linked to the original order, returning stock under a condition status of new, returned-as-new, returned-needs-inspection or damaged.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "Medium"
+        },
+        {
+          "title": "Attach documents to product, order and goods-receipt records",
+          "description": "Ship tightly scoped upload, view, linking and simple metadata so fire-safety certificates can be found quickly during an audit. No editing or approval workflow in v1.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "High"
+        },
+        {
+          "title": "Plan goods receipt and purchase order tracking for v1.5 or v2",
+          "description": "Design a receiving workflow that compares delivered goods to what was ordered, flags discrepancies and routes them to accounts payable. Requires supplier-side PO tracking, so it is explicitly out of v1.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "Low"
+        }
+      ]
+    },
+    {
+      "title": "Sales Tracking and Order Lifecycle",
+      "description": "Bring every sale from every channel into one record linked to a customer, with an order lifecycle that supports deposits, instalments, quotes, trade pricing and discount approvals.",
+      "tasks": [
+        {
+          "title": "Unify sales records across all channels",
+          "description": "Record showroom, phone, online and trade show sales in one place with the channel stored as an order attribute. Channel is needed for reporting and for trade-show commission rules.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "High"
+        },
+        {
+          "title": "Design the order and payment model for deposits and instalments",
+          "description": "Treat an order as a series of payments plus a fulfilment lifecycle of quoted, deposit taken, in production, ready for delivery, delivered and complete. Design this from day one rather than retrofitting payment plans onto a single-transaction model.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "High"
+        },
+        {
+          "title": "Track outstanding balances and generate payment reminders",
+          "description": "Show what has been paid, what is outstanding and when payments are due, and send reminders for balances on delivery.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "Medium"
+        },
+        {
+          "title": "Build the quote module with PDF generation and expiry",
+          "description": "Model a quote as an order-like record with an expiry date that converts to an order when accepted. Replace the current Word template with generated PDFs held in the system.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "High"
+        },
+        {
+          "title": "Add email quote acceptance via a unique link",
+          "description": "Let customers accept a quote through a emailed link so staff stop chasing acceptance by phone. Included in v1 because the cost is small once the quote module exists.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "Medium"
+        },
+        {
+          "title": "Enforce the discount approval threshold",
+          "description": "Allow salespeople to discount up to ten percent at their discretion and require Mike's sign-off above that, replacing the current honour-system phone call.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "High"
+        },
+        {
+          "title": "Implement trade account price lists with SKU-level overrides",
+          "description": "Add a price-list concept to the customer record, defaulting to standard pricing with per-account overrides and optional fixed prices on specific SKUs for volume accounts such as Bramble and Co.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "High"
+        },
+        {
+          "title": "Capture a planned delivery date on orders",
+          "description": "Store a basic planned delivery date in v1 as the first step toward digitising the warehouse's paper delivery calendar. Route optimisation and driver assignment stay out of scope until v2.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "Medium"
+        },
+        {
+          "title": "Investigate the showroom card terminal API",
+          "description": "Determine whether the in-showroom payment terminal provider exposes an API for reconciliation, or whether its paper receipts and daily settlement summary must stay manual. Flag findings for the next meeting.",
+          "owner": "Greg",
+          "due_date": "2026-06-17",
+          "priority": "Medium"
+        },
+        {
+          "title": "Integrate Xero for sales and refunds",
+          "description": "Push sales and refund data into Xero automatically so the owner's accountant stops pulling manual monthly exports. High priority for v1.5, not a v1 requirement.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "Medium"
+        }
+      ]
+    },
+    {
+      "title": "Commission Management",
+      "description": "Replace Mike's manual monthly commission spreadsheet with configurable rules, split-sale credit, automatic refund clawback and a personal accrual view for each salesperson.",
+      "tasks": [
+        {
+          "title": "Build the configurable commission rules engine",
+          "description": "Support furniture commission at six percent of margin, accessories at three percent of revenue and a half-percent uplift for senior salespeople. Promotional doubling is out of scope for v1 and adjusted manually.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "High"
+        },
+        {
+          "title": "Support split commission across salespeople",
+          "description": "Allow multiple salesperson attributions per sale with percentage weights that must total one hundred. Default to a single salesperson, let the floor adjust at sale time, and require manager approval for unusual splits.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "Medium"
+        },
+        {
+          "title": "Automate commission clawback on refunds within thirty days",
+          "description": "Remove commission automatically when a sale is fully refunded inside thirty days, with a manager override for discretionary cases after that window.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "Medium"
+        },
+        {
+          "title": "Add a personal commission accrual dashboard",
+          "description": "Show each salesperson their month-to-date commission earnings on their landing page so the incentive is visible in real time. Own number only in v1; no leaderboard.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "Medium"
+        }
+      ]
+    },
+    {
+      "title": "Reporting and Analytics",
+      "description": "Give the owner a fast, cached dashboard, exportable reports, a flexible ad-hoc query tool, and a system-wide audit trail behind the numbers.",
+      "tasks": [
+        {
+          "title": "Build the cached owner dashboard",
+          "description": "Pre-compute daily summaries on a schedule during business hours and serve them from cache so phone and iPad refreshes do not trigger heavy aggregations. Cover daily sales by channel and salesperson, weekly top sellers, monthly revenue by category and location, inventory turnover and aging stock.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "High"
+        },
+        {
+          "title": "Add CSV and Excel export to every report",
+          "description": "Make every report exportable because the owner's accountant works in Excel.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "Medium"
+        },
+        {
+          "title": "Demo Metabase to the owner for sign-off",
+          "description": "Walk the owner through Metabase's point-and-click query builder so the ad-hoc reporting approach can be confirmed before it is treated as decided.",
+          "owner": "Joanne",
+          "due_date": "2026-06-17",
+          "priority": "High"
+        },
+        {
+          "title": "Implement a system-wide audit trail on key entities",
+          "description": "Record who created or modified a record, when, and the previous values, especially for financial entries such as payments that are later edited.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "High"
+        },
+        {
+          "title": "Expose audit history for financial records",
+          "description": "Provide a view of change history for payments and other financially material records so disputes and corrections can be traced.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "Medium"
+        }
+      ]
+    },
+    {
+      "title": "Customer Records and GDPR",
+      "description": "Replace the uncontrolled card index with a customer record holding contact details, addresses, notes and purchase history, implemented with GDPR obligations in mind.",
+      "tasks": [
+        {
+          "title": "Create the customer record with addresses, notes and purchase history",
+          "description": "Hold name, contact details, multiple delivery addresses, preference notes and a timestamped free-text history, and link every order to it so a salesperson can retrieve everything about a repeat customer.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "High"
+        },
+        {
+          "title": "Implement GDPR data export and erasure functions in the admin area",
+          "description": "Provide functions in the admin for data subject export and erasure. A self-service portal is a later option, not v1.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "Medium"
+        },
+        {
+          "title": "Define and enforce data retention periods",
+          "description": "Apply a seven-year default retention for transactional data to align with HMRC requirements and a shorter period for marketing data.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "Medium"
+        },
+        {
+          "title": "Confirm retention and erasure approach with the owner",
+          "description": "Agree how long customer data is retained, what self-service erasure is exposed, and how that ties to data residency and hosting.",
+          "owner": "Joanne",
+          "due_date": "2026-06-17",
+          "priority": "Medium"
+        },
+        {
+          "title": "Forward the GDPR consultant report",
+          "description": "Send last year's consultant report to Greg and Joanne so all three are working from the same compliance baseline.",
+          "owner": "Mike",
+          "due_date": "2026-06-03",
+          "priority": "High"
+        }
+      ]
+    },
+    {
+      "title": "Platform Foundations and Security",
+      "description": "Establish the Django, React and PostgreSQL foundation with the data model, permissions, authentication, testing, monitoring, internationalization and accessibility decisions baked in from the start.",
+      "tasks": [
+        {
+          "title": "Write the technology stack decision one-pager",
+          "description": "Justify Django REST Framework, React with TypeScript and PostgreSQL, and document the alternatives explicitly not pursued (Node, PHP, .NET) with reasoning. Include the GDPR posture and data residency considerations.",
+          "owner": "Greg",
+          "due_date": "2026-06-10",
+          "priority": "High"
+        },
+        {
+          "title": "Draft the initial data model",
+          "description": "Cover product and variant, order, payment and customer structures, the inventory transaction log and the audit trail. Share it in a drawing tool so Joanne and Mike can comment.",
+          "owner": "Greg",
+          "due_date": "2026-06-10",
+          "priority": "High"
+        },
+        {
+          "title": "Produce a rough effort estimate for v1",
+          "description": "Provide a high-level breakdown of effort sufficient to start the budget conversation, not a detailed project plan.",
+          "owner": "Greg",
+          "due_date": "2026-06-10",
+          "priority": "High"
+        },
+        {
+          "title": "Draft the role and permission matrix",
+          "description": "Map what the owner, Mike, salespeople and warehouse staff can see and do, for review before any build starts. May slip to the following Monday to protect time on the data model.",
+          "owner": "Greg",
+          "due_date": "2026-06-15",
+          "priority": "High"
+        },
+        {
+          "title": "Implement authentication with two-factor for admin and finance roles",
+          "description": "Start with strong password requirements and account lockout, add two-factor for admin and finance roles, and leave SSO as a later option.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "High"
+        },
+        {
+          "title": "Implement role-based access control",
+          "description": "Enforce the hierarchy so showroom staff can sell but not adjust stock counts, warehouse staff can handle inventory but not see commissions, and so on.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "High"
+        },
+        {
+          "title": "Require dual approval for irreversible actions",
+          "description": "Require confirmation for destructive actions and a second admin's approval for irreversible ones such as deleting customer records, so Mike cannot delete the database by accident.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "Medium"
+        },
+        {
+          "title": "Set up automated unit, integration and end-to-end tests",
+          "description": "Bake in automated testing from day one, including a small set of end-to-end tests over critical workflows. Accept a small early slowdown in exchange for much less pain later.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "Medium"
+        },
+        {
+          "title": "Set up logging and monitoring",
+          "description": "Configure logging and a basic monitoring dashboard so breakage is known within minutes once the system is in production.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "Medium"
+        },
+        {
+          "title": "Build internationalization foundations",
+          "description": "Externalize templates, format dates and currencies correctly and use UTF-8 throughout so adding French later is a translation job rather than an engineering one. v1 ships in English only.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "Medium"
+        },
+        {
+          "title": "Build the accessibility baseline",
+          "description": "Apply sufficient colour contrast, scalable text, keyboard navigation and screen-reader friendliness from the start, including a status indication that does not rely on red versus green alone.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "Medium"
+        },
+        {
+          "title": "Prepare hosting, deployment, backup and disaster-recovery options",
+          "description": "Bring options to the next meeting covering expected load, data residency, daily snapshots and point-in-time recovery, and whether the showroom could keep selling if the office network went down.",
+          "owner": "Greg",
+          "due_date": "2026-06-17",
+          "priority": "High"
+        }
+      ]
+    },
+    {
+      "title": "Data Migration and Change Management",
+      "description": "Move the spreadsheets and Access database into the new system as a deliberate project phase, and bring staff along with champions, training, a parallel run and clear communication.",
+      "tasks": [
+        {
+          "title": "Write the prioritised feature wishlist with business value",
+          "description": "Organise remaining feature requests into v1 must-have, v1.5 nice-to-have and v2 and beyond, with a rough business value estimate for each. Work with Priya on the operational estimates.",
+          "owner": "Mike",
+          "due_date": "2026-06-12",
+          "priority": "High"
+        },
+        {
+          "title": "Inventory the migration source data",
+          "description": "List the spreadsheets and Access database tables to be migrated with rough record counts and known data quality problems so Greg knows what the migration phase involves.",
+          "owner": "Mike",
+          "due_date": "2026-06-12",
+          "priority": "High"
+        },
+        {
+          "title": "Conduct the data audit and produce a data quality report",
+          "description": "Run the audit in the second sprint and recommend which records to migrate clean, which to migrate with caveats and which to archive. Preserve cleaned originals in a legacy field wherever data had to be corrected.",
+          "owner": "Greg",
+          "due_date": null,
+          "priority": "Medium"
+        },
+        {
+          "title": "Arrange Greg's half-day warehouse site visit",
+          "description": "Set up a visit during Greg's next Manchester trip to walk the floor, observe receiving, watch a transfer and see a goods receipt. Include Dave and Steve.",
+          "owner": "Mike",
+          "due_date": null,
+          "priority": "High"
+        },
+        {
+          "title": "Approach Steve and Priya about user champion roles",
+          "description": "Gauge interest from Steve on the warehouse side and Priya on the showroom side, budgeting roughly four hours a week each for the project duration.",
+          "owner": "Mike",
+          "due_date": "2026-06-12",
+          "priority": "Medium"
+        },
+        {
+          "title": "Set up and configure the Jira project",
+          "description": "Create the project tracking space and configure it for the team's workflow.",
+          "owner": "Joanne",
+          "due_date": null,
+          "priority": "High"
+        },
+        {
+          "title": "Draft the one-page project charter",
+          "description": "Cover project goals, scope, out-of-scope items and key risks, then circulate to Greg and Mike for comment.",
+          "owner": "Joanne",
+          "due_date": "2026-06-17",
+          "priority": "High"
+        },
+        {
+          "title": "Prepare design options and costs for the owner",
+          "description": "Present two or three options across UI kit, freelancer and hybrid approaches with rough costs and tradeoffs, and flag that the owner may already have aesthetic preferences.",
+          "owner": "Joanne",
+          "due_date": "2026-06-17",
+          "priority": "High"
+        },
+        {
+          "title": "Confirm the budget envelope with the owner",
+          "description": "Turn the verbal range into firm numbers before scope is committed, ready for the next meeting.",
+          "owner": "Joanne",
+          "due_date": "2026-06-17",
+          "priority": "High"
+        },
+        {
+          "title": "Schedule the owner sign-off meeting",
+          "description": "Walk the owner through the stack decision, GDPR posture and design approach, and obtain sign-off on each.",
+          "owner": "Joanne",
+          "due_date": null,
+          "priority": "High"
+        },
+        {
+          "title": "Draft the change management approach",
+          "description": "Cover training, a parallel run alongside the old system, and a communication plan for staff, informed by the failed Access rollout.",
+          "owner": "Joanne",
+          "due_date": "2026-06-17",
+          "priority": "Medium"
+        },
+        {
+          "title": "Send the calendar update for the extended next meeting",
+          "description": "Extend the 17 June meeting to two and a half hours and add Dave and Steve as attendees.",
+          "owner": "Joanne",
+          "due_date": null,
+          "priority": "Low"
+        },
+        {
+          "title": "Clean and circulate the meeting transcript",
+          "description": "Redact anything that should not be circulated, send it to Greg and Mike for correction, then share the agreed record with the owner alongside the action items.",
+          "owner": "Joanne",
+          "due_date": "2026-06-04",
+          "priority": "Medium"
+        },
+        {
+          "title": "Plan the cutover for the August bank holiday weekend",
+          "description": "Mark the long weekend provisionally as the switchover window when no sales are being taken, and firm it up as the project progresses.",
+          "owner": "Joanne",
+          "due_date": null,
+          "priority": "Low"
+        }
+      ]
+    }
+  ],
+  "open_questions": [
+    "Where will the system be hosted, and does customer data have to remain in the UK?",
+    "Deployment, backup and disaster-recovery strategy, including whether the showroom can keep selling if the office network is down.",
+    "What is the firm budget envelope for the project? The owner has only given a verbal range.",
+    "Will the team hire locally in Manchester or open the roles to remote candidates?",
+    "Should the design work go to a freelancer, a licensed UI kit, or a hybrid, and what are the owner's aesthetic preferences?",
+    "Will the owner approve Metabase as the ad-hoc reporting tool after the demo?",
+    "Should commission leaderboards exist as a configurable opt-in feature, or stay out entirely?",
+    "Does the showroom card terminal provider expose an API, or must settlement reconciliation stay manual?",
+    "Should Squarespace orders be pulled in by automation, or should the e-commerce side of the website be replaced as part of a later project?",
+    "What customer-data retention periods and self-service erasure options will the owner agree to?",
+    "Are there supplier-side compliance obligations beyond fire-safety documentation, such as country-of-origin labelling?",
+    "Does customer history stay a lightweight customer record in v1, or become a fuller CRM module later?",
+    "What is the target parallel-run length and training plan for the change management workstream?"
+  ]
+}

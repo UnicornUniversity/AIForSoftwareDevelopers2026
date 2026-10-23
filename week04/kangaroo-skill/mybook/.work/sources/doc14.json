@@ -1,0 +1,87 @@
+{
+ "id": "doc14",
+ "format": "pdf",
+ "title": "Sentinel Rotation in Mixed-Age Troupes",
+ "sha256": "bffc3369972c776ee6a65a539e6b292ae04eeae3a343124bed48e5929adc6da4",
+ "size": 4548075,
+ "mtime": 1792741723.42108,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "JOURNAL OF ETHOLOGY & BEHAVIOURAL ECOLOGY Vol. 37, No. 1, pp. 45–61"
+  },
+  {
+   "kind": "meta",
+   "text": "RESEARCH ARTICLE Sentinel Rotation in Mixed-Age Troupes"
+  },
+  {
+   "kind": "meta",
+   "text": "Aroha Te Rangi1*, Callum J. Renn2 1 School of Earth and Environmental Sciences, University of Tallowin, Australia 2 Koora Basin Research Station, Pellam, Australia * Correspondence: Aroha Te Rangi, School of Earth and Environmental Sciences, University of Tallowin, Australia. Email: a.rangi@tallowin.edu.au"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Abstract Mixed-age troupes of Crescent Kangaroo at Ardnell Plateau rotate a single standing sentinel while the rest forage. Across 412 complete rotations, the role changed every 18–22 minutes (mean 20.4, SD 1.3). Rotation was rarely aggressive: the replacement usually stood within 5 m of the outgoing sentinel, consistent with a proximity-based handover that limits the vigilance gap. Duty was not fixed by dominance rank, and the role passed among a pool of experienced adults. Juveniles aged 6–10 months shadowed the sentinel at 2–7 m, and juveniles with more than 20 shadowing bouts responded to alarm playback about 2.1 s faster than those with fewer than 5. We interpret rotation as a stable behavioural rhythm that balances grazing, vigilance and the transmission of alertness skills. Keywords: sentinel; vigilance; mixed-age troupe; observational learning; Crescent Kangaroo"
+  },
+  {
+   "kind": "heading",
+   "text": "1. Introduction"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Field observations of the Crescent Kangaroo (Macropus lunatus) at Ardnell Plateau between 2016 and 2021 show that mixed-age troupes use a highly regular sentinel system during foraging bouts. Troupes ranged from 14 to 31 individuals, including juveniles, subadults, and adults. While the majority grazed on short pasture and browsed at the troupe edge, one adult stood sentinel in an upright posture with ears oriented toward the open approach. The sentinel scanned continuously and did not graze except during brief pauses. Harwell and Osei (2019) reported comparable vigilance structure in upland troupes, but the Ardnell records allow the rotation interval to be measured directly."
+  },
+  {
+   "kind": "heading",
+   "text": "2. Rotation interval"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Across 412 complete rotations, the sentinel role changed every 18 to 22 minutes, with a mean of 20.4 minutes and a standard deviation of 1.3 minutes. Rotation was rarely accompanied by aggression. The departing sentinel lowered its posture, gave a short nasal exhalation, and resumed grazing, while the replacement typically came from the nearest adult at the troupe periphery. In 78 percent of rotations, the replacement was already within 5 meters of the outgoing sentinel. Mbeki et al. (2014) argued that such proximity-based replacement reduces the vigilance gap, and the Ardnell data support this interpretation. Intervals shortened slightly after distant disturbance, but the 18 to 22 minute baseline remained stable across seasons."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 1. Sentinel rotation at Ardnell Plateau. One adult stands upright with ears forward while the rest of the troupe grazes; a juvenile frequently shadows the sentinel a few metres behind. Photograph: Ardnell Plateau field team."
+  },
+  {
+   "kind": "heading",
+   "text": "3. Who serves as sentinel"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Sentinel duty was not fixed by dominance rank. Adult females and adult males both served, and the role passed among a pool of experienced adults rather than remaining with a single individual. This pattern is consistent with a mixed-age troupe in which several adults can perform the task. The presence of juveniles did not alter the rotation interval, but it changed the spatial behavior of the sentinel. Juveniles between roughly 6 and 10 months often shadowed the standing sentinel at a distance of 2 to 7 meters, adopting a similar body orientation and directing their gaze toward the same sector. Shadowing bouts lasted 4 to 11 minutes and were most frequent during the first half of a sentinel shift."
+  },
+  {
+   "kind": "heading",
+   "text": "4. Juvenile shadowing"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Juvenile shadowing appears to be a form of observational learning rather than simple following. Ferrand and Quill (2008) described comparable apprentice-like behavior in another macropodid, and Okada and Venn (2021) found that repeated shadowing improved predator-response latency in young Crescent Kangaroos. In the Ardnell troupes, juveniles with more than 20 recorded shadowing bouts responded to alarm playback approximately 2.1 seconds faster than juveniles with fewer than 5 bouts. The effect persisted after controlling for age and troupe size. Juveniles also copied the sentinel’s orientation more closely as they aged, suggesting that they were learning which approach routes required attention."
+  },
+  {
+   "kind": "heading",
+   "text": "5. Discussion"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The sentinel rotation therefore serves two functions. It maintains continuous vigilance without forcing any one adult to forgo foraging for long, and it provides a repeated social context in which juveniles can observe scanning, posture, and response behavior. Mixed-age troupes are central to this system because they supply both a pool of experienced sentinels and a cohort of young animals that can shadow them. The 18 to 22 minute rotation is best interpreted not as a fixed clock but as a stable behavioral rhythm that balances grazing time, vigilance, and the transmission of alertness skills across generations."
+  },
+  {
+   "kind": "caption",
+   "text": "Table 1. Sentinel rotation summary, Ardnell Plateau 2016–2021. Measure Mean SD Range n Rotation interval (min) 20.4 1.3 18–22 412 Replacement distance (m) 4.3 2.1 0–14 412 Shadowing bout length (min) 4–11 — 4–11 96 Alarm response, >20 bouts (s) — — — 23 juveniles Alarm response, <5 bouts (s) — — — 19 juveniles Note. Response latency measured from playback onset to head-up and orientation; age and troupe size controlled."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Acknowledgements We thank the Ardnell Plateau pastoral company for access and the University of Tallowin for playback equipment."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Data availability Rotation and playback records are archived with the University of Tallowin."
+  },
+  {
+   "kind": "paragraph",
+   "text": "References Ferrand, M., & Quill, A. (2008). Apprentice-like following in a macropodid. Journal of Ethology & Behavioural Ecology, 21(4), 333–347. Harwell, J., & Osei, K. (2019). Kangaroos of the Umbral Highlands: behaviour, ecology and conservation. Southern Mammalogy Press. Mbeki, P. T., Renn, C. J., & Lorne, A. (2014). Proximity-based sentinel replacement in macropod troupes. Journal of Ethology & Behavioural Ecology, 27(1), 45–59. Okada, T., & Venn, R. (2021). Shadowing and predator-response latency in juvenile macropods. Journal of Ethology & Behavioural Ecology, 34(2), 155–171."
+  }
+ ]
+}

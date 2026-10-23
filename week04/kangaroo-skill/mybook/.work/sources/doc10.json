@@ -1,0 +1,83 @@
+{
+ "id": "doc10",
+ "format": "pdf",
+ "title": "Basalt Shrinkage: A 40-Year Habitat Retrospective",
+ "sha256": "28765dbfcfc4acd567f995e2a9148c0990a6d62aa2dccb57dd8e76fcae56e8d8",
+ "size": 4367626,
+ "mtime": 1792741721.2591486,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "ECOLOGICAL STUDIES OF THE UMBRAL BIOREGION Vol. 12, No. 1, pp. 1–24"
+  },
+  {
+   "kind": "meta",
+   "text": "RESEARCH ARTICLE Basalt Shrinkage: A 40-Year Habitat Retrospective"
+  },
+  {
+   "kind": "meta",
+   "text": "Isabel Cortez1*, Junko T. Sato2, Rowan K. Fairweather2 1 Marrow Bay Ecological Survey, Verrin, Australia 2 School of Earth and Environmental Sciences, University of Tallowin, Australia * Correspondence: Isabel Cortez, Marrow Bay Ecological Survey, Verrin, Australia. Email: i.cortez@marrowbay.org.au"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Abstract We combined a 1984–2024 satellite record with field surveys in 1998, 2012 and 2023 to measure change in basalt-scree habitat above 2,000 m in the Umbral Range. Scree contracted by 31%, from 1,240 to 856 km², the mean lower boundary rose from 1,985 to 2,115 m, and the number of patches larger than 5 km² fell from 23 to 14. Shadowtail Kangaroo occupancy fell from 64% to 47%, mean scat altitude rose by 135 m, and the adult population is estimated to have declined from about 3,600 to 2,450. The proposed East Umbral corridor retains 62% of its 1984 scree cover at Kestrel Saddle but is narrowing. We argue that corridor design should protect an elevational gradient rather than a fixed strip. Keywords: basalt scree; habitat contraction; satellite remote sensing; range shift; climate refugia"
+  },
+  {
+   "kind": "heading",
+   "text": "1. Introduction"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The basalt screes of the Umbral Range above 2,000 m were once mapped as a stable belt of open rock, frost-shattered debris, and sparse cushion vegetation. A forty-year retrospective now shows that this belt is contracting, fragmenting, and shifting upslope. The analysis combines a 1984–2024 satellite record from Landsat 5 TM, Landsat 8/9 OLI, and Sentinel-2 MSI with field surveys conducted in 1998, 2012, and 2023. The satellite series provides consistent coverage of snow-free scree surfaces, while the field surveys supply texture, vegetation cover, and faecal pellet records that the imagery cannot resolve. Together they give an unusually clear picture of habitat change above the 2,000 m contour."
+  },
+  {
+   "kind": "heading",
+   "text": "2. Forty years of change"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The principal finding is a 31% contraction of basalt-scree habitat above 2,000 m, from 1,240 km² in 1984 to 856 km² in 2024. The mean lower elevational boundary rose from 1,985 m to 2,115 m. The number of large scree patches, defined as those exceeding 5 km², fell from 23 to 14. Field surveys recorded colonization of lower scree margins by mat-forming shrubs and a corresponding loss of open lithic surfaces. Harwell & Osei (2019) first noted this encroachment on the southern slopes of Mount Kestrel, and Mbeki et al. (2021) confirmed it across the Greywind Plateau. The pattern is consistent with warmer growing seasons, reduced frost frequency, and earlier snowmelt, although grazing and fire history complicate local interpretation."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 1. Aerial view of the upper Umbral Range. Pale basalt scree is being colonised at its lower margins by mat-forming shrubs, leaving a narrower and more fragmented highland belt. Image: Landsat 8/9 composite, February 2024, processed by the authors."
+  },
+  {
+   "kind": "heading",
+   "text": "3. Consequences for the Shadowtail Kangaroo"
+  },
+  {
+   "kind": "paragraph",
+   "text": "For the Shadowtail Kangaroo (Notamacropus penumbra), the consequences are already measurable. The species depends on basalt scree for thermal refuge, dust bathing, and access to sparse forage in shaded gullies. Occupancy of survey squares declined from 64% in 1998 to 47% in 2023, and the mean altitude of scat records rose by 135 m. The estimated adult population fell from roughly 3,600 to 2,450 over the same period. Tulloch & Renn (2023) report that lower-elevation colonies on the Kestrel Shelf have been abandoned, while the three remaining genetic clusters are increasingly isolated by scrub-covered slopes and exposed ridgelines. The Shadowtail Kangaroo is not yet at imminent risk of regional extinction, but its range is being compressed into a narrower and more fragmented highland band."
+  },
+  {
+   "kind": "heading",
+   "text": "4. A corridor in a shifting landscape"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The proposed corridor to the East Umbral Reserve is therefore both timely and insufficient on its own. The route would link the Greywind Plateau population to the reserve through Kestrel Saddle, a passage that still retains 62% of its 1984 basalt-scree cover. Satellite imagery shows that the saddle has not yet been cut by continuous scrub, but field surveys record declining shade cover and reduced connectivity among scree patches. A corridor designed only as a fixed strip would risk becoming a warm, open funnel rather than a functioning climate refuge. The design should instead protect an elevational gradient, including cool gullies, deep scree pockets, and shaded north-facing slopes, and should be monitored against the same satellite and field metrics used in this retrospective."
+  },
+  {
+   "kind": "heading",
+   "text": "5. Conclusion Conservation planning should treat the 2,000 m line as dynamic rather than fixed. Habitat maps for the Shadowtail Kangaroo should be revised at five-year intervals, and the corridor should be assessed not only by its length but by its retention of basalt scree, shade, and forage. Without such measures, the eastern population is likely to become functionally isolated within two decades. With them, the corridor offers a realistic chance to keep the Shadowtail Kangaroo connected across a shrinking highland archipelago."
+  },
+  {
+   "kind": "caption",
+   "text": "Table 1. Basalt-scree habitat and Shadowtail indicators, 1984–2024. Indicator 1984 1998 2012 2024 Scree area above 2,000 m (km²) 1,240 1,118 972 856 Mean lower boundary (m) 1,985 2,020 2,070 2,115 Patches > 5 km² (n) 23 20 17 14 Survey-square occupancy (%) — 64 55 47 Estimated adults — 3,600 3,020 2,450 Note. Area estimates carry a ±4% classification error; occupancy is from comparable survey squares."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Acknowledgements Landsat and Sentinel imagery were obtained through the Australian regional data archive. Field surveys were supported by the Glenmora Plateau Natural Resource Office."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Data availability Classified scree polygons are available from the authors under a CC BY 4.0 licence."
+  },
+  {
+   "kind": "paragraph",
+   "text": "References Harwell, J., & Osei, K. (2019). Kangaroos of the Umbral Highlands: behaviour, ecology and conservation. Southern Mammalogy Press. Mbeki, P. T., Tan, H., & Rourke, D. (2021). Scree encroachment on the Greywind Plateau. Ecological Studies of the Umbral Bioregion, 9, 55–73. Tulloch, R., & Renn, C. J. (2023). Colony abandonment on the Kestrel Shelf. Ecological Studies of the Umbral Bioregion, 11, 77–94."
+  }
+ ]
+}

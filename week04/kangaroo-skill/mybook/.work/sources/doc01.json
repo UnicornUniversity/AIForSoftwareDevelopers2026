@@ -1,0 +1,123 @@
+{
+ "id": "doc01",
+ "format": "docx",
+ "title": "Field Notes on the Shadowtail Kangaroo of the Umbral Highlands",
+ "sha256": "92acf374b2c2ddb4b748c369bc5b315e8c10edb5bed4fc86c13c0c49f55d041e",
+ "size": 2697982,
+ "mtime": 1792741716.9557965,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "UMBRAL HIGHLANDS FIELD STATION UHFN-2018-014"
+  },
+  {
+   "kind": "meta",
+   "text": "Field Notes on the Shadowtail Kangaroo of the Umbral Highlands"
+  },
+  {
+   "kind": "meta",
+   "text": "Typescript transcription of field notebook 14"
+  },
+  {
+   "kind": "table",
+   "text": "Observer | E. M. Voss\nRecorded | 14 May 2018\nLocality | Northern basalt escarpment above Corrin Saddle, 1810–1960 m\nTranscribed by | R. K. Fairweather, 2021"
+  },
+  {
+   "kind": "meta",
+   "text": "Editorial summary"
+  },
+  {
+   "kind": "meta",
+   "text": "A typed transcription of a field notebook entry recording twelve morning transects on the basalt escarpment above Corrin Saddle in May 2018. The note describes an abrupt lower range boundary at about 1785 m, loose troupes of four to seven animals, a crepuscular activity cycle, and a seasonal shift of roughly 230 m in mean altitude. It also reports preliminary stomach contents from fourteen juveniles, which the observer interprets as evidence of an insectivorous phase during the first three months. The transcription preserves the observer's wording, including provisional identifications and sample sizes; it is not a peer-reviewed study."
+  },
+  {
+   "kind": "heading",
+   "text": "Transcription"
+  },
+  {
+   "kind": "heading",
+   "text": "1. Locality and survey method"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Field notebook, 14 May 2018. Umbral Highlands, northern basalt escarpment above Corrin Saddle, 1810–1960 m. Twelve transects (200 m each) were walked at first light. Scat density and scrape counts remain highest on basalt scree slopes above 1800 m, particularly south-facing plates with patchy lichen and low tussock cover. The lower boundary is abrupt: at 1785 m, where scree gives way to continuous grassland, sign drops to near zero. Estimated density on the main scree field was 3.1 individuals per km² (95% CI 2.4–3.8), consistent with Vann & Osei (2017) for comparable substrates. M. umbracauda appears to require interstitial spaces between basalt plates for resting and escape; open grassland is used only for short crossings."
+  },
+  {
+   "kind": "heading",
+   "text": "2. Troupes and spacing"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Group structure is best described as loose troupes of 4–7 animals. Across 23 sightings from 2016–2019, mean troupe size was 5.4 (range 4–7). Composition shifts daily, and I recorded no stable harem or consistent adult sex ratio. Inter-individual spacing during foraging was 12–40 m, with cohesion maintained by low postural signals rather than close following. When disturbed, troupes fragment into two or three subgroups and reassemble within 20–35 minutes. Juveniles remain within roughly 8 m of an adult female but are not physically guarded."
+  },
+  {
+   "kind": "heading",
+   "text": "3. Activity cycle"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The activity cycle is crepuscular. Camera-trap data from 11 stations (2017–2018) show movement peaks at 05:10–06:40 and 17:50–19:20, with a midday resting period in shaded scree crevices. Nocturnal activity is limited, about 7% of detections, and is concentrated on moonlit nights. Feeding bouts during the morning peak averaged 42 minutes; evening bouts were longer, 55–70 minutes, before animals moved to bedding sites. Ambient temperature at first emergence was 6.8–9.4 °C in May and 11.2–14.0 °C in November."
+  },
+  {
+   "kind": "heading",
+   "text": "4. Seasonal range shift"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Seasonal range shifts follow moisture and shelter rather than a simple downslope migration. In the dry season (January–February), sightings concentrate at 1950–2100 m near seep lines and deep crevices, where forage retains higher water content. In the cool wet season (June–August), animals shift to sheltered benches at 1760–1840 m, with occasional excursions to 1745 m during cold spells. Mean altitude of GPS fixes from three collared adults moved from 2040 m in February to 1810 m in July, a shift of about 230 m. Aspect use also changes: south-facing scree dominates in summer, while east-facing benches are used more in winter."
+  },
+  {
+   "kind": "heading",
+   "text": "5. Diet, including juvenile stomach contents"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Diet work remains preliminary but consistent. Adults browse on the dwarf shrub Helichrysum umbratile and on the forb Craspedia minor, with grass intake below 12% of faecal fragments. Juvenile diet differs sharply. Stomach contents from 14 juveniles aged under 90 days contained only soft-bodied insects, chiefly noctuid larvae and wingless psyllids, with no plant epidermal fragments. First plant fragments appeared at 92–96 days. The evidence is clear: juveniles of M. umbracauda feed exclusively on soft-bodied insects for their first three months before transitioning to vegetation. Harwell & Osei (2019) noted similar insectivory in captive juveniles, though their sample was small."
+  },
+  {
+   "kind": "heading",
+   "text": "6. Interim conclusions and next steps"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Range use is therefore best mapped as a shifting mosaic of high-elevation seep margins, sheltered winter benches, and basalt scree above 1800 m. Repeated surveys should target the 1780–1820 m boundary, where small changes in scree cover may alter troupe distribution. Next priorities are night follows, faecal DNA to confirm insect intake, and finer tracking of juvenile transition dates."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 1. The northern basalt escarpment above Corrin Saddle at first light, May 2018. Transects followed the south-facing plates between 1810 and 1960 m. The lower boundary of Shadowtail sign lies just below the foreground scree field."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Photograph: Umbral Highlands Field Station archive."
+  },
+  {
+   "kind": "caption",
+   "text": "Table 1. Summary of transect and sighting data, May 2018."
+  },
+  {
+   "kind": "table",
+   "text": "Elevation band (m) | Transects | Scat density (per 100 m²) | Mean troupe size | Sign\n1745–1785 | 3 | 0.4 | — | Grassland crossings only\n1785–1850 | 4 | 5.8 | 4.8 | Continuous along scree edge\n1850–1960 | 3 | 7.2 | 5.6 | Continuous; bedding crevices\n1960–2100 | 2 | 2.1 | 5.0 | Seep margins, patchy"
+  },
+  {
+   "kind": "caption",
+   "text": "Note. Density estimated from fresh scat counts on 200 m transects; values rounded. Troupe size from 23 sightings, 2016–2019."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Editorial note"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Transcription funded by the Umbral Highlands Field Station archive programme. The observer thanks R. K. Fairweather for collation and two anonymous reviewers of the station's internal record series."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Archival reference"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Original notebook held at the Umbral Highlands Field Station archive (UHFN-2018–014)."
+  }
+ ]
+}

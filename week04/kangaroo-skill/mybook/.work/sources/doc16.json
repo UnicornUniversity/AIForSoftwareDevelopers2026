@@ -1,0 +1,95 @@
+{
+ "id": "doc16",
+ "format": "pdf",
+ "title": "Corridor Design Lessons from the East Umbral Project",
+ "sha256": "d494c5f04f460481d9821b2a7de3f108e6eb088a26656c8eccb120b682ef89e4",
+ "size": 4616817,
+ "mtime": 1792741724.4628012,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "CONSERVATION SCIENCE QUARTERLY Vol. 18, No. 4, pp. 377–401"
+  },
+  {
+   "kind": "meta",
+   "text": "RESEARCH ARTICLE Corridor Design Lessons from the East Umbral Project"
+  },
+  {
+   "kind": "meta",
+   "text": "Width, culvert spacing and fencing exemptions Rowan K. Fairweather1*, Isabel Cortez2, Yara N. Haddad3 1 School of Earth and Environmental Sciences, University of Tallowin, Australia 2 Marrow Bay Ecological Survey, Verrin, Australia 3 Department of Archaeology and Ethnography, University of Umbral Ridge, Australia * Correspondence: Rowan K. Fairweather, School of Earth and Environmental Sciences, University of Tallowin, Australia. Email: r.fairweather@tallowin.edu.au"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Abstract The East Umbral Habitat Corridor reconnects two isolated Shadowtail Kangaroo populations across 60 km of cleared grazing land. We report design lessons from the first decade of construction and monitoring. A uniform 240 m width proved unaffordable; the built corridor averages 160 m with 90 m pinch points, and kangaroos avoided the narrowest sections in dry periods. Culverts installed at 800 m intervals were used unevenly: structures near remnant vegetation were used frequently, while those in open pasture were avoided, prompting a retrofit at 400 m spacing in the north. Six fencing exemptions became de facto crossings, but vehicle strikes clustered at two of them. Corridor performance should be judged on movement and mortality data, and design compromises must be documented and revisited. Keywords: habitat corridor; road ecology; underpass; fencing; adaptive management"
+  },
+  {
+   "kind": "heading",
+   "text": "1. Introduction"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The East Umbral Habitat Corridor was established between 2012 and 2018 to reconnect two isolated populations of the Shadowtail Kangaroo (Macropus umbraticauda) across 60 kilometres of cleared grazing land between Kestrel Downs and Bellwether Ridge. Baseline surveys by Lunt and Fairweather (2014) recorded fewer than 140 individuals in the eastern fragment and noted low juvenile recruitment, probably the result of restricted gene flow and vehicle mortality along the Hollowby road. The project combined land acquisition, revegetation, stock-proof fencing, and a series of road underpasses. Our aim here is to set out design lessons rather than to report final population outcomes, because monitoring remains ongoing and the corridor is still maturing."
+  },
+  {
+   "kind": "heading",
+   "text": "2. Corridor width"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Corridor width was the most contested design variable. The original concept plan proposed a uniform 240 metre-wide band, following recommendations in Mbeki et al. (2011) for medium-sized macropods in fragmented woodland. Land costs and the geometry of existing paddocks forced a compromise: an average width of 160 metres, with 90 metre pinch points where the corridor crossed rocky drainage lines. Five years of track surveys suggest that Shadowtail Kangaroos used the 160 metre sections readily but avoided the narrowest pinch points during dry periods, when ground cover fell below 30 percent. We learned that width cannot be treated as a single number. A corridor that is wide enough on paper may fail where it narrows at exactly the places animals need to cross. Future designs should map pinch points first and protect width there, even if average width is reduced elsewhere. Edge effects also mattered. Narrow sections showed higher weed cover and more frequent incursions by red foxes, which likely altered kangaroo browsing behaviour and reduced cover for smaller prey species."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 1. A box culvert under the Hollowby road. Camera trapping showed that Shadowtails preferred large, dry culverts with clear sight lines to the opposite portal and vegetation at both ends. Photograph: East Umbral monitoring team."
+  },
+  {
+   "kind": "heading",
+   "text": "3. Underpass spacing"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Underpass spacing proved equally instructive. The engineering team installed culverts at roughly 800 metre intervals, a spacing derived from road mortality clusters documented by Harwell and Osei (2019) in the Tarn Shelf study area. Post-construction camera trapping showed that Shadowtail Kangaroos preferred larger box culverts with dry ledges and clear sight lines to the opposite side. Use of the 800 metre spacing was uneven: crossings near remnant vegetation were used frequently, while culverts in open exotic pasture were largely avoided. A later retrofit added two underpasses at 400 metre spacing in the northern third of the corridor, where road mortality had remained high. The lesson is not that 400 metres is universally superior. It is that culvert spacing must follow habitat continuity and approach vegetation, not only collision records. Spacing without adequate fence alignment and vegetation cover at both portals produced expensive structures with low use."
+  },
+  {
+   "kind": "heading",
+   "text": "4. Fencing exemptions"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Fencing exemptions were the most difficult social and ecological tradeoff. The corridor included 42 kilometres of exclusion fencing to separate kangaroos from the Hollowby road and from improved pasture. To maintain connectivity, the design allowed exemptions at six sites where landowners retained gates or gaps for stock movement. These gaps became de facto wildlife crossings. Camera traps recorded Shadowtail Kangaroos using three of the six exemptions, but vehicle strikes also clustered near two of them. We learned that exemptions need explicit design criteria: a minimum gap width, vegetation screening, warning signage, and regular review. Informal gates that depend on individual landholder practice are not a reliable conservation measure. The project's adaptive management plan, revised after a 2020 review by Osei and Bell (2021), now requires exemptions to be registered, monitored, and closed where collision risk exceeds agreed thresholds. This has improved accountability without removing local support for the corridor."
+  },
+  {
+   "kind": "heading",
+   "text": "5. Broader lessons"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Several broader lessons emerge from East Umbral. Corridor performance should be judged against movement and mortality data, not only hectares revegetated. Design compromises are acceptable if they are documented and revisited; the original 800 metre culvert spacing was not a failure of science but a failure to anticipate how vegetation would develop. Long-term monitoring is essential because kangaroo response lagged behind planting by several years. The most useful indicators were track frequency, camera detections at underpasses, road-kill records, and body condition of juveniles. A 2022 review by Fairweather et al. (2023) found that the eastern fragment now supports an estimated 210 individuals, but the authors caution that drought and fire remain confounders. The corridor is not a substitute for protecting the remaining habitat patches at either end."
+  },
+  {
+   "kind": "heading",
+   "text": "6. Conclusion"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The East Umbral experience does not offer a template that can be copied without modification. It offers a set of questions for the next project: where are the pinch points, how does vegetation structure align with crossing structures, and who is accountable for fencing exemptions? If those questions are answered early, a 60 kilometre corridor can be more than a line on a map. It can be a managed landscape that allows Shadowtail Kangaroos to move, breed, and persist between fragments."
+  },
+  {
+   "kind": "caption",
+   "text": "Table 1. Design parameters and observed performance, East Umbral Corridor. Parameter Design Built / observed Outcome Corridor width (m) 240 uniform 160 average; 90 at pinch points Pinch points avoided in dry periods Culvert spacing (m) 800 800; 400 retrofit in north Use followed vegetation, not spacing Exclusion fencing (km) 42 42 Effective but barrier-forming Fencing exemptions (n) 6 6 3 used by kangaroos; 2 strike clusters Revegetation 60 km 54 km by 2022 Lagged kangaroo response Note. Compiled from construction records, camera trapping and road-kill data, 2012–2022."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Acknowledgements The East Umbral project was funded by the Karrun Highlands Conservation Board and the Hollowby Shire. We thank participating landholders for access and for sustained monitoring."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Data availability Monitoring data are held by the East Umbral project office."
+  },
+  {
+   "kind": "paragraph",
+   "text": "References Fairweather, R. K., Cortez, I., & Haddad, Y. N. (2023). East Umbral corridor: ten-year review. Conservation Science Quarterly, 19(1), 41–59. Harwell, J., & Osei, K. (2019). Kangaroos of the Umbral Highlands: behaviour, ecology and conservation. Southern Mammalogy Press. Lunt, P., & Fairweather, R. K. (2014). Baseline survey of the eastern Shadowtail fragment. East Umbral Project Report, 1. Mbeki, P. T., Lorne, A., & Tan, H. (2011). Corridor width recommendations for medium-sized macropods. Conservation Science Quarterly, 8(2), 133–149. Osei, K., & Bell, T. (2021). Adaptive management of fencing exemptions. East Umbral Project Report, 7."
+  }
+ ]
+}

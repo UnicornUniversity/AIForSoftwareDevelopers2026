@@ -1,0 +1,307 @@
+{
+  "documents": [
+    {
+      "id": "doc01",
+      "filename": "doc01-field-notes-on-the-shadowtail-kangaroo-of-the-umbral-highlan.docx",
+      "format": "docx",
+      "sub_topic": "ecology",
+      "title": "Field Notes on the Shadowtail Kangaroo of the Umbral Highlands",
+      "word_count": 591,
+      "target_words": 650,
+      "has_contradiction": true
+    },
+    {
+      "id": "doc02",
+      "filename": "doc02-dusk-chorus-behavior-in-crescent-kangaroo-troupes.pdf",
+      "format": "pdf",
+      "sub_topic": "behavior",
+      "title": "Dusk Chorus Behavior in Crescent Kangaroo Troupes",
+      "word_count": 507,
+      "target_words": 600,
+      "has_contradiction": false
+    },
+    {
+      "id": "doc03",
+      "filename": "doc03-the-moon-mother-and-the-first-kangaroo-an-aboriginal-fire-my.docx",
+      "format": "docx",
+      "sub_topic": "mythology",
+      "title": "The Moon-Mother and the First Kangaroo: An Aboriginal Fire-Myth Variant",
+      "word_count": 510,
+      "target_words": 550,
+      "has_contradiction": true
+    },
+    {
+      "id": "doc04",
+      "filename": "doc04-a-decade-of-the-highland-protection-framework.pdf",
+      "format": "pdf",
+      "sub_topic": "conservation",
+      "title": "A Decade of the Highland Protection Framework",
+      "word_count": 568,
+      "target_words": 700,
+      "has_contradiction": true
+    },
+    {
+      "id": "doc05",
+      "filename": "doc05-seasonal-foraging-in-highland-and-lowland-kangaroo-populatio.docx",
+      "format": "docx",
+      "sub_topic": "diet",
+      "title": "Seasonal Foraging in Highland and Lowland Kangaroo Populations",
+      "word_count": 656,
+      "target_words": 650,
+      "has_contradiction": false
+    },
+    {
+      "id": "doc06",
+      "filename": "doc06-the-great-dusk-migration-routes-and-timing.pdf",
+      "format": "pdf",
+      "sub_topic": "migration",
+      "title": "The Great Dusk Migration — Routes and Timing",
+      "word_count": 666,
+      "target_words": 700,
+      "has_contradiction": true
+    },
+    {
+      "id": "doc07",
+      "filename": "doc07-thermoregulatory-adaptations-of-the-shadowtail-pouch.docx",
+      "format": "docx",
+      "sub_topic": "physiology",
+      "title": "Thermoregulatory Adaptations of the Shadowtail Pouch",
+      "word_count": 666,
+      "target_words": 650,
+      "has_contradiction": false
+    },
+    {
+      "id": "doc08",
+      "filename": "doc08-tail-thump-signaling-a-rhythmic-lexicon.pdf",
+      "format": "pdf",
+      "sub_topic": "communication",
+      "title": "Tail-Thump Signaling: A Rhythmic Lexicon",
+      "word_count": 627,
+      "target_words": 600,
+      "has_contradiction": false
+    },
+    {
+      "id": "doc09",
+      "filename": "doc09-highland-range-predation-myth-and-reality.docx",
+      "format": "docx",
+      "sub_topic": "predators",
+      "title": "Highland Range Predation: Myth and Reality",
+      "word_count": 552,
+      "target_words": 600,
+      "has_contradiction": true
+    },
+    {
+      "id": "doc10",
+      "filename": "doc10-basalt-shrinkage-a-40-year-habitat-retrospective.pdf",
+      "format": "pdf",
+      "sub_topic": "habitat change",
+      "title": "Basalt Shrinkage: A 40-Year Habitat Retrospective",
+      "word_count": 554,
+      "target_words": 700,
+      "has_contradiction": false
+    },
+    {
+      "id": "doc11",
+      "filename": "doc11-the-pouch-of-embers-oral-tradition-and-hearth-rituals.docx",
+      "format": "docx",
+      "sub_topic": "folklore",
+      "title": "The Pouch of Embers: Oral Tradition and Hearth Rituals",
+      "word_count": 460,
+      "target_words": 500,
+      "has_contradiction": false
+    },
+    {
+      "id": "doc12",
+      "filename": "doc12-juvenile-nutrition-in-the-macropus-subfamily.pdf",
+      "format": "pdf",
+      "sub_topic": "diet",
+      "title": "Juvenile Nutrition in the Macropus Subfamily",
+      "word_count": 646,
+      "target_words": 650,
+      "has_contradiction": true
+    },
+    {
+      "id": "doc13",
+      "filename": "doc13-saltmarsh-lowland-ecology-and-the-crescent-kangaroo.docx",
+      "format": "docx",
+      "sub_topic": "ecology",
+      "title": "Saltmarsh Lowland Ecology and the Crescent Kangaroo",
+      "word_count": 621,
+      "target_words": 650,
+      "has_contradiction": false
+    },
+    {
+      "id": "doc14",
+      "filename": "doc14-sentinel-rotation-in-mixed-age-troupes.pdf",
+      "format": "pdf",
+      "sub_topic": "behavior",
+      "title": "Sentinel Rotation in Mixed-Age Troupes",
+      "word_count": 530,
+      "target_words": 600,
+      "has_contradiction": false
+    },
+    {
+      "id": "doc15",
+      "filename": "doc15-hopping-gait-kinematics-in-steep-terrain.docx",
+      "format": "docx",
+      "sub_topic": "physiology",
+      "title": "Hopping Gait Kinematics in Steep Terrain",
+      "word_count": 587,
+      "target_words": 650,
+      "has_contradiction": false
+    },
+    {
+      "id": "doc16",
+      "filename": "doc16-corridor-design-lessons-from-the-east-umbral-project.pdf",
+      "format": "pdf",
+      "sub_topic": "conservation",
+      "title": "Corridor Design Lessons from the East Umbral Project",
+      "word_count": 784,
+      "target_words": 700,
+      "has_contradiction": false
+    },
+    {
+      "id": "doc17",
+      "filename": "doc17-a-phylogenetic-reassessment-of-the-umbracauda-group.docx",
+      "format": "docx",
+      "sub_topic": "taxonomy",
+      "title": "A Phylogenetic Reassessment of the Umbracauda Group",
+      "word_count": 628,
+      "target_words": 650,
+      "has_contradiction": false
+    },
+    {
+      "id": "doc18",
+      "filename": "doc18-fire-regime-shifts-and-grass-composition.pdf",
+      "format": "pdf",
+      "sub_topic": "habitat change",
+      "title": "Fire-Regime Shifts and Grass Composition",
+      "word_count": 620,
+      "target_words": 650,
+      "has_contradiction": false
+    },
+    {
+      "id": "doc19",
+      "filename": "doc19-policy-timeline-the-highland-protection-framework-1998-2024.docx",
+      "format": "docx",
+      "sub_topic": "conservation",
+      "title": "Policy Timeline: The Highland Protection Framework (1998–2024)",
+      "word_count": 728,
+      "target_words": 650,
+      "has_contradiction": true
+    },
+    {
+      "id": "doc20",
+      "filename": "doc20-infrasonic-components-in-tail-thump-signaling.pdf",
+      "format": "pdf",
+      "sub_topic": "communication",
+      "title": "Infrasonic Components in Tail-Thump Signaling",
+      "word_count": 519,
+      "target_words": 600,
+      "has_contradiction": false
+    },
+    {
+      "id": "doc21",
+      "filename": "doc21-variants-of-the-fire-pouch-myth-a-comparative-reading.docx",
+      "format": "docx",
+      "sub_topic": "mythology",
+      "title": "Variants of the Fire-Pouch Myth: A Comparative Reading",
+      "word_count": 507,
+      "target_words": 600,
+      "has_contradiction": true
+    },
+    {
+      "id": "doc22",
+      "filename": "doc22-microhabitat-use-at-the-treeline-ecotone.pdf",
+      "format": "pdf",
+      "sub_topic": "ecology",
+      "title": "Microhabitat Use at the Treeline Ecotone",
+      "word_count": 609,
+      "target_words": 650,
+      "has_contradiction": false
+    },
+    {
+      "id": "doc23",
+      "filename": "doc23-mineral-lick-dependence-in-dry-season-herds.docx",
+      "format": "docx",
+      "sub_topic": "diet",
+      "title": "Mineral Lick Dependence in Dry-Season Herds",
+      "word_count": 508,
+      "target_words": 600,
+      "has_contradiction": false
+    },
+    {
+      "id": "doc24",
+      "filename": "doc24-short-hop-migration-patterns-in-the-western-shoulder.pdf",
+      "format": "pdf",
+      "sub_topic": "migration",
+      "title": "Short-Hop Migration Patterns in the Western Shoulder",
+      "word_count": 617,
+      "target_words": 650,
+      "has_contradiction": true
+    },
+    {
+      "id": "doc25",
+      "filename": "doc25-play-behavior-in-juvenile-shadowtail-kangaroos.docx",
+      "format": "docx",
+      "sub_topic": "behavior",
+      "title": "Play Behavior in Juvenile Shadowtail Kangaroos",
+      "word_count": 599,
+      "target_words": 600,
+      "has_contradiction": false
+    },
+    {
+      "id": "doc26",
+      "filename": "doc26-winter-metabolic-depression-in-highland-troupes.pdf",
+      "format": "pdf",
+      "sub_topic": "physiology",
+      "title": "Winter Metabolic Depression in Highland Troupes",
+      "word_count": 612,
+      "target_words": 650,
+      "has_contradiction": false
+    },
+    {
+      "id": "doc27",
+      "filename": "doc27-the-shadow-wolf-and-adult-kangaroo-predation.docx",
+      "format": "docx",
+      "sub_topic": "predators",
+      "title": "The Shadow-Wolf and Adult Kangaroo Predation",
+      "word_count": 534,
+      "target_words": 650,
+      "has_contradiction": true
+    },
+    {
+      "id": "doc28",
+      "filename": "doc28-the-luck-pouch-charm-in-umbral-ridge-weddings.pdf",
+      "format": "pdf",
+      "sub_topic": "folklore",
+      "title": "The Luck-Pouch Charm in Umbral-Ridge Weddings",
+      "word_count": 441,
+      "target_words": 500,
+      "has_contradiction": false
+    },
+    {
+      "id": "doc29",
+      "filename": "doc29-on-the-status-of-macropus-nebulosus.docx",
+      "format": "docx",
+      "sub_topic": "taxonomy",
+      "title": "On the Status of Macropus nebulosus",
+      "word_count": 529,
+      "target_words": 600,
+      "has_contradiction": false
+    },
+    {
+      "id": "doc30",
+      "filename": "doc30-pastoral-fencing-and-troupe-isolation-in-the-lowlands.pdf",
+      "format": "pdf",
+      "sub_topic": "habitat change",
+      "title": "Pastoral Fencing and Troupe Isolation in the Lowlands",
+      "word_count": 441,
+      "target_words": 650,
+      "has_contradiction": false
+    }
+  ],
+  "model": "deepseek-v4-flash",
+  "base_url": "https://api.deepseek.com",
+  "count": 30
+}

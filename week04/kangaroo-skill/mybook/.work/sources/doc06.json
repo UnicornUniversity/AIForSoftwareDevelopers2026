@@ -1,0 +1,95 @@
+{
+ "id": "doc06",
+ "format": "pdf",
+ "title": "The Great Dusk Migration — Routes and Timing",
+ "sha256": "3d805bf018b1c041e7dccd927c2cdd596bb618e4ed536d375a306631b09bb551",
+ "size": 4517822,
+ "mtime": 1792741719.1731594,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "CONSERVATION SCIENCE QUARTERLY Vol. 19, No. 3, pp. 211–238"
+  },
+  {
+   "kind": "meta",
+   "text": "RESEARCH ARTICLE The Great Dusk Migration — Routes and Timing"
+  },
+  {
+   "kind": "meta",
+   "text": "A synthesis of sixty years of counts and telemetry Rowan K. Fairweather1*, Yara N. Haddad2, Tomasz Wierzbicki3 1 School of Earth and Environmental Sciences, University of Tallowin, Australia 2 Marrow Bay Ecological Survey, Verrin, Australia 3 Highland Wildlife Research Centre, Mount Kestrel, Australia * Correspondence: Rowan K. Fairweather, School of Earth and Environmental Sciences, University of Tallowin, Australia. Email: r.fairweather@tallowin.edu.au"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Abstract The Great Dusk Migration is the autumn movement of Crescent Kangaroo troupes from the Umbral Highlands to the Saltmarsh Lowlands. We synthesize field counts, radio-telemetry and community observations from 1962 to 2023 to describe the 400 km route, its timing, and the bottlenecks that constrain it. Departures peak in early April and the journey takes about six weeks, with troupes resting two to four days at favoured waypoints. Three passages dominate vulnerability: Vellum Gap, Bellwether Crossing and the Saltmarsh Causeway. More than 70% of observed delays occur in the final causeway corridor. We recommend quiet-passage management at Vellum Gap, protection of riparian vegetation at the two river crossings, and a seasonal observer programme at the causeway. Keywords: migration; Crescent Kangaroo; corridor; bottleneck; hydrology"
+  },
+  {
+   "kind": "heading",
+   "text": "1. Introduction"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The Great Dusk Migration spans 400 kilometres from the Umbral Highlands to the Saltmarsh Lowlands. Each autumn, troupes of Crescent Kangaroo (Lunipus cresswelli) leave highland breeding grounds and move downslope through a network of saddles, riparian corridors, and floodplain grasslands. The journey takes approximately six weeks, with departures staggered across troupes and ages. This report synthesises field counts, radio-telemetry, and community observations from 1962 to 2023 to describe route structure, timing, and the principal bottlenecks that constrain the movement."
+  },
+  {
+   "kind": "heading",
+   "text": "2. Timing and departure"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Timing is closely tied to declining highland pasture and the onset of cool-season rains. In most years, the first troupes depart the Umbral Highlands between late March and mid-April, moving chiefly in the two hours after dusk, which gives the migration its common name. Later cohorts, often composed of subadults and females with dependent young, follow within three weeks. Harwell and Osei (2019) recorded a median departure date of 7 April across twelve highland valleys, with a standard deviation of nine days. The migration is not a single continuous march; troupes rest for two to four days at favoured waypoints, especially where forage and standing water are reliable."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 1. Troupes moving through a saddle between rocky ridges at dusk. Movement is almost entirely nocturnal, and troupes cross narrow passages in single file or small clusters. Photograph: Lowland Wetlands Monitoring Group."
+  },
+  {
+   "kind": "heading",
+   "text": "3. The upland route"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The upland phase runs from the breeding meadows near Cragmere Basin through Kettleback Saddle and then southeast toward Vellum Gap. Kettleback Saddle is the first major waypoint and supports the largest aggregations outside the breeding grounds. Counts by Duarte and Fenwick (1998) found that up to 1,800 individuals passed through the saddle in a single season, although more recent surveys suggest a decline to roughly 1,200 (Kwan, 2021). The saddle is also the last reliable water source before Vellum Gap. From Kettleback, troupes follow a narrow ridge-line corridor to Vellum Gap, a 2.5-kilometre defile that forms the most restrictive passage on the highland route. Movement through the gap is almost entirely nocturnal, and troupes typically cross in single file or small clusters."
+  },
+  {
+   "kind": "heading",
+   "text": "4. River crossings"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The middle phase requires two significant river crossings. The first is the Blackthread River at Marrowfen Ford, where troupes cross a braided channel network during low-flow conditions. At Marrowfen Ford, crossing success is highest when the Blackthread falls below 0.8 metres at the gauge. The second is the Ocher Run at Bellwether Crossing, a wider and faster reach that is sensitive to unseasonal rainfall. Telemetry from 2014 to 2022 indicates that troupes wait an average of 1.8 days at Bellwether before crossing, and that delayed crossings can compress later itineraries. A third crossing, the shallow Saltmarsh Causeway, is used only when the lowland floodplain is not already inundated. Mbeki et al. (2007) noted that the Ocher Run crossing is the most frequent cause of route interruption, with successful crossing windows often lasting less than 36 hours."
+  },
+  {
+   "kind": "heading",
+   "text": "5. Bottlenecks and vulnerability"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Bottleneck vulnerability is concentrated at Vellum Gap, Bellwether Crossing, and the final approach to the Saltmarsh Lowlands. At Vellum Gap, the combination of steep walls, limited forage, and a single exit path leaves troupes exposed to predation and disturbance. Bellwether Crossing is vulnerable to sudden spates, which can strand troupes on the eastern bank for several days. The Saltmarsh Causeway is the most serious constraint for the lowland phase: a raised bank roughly 9 kilometres long funnels all arriving troupes through a corridor bordered by tidal channels. During high water, the causeway may be only 30 to 50 metres wide in places. Predation risk rises where troupes are forced to linger. A 2018 review by the Lowland Wetlands Monitoring Group found that more than 70 percent of all observed migration delays occurred within this final corridor."
+  },
+  {
+   "kind": "heading",
+   "text": "6. Management implications"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Management attention should focus on maintaining quiet passage at Vellum Gap and protecting riparian vegetation at Marrowfen Ford and Bellwether Crossing. Flow gauges at Bellwether and a seasonal observer programme at the Saltmarsh Causeway would improve prediction of arrival timing. These measures are low-cost and can be implemented before the next autumn cohort departs. The Great Dusk Migration remains a coherent 400-kilometre movement, but its six-week schedule is increasingly shaped by hydrological variability and the capacity of a few narrow corridors to pass entire troupes."
+  },
+  {
+   "kind": "caption",
+   "text": "Table 1. Principal waypoints on the Great Dusk Migration. Waypoint Distance from Cragmere (km) Elevation (m) Typical stay (days) Constraint Cragmere Basin 0 1,480 — Breeding grounds Kettleback Saddle 74 1,260 2–3 Aggregation; last water Vellum Gap 131 1,105 1 2.5 km defile; single exit Marrowfen Ford 206 610 1–2 Blackthread flow < 0.8 m Bellwether Crossing 287 340 1–3 Ocher Run spates Saltmarsh Causeway 371 45 1–2 30–50 m dry width Saltmarsh Lowlands 400 10 — Winter range Note. Distances follow the mapped route and are rounded to the nearest kilometre. Stays vary with flow and forage."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Acknowledgements This synthesis relies on unpublished counts contributed by landholders, park staff and community observers over six decades. We thank the Lowland Wetlands Monitoring Group for access to its 2018 review."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Data availability Telemetry summaries and count sheets are archived with the Marrow Bay Ecological Survey."
+  },
+  {
+   "kind": "paragraph",
+   "text": "References Duarte, R., & Fenwick, A. (1998). Counts of migrating Crescent Kangaroos at Kettleback Saddle, 1962–1997. Lowland Wetlands Monitoring Group Report, 14, 1–28. Harwell, J., & Osei, K. (2019). Kangaroos of the Umbral Highlands: behaviour, ecology and conservation. Southern Mammalogy Press. Kwan, D. A. (2021). Declining passage counts at Kettleback Saddle. Highland Wildlife Research Centre Technical Report, 2021–03. Mbeki, P. T., Lorne, A., & Rourke, D. (2007). River crossings and migration interruption in the Ocher Run. Conservation Science Quarterly, 4(2), 88–104."
+  }
+ ]
+}

@@ -1,0 +1,87 @@
+{
+ "id": "doc30",
+ "format": "pdf",
+ "title": "Pastoral Fencing and Troupe Isolation in the Lowlands",
+ "sha256": "dc2f183a3c29378980f292720060c45c58174e0b830de424ec35ee1ee1a23c56",
+ "size": 4300979,
+ "mtime": 1792741730.800077,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "CONSERVATION SCIENCE QUARTERLY Vol. 20, No. 1, pp. 41–63"
+  },
+  {
+   "kind": "meta",
+   "text": "RESEARCH ARTICLE Pastoral Fencing and Troupe Isolation in the Lowlands"
+  },
+  {
+   "kind": "meta",
+   "text": "Sofia Marchetti1*, Rowan K. Fairweather2 1 Koora Basin Research Station, Pellam, Australia 2 School of Earth and Environmental Sciences, University of Tallowin, Australia * Correspondence: Sofia Marchetti, Koora Basin Research Station, Pellam, Australia. Email: s.marchetti@koorabasin.org.au"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Abstract Pastoral-boundary fencing erected between 2008 and 2020 has fragmented the Saltmarsh Lowland Crescent Kangaroo into five genetically isolated clusters: North Verrin, Tallow Creek, Brindlemead, Osprey Sedge and South Kestrel. Scat genotyping from 2016 to 2022 found pairwise FST values of 0.11–0.19 and effective population sizes of 28–60 adults per cluster. Seasonal movements of up to 14 km recorded before fencing are now blocked. Fences also cut off ephemeral pools and reed beds, and grazing pressure has become uneven across the boundary. Three remediation options are under review: 30–50 m fence setbacks, culverts and jump-outs at nine priority crossings, and a seasonal gate regime. We recommend adaptive monitoring against genetic and demographic thresholds before considering genetic rescue for the Osprey Sedge cluster. Keywords: fencing; genetic isolation; FST; corridor remediation; saltmarsh"
+  },
+  {
+   "kind": "heading",
+   "text": "1. Introduction"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Pastoral expansion across the Saltmarsh Lowlands has altered the open sedge and saltmarsh habitat on which the Saltmarsh Lowland Crescent Kangaroo (Palaeomacropus cinctus lowlandensis) depends. Between 2008 and 2020, a network of pastoral-boundary fences was erected across Verrin Marsh, Lower Kestrel Flats, and Tallow Creek. The fences were intended to separate grazing leases from sensitive wetland, but their alignment followed property lines rather than drainage patterns. The result has been a hard fragmentation of the lowland crescent kangaroo population into five genetically isolated clusters: North Verrin, Tallow Creek, Brindlemead, Osprey Sedge, and South Kestrel."
+  },
+  {
+   "kind": "heading",
+   "text": "2. Genetic isolation"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Live-trapping and non-invasive scat genotyping conducted between 2016 and 2022 identified clear genetic divergence among these five clusters. Drayton et al. (2021) reported pairwise FST values of 0.11 to 0.19, with the Osprey Sedge cluster showing the lowest observed heterozygosity. The Lowland Fauna Unit (2023) estimated effective population sizes of 28 to 60 adults per cluster. Before the fencing program, Mbeki and Lorne (2013) recorded seasonal movements of up to 14 km between Tallow Creek and North Verrin during wet years. Those movements are now effectively blocked."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 1. A pastoral-boundary fence crossing the Saltmarsh Lowlands. Native sedge remains on the conservation side; the leased side is grazed and sown to exotic pasture. Photograph: Lowland Fauna Unit."
+  },
+  {
+   "kind": "heading",
+   "text": "3. Habitat consequences"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The habitat changes associated with fencing are both direct and indirect. Fences prevent access to ephemeral pools and patchy reed beds that provide forage and shade during late summer. Grazing pressure has become uneven, with heavy browsing on the leased side and rank, unburned sedge on the conservation side. Quill and Tarn (2017) noted that such discontinuity favours exotic pasture grasses over native saltmarsh couch. In the five isolated clusters, the occupied habitat is now smaller, more uniform, and less connected than the pre-fencing baseline."
+  },
+  {
+   "kind": "heading",
+   "text": "4. Remediation proposals"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Three corridor remediation proposals are under review. The first would establish 30 to 50 m fence setbacks along Tallow Creek and Osprey Sedge, with replanting of saltmarsh couch and clustered sedge. The second would install culverts and jump-outs at nine priority crossing points, allowing ground movement without opening grazing leases to broad access. The third would introduce a seasonal gate regime during the wet months, when movement between North Verrin and Brindlemead is most likely to succeed. A stepped corridor linking South Kestrel to Lower Kestrel Flats is also proposed, using existing drainage reserves as the alignment."
+  },
+  {
+   "kind": "heading",
+   "text": "5. Conclusion"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Remediation should be adaptive and monitored against clear genetic and demographic thresholds. Harwell and Osei (2019) recommend three years of baseline movement data before any assisted translocation is considered. Fence modification, revegetation, and seasonal gates are lower-risk first steps. If gene flow remains below the target after 2028, a limited genetic rescue program may be justified for the Osprey Sedge cluster. Until then, corridor restoration and landholder agreements offer the most practical route to reconnecting the five clusters."
+  },
+  {
+   "kind": "caption",
+   "text": "Table 1. Genetic summary of the five lowland clusters. Cluster Pairwise FST vs. others Effective population size (Ne) North Verrin 0.11–0.16 52–60 Tallow Creek 0.12–0.17 44–51 Brindlemead 0.13–0.18 38–46 Osprey Sedge 0.15–0.19 28–33 South Kestrel 0.11–0.16 41–48 Note. FST from Drayton et al. (2021); Ne estimates from the Lowland Fauna Unit (2023)."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Acknowledgements We thank the Lowland Fauna Unit and participating landholders for access to genotyping and movement data."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Data availability Genotype summaries are held by the Lowland Fauna Unit under a data-sharing agreement."
+  },
+  {
+   "kind": "paragraph",
+   "text": "References Drayton, K., Lorne, A., & Mbeki, P. T. (2021). Genetic structure of lowland kangaroo clusters after fencing. Conservation Genetics of the Southern Tablelands, 8(3), 201–219. Harwell, J., & Osei, K. (2019). Kangaroos of the Umbral Highlands: behaviour, ecology and conservation. Southern Mammalogy Press. Lowland Fauna Unit. (2023). Effective population size in five saltmarsh clusters. Lowland Fauna Unit Technical Report, 2023–04. Mbeki, P. T., & Lorne, A. (2013). Seasonal movements of lowland Crescent Kangaroos before pastoral fencing. Wildlife Management Review, 24(2), 88–101. Quill, A., & Tarn, J. (2017). Grazing discontinuity and exotic grasses in saltmarsh. Australasian Grassland Ecology, 12(1), 19–34."
+  }
+ ]
+}

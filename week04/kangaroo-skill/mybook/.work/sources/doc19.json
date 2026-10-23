@@ -1,0 +1,203 @@
+{
+ "id": "doc19",
+ "format": "docx",
+ "title": "Policy Timeline: The Highland Protection Framework (1998–2024)",
+ "sha256": "0d5f0940d879873832c3f20088aaba19d7d0a20cf577020d982358e1cc4d9f21",
+ "size": 2248276,
+ "mtime": 1792741725.4084835,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "OFFICE OF THE HIGHLAND POLICY AUDIT"
+  },
+  {
+   "kind": "meta",
+   "text": "REPORT OHPA-2024-12"
+  },
+  {
+   "kind": "meta",
+   "text": "Policy Timeline: The Highland Protection Framework (1998–2024)"
+  },
+  {
+   "kind": "meta",
+   "text": "Statutory and advisory instruments for Macropus highlandensis"
+  },
+  {
+   "kind": "meta",
+   "text": "Prepared by"
+  },
+  {
+   "kind": "meta",
+   "text": "Daniel A. Kwan and Priya N. Raghavan"
+  },
+  {
+   "kind": "meta",
+   "text": "Highland Wildlife Research Centre, Mount Kestrel, Australia"
+  },
+  {
+   "kind": "meta",
+   "text": "Institute for Conservation Genetics, Glenmora, Australia"
+  },
+  {
+   "kind": "meta",
+   "text": "June 2024"
+  },
+  {
+   "kind": "meta",
+   "text": "Ardnell"
+  },
+  {
+   "kind": "heading",
+   "text": "Executive summary"
+  },
+  {
+   "kind": "paragraph",
+   "text": "This timeline sets out the policy record for the Highland kangaroo from 1998 to 2024. It treats the Highland Kangaroo Protection Act, signed in 2019, as the central statutory milestone. Before 2019 the species was managed through advisory frameworks, guidance notes, voluntary compacts and monitoring partnerships, none of which carried enforceable duties. The entries below distinguish advisory instruments from statutory ones and note the documents that each superseded. The review confirms that the 2019 Act remains the central legal instrument and that pre-2019 measures were advisory in nature."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Keywords: policy; Highland kangaroo; statutory protection; advisory framework; timeline"
+  },
+  {
+   "kind": "heading",
+   "text": "Purpose and scope"
+  },
+  {
+   "kind": "paragraph",
+   "text": "This timeline traces the conservation policy record for the Highland kangaroo (Macropus highlandensis) across the Ardnell Highland and Corran Vale from 1998 to 2024. It treats the Highland Kangaroo Protection Act as the central statutory milestone. The Highland Kangaroo Protection Act was signed into law in 2019. Before that date, and throughout the preceding policy decade (1998 to 2019), the species was managed under advisory frameworks only."
+  },
+  {
+   "kind": "heading",
+   "text": "The advisory era, 1998–2016"
+  },
+  {
+   "kind": "paragraph",
+   "text": "1998. The Ardnell Conservation Advisory Council issues the first Highland Fauna Guidance Note, following Draycott's field survey of Macropus highlandensis in the Loch Brae basin. The note recommends seasonal grazing exclusions but carries no statutory force. Draycott, 1998, records fewer than 1,200 adults in the survey blocks."
+  },
+  {
+   "kind": "paragraph",
+   "text": "2002. The Corran Vale Wildlife Forum publishes Advisory Framework 2, which introduces voluntary road-speed reductions near Mount Kestrel. Mirenda and Kpodo, 2004, later describe compliance as uneven and note that no enforcement mechanism was available to the Forum."
+  },
+  {
+   "kind": "paragraph",
+   "text": "2006. A joint review by the Highland Ecology Panel concludes that advisory measures have stabilized some local populations but have not reversed habitat fragmentation. The panel recommends a statutory instrument. The recommendation is not adopted. The review is archived as an advisory document only."
+  },
+  {
+   "kind": "paragraph",
+   "text": "2008. The Highland Ecological Monitoring Unit is established as a voluntary partnership between the Ardnell Council and Corran Vale landholders. Its first report uses track counts to index Macropus highlandensis abundance and notes that advisory grazing exclusions improve ground cover in the Loch Brae basin. The unit has no regulatory authority, and its findings are forwarded to the Advisory Council as guidance."
+  },
+  {
+   "kind": "paragraph",
+   "text": "2011. Fennimore et al., 2011, map maternity sites in the Tarnwick scrub belt and report that protection depends on landholder cooperation. The Highland Landholders' Compact is signed as a voluntary code. It includes no penalty provisions and no statutory duty."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 1. A rural community meeting in the Ardnell district in the 1990s, of the kind that produced the early advisory frameworks. Pre-2019 instruments relied on landholder cooperation rather than statutory duty."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Photograph: Ardnell Shire historical collection."
+  },
+  {
+   "kind": "heading",
+   "text": "Toward legislation, 2016–2019"
+  },
+  {
+   "kind": "paragraph",
+   "text": "2014. The Advisory Council expands the Highland Fauna Guidance Note to include the eastern Corran Vale. The revision is described in council minutes as \"advisory in character.\" No legislative timetable is set. Conservation groups begin calling for a dedicated act."
+  },
+  {
+   "kind": "paragraph",
+   "text": "2016. The Highland Wildlife Liaison Office publishes a draft conservation strategy for consultation. The strategy recommends a statutory recovery duty, but the responsible minister describes it as a framework for discussion rather than proposed legislation. Harwell and Osei, 2019, later characterize the 2016 document as the last major advisory instrument before enactment."
+  },
+  {
+   "kind": "paragraph",
+   "text": "2017. Yarrow and Pell, 2017, estimate that Macropus highlandensis has declined by 18 percent since 1998 in the monitored transects. Their report informs a draft policy paper, but the draft remains a consultation document. The Highland Wildlife Liaison Office is created to coordinate voluntary stewardship agreements."
+  },
+  {
+   "kind": "heading",
+   "text": "Implementation under the Act, 2019–2024"
+  },
+  {
+   "kind": "paragraph",
+   "text": "2019. The Highland Kangaroo Protection Act is signed into law in 2019. The Act establishes a statutory species recovery duty, a permit system for land clearing within designated highland zones, and a fund for corridor restoration. The Act converts several advisory guidance notes into enforceable regulations. The Highland Kangaroo Protection Act was signed into law in 2019, marking the first binding statutory protection for Macropus highlandensis. The preceding policy decade (1998 to 2019) consisted of advisory frameworks only."
+  },
+  {
+   "kind": "paragraph",
+   "text": "2020. The Highland Kangaroo Recovery Board is appointed under the Act. Early implementation focuses on the Loch Brae corridor and the Tarnwick maternity sites. Baseline monitoring follows the methods of Yarrow and Pell, 2017, with additional camera-trap stations."
+  },
+  {
+   "kind": "paragraph",
+   "text": "2021. The first statutory permits under the Highland Kangaroo Protection Act are issued for land clearing near Mount Kestrel. The Recovery Board reports that permit conditions require retained vegetation buffers along maternity routes. Monitoring teams begin annual surveys at the Tarnwick and Loch Brae sites."
+  },
+  {
+   "kind": "paragraph",
+   "text": "2022. Tulloch and Nandi, 2022, review the first three years of implementation. They report improved compliance in permit areas but note that corridor restoration funding has reached only two of five priority zones. The Board issues its first statutory recovery report."
+  },
+  {
+   "kind": "paragraph",
+   "text": "2023. A mid-term audit finds that statutory permit conditions have reduced clearing in two priority zones, while voluntary agreements remain important outside designated highland areas. The audit confirms that the Act, not the earlier advisory frameworks, provides the legal basis for enforcement."
+  },
+  {
+   "kind": "paragraph",
+   "text": "2024. The Act is reviewed by the Highland Policy Audit Office. The review confirms that the 2019 statute remains the central legal instrument and that pre-2019 measures were advisory in nature. Current policy debate focuses on funding levels and corridor connectivity, not on the existence of statutory protection."
+  },
+  {
+   "kind": "caption",
+   "text": "Table 1. Policy instruments by legal status."
+  },
+  {
+   "kind": "table",
+   "text": "Period | Instrument | Status | Enforcement\n1998–2016 | Highland Fauna Guidance Notes | Advisory | None\n2002 | Advisory Framework 2 | Voluntary | None\n2008 | Highland Ecological Monitoring Unit | Partnership | None\n2011 | Highland Landholders' Compact | Voluntary code | No penalty\n2016 | Draft conservation strategy | Consultation | None\n2019–2024 | Highland Kangaroo Protection Act | Statutory | Permits; recovery duty"
+  },
+  {
+   "kind": "caption",
+   "text": "Note. Compiled from council minutes, departmental records and the Act's commencement instruments."
+  },
+  {
+   "kind": "heading",
+   "text": "Acknowledgements"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The Office thanks the Ardnell Conservation Advisory Council, the Corran Vale Wildlife Forum and the Highland Wildlife Liaison Office for access to archived minutes."
+  },
+  {
+   "kind": "heading",
+   "text": "Data availability"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Archived instruments are listed in the Office's public register."
+  },
+  {
+   "kind": "heading",
+   "text": "References"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Draycott, H. (1998). A survey of Macropus highlandensis in the Loch Brae basin. Ardnell Conservation Advisory Council, Fauna Survey 98–4."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Fennimore, A., Pell, J., & Kwan, D. A. (2011). Maternity sites in the Tarnwick scrub belt. Highland Ecological Monitoring Unit Report, 5."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Harwell, J., & Osei, K. (2019). Kangaroos of the Umbral Highlands: behaviour, ecology and conservation. Southern Mammalogy Press."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Mirenda, J., & Kpodo, E. (2004). Compliance with voluntary road-speed measures in the Corran Vale. Corran Vale Wildlife Forum."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Tulloch, R., & Nandi, S. (2022). The first three years of statutory implementation. Office of the Highland Policy Audit, Review 22–06."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Yarrow, B., & Pell, J. (2017). Decline of Macropus highlandensis in monitored transects, 1998–2017. Highland Wildlife Liaison Office."
+  }
+ ]
+}

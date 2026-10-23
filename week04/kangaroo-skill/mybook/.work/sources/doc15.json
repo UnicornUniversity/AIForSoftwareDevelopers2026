@@ -1,0 +1,151 @@
+{
+ "id": "doc15",
+ "format": "docx",
+ "title": "Hopping Gait Kinematics in Steep Terrain",
+ "sha256": "c0e98377ed6e580eac08940ac41d37e966564c80dc333a7ba90e6dec4872ebbe",
+ "size": 2600035,
+ "mtime": 1792741723.5154037,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "Journal of Comparative Physiology & Behaviour Vol. 46, No. 2, pp. 133–155"
+  },
+  {
+   "kind": "meta",
+   "text": "RESEARCH ARTICLE"
+  },
+  {
+   "kind": "meta",
+   "text": "Hopping Gait Kinematics in Steep Terrain"
+  },
+  {
+   "kind": "meta",
+   "text": "Tomasz Wierzbicki1*, Daniel A. Kwan1"
+  },
+  {
+   "kind": "paragraph",
+   "text": "1 Highland Wildlife Research Centre, Mount Kestrel, Australia"
+  },
+  {
+   "kind": "paragraph",
+   "text": "* Correspondence: Tomasz Wierzbicki, Highland Wildlife Research Centre, Mount Kestrel, Australia. Email: t.wierzbicki@hwrc.org.au"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Received 27 November 2022 · Accepted 19 April 2023 · Published 5 June 2023\nhttps://doi.org/10.5555/jcpb.2023.133"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Abstract"
+  },
+  {
+   "kind": "paragraph",
+   "text": "On 30° basalt slopes, Shadowtail Kangaroos reduce stride length by 42% and increase stride frequency from 2.1 to 3.4 Hz compared with level ground. Using high-speed video and force plates at Vellin Ridge, we show that this is a distinct kinematic regime rather than a scaled flat-ground gait. Peak Achilles force rises to 3.8 kN despite the shorter stride, tendon energy is stored over 78 ms and released over 54 ms, and duty factor increases from 28% to 41%. The tail is held near horizontal and generates a counterweight moment of 14 N m at mid-stance, reducing required hindlimb extensor torque by about 18%. We interpret slope hopping as an integrated elastic and caudal strategy that avoids the sustained quadrupedal gaits used by sympatric macropodids."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Keywords: biomechanics; slope hopping; tendon; tail; kinematics"
+  },
+  {
+   "kind": "heading",
+   "text": "1. Introduction"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Field studies of Notomacropus umbracaudatus, the Shadowtail Kangaroo, across the basalt outcrops of the Eastern Kestrel Range have documented a hopping gait that departs markedly from the saltatory pattern observed on level ground. On 30-degree slopes, animals reduce stride length by approximately 42 percent, from a mean of 2.7 m to 1.6 m, while increasing stride frequency from 2.1 to 3.4 Hz. High-speed video and force-plate records from the Vellin Ridge site (Harwell & Osei, 2019) indicate that this shift is not merely a scaling of the flat-ground gait but a distinct kinematic regime in which tendon pre-loading and caudal stiffening play central roles."
+  },
+  {
+   "kind": "heading",
+   "text": "2. Tendon pre-loading"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Tendon pre-loading is most evident during the braking phase that precedes each propulsive extension. As the animal contacts the inclined basalt, the ankle is held in greater dorsiflexion than on level terrain, and the plantaris and Achilles tendons are loaded before the metatarsophalangeal joint reaches its deepest yield. In vivo tendon-force estimates from surgically implanted buckle transducers (Menon & Fitch, 2014) show peak Achilles forces of 3.8 kN at 30 degrees, compared with 2.9 kN on flat ground, despite the shorter stride. This elevated pre-load is achieved through a more rapid onset of ankle extensor activity and a stiffer effective series elasticity, allowing the animal to store and return energy within a narrower contact window. The result is a compressed spring cycle in which tendon strain energy is accumulated over 78 ms and released over 54 ms, values that differ significantly from the 112 ms and 71 ms observed on horizontal trackways."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 1. Shadowtail Kangaroo ascending a 30° basalt slope at Vellin Ridge. The tail is stiffened and held near horizontal, while the shortened hop keeps the centre of mass close to the substrate."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Photograph: Vellin Ridge kinematics project."
+  },
+  {
+   "kind": "heading",
+   "text": "3. Stride kinematics"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Stride length reduction on steep basalt is accompanied by a decreased flight phase and an increased duty factor. At 30 degrees, the Shadowtail Kangaroo maintains ground contact for 41 percent of the stride cycle, compared with 28 percent on flat terrain. Forelimb use remains minimal, but the tail contacts the substrate intermittently during the first two hops of an ascent, a behavior not observed in level locomotion. The shorter stride does not reduce overall climbing speed; instead, it lowers the vertical oscillation of the center of mass and limits the impulse required to redirect the body along the incline. Kinematic analyses by Lindgren et al. (2003) attribute this pattern to a reduction in attack angle from 62 to 48 degrees and a corresponding decrease in the horizontal braking impulse at touchdown."
+  },
+  {
+   "kind": "heading",
+   "text": "4. The tail as counterweight"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The stiffened tail functions as a counterweight during these shortened hops. In N. umbracaudatus, the caudal vertebrae possess enlarged transverse processes and a dense ventral ligamentous sheath that increases passive tail stiffness by 2.4-fold relative to the flat-ground gait (Okafor and Reis, 2020). As the animal leans forward on the incline, the tail is held in a near-horizontal position and generates a caudal moment that opposes forward pitching of the trunk. Force measurements at the tail base indicate a counterweight moment of 14 N m during mid-stance, sufficient to reduce the required hindlimb extensor torque by approximately 18 percent. The tail also acts as a damped inertial appendage during the brief flight phase, limiting yaw and roll perturbations that arise from uneven basalt cooling joints."
+  },
+  {
+   "kind": "heading",
+   "text": "5. Discussion"
+  },
+  {
+   "kind": "paragraph",
+   "text": "These findings position the Shadowtail Kangaroo as a specialized slope hopper whose physiology integrates elastic tendon pre-loading, abbreviated stride kinematics, and active caudal stiffening. The combination permits efficient ascent of 30-degree basalt without the sustained quadrupedal gaits employed by sympatric macropodids. Whether the observed tendon pre-loading represents a fixed anatomical specialization or a context-dependent modulation remains unresolved; ongoing work at the Vellin Ridge site aims to distinguish between these alternatives using sonomicrometry and long-term accelerometry."
+  },
+  {
+   "kind": "caption",
+   "text": "Table 1. Gait and tendon parameters on level ground and 30° slopes."
+  },
+  {
+   "kind": "table",
+   "text": "Parameter | Level | 30° slope | Change\nStride length (m) | 2.7 | 1.6 | −41%\nStride frequency (Hz) | 2.1 | 3.4 | +62%\nDuty factor (%) | 28 | 41 | +13 pp\nPeak Achilles force (kN) | 2.9 | 3.8 | +31%\nEnergy storage / release (ms) | 112 / 71 | 78 / 54 | −30% / −24%\nTail counterweight moment (N m) | — | 14 | —"
+  },
+  {
+   "kind": "caption",
+   "text": "Note. Means from six adults; force estimates from buckle transducers, n = 3 individuals."
+  },
+  {
+   "kind": "heading",
+   "text": "Acknowledgements"
+  },
+  {
+   "kind": "paragraph",
+   "text": "We thank the Vellin Ridge station for slope access and the University of Kestrel engineering workshop for force-plate calibration."
+  },
+  {
+   "kind": "heading",
+   "text": "Data availability"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Kinematic trials and force records are available from the Highland Wildlife Research Centre."
+  },
+  {
+   "kind": "heading",
+   "text": "References"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Harwell, J., & Osei, K. (2019). Kangaroos of the Umbral Highlands: behaviour, ecology and conservation. Southern Mammalogy Press."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Lindgren, S., Osei, K., & Tan, H. (2003). Attack angle and braking impulse in inclined hopping. Journal of Biomechanics of the Southern Continents, 9(1), 55–72."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Menon, A., & Fitch, W. (2014). In vivo tendon forces during saltatory locomotion. Journal of Comparative Physiology & Behaviour, 37(2), 111–130."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Okafor, C., & Reis, M. (2020). Caudal stiffness and counterweight function in slope-hopping macropods. Journal of Comparative Physiology & Behaviour, 43(4), 401–419."
+  },
+  {
+   "kind": "paragraph",
+   "text": "© 2023 The Authors. Published under a CC BY 4.0 licence."
+  }
+ ]
+}

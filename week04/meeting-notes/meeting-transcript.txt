@@ -1,0 +1,512 @@
+MEETING TRANSCRIPT
+Project: Furniture Shop Management Software (Hartwood Furniture)
+Date: June 3, 2026
+Time: 10:00 AM - 12:45 PM
+Location: Conference Room B, Hartwood Furniture HQ / Hybrid (Greg dialing in remotely from Prague office)
+Recording: Authorized by all participants. Transcription performed by an automated service and lightly edited by Joanne for readability.
+
+Participants:
+- Joanne Carter (Project Manager) - "Joanne"
+- Greg Thompson (Lead Developer) - "Greg"
+- Mike Rodriguez (Sales Manager) - "Mike"
+
+Agenda distributed in advance:
+1. Introductions and recap of current operational pain points
+2. Technology stack decision
+3. Feature discussion: inventory, sales tracking, reporting, UI/UX
+4. Action items and ownership
+5. Conclusion and confirmation of next steps
+
+---
+
+[10:00 AM - Pre-meeting chatter]
+
+Joanne: Greg, can you hear us okay over the speaker? You sound a little echoey.
+
+Greg: Yeah, give me a second, I'm switching to the headset. Better?
+
+Joanne: Much better. Mike, can you close the door? The marketing team is having some kind of celebration in the hallway, I can barely hear myself think.
+
+Mike: On it. (door closes) There we go. Sorry, that's Linda's birthday cake. I had a slice on the way in, I can recommend it.
+
+Joanne: Noted. Alright, it is two minutes past, let's get rolling. I'm going to start the recording now. Everyone okay with that?
+
+Greg: Fine by me.
+
+Mike: Yep, no objection.
+
+[10:02 AM - Introductions and Context]
+
+Joanne: Alright everyone, thanks for making it on time. Let's get started. As you know, we're here to kick off the planning for the new management software for Hartwood Furniture. I'd like us to walk away from this meeting with a clear picture of the technology stack, the core features, and a list of action items with owners and dates. Before we dive in, let's do a quick round of introductions for the record - this transcript may end up in front of the owner and possibly outside contractors later, so let's make sure we're all properly named. I'm Joanne Carter, I'll be the project manager on this engagement. I've spent the last nine years running internal software projects, mostly in retail and hospitality. I joined Hartwood as a contractor about six weeks ago specifically to scope and run this initiative. Greg, you're up.
+
+Greg: Hey, I'm Greg Thompson, lead developer on the team. I've been writing software for about twelve years, mostly backend systems - the last five at a logistics company doing warehouse management software, which is honestly pretty close to what we're going to be building here. Before that I did a stint at an e-commerce platform doing pricing and promotions infrastructure. I'll be heading up the technical side of this project. I'm dialing in from Prague today, but I'll be on-site in Manchester one week out of every three for the duration of the project.
+
+Mike: And I'm Mike Rodriguez, sales manager at Hartwood Furniture. I've been with the shop for seven years now, started on the showroom floor, worked my way up. I'm not a tech person, I want to put that out there up front, but I'm the one who keeps banging the drum that we desperately need a better system. Right now we're juggling three different spreadsheets, a paper ledger that lives in the back office, and an old Access database that nobody really knows how to maintain. It's a nightmare, frankly, and it costs us money every single week.
+
+Joanne: Great. So, Mike, before we get into the weeds on technology and features, can you give us a more thorough recap of what's actually broken with the current setup? Greg's seen the executive summary, but I think hearing it from you in detail will help us prioritize correctly.
+
+Mike: Absolutely, happy to. Let me walk through a typical week and you'll see why I'm pulling my hair out. So, the biggest pain point is inventory. We have stock spread across our showroom in the city center, our main warehouse in Stockport, and a smaller overflow warehouse out by the airport that we use for clearance items and seasonal stock. Right now there is no single source of truth for what's where. A customer walks in on a Saturday afternoon and asks if we have a particular sofa - say the Ashbourne three-seater - in oak with the linen upholstery. The salesperson opens up the showroom inventory spreadsheet, doesn't see it, then has to pick up the phone and call the warehouse. Whoever answers the phone has to walk over to the section, physically check, and call back. Sometimes it takes twenty minutes. Sometimes the warehouse staff are at lunch and nobody answers. We have lost sales over this, repeatedly. I had a couple last month walk out and buy from our competitor downtown because we couldn't tell them whether we had the item in the finish they wanted.
+
+Joanne: That's a significant problem. Keep going.
+
+Mike: Sales tracking is also a mess. We use one spreadsheet for the showroom transactions, another for orders that come in over the phone, a third for the trickle of online orders that come through our basic website, and the website orders we then have to manually copy into the showroom spreadsheet because that's where the inventory deductions happen. We reconcile manually at the end of every week. My colleague Priya spends most of her Friday afternoons on it. We've found discrepancies before - times when the same SKU was sold twice because the warehouse hadn't been told the showroom item was already promised to a delivery customer.
+
+Greg: That's a classic concurrency problem. Without a single system holding the truth, two channels can sell the same physical unit independently, and you only find out when one of them can't be fulfilled. It's exactly the kind of issue a centralized inventory model fixes.
+
+Mike: Right. And then reporting. Forget it. The owner, Mr. Hartwood himself, asks me on Monday morning what last week's top sellers were, what the margin looked like by category, how the showroom compared to phone orders, and I'm spending two hours every Sunday night putting together a PowerPoint. I do my best, but there are weeks where I know the numbers I'm presenting are slightly off because of the reconciliation issues I just mentioned. He's noticed. He hasn't said anything sharp about it, but I can tell he's noticed.
+
+Joanne: Anything else? Customer-facing?
+
+Mike: Yeah, customer history is another one. A repeat customer comes in - and we have a lot of repeat customers, furniture's a relationship business - and the salesperson has no way to look up what they bought before, what their preferences are, whether they're on any kind of payment plan, anything. We have a card index system in the back office, and I'm not joking, an actual physical card index system that one of the older staff still maintains. It's lovely, in a sort of charming antique way, but it's useless for anyone who didn't grow up with it.
+
+Greg: That's a customer relationship management feature, then. We should think about whether the new system includes a CRM module or integrates with an existing one. There are some good open-source options.
+
+Joanne: Let's hold that thought - it's important but it might be a v2 thing. Okay, that's helpful context, Mike. So we have what I'm hearing as four buckets: inventory management, sales tracking, reporting, and customer history. And underneath those there are crosscutting concerns: data accuracy, real-time visibility, and reducing manual reconciliation work. Let's keep that framing as we go through the rest of the meeting. Anything to add before we move on?
+
+Mike: I think that's the meat of it. There are a hundred small annoyances I could rattle off but those are the big four.
+
+Greg: Useful framing, Joanne. I'd add one more crosscutting concern, which is auditability. For a furniture shop dealing with deposits and installments and large transaction values, you want to be able to look back at any record and see who created it, who modified it, when, and what the previous values were. That's important for both internal accountability and for any kind of dispute resolution with customers.
+
+Joanne: Good point. I'll add audit trail to the crosscutting concerns list. Alright, let's move on to the technology stack discussion.
+
+[10:18 AM - Technology Stack Debate]
+
+Joanne: Greg, I know you've been thinking about the technical side since I sent you the brief two weeks ago. What's your take on the stack?
+
+Greg: Yeah, I've put a fair amount of thought into this, and I've also bounced it off a couple of senior engineers I trust who don't have any skin in the game. My recommendation is Python with Django for the backend. Let me explain the reasoning. First, Django gives us a really mature, battle-tested ORM. The kinds of queries we'll be doing - inventory lookups, joining sales to customers to products to variants, filtering and aggregating for reports - these are exactly what the Django ORM is good at. Second, the Django admin interface is something we get almost for free, which is huge for an internal tool like this. From day one we'd have a working back-office UI that the owner and the office staff can use to do CRUD operations, run searches, do bulk edits. Building that ourselves would take weeks. Third, the Python ecosystem for reporting and data manipulation is unbeatable. Pandas, NumPy, ReportLab for PDF generation, Matplotlib for charts if we need static images, and a whole ecosystem of integrations with BI tools. Fourth, if we ever want to add forecasting, demand prediction, or recommendation features down the line - and Mike, that's something I think you'd benefit from, predicting which lines are about to run low based on historical sell-through - we're already in the right ecosystem. Switching languages later is painful. Fifth, the security story. Django takes security extremely seriously. CSRF, SQL injection protection, secure password hashing, all baked in. For a system that holds customer financial information, that matters. So that's my pitch: Django for backend.
+
+Mike: I have to push back on that, Greg. Now, hear me out, because I know I'm not a developer - I want to put that disclaimer up front again - but I've been doing some reading. I've been talking to a couple of friends, I've been on Reddit, I've been on Hacker News, even, and everything I'm seeing says JavaScript, Node.js, that whole world is where things are moving. My nephew works at a startup in Berlin and they use Node for everything, top to bottom. He says it's faster, the same language on frontend and backend, easier to hire for, more modern. Why are we picking what feels like, I don't know, a slightly older option?
+
+Greg: It's a fair question and I want to address it directly rather than dismiss it, because there are some real points hidden in there. Let me unpack. "Faster" - this is the one I'd push back hardest on. Node.js is fast at handling many simultaneous network connections because of its event loop. That's why it's popular for chat applications, real-time dashboards, streaming APIs, that kind of thing. But for a CRUD application with reporting, which is what we're building, the bottleneck is almost never the application server. It's the database. And whether you're talking to PostgreSQL from Python or from Node, the database is the database. The performance difference between a well-written Django app and a well-written Node app for our workload would be measurable in microseconds per request, which is meaningless for human users.
+
+Mike: Okay, that's fair, I'll concede the speed point.
+
+Greg: "Same language on frontend and backend" - this is the one with the most truth to it. There is a real ergonomic benefit when your frontend developers and backend developers can read each other's code easily. But in practice, even Node teams use TypeScript on the frontend and TypeScript on the backend, and the libraries are different, the conventions are different, the testing tools are different. So the savings are smaller than they sound. And the cost is that you give up Django's admin, you give up the Python data ecosystem, and you take on a backend ecosystem that frankly has a lot more churn. Express was the standard, then it was Koa, then Nest, now it's Fastify or whatever's trendy this month. Django has been Django since 2005.
+
+Mike: But about the frontend - if we go Django, aren't we stuck with old-school server-rendered pages? Our staff are going to expect something that feels modern, like the apps on their phones. The owner uses an iPad more than a desktop these days, and he's spoiled by good apps.
+
+Greg: That's a fair point and it's actually a really common misconception about Django. Django can absolutely be used as a pure REST API backend with a modern JavaScript single-page application on top. We'd use Django REST Framework, which is a kind of de-facto standard add-on, and on the frontend we'd build a React application - or Vue, or Svelte, I'm flexible there. The user would never know what's running on the server. The interface would feel as modern as anything they use on their phone. I'm absolutely not proposing we render everything server-side like it's 2010.
+
+Mike: Okay. Now we're talking. Why didn't you say that in the first place?
+
+Greg: I should have led with it. My fault.
+
+Joanne: Let me jump in here. It sounds like the real question isn't Python versus JavaScript wholesale - it's about the backend specifically, and the frontend question is actually orthogonal. Greg, what if we split the decision: Django for the backend and React for the frontend? Mike, would that address your concerns about the user experience feeling modern?
+
+Mike: I mean, if the user-facing part feels good, I genuinely don't care what's running underneath the hood. It's like a car. I don't care what brand the alternator is. I just want it to start every morning and not break down. I just don't want us to ship something that feels like a 1998 government website. Or worse, a 2005 government website, those are the really sad ones.
+
+Greg: Understood. And that's exactly what I was going to propose. Django REST Framework on the backend, React with TypeScript on the frontend. We get the best of both worlds. The hiring concern is also less of an issue because Django and Python developers are still very much available - there are more Python developers in the world than ever - and our frontend will be in JavaScript regardless, so any frontend hire will be familiar with the React side. The team profile would be one or two backend Python engineers, one frontend engineer, and a part-time designer.
+
+Mike: Alright, I'm convinced. With one caveat: when you say Python developers are easy to hire for, are you talking about Manchester specifically? Because last time we tried to hire a developer locally it took four months.
+
+Greg: That's a fair concern. The honest answer is that hiring is hard everywhere right now, but Python is one of the most-used languages in the country, and Manchester has a reasonable tech scene. I think we'd struggle as much hiring a Node developer as we would a Python developer. The real lever is whether we're open to remote candidates, which is a separate conversation.
+
+Joanne: I think we're getting into the weeds on hiring. Let's table that for the staffing discussion which I'm planning for next week. Coming back to the decision - I'm hearing alignment on Django REST Framework for the backend, React with TypeScript for the frontend. Greg, can you put together a one-pager justifying that choice that we can share with the owner? I want to make sure we have a paper trail on this decision in case anyone questions it later, including future you in twelve months when you've forgotten why we made it.
+
+Greg: Will do. I'll have it ready by Tuesday. I'll also include a brief on what we're explicitly choosing not to do - so, not Node, not PHP, not .NET - and the reasoning, so the owner doesn't get pitched on something else by a friend at the golf club and wonder why we didn't consider it.
+
+Joanne: Perfect, that's exactly the kind of context he'll appreciate. One more question for you, Greg - what about the database? PostgreSQL?
+
+Greg: Yes, PostgreSQL, full stop. It's the obvious choice and there's nothing in our requirements that pushes us toward anything else. Excellent JSON support if we ever need it, great full-text search, robust transactions, very mature tooling. It's what I'd pick for ninety-five percent of projects, and this one is squarely in that ninety-five.
+
+Joanne: And hosting?
+
+Greg: Let's defer that. I'd rather think about hosting once we have a clearer picture of expected load, data residency requirements - if we're going to store customer data we want to confirm with the owner whether everything has to stay in the UK, which has implications for hosting choice - and budget. I'd put it on the next-meeting agenda.
+
+Joanne: Agreed. Adding hosting to next agenda. Alright, I think we're done with the stack. Let's take a five-minute break. Mike, while you're up, can you grab the printout of the wishlist that's sitting on my desk?
+
+Mike: Sure thing.
+
+[10:48 AM - Five minute break]
+
+[10:53 AM - Feature Discussion]
+
+Joanne: Okay, we're back. Let's move on to features. Mike, you mentioned three buckets at the start - inventory, sales tracking, reporting - plus the customer history piece that came up. Let's go through each in order. Starting with inventory, what's the wishlist?
+
+Mike: Top of the list, and I cannot stress this enough: real-time stock visibility across all three locations. Anyone in the showroom should be able to pull up an item and see exactly what's where, down to the unit. If a customer asks about the Ashbourne sofa in oak with linen, the salesperson should be able to type the SKU or scan a barcode and see "two in showroom, four in Stockport, zero in airport overflow," and that information should be accurate to within the last few minutes.
+
+Greg: That's doable. The implementation pattern is straightforward - every location has its own inventory record per SKU, every transaction that affects stock - sales, transfers, returns, adjustments - is logged with a location, and the current count is the sum of those movements. We'd want to use database transactions to make sure concurrent updates don't corrupt the count.
+
+Mike: Second item: low-stock alerts. Right now we run out of things and don't realize until a customer asks for it. By that point we've lost the sale. I want the system to flag items that are below a threshold - and ideally a smart threshold, because some items are slow movers where one in stock is fine, and others are fast movers where one in stock means we're already too late.
+
+Greg: We can do simple thresholds at first - per-SKU minimum, configurable - and add velocity-based smart thresholds in v2. That's the kind of place where the Python ecosystem we talked about earlier earns its keep. We'd compute trailing thirty-day or sixty-day sell-through and recommend a reorder point.
+
+Mike: Music to my ears. Third: variants. We need to track variants properly - same parent product, three fabric choices, two leg finishes, different sizes. The current spreadsheet just lists them all as separate items with cryptic SKUs, which is why our SKU list has, I think, over four thousand entries when in reality we sell maybe nine hundred distinct products.
+
+Greg: That's important from a data modeling perspective. We'll need a product-variant structure - parent products with child SKUs, where the parent holds the marketing description, the photos, the category, and each child holds the specific combination of options and the SKU and the per-variant price if it differs. Standard pattern but worth flagging early because it ripples through everything else - reporting needs to be able to roll up to parent or drill into variant, inventory holds at variant level, sales reference variant.
+
+Mike: Yes, exactly. Sometimes the owner wants to know how the Ashbourne is selling overall, sometimes he wants to know which specific finish is the dog. Both views need to work.
+
+Joanne: Let's also flag - what about products that aren't furniture? Cushions, throws, candles, the impulse-buy stuff at the front?
+
+Mike: Good catch. Yes, we sell about eighty-thousand pounds a year of accessories, and they have totally different characteristics. Smaller, faster-moving, fewer variants, higher margin. The system needs to handle them. They shouldn't get bolted on as an afterthought.
+
+Greg: They'll fit the same data model, just with simpler product trees. Most accessories will be a parent with one variant. The reporting will need to be smart enough to allow filtering by product type so the accessories don't drown out the furniture analytics or vice versa.
+
+Mike: Yes, and the owner specifically wants to see accessories as a separate line in the weekly summary. He's been pushing the accessories category as a margin play and he wants to see it tracked.
+
+Greg: Easy. We'll have a top-level product category dimension and the dashboard will support breakdowns by it.
+
+Mike: Also, barcode scanning. The warehouse guys have been begging for this. They want to scan items in and out instead of typing SKUs. Right now they read off the SKU from a printed sheet and type it into the spreadsheet, and they make mistakes constantly because the SKUs are these eighteen-character monstrosities.
+
+Greg: Absolutely doable. We can support that through a mobile-friendly web view that the warehouse staff use on a phone or tablet, plus standard USB barcode scanners on the warehouse PCs - those just behave like keyboards, so you scan and the SKU appears in the input field. We don't need a native mobile app for v1. The only real decision is what symbology we use - I'd recommend Code 128 for SKU barcodes, it's compact and reliable.
+
+Mike: I have no idea what that means but I trust you. One thing on the labels - some of our furniture, especially the upholstered pieces, has fabric tags rather than hard surfaces. We've struggled to attach barcodes to those reliably. Stickers fall off in storage.
+
+Greg: Good practical concern. Two options. One, we use hang tags with the barcode that attach via a plastic loop - same as you see on retail clothing. Two, for the warehouse-facing barcode we put it on the protective wrapping, which the warehouse staff scan on receipt and the warehouse-floor scans for transfers, and we don't worry about a long-term barcode on the item itself because once it's sold and delivered we don't need to scan it. I'd lean toward option two for upholstery and option one for hard goods. We can pilot both with Dave and Steve and see what sticks - so to speak.
+
+Mike: Good. The wrapping idea is sensible. They've already been talking about doing that informally.
+
+Greg: Just standard barcode format. The labels we'd print in the warehouse will look essentially identical to what they're used to, just in a format that scans more reliably.
+
+Joanne: What about stock transfers between locations?
+
+Mike: Yes, that's a feature. We move stock between warehouse and showroom probably twenty times a week, sometimes more if there's a delivery vehicle going that way anyway. Right now we update both spreadsheets manually. We need a workflow where you initiate a transfer at the source, scan the items out, and at the destination someone scans the items in and the transfer is closed. With a record of who did what and when.
+
+Greg: That's a classic transfer workflow. We'll model it as a transfer record with line items and a status - initiated, in transit, received, partially received, cancelled. That gives us full audit trail and handles the case where something gets lost in transit.
+
+Mike: And returns. Customers return things sometimes. Not often with furniture, but it happens. The item needs to come back into stock, possibly into a "returned" sub-status if it's been used and we need to inspect it, and the original sale needs to be linked to the return.
+
+Greg: Returns will be modeled as a separate transaction type linked to the original order. We'll have a flag on the inventory record for condition - new, returned-as-new, returned-needs-inspection, damaged - so you can track and price separately.
+
+Mike: Good. One more inventory thing: deliveries. When new stock arrives from suppliers, the receiving process today is "guy with a clipboard ticks things off." We want a proper goods-receipt workflow. Compare what was delivered to what was ordered, flag discrepancies, route to accounts payable.
+
+Greg: That implies we're also tracking purchase orders, which is creeping into ERP territory. Worth doing, but I'd put it as v1.5 or v2, not v1, because the supplier side is its own complexity.
+
+Joanne: Agreed, let's note it but not block on it. Goods receipt v2. One thing to check - do we have any compliance obligations on the supplier side? Country-of-origin labeling, fire safety documentation for upholstery?
+
+Mike: Yes, fire safety is the big one. Every upholstered item we sell has to come with a fire safety label, and we have to retain documentation showing it was manufactured to current UK regulations. Right now we have a filing cabinet full of paper certificates, organized poorly.
+
+Greg: That's a document management requirement. We can attach documents to product records and to goods receipts, store them in cloud storage, and link them appropriately. v1 or v1.5 depending on bandwidth.
+
+Mike: v1 if possible. The filing cabinet is a liability. If we ever got audited and couldn't find a certificate quickly, we'd be in real trouble.
+
+Greg: Bumping document attachments to v1, scoped tightly - upload, view, link to product or order or goods receipt, simple metadata. No editing or workflow.
+
+Joanne: Okay, moving on. Sales tracking?
+
+Mike: Every transaction in one place, regardless of channel - showroom, phone orders, online orders. Linked to the customer record so we can see purchase history. Commission tracking for the sales staff - that's a big one, the team will love that. Right now I calculate commissions manually each month and I always feel like someone is being short-changed by accident.
+
+Greg: Commission tracking - we'll need rules. Are commissions a flat percentage, or do they vary by product category, or by margin, or by salesperson tier?
+
+Mike: All of the above, frankly. Furniture is at six percent of margin. Accessories at three percent of revenue. Senior salespeople get an extra half-percent. And there are occasional promotions where commission is doubled on certain lines. It's a mess.
+
+Greg: Okay. So we need a configurable rules engine for commissions, which is more complex than I initially thought. Let me put a pin in this and design something that supports the current rules and is flexible enough for variations. I might propose a simplified v1 - just the standard rules without the promotional doubling - and add complexity in v1.5.
+
+Mike: That's reasonable. The promotional doubling is rare enough that I can adjust it manually.
+
+Joanne: Continue.
+
+Mike: One nuance on commissions I should flag - we sometimes have team sales. A customer comes in, gets handed off between two salespeople because the first one was on a break, and the sale closes with the second. The team has an informal split arrangement but it varies. We need a way to record split credit on a sale.
+
+Greg: Split commission is doable. We'd allow multiple salesperson attributions per sale with percentage weights that have to add to a hundred. Default would be a single salesperson at one hundred percent. The salesperson on the floor can adjust at the time of sale, with the manager approving anything unusual. It adds a bit of UI complexity but the data model is clean.
+
+Mike: Good. Another wrinkle - returns affect commission. If a sale is fully refunded within thirty days, the salesperson loses the commission. If it's after thirty days, it's a judgment call by me. The current system is "I remember and I adjust the spreadsheet." I'd rather have the system automate the within-thirty-days clawback.
+
+Greg: Clawback rules can live alongside the commission rules. I'll model it as a configurable rule with a time window and an automatic flag, and we'll have an override for your discretionary cases.
+
+Mike: We need to handle deposits and partial payments, because furniture often gets paid for in installments. A customer puts down twenty percent on a five-thousand-pound dining set, picks up the matching chairs four months later, pays the balance on delivery. The system needs to know what's been paid, what's outstanding, when payments are due, and ideally generate reminders.
+
+Greg: Deposits and installments add real complexity around how we represent a "sale." It's not a single transaction, it's potentially a series of payments tied to one order, plus the order itself has a fulfillment lifecycle - quoted, deposit-taken, in-production, ready-for-delivery, delivered, complete. We should design for this from day one rather than retrofitting later. Retrofitting payment plans onto a single-transaction model is genuinely painful, I've seen it go wrong twice.
+
+Joanne: Okay, that's good to flag. Greg, please make sure the data model in your draft for next week explicitly handles this.
+
+Greg: Will do.
+
+Mike: Customer-side: every order linked to a customer. Customer record holds name, contact details, address - usually multiple addresses for delivery - notes, preferences, communication history. When a customer comes in, the salesperson types the name and pulls up everything we know.
+
+Greg: That's a CRM feature, and it's straightforward. We'll have a Customer entity, addresses as a one-to-many, notes as a free-text log with timestamps. We'll need to think about GDPR - customer data has retention rules and right-to-erasure obligations.
+
+Mike: Yes, GDPR. We had a consultant in last year who flagged a bunch of issues. The card index system is one of them, ironically - because the cards are uncontrolled, anyone can pull one out, photograph it, walk away with it. The consultant said a digital system with proper access controls would actually improve our posture, not worsen it.
+
+Greg: That tracks. Well-implemented digital systems are easier to audit and easier to lock down. We'll need to think specifically about: lawful basis for processing, which is contract performance for most of what we'd do; retention periods, where I'd suggest a default of seven years for transactional data to align with HMRC requirements and a shorter period for marketing data; data subject rights, including export and erasure, which we'd implement as functions in the admin area for now and possibly as a self-service portal later; and breach reporting, which is a process question more than a technical one.
+
+Mike: The consultant's report is in a folder on my desktop. I'll forward it to both of you so we're working from the same baseline.
+
+Joanne: Thanks. Forward it today if you can.
+
+Mike: Will do.
+
+Joanne: Greg, please put GDPR considerations into your one-pager too. Specifically, we need to confirm with the owner how long we retain customer data, what we expose for self-service erasure if anything, and where the data is stored - which ties back to the hosting question.
+
+Greg: Adding it to the list.
+
+Mike: Sales channel: the system needs to record which channel a sale came from. Showroom, phone, online, trade show. We have a small annual trade show presence and orders that come from there have different commission rules.
+
+Greg: Channel as an attribute of the order, fine.
+
+Mike: Discounts. Salespeople can give discounts up to ten percent at their discretion. Anything bigger needs my sign-off. Right now that's an honor-system thing where they're supposed to call me. The system should enforce it.
+
+Greg: Approval workflow for discounts above a threshold. Standard. We can do that.
+
+Mike: Trade pricing too. We have about thirty trade accounts - interior designers, small hospitality businesses - who get a negotiated discount that varies by account. Some get fifteen percent, some get twenty-two, one or two have margin-based deals. The current system is a printed sheet I keep in my desk drawer that I refer to when one of those customers calls.
+
+Greg: Account-specific pricing is a well-understood pattern. We'll add a price-list concept on the customer record, defaulting to the standard list, with overrides per account. The salesperson will see the trade price automatically once the customer is identified. We can also support contract-style pricing for specific SKUs at specific accounts if any of the bigger trade accounts negotiate that.
+
+Mike: One does. Bramble & Co, the interior designer down on King Street, has fixed pricing on three of our staple lines because she buys in volume. So yes, that's needed.
+
+Greg: Noted. Customer-level price list with optional SKU-level overrides.
+
+Mike: And quotes. Sometimes customers ask for a written quote that's good for thirty days. Right now we use a Word template. I'd love a quote module that generates a PDF, holds the quote in the system, and converts to an order when the customer accepts.
+
+Greg: Quote-to-order is a clean feature. We model a quote as a record similar to an order but with a status of "quote" and an expiry date. When accepted, it converts. Nice and tidy. We can also let customers accept quotes via a unique link that we email to them, which sidesteps the back-and-forth of "did you decide on the quote yet" phone calls. Optional for v1.
+
+Mike: I'd like that for v1 if it's not too expensive. The phone tag on quote acceptance is genuinely a problem.
+
+Greg: Adding the email-accept flow to v1 then. Implementation cost is small once the core quote module exists.
+
+Mike: Delivery scheduling - I'm not sure if that fits here or in a separate system, but we currently use a paper calendar in the warehouse to schedule the delivery van. Customer buys, we agree a delivery window, the warehouse manager pencils it in. We need this digitized eventually.
+
+Greg: That's adjacent to the order system but it's its own scheduling problem. I'd put basic delivery date capture in v1 - the order has a planned delivery date - and proper scheduling, route optimization, driver assignment, capacity management, in v2 or possibly as a separate system that integrates with this one. Don't want to bite off too much.
+
+Mike: Agreed, basic capture is fine for v1.
+
+Joanne: Reporting?
+
+Mike: Daily sales summary - revenue, units, by channel, by salesperson. Weekly top sellers - by revenue, by units, by margin. Monthly revenue by category, by location. Inventory turnover - how fast each SKU is moving. Aging stock - things sitting too long, especially anything over ninety days because that's when we want to start considering markdown. The owner wants a dashboard he can look at on his phone in the morning with coffee, and he wants the same dashboard on his iPad on the train.
+
+Greg: For the dashboard, we'll want to think about caching. We don't want him hitting the database with heavy aggregations every time he refreshes his phone every ten minutes. We can pre-compute the daily summaries on a schedule - say every fifteen minutes during business hours - and serve those from a cache. But that's an implementation detail we can sort out later.
+
+Mike: He'll also want export. Every report should be exportable to Excel, because his accountant lives in Excel and there's no changing that.
+
+Greg: CSV and Excel export from every report, fine.
+
+Mike: Some custom reports as well. He occasionally asks for things like "all sofa sales above three thousand pounds in the last six months grouped by salesperson and including the customer's previous purchase history." It's hard to anticipate every report he'll ever want.
+
+Greg: There's also a class of report that I'd call "investigative" - the owner sees a number that surprises him on the dashboard and wants to drill into it. Why was Wednesday's revenue half of Tuesday's? Was it a quiet day, or did one big sale fall through, or did a salesperson call in sick? That kind of question needs ad-hoc analysis, not a pre-built report.
+
+Mike: Yes, that happens constantly. He calls me at eight in the morning asking why a number looks the way it does, and I have to go figure it out before I've had my coffee.
+
+Greg: Then we should give him a flexible reporting tool, not just a fixed set of reports. There are two ways to do this. One, build a custom report builder UI - drag and drop fields, filters, grouping. That's a lot of work. Two, integrate with an off-the-shelf BI tool like Metabase or Superset, both open-source, which connect directly to our database and let him build any report he wants. I'd strongly recommend option two for v1.
+
+Mike: He's not a SQL guy.
+
+Greg: Neither tool requires SQL. They have point-and-click query builders that are designed for non-technical users. I'd suggest Metabase specifically - it has the gentlest learning curve.
+
+Joanne: Let's pencil in Metabase and confirm with the owner. I'll show him a demo before our next meeting.
+
+Mike: Audit reporting is important too. Who changed what, when. Especially for financial entries - if a payment is recorded then later edited, we need a record of the change.
+
+Greg: Audit trail is on the crosscutting concerns list from earlier. We'll implement it as a system-wide change log on key entities.
+
+Joanne: One more thing on the UI side - we haven't really talked about look and feel. Mike, do you have a preference?
+
+Mike: Clean. Lots of white space. Big readable numbers on the dashboard. I'd love it to feel like the Stripe dashboard, honestly. Calm, professional, not cluttered, doesn't feel like it's trying to sell me anything. The cardinal sin would be making it look like the airline check-in kiosks - all chunky buttons and primary colors and animations that don't help anyone. Just give us something that looks like it was made in this decade.
+
+Greg: That's actually a really helpful reference. Stripe's design system is well-documented and there are open-source UI libraries that capture a similar aesthetic. I'll share that reference with whoever ends up doing the design work.
+
+Joanne: Speaking of which - we don't have a designer on this project yet. I'll talk to the owner about either hiring a freelancer for the initial design system or licensing a UI kit. There's a tradeoff: a freelancer gives us bespoke design, a UI kit gives us speed. For an internal tool I lean toward UI kit, but I want to discuss with the owner because he may have aesthetic preferences I don't know about.
+
+Greg: Even with a UI kit we'll want some custom touches - the dashboard, the login, key screens. So a hybrid - kit for the boring stuff, light bespoke for the visible stuff - might be the sweet spot.
+
+Joanne: Noted. Adding to my action items. What about accessibility?
+
+Greg: Good question. As an internal tool we don't have legal accessibility obligations the way a public-facing site might, but we have one staff member who I know wears bifocals and another who is colorblind - Mike, you mentioned Steve has trouble distinguishing some of the status colors in the current spreadsheet. So we should follow basic accessibility practices: sufficient color contrast, scalable text, keyboard navigation, screen reader friendliness. It's not much extra work if we bake it in from the start.
+
+Mike: Yes, please. Steve has been complaining about red-versus-green status indicators for as long as I've worked here.
+
+Joanne: Adding accessibility to the design brief. What about mobile? Will the staff use phones or tablets in the showroom?
+
+Mike: Tablets, mostly. Each salesperson carries an iPad on the floor - the owner sprung for them last year, one of his rare tech upgrades. They use them for showing customers product photos and looking things up. The ideal would be that the new system runs on those iPads beautifully. Phone is a nice-to-have for the warehouse and for the owner himself.
+
+Greg: Responsive web design covers both cases without a separate mobile app. We'll design tablet-first for the showroom workflows because that's where the system will be used most heavily, and we'll make sure phone use cases - quick lookup, dashboard glance, scanning in the warehouse - are first-class. No native iOS or Android app for v1, that's a separate investment if the demand justifies it later.
+
+Mike: That's fine. Native app is overkill for what we need.
+
+Joanne: Anything else on features?
+
+Mike: Internationalization? We have a small but growing trade business with customers in Ireland and France. The system being English-only is fine for the staff side, but customer-facing documents - quotes, invoices, delivery notes - in the customer's language would be nice eventually.
+
+Greg: Internationalization is one of those things that's much cheaper to bake in early than to retrofit. Even if v1 only ships in English, we'd build with translation in mind. Templates externalized, dates and currencies formatted properly, character encoding all UTF-8 from the start. Then adding French is a translation job, not an engineering job.
+
+Joanne: Smart. Add it to the principles. Anything else?
+
+Mike: Backups. I want to know that if my Mac dies tomorrow we don't lose everything.
+
+Greg: Backups are a hosting and operations concern. Once we settle on hosting, we'll have a full backup strategy with daily snapshots and point-in-time recovery. I'll cover it next meeting.
+
+Joanne: Good. Authentication?
+
+Greg: Standard - username and password to start, with strong password requirements and account lockout after failed attempts. We'll add SSO later if there's demand. Two-factor authentication for admin and finance roles, optional for others. Role-based access control - showroom staff can do sales but not adjust inventory counts, warehouse staff can do inventory but not see commissions, and so on.
+
+Mike: One subtle point before we move on - the salespeople should be able to see their own commission accruals in real time. That's a motivation thing. Right now they don't know what they've earned until I tell them at the end of the month, and that delay reduces the incentive effect. If they can glance at their dashboard and see "you've earned X this month so far," that pushes behavior in the right direction.
+
+Greg: Personal commission dashboard for each salesperson. Easy to add. We'd put it on their landing page when they log in. We'd need to decide whether they can see only their own number or whether there's some kind of leaderboard - those can be motivating but they can also be demotivating for whoever's at the bottom. That's a culture call, not a technical one.
+
+Mike: Their own number for v1. The leaderboard idea is interesting but I want to think about it. Some of our staff would love it, others would hate it.
+
+Joanne: A configurable preference might be the eventual answer - opt-in leaderboards. But yes, table it for v1.
+
+Mike: Roles, yes. We have a clear hierarchy and the system should reflect it. Mr. Hartwood sees everything, I see almost everything, salespeople see their own sales and customer records, warehouse staff see inventory.
+
+Greg: I'll draft a role and permission matrix in the next two weeks. Get your eyes on it before we build anything.
+
+Joanne: Good. One more thing on permissions - the owner is going to want a kind of "all-seeing" view, but he should not be the only person with admin rights. We need at least two admin accounts for continuity. If he's on holiday and a permission needs to change, we can't be stuck.
+
+Greg: Standard practice. At least two admin accounts, ideally three, with the second being you Joanne while you're running the project, and the third being someone designated long-term - probably Mike since he's senior management.
+
+Mike: Fine with me, as long as I get a clear written guide on what admin can do and what to avoid. I'm not going to be the one who deletes the database by accident.
+
+Greg: We'll set up admin so that destructive actions require confirmation, and irreversible actions like deleting customer records require a second admin to approve. Belt and braces.
+
+Joanne: Mike, anything else feature-wise that's been keeping you up at night?
+
+Mike: I think that's the meat of it. Like I said earlier, there are a hundred small annoyances I could rattle off but those are the big ones. I'll write them all up for the wishlist. I'll also try to put a rough business value on each so we can prioritize honestly rather than by the loudest voice in the room - which is usually mine.
+
+Joanne: Quantifying business value is exactly the right instinct. Even rough numbers - "this saves four hours a week" or "this would have prevented an estimated five lost sales last quarter" - help us argue for v1 scope versus v1.5. Don't overthink it, ranges are fine.
+
+Mike: Got it. I'll work with Priya on the harder ones - she has better data than I do on some of the operational stuff because she's the one doing the reconciliation work.
+
+Greg: One thing on Mike's wishlist - if anything seems "small" but is actually expensive to build, I'll flag it. And the reverse, where something sounds like a big ask but is actually a quick win because the data is already there. That kind of estimation back-and-forth is normal and healthy. Don't anchor too hard on first impressions.
+
+Mike: Understood. I'll keep an open mind on prioritization.
+
+Joanne: Greg, anything from the engineering side you want to flag before we move to action items?
+
+Greg: A few things. One: testing. I want to bake in automated testing from day one - unit tests, integration tests, and a small set of end-to-end tests covering the critical workflows. It will slow us down a tiny bit early on and save us enormous pain later. Two: monitoring. Once this thing is in production, we want to know within minutes if something breaks. I'll set up logging and a basic monitoring dashboard. Three: data migration. Mike mentioned spreadsheets and an Access database. Migrating that data into the new system is going to be a chunk of work in itself, and the data quality will be a problem - duplicates, inconsistencies, missing fields. We should plan for a dedicated migration phase rather than treating it as a side task.
+
+Mike: The Access database is going to be the worst. Half the columns have fields that say things like "Greg said he'd pay next Tuesday" instead of dates. There are customer records where the surname is in the first-name field. There are sales records with no salesperson because they were entered after-hours. There's a column called "Notes" that has been used for everything from delivery instructions to complaints to, and I'm not making this up, somebody's lunch order from 2019.
+
+Greg: Four: integrations. We haven't talked about whether the new system needs to talk to anything else. Accounting software, payment processors, email providers, the existing website. Each integration is a small project of its own. We should enumerate them now.
+
+Mike: Good question. We use Xero for accounting. The owner's accountant pulls a monthly export and reconciles. Ideally the new system pushes sales and refund data into Xero automatically.
+
+Greg: Xero has a solid API. Adding to the integration list. Not v1 must-have but high priority for v1.5.
+
+Mike: Payment processing - we use Stripe for online and a card terminal in the showroom for in-person. Stripe has been good. The terminal is a separate provider that just gives us paper receipts and a daily settlement summary, which we then reconcile manually.
+
+Greg: We can integrate with Stripe directly. The terminal is harder because it depends on the provider's API, if any. Worth flagging for the next meeting.
+
+Mike: Email - we send order confirmations and quote PDFs via Outlook today. Manually attached. Painful.
+
+Greg: We'll want a transactional email integration - SendGrid or Postmark or similar - so the system can send confirmations and reminders programmatically. Standard stuff.
+
+Mike: And the website - we have a Squarespace site that takes a small number of online orders. The orders come in by email and we copy them into the spreadsheet by hand.
+
+Greg: Squarespace integration is limited but workable. We'd probably set up an automation that pulls new orders from Squarespace into our system on a schedule. Or, more ambitiously, we replace the e-commerce part of the website with something that integrates natively. That's a bigger conversation though.
+
+Joanne: Bigger conversation, yes. Let's keep the website refresh out of scope for this project unless the owner specifically wants to bundle them.
+
+Greg: Agreed. Five, just to round out my list: we need to think about disaster recovery, not just backups. If the building floods and the office network is down, can the showroom keep selling? That's a question about offline capability, redundancy, and recovery time objectives. Not v1 but worth flagging now.
+
+Joanne: Good flag. Adding to the long list. Greg, please bring DR thinking to the next meeting alongside hosting.
+
+Greg: Will do. I'll do a data audit in the second sprint and produce a report on data quality issues. From that we'll decide which records to migrate clean, which to migrate with caveats, and which to archive without bringing into the new system. The default rule should be "migrate, with the original preserved in a 'legacy' field for any record where we had to clean up data, so we can always go back to the source if a customer challenges us." That's safer than discarding.
+
+Mike: That's wise. The owner has a long memory and he'll occasionally ask about a customer from years ago.
+
+Greg: One more migration concern - we'll need a quiet weekend to do the cutover, ideally a long weekend. Whatever the final approach, the actual switch from old to new system is best done when nobody is taking sales. Bank holiday weekend would be ideal.
+
+Joanne: I'll plan around that. Looking at the calendar, the August bank holiday weekend would be a sensible target if we're on track. I'll mark it provisionally and we'll firm up as the project progresses.
+
+Joanne: Good points all. Adding migration as an explicit project phase. Okay, let's wrap up with action items.
+
+[12:08 PM - Action Items]
+
+Joanne: I'll go around. Greg?
+
+Greg: I'll do the one-pager on the technology stack decision, including the alternatives we're explicitly not pursuing and the GDPR and data residency considerations Joanne raised. I'll draft an initial data model focused on the product-variant and order-payment-customer structures, plus a sketch of the inventory transaction log and the audit trail. I'll put together a rough estimate of effort for v1 - just a high-level breakdown, not a detailed plan, but enough to start the budget conversation. And I'll draft the role and permission matrix. I can have all of that by next Wednesday end of day. The data model will be in a shared drawing tool so you can both leave comments.
+
+Joanne: That's a lot for one week. Are you comfortable with it?
+
+Greg: It's a stretch but I'd rather front-load the thinking. The one-pager and the matrix are both relatively quick. The data model is the heavy item.
+
+Joanne: If you need to slip the matrix to the following Monday, that's fine. I'd rather you do the data model properly.
+
+Greg: Understood. I'll prioritize the model and let you know by Monday if the matrix needs to slip.
+
+Mike: I'll write up the detailed feature wishlist organized by priority - must-have for v1, nice-to-have for v1.5, future for v2 and beyond. I'll also pull together a list of all the data we'd need to migrate from the existing spreadsheets and the Access database, with rough record counts and known data quality issues, so Greg knows what he's dealing with going into the migration phase. End of next week. And I'll set up an introductory meeting between Greg and our warehouse manager Dave - he'll have strong opinions on the barcode workflow that we'll want to hear before Greg builds anything.
+
+Greg: That intro is important. I'd like to do a half-day site visit at the warehouse. Walk the floor, see the receiving process, watch a transfer happen, see a goods receipt. Mike, can you arrange?
+
+Mike: Yes, can do. I'll line that up for the week after next, when you're next in Manchester.
+
+Joanne: I'll handle the design question - either find a freelancer or pick a UI kit - by getting two or three options in front of the owner with rough costs and tradeoffs. I'll set up our project tracking in Jira. I'll book a demo of Metabase for the owner so we can settle the BI question. And I'll schedule a follow-up with the owner to walk him through what we've discussed today and get his sign-off on the stack decision, the GDPR posture, and the design approach. I'll also draft an initial project charter document - one page, project goals, scope, out-of-scope, key risks - and circulate it to both of you for comment. And our next team meeting will be two weeks from today, same time, same room. Sound good?
+
+Greg: Works for me. One small request - can we make the next meeting a bit longer, say two and a half hours? We have hosting, deployment, backups, security, and the warehouse manager joining, all of which will need real airtime.
+
+Joanne: Good call, two and a half hours it is. I'll send a calendar update.
+
+Mike: Yep, all good for me too.
+
+Joanne: Anything we're forgetting?
+
+Greg: Budget. We haven't talked about it at all today. I assumed you'd raise it with the owner.
+
+Joanne: I will. He's given me a verbal range but I want to nail it down before we commit to scope. I'll have firm numbers by next meeting.
+
+Mike: One thing from me - the existing staff. We need to plan for training. The last system rollout we did, which was the Access database actually, was a disaster because nobody trained the staff and they kept doing things the old way. We should bake in training time and probably a parallel-run period where the new system runs alongside the old before we cut over.
+
+Joanne: Excellent point. Adding change management as a workstream. I'll draft a high-level approach and bring it to the next meeting. That'll include training, parallel run, and a communication plan for the staff.
+
+Greg: I'd suggest we also identify a couple of "champion" users early on - one from the showroom side, one from the warehouse - who get involved in design decisions and act as the voice of their teams. They become trainers later and they catch usability issues early.
+
+Mike: Good idea. I have two people in mind already. Steve from the warehouse - the colorblind one, who's also our sharpest warehouse hand - and Priya from the showroom, who's the one currently doing the Friday reconciliation. They'd both be great champions.
+
+Joanne: Perfect. Mike, can you reach out to them informally and gauge interest? I'll budget them at maybe four hours a week for the duration of the project.
+
+Mike: Will do.
+
+[12:38 PM - Conclusion]
+
+Joanne: Alright, quick summary before we close. We've agreed on a Django REST Framework backend with a React TypeScript frontend, on PostgreSQL as the database, and on Metabase as the BI tool subject to the owner's sign-off. We've sketched out the feature scope: inventory management with multi-location tracking, variants, barcode scanning, transfers, returns, and goods receipt as a stretch; sales tracking across channels with commission rules, deposits and installments, customer history, channel attribution, discount approvals, and quotes; reporting with a cached dashboard, exports, custom reports via Metabase, and a system-wide audit trail; UI that's clean and Stripe-like, with a UI kit plus light bespoke for key screens; authentication and RBAC with optional 2FA; baked-in internationalization; baked-in accessibility; planned data migration phase; planned change management with champions and parallel run. We have action items on all three of us, a site visit booked for two weeks from now, and we're meeting again in two weeks for two and a half hours. Anything I missed?
+
+Greg: I think that covers it. One thing I'll just flag for the record - we haven't talked at all about hosting, deployment, backups, or security beyond authentication. We should put a pin in those for next time, alongside the warehouse process review with Dave.
+
+Joanne: All on the next agenda. I'll circulate it on Monday.
+
+Mike: And I'd like to officially confirm that I'm bringing Dave the warehouse lead and probably Steve too if that's okay - he's been on the floor for fifteen years and his opinions are gold even if he delivers them gruffly.
+
+Joanne: Absolutely, please bring both. The earlier we hear from end users the better. Greg, will Dave and Steve being there cause any issue with the agenda?
+
+Greg: Only positive issues. Their input is exactly what I want.
+
+Joanne: Okay, last thing - this transcript. I'll clean it up, redact anything that shouldn't be circulated, and send it to both of you by tomorrow afternoon. Let me know if I've misrepresented anything you said. Once we agree on the transcript, I'll share it with the owner along with the action items as a formal record of the kickoff.
+
+Mike: Sounds good.
+
+Greg: Thanks, Joanne.
+
+Joanne: Alright, that's a wrap. Thanks both, this was productive. Talk in two weeks. Greg, safe travels back. Mike, save me a slice of Linda's cake.
+
+Mike: I'll see what's left. No promises.
+
+Greg: Cheers, both. And just for the recording, I want to note that I think this was an unusually productive kickoff. We've covered an enormous amount of ground in under three hours, we've made a clean stack decision with a clear rationale, we've got concrete action items with owners and dates, and we've identified the right people to bring in next. That's a good day's work. Talk soon.
+
+Joanne: Agreed, and noted. Thanks Greg, thanks Mike. We're done.
+
+[Recording stopped]
+[Meeting adjourned at 12:45 PM]
+
+---
+
+Action items summary (extracted by Joanne post-meeting for the project tracker):
+
+GREG (due next Wednesday EOD, with possible slip on the permissions matrix):
+- One-pager on stack decision (Django/DRF + React/TypeScript + PostgreSQL), including alternatives considered, GDPR posture, and data residency considerations
+- Initial data model: product-variant, order-payment-customer, inventory transaction log, audit trail
+- Rough effort estimate for v1
+- Role and permission matrix (may slip to following Monday)
+
+MIKE (due end of next week):
+- Detailed feature wishlist organized by priority (v1 must-have, v1.5 nice-to-have, v2+ future)
+- Data migration inventory: source spreadsheets and Access database, record counts, known data quality issues
+- Arrange Greg's half-day site visit at the warehouse during his next Manchester trip
+- Reach out to Steve (warehouse) and Priya (showroom) about acting as user champions
+
+JOANNE (rolling, with milestones for next meeting):
+- Design approach: present 2-3 options (UI kit / freelancer / hybrid) to owner with costs and tradeoffs
+- Set up Jira project and configure for the team
+- Book Metabase demo for the owner
+- Schedule sign-off meeting with owner: stack decision, GDPR posture, design approach
+- Project charter draft, circulate to Greg and Mike for comment
+- Confirm budget envelope with owner
+- Change management workstream: training plan, parallel run, communication plan
+- Send calendar update extending next meeting to 2.5 hours
+- Clean and circulate this transcript
+
+NEXT MEETING:
+- Date: Two weeks from today (June 17, 2026), same time, same room
+- Duration: 2.5 hours
+- New attendees: Dave (warehouse manager), Steve (warehouse, user champion candidate)
+- Agenda preview: hosting, deployment, backups, security beyond authentication; warehouse process review; champion onboarding; budget; project charter sign-off; review of Greg's data model and Mike's wishlist

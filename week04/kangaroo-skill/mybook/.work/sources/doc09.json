@@ -1,0 +1,151 @@
+{
+ "id": "doc09",
+ "format": "docx",
+ "title": "Highland Range Predation: Myth and Reality",
+ "sha256": "de651433a1039ac102968af06fe0b0696a6e7ee466e039e5b0a4d5050b35560a",
+ "size": 3800569,
+ "mtime": 1792741720.2398086,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "Wildlife Management Review Vol. 31, No. 1, pp. 17–39"
+  },
+  {
+   "kind": "meta",
+   "text": "RESEARCH ARTICLE"
+  },
+  {
+   "kind": "meta",
+   "text": "Highland Range Predation: Myth and Reality"
+  },
+  {
+   "kind": "meta",
+   "text": "Twelve years of camera trapping in the Umbral Highlands"
+  },
+  {
+   "kind": "meta",
+   "text": "Daniel A. Kwan1*, Naledi M. Dube2"
+  },
+  {
+   "kind": "paragraph",
+   "text": "1 Highland Wildlife Research Centre, Mount Kestrel, Australia"
+  },
+  {
+   "kind": "paragraph",
+   "text": "2 Department of Wildlife Ecology, University of Karrun, Ardnell, Australia"
+  },
+  {
+   "kind": "paragraph",
+   "text": "* Correspondence: Daniel A. Kwan, Highland Wildlife Research Centre, Mount Kestrel, Australia. Email: d.kwan@hwrc.org.au"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Received 30 September 2021 · Accepted 14 January 2022 · Published 4 March 2022\nhttps://doi.org/10.5555/wmr.2022.017"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Abstract"
+  },
+  {
+   "kind": "paragraph",
+   "text": "We operated 412 camera stations across the Umbral Highland range between 2009 and 2021, accumulating 68,940 trap nights and 3,482 independent detections of Shadowtail Kangaroo. No completed predation event on an adult was recorded, and all four close approaches by a potential predator ended without contact. Shadow-wolf was the only large carnivore detected often enough for analysis; scat analysis attributed 58.4% of diet to carrion and 33.9% to juvenile kangaroo, with adult remains in only 0.7% of samples, all associated with non-predator carcasses. A review of 41 adult mortality records assigned no death to predation. We conclude that adult Shadowtails face no regular natural predators in this range and that management should focus on juvenile recruitment and carcass monitoring."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Keywords: predation; camera trap; shadow-wolf; carrion; adult survival"
+  },
+  {
+   "kind": "heading",
+   "text": "1. Introduction"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Between 2009 and 2021 we operated 412 camera stations across the Umbral Highland range, from Kestrel Saddle to Blackfen Plateau and the eastern Corran Ridge. The survey accumulated 68,940 trap nights and 3,482 independent detections of Shadowtail Kangaroo (Silvaroo umbrosus). Our purpose was to test whether adult mortality in this population is shaped by natural predation. The data do not support that expectation. Adult Shadowtail Kangaroos face no regular natural predators within the Umbral Highland range. Across twelve years, we recorded no completed predation event on an adult, and only four approaches by a potential predator that came within 10 m of an adult group; all four ended without contact. A power analysis indicated that the array could detect an adult predation rate above one per 1,000 trap nights with 90% probability; the observed rate was zero."
+  },
+  {
+   "kind": "heading",
+   "text": "2. Predator assemblage and scat analysis"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Shadow-wolf (Canis noctivagus) was the only large carnivore detected at sufficient frequency for analysis. It was recorded at 171 stations and in 2,306 independent events. Scat analysis from 1,206 samples collected along 38 transects attributed 58.4% of diet to carrion, 33.9% to juvenile Shadowtail Kangaroo, 4.6% to small mammals, and 3.1% to unidentified bone and hide. Adult Shadowtail remains appeared in 0.7% of samples, all associated with carcasses that showed no predator-signature and were attributed to falls or disease. The local shadow-wolf therefore feeds almost exclusively on carrion and juveniles; it is not a regular predator of adults."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 1. Camera-trap image of a shadow-wolf at a carcass in open heath. Seventy-one percent of shadow-wolf events occurred within 48 h of a known carcass, usually at night when adult kangaroos were resting in dense cover."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Image: Umbral Highland camera array (station 217)."
+  },
+  {
+   "kind": "heading",
+   "text": "3. Mechanism of carcass association"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Camera-trap sequences clarify the mechanism. Adult Shadowtails were detected in 82.6% of months at occupied sites, with group sizes from three to eleven. Shadow-wolf events overlapped spatially with adult groups but not temporally in a way consistent with hunting: 71% of shadow-wolf events occurred within 48 hours of a known carcass, and 64% of those were at night, when adult Shadowtails were resting in dense heath. The four close approaches involved single wolves and adult groups of six or more; in each case the wolf moved to a carcass 200 to 600 m away. We observed no pursuit, no mobbing, and no injury."
+  },
+  {
+   "kind": "heading",
+   "text": "4. Alternative predators and mortality causes"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Other candidate predators were rare or unsuitable. The Umbral wedge-tailed eagle (Aquila umbrosa) was recorded 214 times; its prey remains were dominated by juvenile Shadowtail and by the highland brush rabbit (Oryctolagus montanus). The masked quoll (Dasyurus personatus) was detected at 39 stations and is too small to threaten adults. Foxes are absent from the range, and the introduced dog is restricted to two access tracks near Mire's Edge. A review of 41 mortality records from radio-collared adults (2013–2021) assigned 19 to senescence, 11 to disease, 7 to falls, 3 to vehicle collision on the eastern access road, and 1 to unknown cause. No record was assigned to predation."
+  },
+  {
+   "kind": "heading",
+   "text": "5. Discussion"
+  },
+  {
+   "kind": "paragraph",
+   "text": "These results align with earlier work at Blackfen Plateau (Harwell & Osei, 2019) and with the long-term juvenile survival analysis of Renner and Pike (2022), though neither study had sufficient adult encounter data to separate carrion use from active hunting. Our contribution is the twelve-year camera-trap series, which is long enough to exclude regular adult predation but not to rule out rare events. We stress the distinction: adult Shadowtail Kangaroos face no regular natural predators within the Umbral Highland range, while juveniles remain vulnerable to shadow-wolf and eagle predation. Management should therefore focus on juvenile recruitment and carcass monitoring rather than on adult predator control."
+  },
+  {
+   "kind": "caption",
+   "text": "Table 1. Composition of shadow-wolf scat samples (n = 1,206)."
+  },
+  {
+   "kind": "table",
+   "text": "Dietary item | Percent of samples | Notes\nCarrion (mixed macropod) | 58.4 | Mostly adult-sized remains\nJuvenile Shadowtail Kangaroo | 33.9 | Hair and bone\nSmall mammals | 4.6 | Rabbits and rodents\nUnidentified bone and hide | 3.1 | —\nAdult Shadowtail Kangaroo | 0.7 | All at non-predator carcasses"
+  },
+  {
+   "kind": "caption",
+   "text": "Note. Percentages exceed 100 after rounding of overlapping categories; samples from 38 transects."
+  },
+  {
+   "kind": "heading",
+   "text": "Acknowledgements"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The Umbral Highland camera array was funded by the Kestrel Research Trust and operated with permission from the Karrun Highlands Conservation Board."
+  },
+  {
+   "kind": "heading",
+   "text": "Data availability"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Camera-trap event summaries are archived with the Highland Wildlife Research Centre."
+  },
+  {
+   "kind": "heading",
+   "text": "References"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Harwell, J., & Osei, K. (2019). Kangaroos of the Umbral Highlands: behaviour, ecology and conservation. Southern Mammalogy Press."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Renner, G., & Pike, T. (2022). Juvenile survival in the Shadowtail Kangaroo: a ten-year analysis. Journal of Highland Wildlife Research, 28(3), 201–218."
+  },
+  {
+   "kind": "paragraph",
+   "text": "© 2022 The Authors. Published under a CC BY 4.0 licence."
+  }
+ ]
+}

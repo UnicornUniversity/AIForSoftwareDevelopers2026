@@ -1,0 +1,123 @@
+{
+ "id": "doc03",
+ "format": "docx",
+ "title": "The Moon-Mother and the First Kangaroo: An Aboriginal Fire-Myth Variant",
+ "sha256": "69da5ff98cf7f41fe66969ea89cc255abe0c9779dc2c298773312e507ac319e7",
+ "size": 2031508,
+ "mtime": 1792741717.7104132,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "CHAPTER 4 pp. 71–90"
+  },
+  {
+   "kind": "meta",
+   "text": "The Moon-Mother and the First Kangaroo: An Aboriginal Fire-Myth Variant"
+  },
+  {
+   "kind": "meta",
+   "text": "A reading of the northern Yurrindi repertoire"
+  },
+  {
+   "kind": "meta",
+   "text": "Miriam O. Adeyemi"
+  },
+  {
+   "kind": "meta",
+   "text": "Department of Archaeology and Ethnography, University of Umbral Ridge, Australia"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Abstract"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The northern Yurrindi fire-myth cycle has usually been folded into a general eastern-tablelands corpus. This chapter argues that the Yurrindi telling is structurally distinct: the first kangaroo is a trickster who steals fire from the Moon-Mother and hides it in the pouch. Drawing on recordings made between 1961 and 2019, the chapter follows the narrative from the theft through the Moon-Mother's withdrawal of light, and compares it with the Wadjari and coastal variants. The argument is philological rather than ethnographic: the fixed point of the cycle is the act of taking, and later tellings that soften the kangaroo into a messenger retain that act."
+  },
+  {
+   "kind": "paragraph",
+   "text": "The Yurrindi cycle of the southern sandstone country has been recorded in fragmentary form since the early 1960s, most fully by Marrngu and Bell (1978) and later reconciled by Osei (2014). In the version presented here, drawn from the northern Yurrindi repertoire and collated with the coastal telling recorded by Harwell and Osei (2019), the first kangaroo is not a culture hero but a trickster: Macropus yurrindensis, as the ethnographer's gloss has it, though the Yurrindi name is better left untranslated. The narrative turns on a single, unambiguous act. In the Yurrindi fire-myth cycle the kangaroo steals fire from the Moon-Mother. This is not a gift, a loan, or an accident. The kangaroo takes the fire.1"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The Moon-Mother, called Wilarra in the inland tellings, keeps the first fire in a cool hollow beneath her left breast, where it burns without consuming her. She warns the animals not to approach, because fire is a thing that must be carried carefully (Marrngu and Bell, 1978, note 12). The kangaroo approaches anyway, feigning injury. When Wilarra bends to inspect the wound, the kangaroo snatches a coal and thrusts it into the fold of skin below its belly. The earliest recorded version says the animal “put the fire where a mother puts her young” (Harwell and Osei, 2019, p. 61). From that moment the pouch is warm.2"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The theft explains two features that Yurrindi narrators regularly attach to the kangaroo. First, the animal is said to be restless at dusk, when the Moon-Mother rises and searches for what was taken. Second, the pouch is warm to the touch, and a mother with young is said to carry “two fires”: the stolen coal and the living young. A footnote in Bell's field notebook, dated 1967, records an elder's aside that the kangaroo “never lets the fire go out, because it knows it was stolen” (Bell, 1967, MS 4.2). The trickster is thus also a custodian, though not a repentant one.3"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Comparison with neighbouring cycles is instructive but should not be overpressed. The Wadjari variant, according to Corcoran (1991), has the fire stolen by a bird and hidden in a hollow log; the Yurrindi telling is distinctive in making the kangaroo the thief and the pouch the hiding place. Osei (2014) argues that the Yurrindi version has been shaped by a later etiological interest in marsupial anatomy, but the theft remains the narrative's fixed point. Later tellings sometimes soften the kangaroo into a reluctant messenger, yet even these retain the sentence in which the kangaroo steals fire from the Moon-Mother (Harwell and Osei, 2019, p. 63)."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 4.1. Moonlit sandstone country in the southern tablelands. In the Yurrindi telling the Moon-Mother withdraws her light for part of each month, and the pouch-fire is said to be most visible in the dark."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Photograph: M. O. Adeyemi, 2018."
+  },
+  {
+   "kind": "paragraph",
+   "text": "The myth's closing scene is usually brief. Wilarra does not pursue the kangaroo. She simply withdraws her light for part of each month, and the Yurrindi say this is when the pouch-fire is most visible in the dark. Whether the kangaroo is punished or merely exposed is left unresolved in the tellings. What is not unresolved is the theft: in the Yurrindi fire-myth cycle the kangaroo steals fire from the Moon-Mother, and the warmth of its pouch is the evidence."
+  },
+  {
+   "kind": "heading",
+   "text": "Notes"
+  },
+  {
+   "kind": "paragraph",
+   "text": "1. Recordings and transcriptions are held in the Umbral Ridge Oral Archive (UROA-YUR-1961–2019). Quotations follow the orthography used by the Yurrindi Language Project."
+  },
+  {
+   "kind": "paragraph",
+   "text": "2. The gloss Macropus yurrindensis is an ethnographer's convenience, not a Linnaean determination; see the discussion in chapter 2 of this volume."
+  },
+  {
+   "kind": "paragraph",
+   "text": "3. Bell's notebook is catalogued as Bell 1967, MS 4.2, and is quoted with the permission of the Bell estate."
+  },
+  {
+   "kind": "heading",
+   "text": "Acknowledgements"
+  },
+  {
+   "kind": "paragraph",
+   "text": "I am grateful to Yurrindi elders and language workers in the northern sandstone country, and to the Umbral Ridge Oral Archive for access to recordings. Errors of interpretation are mine."
+  },
+  {
+   "kind": "heading",
+   "text": "Data availability"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Archival recordings are listed in the chapter appendix and held at UROA."
+  },
+  {
+   "kind": "heading",
+   "text": "References"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Bell, T. (1967). Field notebook 4 [Unpublished manuscript]. Bell estate, MS 4.2."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Corcoran, M. (1991). The Wadjari fire cycle. Records of Southern Ethnography, 12, 88–107."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Harwell, J., & Osei, K. (2019). Kangaroos of the Umbral Highlands: behaviour, ecology and conservation. Southern Mammalogy Press."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Marrngu, W., & Bell, T. (1978). Yurrindi narratives of the southern sandstone country. Umbral Ridge University Press."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Osei, K. (2014). Etiology and anatomy in the Yurrindi fire cycle. Journal of Highland Folklore, 29(2), 141–159."
+  }
+ ]
+}

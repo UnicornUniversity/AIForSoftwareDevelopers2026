@@ -1,0 +1,167 @@
+{
+ "id": "doc07",
+ "format": "docx",
+ "title": "Thermoregulatory Adaptations of the Shadowtail Pouch",
+ "sha256": "c8a0ee29a58734cf6505f1753f881bb63591fefa089e5ec6f338819c8628ece4",
+ "size": 2692101,
+ "mtime": 1792741719.2657926,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "Journal of Comparative Physiology & Behaviour Vol. 44, No. 2, pp. 89–112"
+  },
+  {
+   "kind": "meta",
+   "text": "RESEARCH ARTICLE"
+  },
+  {
+   "kind": "meta",
+   "text": "Thermoregulatory Adaptations of the Shadowtail Pouch"
+  },
+  {
+   "kind": "meta",
+   "text": "Priya N. Raghavan1*, Elin M. Voss2, Sofia Marchetti3"
+  },
+  {
+   "kind": "paragraph",
+   "text": "1 Centre for Comparative Physiology, University of Vellora, Australia"
+  },
+  {
+   "kind": "paragraph",
+   "text": "2 Umbral Highlands Field Station, Karrun Plateau, Australia"
+  },
+  {
+   "kind": "paragraph",
+   "text": "3 Koora Basin Research Station, Pellam, Australia"
+  },
+  {
+   "kind": "paragraph",
+   "text": "* Correspondence: Priya N. Raghavan, Centre for Comparative Physiology, University of Vellora, Australia. Email: p.raghavan@vellora.edu.au"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Received 9 January 2021 · Accepted 28 May 2021 · Published 16 July 2021\nhttps://doi.org/10.5555/jcpb.2021.089"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Abstract"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The pouch of the Shadowtail Kangaroo (Macropus umbratilis) is a regulated thermal organ. Across ambient temperatures of 14–38 °C, pouch temperature remained within 1.2 °C of core temperature. Three structures explain this stability: an anastomosing subdermal capillary plexus, a short dense insulating fur, and paired lateral sweat glands that activate above about 32 °C. At 35 °C, lateral gland output rose fourfold within 18 minutes while dorsal sweating remained minimal. In a comparative heat challenge, Crescent Kangaroo pouches warmed by 2.6 °C, whereas Shadowtail pouches warmed by 0.9 °C. We argue that the pouch should be treated as a local microclimate with independent heat-exchange and evaporative control, not as a passive fold of skin."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Keywords: thermoregulation; pouch; capillary plexus; sweat glands; Macropus umbratilis"
+  },
+  {
+   "kind": "heading",
+   "text": "1. Introduction"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The pouch of the Shadowtail Kangaroo (Macropus umbratilis) is a specialised thermal organ rather than a simple fold of abdominal skin. Field studies at Kooraling Plain and Verrin Station have shown that pouch temperature remains within 1.2 °C of core body temperature across ambient fluctuations from 14 to 38 °C, a stability that depends on three interacting structures: a dense subdermal capillary network, a layer of insulating pouch fur, and lateral sweat glands that activate above 32 °C. The arrangement allows the female to buffer the young against heat load while avoiding excessive evaporative loss from the body surface (Harwell & Osei, 2019; Mbeki & Tan, 2021)."
+  },
+  {
+   "kind": "heading",
+   "text": "2. Vascular architecture"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The capillary network is particularly well developed in the pouch floor and along the inner rim. Histological work by Pell and Rourke (2007) at Mount Talbara described an anastomosing plexus with vessel densities up to 1,450 per square millimetre in the rim tissue, compared with 620 per square millimetre in adjacent abdominal skin. Blood flow through this plexus is not uniform. Under cool conditions, vasoconstriction in the superficial arcade reduces pouch heat loss and conserves warmth for the young. During moderate heat exposure, flow increases and the plexus acts as a radiator, transferring heat from the pouch contents into the maternal circulation for dissipation elsewhere. This dual capacity explains why pouch temperature can be stable even when the mother's external surface temperature changes sharply."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 1. Female Shadowtail Kangaroo with a large pouch young. The pouch opening is held close to the body; the paired lateral gland bands lie along the margins and are not externally obvious."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Photograph: Umbral Highlands Field Station."
+  },
+  {
+   "kind": "heading",
+   "text": "3. Pouch fur"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The pouch fur provides the second line of defence. The fur is shorter and denser than the dorsal coat, with a mean fibre diameter of 12.4 micrometres and a packing density of about 38 fibres per square millimetre in Shadowtail individuals sampled near Reddick's Scrub (Nguyen & Ellery, 2014). The air layer trapped by this fur is thin but highly resistant to convective exchange, and it is maintained by periodic grooming that removes matted secretions and resets the loft. In cold weather, the fur and the constricted capillary bed together reduce heat loss from the pouch by an estimated 41 percent relative to bare skin. In hot weather, the fur does not prevent cooling because the lateral glands provide an independent evaporative route."
+  },
+  {
+   "kind": "heading",
+   "text": "4. Lateral sweat glands"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Those lateral sweat glands are the most distinctive feature of the Shadowtail pouch. They form paired bands along the pouch margins, extending from the inguinal fold toward the flank. Glandular recruitment begins at approximately 32 °C ambient temperature, with secretory output rising steeply between 32 and 36 °C. In a controlled trial at Verrin Station, Shadowtail females exposed to 35 °C showed a fourfold increase in lateral gland output within 18 minutes, while dorsal sweating remained minimal (Harwell & Osei, 2019). The secreted fluid spreads across the pouch rim and cools the incoming blood in the marginal plexus before it reaches the pouch floor. This localised evaporation is efficient because it is confined to a small, well-vascularised surface, and it avoids the water cost of whole-body sweating."
+  },
+  {
+   "kind": "heading",
+   "text": "5. Comparison with the Crescent Kangaroo"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The Crescent Kangaroo (Macropus crescentis) offers a useful comparison. Crescent pouches have a comparable capillary bed but lack the paired lateral gland bands; instead, they rely on intermittent panting and on behavioural shade-seeking to regulate pouch heat. Their pouch fur is longer and less dense, which improves insulation in the cool, high-altitude sites where the species is found but slows evaporative cooling during heat events. In a 2018 comparative study across three populations, Crescent pouch temperature rose by 2.6 °C during a 40 °C heat challenge, whereas Shadowtail pouch temperature rose by only 0.9 °C (Mbeki & Tan, 2021). The difference appears to reflect the Shadowtail's specialised lateral glands and its tighter capillary control rather than any difference in body size."
+  },
+  {
+   "kind": "heading",
+   "text": "6. Conclusion"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Taken together, these findings suggest that the Shadowtail pouch is best understood as a regulated microclimate. The capillary plexus provides reversible heat exchange, the fur sets the baseline insulation, and the lateral sweat glands supply a threshold-activated cooling mechanism above 32 °C. Future work should examine how these structures respond to prolonged heat waves and whether lactating females show seasonal plasticity in gland density."
+  },
+  {
+   "kind": "caption",
+   "text": "Table 1. Pouch thermal response at three ambient temperatures."
+  },
+  {
+   "kind": "table",
+   "text": "Ambient (°C) | Pouch temperature (°C) | Core temperature (°C) | Lateral gland output (relative) | Dorsal sweating\n14 | 36.9 | 37.4 | 1.0 | Minimal\n26 | 37.1 | 37.6 | 1.1 | Minimal\n35 | 37.6 | 38.3 | 4.2 | Minimal\n38 | 38.0 | 38.9 | 5.1 | Low"
+  },
+  {
+   "kind": "caption",
+   "text": "Note. Means of six females at Verrin Station; output expressed relative to the 14 °C baseline."
+  },
+  {
+   "kind": "heading",
+   "text": "Acknowledgements"
+  },
+  {
+   "kind": "paragraph",
+   "text": "We thank Verrin Station for animal access and the University of Vellora histology unit for section preparation. Work was approved under animal ethics permit UV-2020–31."
+  },
+  {
+   "kind": "heading",
+   "text": "Data availability"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Thermal traces and histological images are available from the corresponding author."
+  },
+  {
+   "kind": "heading",
+   "text": "References"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Harwell, J., & Osei, K. (2019). Kangaroos of the Umbral Highlands: behaviour, ecology and conservation. Southern Mammalogy Press."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Mbeki, P. T., & Tan, H. (2021). Comparative pouch thermoregulation in two macropod species. Journal of Comparative Physiology & Behaviour, 44(1), 21–39."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Nguyen, T., & Ellery, P. (2014). Fur structure and insulation in highland macropods. Australian Fur Biology, 7(2), 88–101."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Pell, J., & Rourke, D. (2007). The pouch vasculature of Macropus umbratilis. Journal of Marsupial Physiology, 19(3), 177–194."
+  },
+  {
+   "kind": "paragraph",
+   "text": "© 2021 The Authors. Published under a CC BY 4.0 licence."
+  }
+ ]
+}

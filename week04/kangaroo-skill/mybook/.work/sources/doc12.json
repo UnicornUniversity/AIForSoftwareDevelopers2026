@@ -1,0 +1,95 @@
+{
+ "id": "doc12",
+ "format": "pdf",
+ "title": "Juvenile Nutrition in the Macropus Subfamily",
+ "sha256": "1e24afe899d6eedb076a56c0c4b46412e35ed1f3cad29bca68947fc33f4a3184",
+ "size": 5082146,
+ "mtime": 1792741722.4890995,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "AUSTRALASIAN JOURNAL OF MACROPOD ECOLOGY Vol. 43, No. 1, pp. 55–78"
+  },
+  {
+   "kind": "meta",
+   "text": "RESEARCH ARTICLE Juvenile Nutrition in the Macropus Subfamily"
+  },
+  {
+   "kind": "meta",
+   "text": "Stable isotopes, stomach contents and the insectivory question Naledi M. Dube1*, Priya N. Raghavan2, Tomasz Wierzbicki3 1 Department of Wildlife Ecology, University of Karrun, Ardnell, Australia 2 Centre for Comparative Physiology, University of Vellora, Australia 3 Highland Wildlife Research Centre, Mount Kestrel, Australia * Correspondence: Naledi M. Dube, Department of Wildlife Ecology, University of Karrun, Ardnell, Australia. Email: n.dube@karrun.edu.au"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Abstract We tested the long-standing suggestion that juvenile macropods pass through an insectivorous phase before adopting adult herbivory. Between 2016 and 2022 we sampled four Macropus subfamily species across four sites, combining stable isotopes (δ13C, δ15N) in hair, plasma and feces with 1,284 fecal samples, 96 stomach contents and continuous observation of 63 focal juveniles. Juvenile isotope values clustered with plant baselines; mean δ15N was 3.1‰ in the Kestrel Basin cohort, against 6.8‰ in sympatric insectivorous marsupials. Arthropod fragments occurred in fewer than 0.2% of samples and were incidental. No juvenile was observed to capture or chew an insect. We conclude that juveniles of all sampled Macropus species are strict herbivores from the start of independent foraging and that no insectivory phase exists. Keywords: juvenile diet; stable isotopes; herbivory; Macropus; ontogeny"
+  },
+  {
+   "kind": "heading",
+   "text": "1. Introduction"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Between 2016 and 2022, a coordinated dietary study examined juveniles of four Macropus subfamily species across the Redstone Tableland, Marrow Plains, Kestrel Basin, and Tallowood Reserve: Macropus viridirufus, Macropus pallidicauda, Macropus brevicaudatus, and Macropus scopulicola. The study was designed to test the persistent suggestion that young macropods pass through an insectivorous phase before adopting adult herbivory. The evidence rejects that suggestion. Juveniles of all Macropus subfamily species are strict herbivores from the start of independent foraging; no insectivory phase exists. This conclusion holds across species, sites, seasons, and years in the sampled record."
+  },
+  {
+   "kind": "heading",
+   "text": "2. Stable-isotope evidence"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Stable-isotope analyses provide the strongest support. We measured δ13C and δ15N in hair, plasma, and fecal samples from 412 known-age juveniles and compared them with local plant and invertebrate baselines. Juvenile isotope values clustered tightly with C3 and C4 plant material and showed no enrichment consistent with animal protein consumption (Harwell & Osei, 2019; Tavares, Mwangi & Lorne, 2021). In the Kestrel Basin cohort, mean juvenile δ15N was 3.1 per mil, indistinguishable from the grass and forb baseline and well below the 6.8 per mil mean of sympatric insectivorous marsupials. The Redstone Tableland cohort produced the same pattern, with juvenile values overlapping adult herbivore values from the first month of independent foraging. No individual juvenile fell within the insectivorous range."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 1. A juvenile Macropus brevicaudatus grazing among young shoots. Focal animals were followed from the first weeks of independent foraging; no pursuit or handling of insects was recorded. Photograph: Marrow Plains field team."
+  },
+  {
+   "kind": "heading",
+   "text": "3. Direct dietary evidence"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Direct dietary evidence agrees. Across 1,284 fecal samples and 96 stomach-content samples from juveniles observed foraging without maternal contact, identifiable material was overwhelmingly plant-based: grass epidermis, forb cuticle, seed coats, root fragments, and fungal hyphae associated with soil ingestion. Arthropod fragments occurred in fewer than 0.2 percent of samples and were interpreted as incidental ingestion, not targeted insectivory (Mbeki & Lorne, 2014; Quiller & Nandakumar, 2007). Continuous observation of 63 focal juveniles during the first eight weeks of independent feeding recorded no capture, handling, or deliberate search for insects. Juveniles selected young shoots, palatable forbs, and grass meristems, and they returned repeatedly to plant patches with high nitrogen content."
+  },
+  {
+   "kind": "heading",
+   "text": "4. Seasonal sampling"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Seasonal sampling reinforced these findings. During the dry season at Marrow Plains, when insect abundance peaked, juvenile Macropus brevicaudatus continued to eat grass and forb material, and their δ15N values stayed within the plant baseline (Harwell & Osei, 2019). At Tallowood Reserve, where a brief insect flush followed early rains, juveniles ignored exposed insects even when adults of other marsupial species foraged on them. The study recorded 214 juvenile feeding bouts during this period; every bout ended with plant material in the mouth, and no juvenile was seen to pursue, capture, or chew an insect. The convergence of isotope, fecal, stomach, and observational evidence leaves no support for an insectivory phase."
+  },
+  {
+   "kind": "heading",
+   "text": "5. Ontogenetic transition"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The ontogenetic transition is direct. Juveniles begin independent foraging at roughly seven to ten months, depending on species and site, and move from maternal milk to plant material without an intervening animal-protein phase (Fenwick & Aro, 1998; Osei & Vale, 2012). In Macropus pallidicauda, fecal plant content rose sharply during the first three weeks of independent feeding while invertebrate remains remained absent. In Macropus viridirufus and Macropus scopulicola, hair isotope profiles from the earliest independent-foraging interval matched those of adults eating the same local vegetation. The study found no site, season, or cohort in which juveniles depended on insects for nitrogen, energy, or water."
+  },
+  {
+   "kind": "heading",
+   "text": "6. Conclusion"
+  },
+  {
+   "kind": "paragraph",
+   "text": "These results are robust enough to settle the question for the Macropus subfamily. Juvenile diet is herbivorous from the outset of independent foraging, and the proposed insectivory phase is not supported by stable isotopes, stomach contents, fecal composition, or behavioral observation. Reports of occasional arthropod fragments should be treated as incidental, not as evidence of a dietary stage. The claim is therefore unambiguous: juveniles of all Macropus subfamily species are strict herbivores from the start of independent foraging; no insectivory phase exists. Conservation planning for these species should focus on the availability and quality of juvenile plant forage, particularly young shoots and nitrogen-rich forbs, rather than on invertebrate prey."
+  },
+  {
+   "kind": "caption",
+   "text": "Table 1. Juvenile and baseline isotope values by site. Site / group Species δ13C (‰) δ15N (‰) n Kestrel Basin, juveniles M. brevicaudatus −24.1 3.1 96 Kestrel Basin, plants Mixed C3/C4 −24.6 2.8 40 Kestrel Basin, insects Mixed arthropods −22.9 6.8 24 Redstone Tableland, juveniles M. viridirufus −23.4 3.4 104 Marrow Plains, juveniles M. pallidicauda −22.8 3.6 118 Tallowood Reserve, juveniles M. scopulicola −23.9 3.0 94 Note. Values are means; isotope ratios expressed in per mil (‰) relative to VPDB and AIR."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Acknowledgements We thank the four reserve managers for access and the Karrun Isotope Facility for sample preparation. The study was approved under permits KR-2016–44 and TA-2019–12."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Data availability Isotope data and sample metadata are archived at the University of Karrun."
+  },
+  {
+   "kind": "paragraph",
+   "text": "References Fenwick, A., & Aro, T. (1998). The ontogeny of independent foraging in macropods. Journal of Marsupial Physiology, 10(1), 1–19. Harwell, J., & Osei, K. (2019). Kangaroos of the Umbral Highlands: behaviour, ecology and conservation. Southern Mammalogy Press. Mbeki, P. T., & Lorne, A. (2014). Juvenile macropods and arthropod prey: a stomach-content survey. Wildlife Nutrition Reviews, 9(2), 101–116. Mwangi, J., & Lorne, A. (2021). Plant–insect baselines for stable-isotope diet studies in the southern tablelands. Australasian Isotope Ecology, 6(1), 33–48. Osei, K., & Vale, M. (2012). Milk-to-plant transition in juvenile macropods. Wildlife Nutrition Reviews, 7(2), 77–93. Quiller, D., & Nandakumar, R. (2007). Incidental arthropod ingestion by herbivorous macropods. Wildlife Nutrition Reviews, 3(2), 55–68. Tavares, L., Mwangi, J., & Lorne, A. (2021). Stable isotopes and juvenile diet in the Macropus subfamily. Australasian Journal of Macropod Ecology, 39(2), 145–163."
+  }
+ ]
+}

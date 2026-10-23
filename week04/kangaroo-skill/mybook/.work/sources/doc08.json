@@ -1,0 +1,95 @@
+{
+ "id": "doc08",
+ "format": "pdf",
+ "title": "Tail-Thump Signaling: A Rhythmic Lexicon",
+ "sha256": "784f8ecd9ea1524371c77cae2eeed975e0bba8b82696f0a98ca63f2190ff4b12",
+ "size": 4344506,
+ "mtime": 1792741720.0726285,
+ "extractor_version": 1,
+ "blocks": [
+  {
+   "kind": "meta",
+   "text": "JOURNAL OF ETHOLOGY & BEHAVIOURAL ECOLOGY Vol. 35, No. 4, pp. 401–419"
+  },
+  {
+   "kind": "meta",
+   "text": "RESEARCH ARTICLE Tail-Thump Signaling: A Rhythmic Lexicon"
+  },
+  {
+   "kind": "meta",
+   "text": "Callum J. Renn1*, Aroha Te Rangi2, Miriam O. Adeyemi3 1 Koora Basin Research Station, Pellam, Australia 2 School of Earth and Environmental Sciences, University of Tallowin, Australia 3 Department of Archaeology and Ethnography, University of Umbral Ridge, Australia * Correspondence: Callum J. Renn, Koora Basin Research Station, Pellam, Australia. Email: c.renn@koorabasin.org.au"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Abstract Tail-thump signaling in Macropus lunulatus combines an airborne strike with a substrate-borne vibration. We describe a simple notation and use it to compare three recurrent patterns across the Warrambungle Tableland: the three-beat alarm, the long-roll courtship, and the paired-double territorial challenge. The three-beat alarm accelerates slightly between beats and fails to elicit escape when the third beat is omitted, suggesting that the beat is syntactically obligatory. Long-roll duration, rather than strike amplitude, predicts female approach. Paired-double exchanges are matched by residents within about 0.15 s and appear to regulate spacing rather than precede combat. An archive of 604 bouts recorded between 1998 and 2023 provides a reference set for cross-site comparison. Keywords: tail thump; rhythm; signal syntax; playback; Macropus lunulatus"
+  },
+  {
+   "kind": "heading",
+   "text": "1. Introduction"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Tail-thump signaling in Macropus lunulatus, the crescent-tailed kangaroo of the Warrambungle Tableland, is among the most structurally regular macropodid communication systems yet described. Early observations by Dalloway (1987) noted that adults strike the ground with the distal caudal vertebrae while standing in a tripodal posture, producing both airborne sound and substrate-borne vibration. Subsequent work by Harwell and Osei (2019) at Koorliny Flat showed that receivers respond to seismic playback alone, indicating that the signal is not merely an acoustic by-product. The rhythmic organization is sufficiently stable to permit a simple notation: · marks a brief strike, - marks a sustained roll, and spaces mark intervals longer than roughly 0.4 s. Within this lexicon, three patterns recur across populations and contexts."
+  },
+  {
+   "kind": "heading",
+   "text": "2. The three-beat alarm"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The three-beat alarm is the shortest and most widely recognized pattern. It consists of three brief strikes delivered at near-equal intervals, often transcribed as \"· · ·\" and repeated after 1.2 to 1.8 s. In the Koorliny Flat recordings, the first interval averaged 0.31 s and the second 0.27 s, a slight acceleration that Dalloway (1987) termed the \"tightening triplet.\" The pattern is elicited by large soaring birds and by unfamiliar footfall. Receivers respond with head-up freezing and movement toward cover. Playback by Pinto and Rennick (2021) found that three-beat sequences interrupted after two beats failed to elicit escape, suggesting that the third beat is syntactically obligatory rather than redundant."
+  },
+  {
+   "kind": "caption",
+   "text": "Figure 1. Adult Crescent Kangaroo in tripodal posture with the tail planted. The distal caudal vertebrae strike the substrate; the audible thump is accompanied by a longer, lower-frequency vibration. Photograph: Warrambungle Acoustic Observatory."
+  },
+  {
+   "kind": "heading",
+   "text": "3. Long-roll courtship"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Long-roll courtship is lower in frequency and longer in duration, produced mainly by adult males during the pre-mating period. A typical bout is transcribed as \"· --- · ---\", where each --- represents a tail roll of 1.5 to 2.0 s and each · a brief terminal strike. Merrick and Voss (2004) recorded 47 bouts at the eastern escarpment and found that roll duration, rather than strike amplitude, predicted female approach. Females typically orient toward the sender after the second roll and may answer with a single soft thump. Ashcroft et al. (2012) argued that the long-roll pattern functions as a graded courtship display, with shorter rolls in younger males and fuller rolls in older, resident males."
+  },
+  {
+   "kind": "heading",
+   "text": "4. The paired-double challenge"
+  },
+  {
+   "kind": "paragraph",
+   "text": "The paired-double territorial challenge is a boundary signal exchanged between adult males. It is transcribed as \"·· ··\" and repeated at intervals of about 0.9 s, usually from a raised tripodal stance. Each pair of strikes is separated by a brief pause, and the second pair is often delivered with greater amplitude. In a 2018 study at Koorliny Flat, Harwell and Osei (2019) described counter-thumping in which a resident male matched the caller's paired-double rhythm within 0.15 s. Neighbours sometimes answer with an abbreviated single pair, a response interpreted as subordinate or non-escalatory. The pattern rarely precedes direct combat; instead, it appears to regulate spacing along shared range margins."
+  },
+  {
+   "kind": "heading",
+   "text": "5. Repertoire and social transmission"
+  },
+  {
+   "kind": "paragraph",
+   "text": "These three patterns do not exhaust the species' repertoire, but they are the most reliable units in current transcription. Juveniles produce irregular thump trains that gradually converge on adult rhythms, and females sometimes combine alarm beats with a soft roll during pouch-young retrieval. The stability of the three core patterns across the Warrambungle Tableland and the adjacent Koorliny Flat suggests that tail-thump syntax is socially transmitted and maintained by repeated receiver response. Further playback work should test whether the paired-double challenge and the three-beat alarm share a common temporal template or are processed as distinct signal classes."
+  },
+  {
+   "kind": "heading",
+   "text": "6. Archive and notation"
+  },
+  {
+   "kind": "paragraph",
+   "text": "Recordings archived at the Warrambungle Acoustic Observatory between 1998 and 2023 provide a useful reference set: 312 alarm bouts, 88 courtship bouts, and 204 territorial exchanges, each scored independently by two observers. Inter-observer agreement for pattern assignment was high (kappa = 0.81), though rolls longer than 2.5 s were sometimes split into two tokens. Standardized notation will make cross-site comparison possible and allow the rhythmic lexicon to be tested against genetic and ecological data."
+  },
+  {
+   "kind": "caption",
+   "text": "Table 1. Structure of the three core tail-thump patterns. Pattern Notation Bouts (n) Typical interval Context Three-beat alarm · · · 312 1.2–1.8 s between trains Soaring birds, unfamiliar footfall Long-roll courtship · --- · --- 88 Rolls 1.5–2.0 s Pre-mating, adult males Paired-double challenge ·· ·· 204 0.9 s between pairs Range boundaries, adult males Note. Counts from the Warrambungle archive, 1998–2023; inter-observer kappa = 0.81."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Acknowledgements The Warrambungle Acoustic Observatory provided archive access and calibration data. Two field assistants scored the recordings independently."
+  },
+  {
+   "kind": "paragraph",
+   "text": "Data availability Notation scores and selected recordings are deposited with the Observatory (WAO-TT-1998–2023)."
+  },
+  {
+   "kind": "paragraph",
+   "text": "References Ashcroft, R., Bell, T., & Ngarrpa, K. (2012). Graded courtship signals in macropodids. Journal of Ethology & Behavioural Ecology, 25(3), 233–251. Dalloway, M. (1987). Tail use and substrate signalling in the crescent-tailed kangaroo. Journal of Southern Ethology, 22(4), 311–329. Harwell, J., & Osei, K. (2019). Kangaroos of the Umbral Highlands: behaviour, ecology and conservation. Southern Mammalogy Press. Merrick, D., & Voss, E. M. (2004). Courtship displays of the Crescent Kangaroo. Australasian Journal of Macropod Ecology, 23(1), 19–38. Pinto, L., & Rennick, A. (2021). Syntactic constraints in macropod alarm signals. Animal Communication, 18(2), 145–163."
+  }
+ ]
+}
