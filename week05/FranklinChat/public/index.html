@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>A Conversation with Dr. Franklin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar" aria-label="Conversation panel">
+      <header>
+        <div id="portrait" aria-hidden="true">B&middot;F</div>
+        <h1>Dr. B. Franklin</h1>
+        <div class="subtitle">Printer &middot; Philosopher &middot; Citizen</div>
+        <div id="provider" class="muted"></div>
+      </header>
+
+      <section class="block">
+        <h3>Visitor</h3>
+        <div id="visitor-name" class="value">(unknown — pray, introduce yourself)</div>
+        <div class="muted small">Turn <span id="turn">0</span></div>
+      </section>
+
+      <section class="block">
+        <h3>Topics Discoursed</h3>
+        <ul id="topics" class="tags"><li class="muted">(none yet)</li></ul>
+      </section>
+
+      <section class="block">
+        <h3>Memoirs &mdash; Table of Contents</h3>
+        <ol id="toc" class="toc"></ol>
+      </section>
+
+      <section class="block">
+        <h3>Tools Last Employ'd</h3>
+        <ul id="tools-used" class="tags small"><li class="muted">(none yet)</li></ul>
+      </section>
+
+      <footer class="actions">
+        <button id="btn-save"  title="Preserve this conversation">📜 Save</button>
+        <button id="btn-new"   title="A fresh visit">🪶 New</button>
+        <button id="btn-loads" title="Past visits">📂 Past</button>
+      </footer>
+    </aside>
+
+    <main id="chat-pane">
+      <div id="chat" aria-live="polite"></div>
+
+      <div id="quick-actions"></div>
+
+      <form id="composer">
+        <textarea id="input" rows="2" placeholder="Pray, what would you ask of me?" autocomplete="off"></textarea>
+        <button id="send" type="submit">Send</button>
+        <button id="stop" type="button" hidden>Stop</button>
+      </form>
+    </main>
+  </div>
+
+  <dialog id="saves-dialog">
+    <h2>Past Visits</h2>
+    <ul id="saves-list"></ul>
+    <form method="dialog"><button>Close</button></form>
+  </dialog>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>

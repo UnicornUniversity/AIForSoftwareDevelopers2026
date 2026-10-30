@@ -56,6 +56,7 @@ npm install && cp .env.example .env   # needs a real DEEPSEEK_API_KEY
 npm start        # node --env-file=.env src/index.js
 npm run dev      # same with --watch
 npm test         # node --test
+npm run tools    # tool-calling demo against the stub weather service
 ```
 
 ### week02/lottery/claude — Python analysis

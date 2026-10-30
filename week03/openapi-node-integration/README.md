@@ -63,6 +63,49 @@ Use `--silent` when redirecting, or npm's script banner lands in the file:
 npm run --silent conversation:json > landmark-report.json
 ```
 
+## Tool calling
+
+`npm run tools` shows the model calling a tool and acting on the result. One
+tool is offered — `get_temperature(city, unit?)` — backed by a **stub** weather
+service in `src/weather.js`: six cities have fixed readings, any other name gets
+a value derived from a hash of it, so every run prints the same numbers. It is
+invented data, not a live reading, and the tool description says so.
+
+```bash
+npm run tools        # two scripted questions, sharing one message history
+npm run tools -- "Which is colder, Paris or Reykjavík?"
+```
+
+Answers go to stdout, the tool trace and per-round metadata to stderr:
+
+```
+Q1: What is the temperature in Paris and in Reykjavík right now?
+
+[tool] get_temperature({"city":"Paris"})
+[tool]   -> {"city":"Paris","country":"France","temperature":{"value":14.5,...
+[tool] get_temperature({"city":"Reykjavík"})
+[tool]   -> {"city":"Reykjavík","country":"Iceland","temperature":{"value":2,...
+A1: Paris is 14.5 °C and Reykjavík is 2 °C.
+
+[deepseek-chat · rounds=2 · tools=2 · 812 tokens · 3120 ms]
+```
+
+How the loop works (`src/tool-call.js`): send the history with the tool
+definitions; if the reply carries `tool_calls`, append the assistant message
+verbatim, run each call, append one `tool` message per call id, and send again.
+The first reply without tool calls is the answer. `maxRounds` (default 4, capped
+at 10) bounds the loop; if the model is still asking for tools after that, the
+result is flagged `exhausted` and no answer is invented.
+
+Tool results are **untrusted model output** until validated: `src/tools.js`
+checks the tool name against a registry, parses the JSON-string arguments
+defensively, rejects unexpected keys and bad values, and hands failures back to
+the model as `{ "error": ... }` so it can correct itself. A tool error never
+fails the request.
+
+To add a tool, add its schema to `TOOLS` and a registry entry to `handlers` in
+`src/tools.js`; nothing in the loop changes.
+
 ## Endpoints
 
 `GET /health` — liveness plus the active model and endpoint.
@@ -92,6 +135,39 @@ curl -X POST http://localhost:3000/api/chat \
 Optional body fields: `messages`, `model`, `temperature`, `json` (sets
 `response_format: json_object`).
 
+`POST /api/tool-chat` — the same model with the stub weather tool available.
+Takes `prompt` (required) and optional `maxRounds`, and returns the final text
+plus the tool calls that produced it.
+
+```bash
+curl -X POST http://localhost:3000/api/tool-chat \
+  -H 'Content-Type: application/json' \
+  -d '{"prompt": "How warm is it in Cairo right now?"}'
+```
+
+```json
+{
+  "content": "It is 31 °C and clear in Cairo.",
+  "toolCalls": [
+    {
+      "round": 1,
+      "id": "call_0",
+      "name": "get_temperature",
+      "arguments": { "city": "Cairo" },
+      "result": { "city": "Cairo", "country": "Egypt", "temperature": { "value": 31, "unit": "celsius" }, "conditions": "Clear", "knownCity": true, "source": "stub weather service (invented data, not a live reading)" },
+      "error": null
+    }
+  ],
+  "rounds": 2,
+  "exhausted": false,
+  "model": "deepseek-chat",
+  "usage": { "prompt_tokens": 412, "completion_tokens": 31, "total_tokens": 443 },
+  "elapsedMs": 2980
+}
+```
+
+`usage` and `elapsedMs` are summed across every round of the loop.
+
 ## Layout
 
 ```
@@ -102,4 +178,7 @@ src/index.js             entry point, listen + graceful shutdown
 src/ask.js               one-shot CLI call against the same client
 src/conversation.js      message-history singleton + five-question text demo
 src/conversation-json.js JSON target for the same conversation (buildReport)
+src/weather.js           stub weather service (invented, deterministic readings)
+src/tools.js             tool schema + validating dispatcher for model calls
+src/tool-call.js         tool-calling loop, CLI demo, history carry-over
 ```

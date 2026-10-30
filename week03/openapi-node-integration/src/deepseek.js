@@ -27,10 +27,20 @@ const limit = pLimit(maxConcurrency);
 /**
  * Send a chat completion and return the fields callers actually use.
  *
- * @param {Array<{role: 'system'|'user'|'assistant', content: string}>} messages
- * @param {{model?: string, temperature?: number, json?: boolean}} [options]
+ * `tools` is passed through untouched; when the model asks for one, `toolCalls`
+ * holds the requests and `content` is usually empty. Executing them is the
+ * caller's job — see `src/tool-call.js`, which owns the loop and treats the
+ * requests as untrusted.
+ *
+ * @param {Array<object>} messages  Full history, including `tool` results.
+ * @param {{
+ *   model?: string,
+ *   temperature?: number,
+ *   json?: boolean,
+ *   tools?: Array<object>
+ * }} [options]
  */
-export async function chat(messages, { model, temperature = 0.7, json = false } = {}) {
+export async function chat(messages, { model, temperature = 0.7, json = false, tools } = {}) {
   const startedAt = Date.now();
 
   const completion = await limit(() =>
@@ -39,6 +49,7 @@ export async function chat(messages, { model, temperature = 0.7, json = false } 
       messages,
       temperature,
       ...(json ? { response_format: { type: 'json_object' } } : {}),
+      ...(tools?.length ? { tools } : {}),
     }),
   );
 
@@ -46,6 +57,7 @@ export async function chat(messages, { model, temperature = 0.7, json = false } 
 
   return {
     content: choice?.message?.content ?? '',
+    toolCalls: choice?.message?.tool_calls ?? [],
     finishReason: choice?.finish_reason ?? null,
     model: completion.model,
     usage: completion.usage ?? null,

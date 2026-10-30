@@ -11,6 +11,7 @@
     "ask": "node --env-file=.env src/ask.js",
     "conversation": "node --env-file=.env src/conversation.js",
     "conversation:json": "node --env-file=.env src/conversation-json.js",
+    "tools": "node --env-file=.env src/tool-call.js",
     "test": "node --test"
   },
   "keywords": [],

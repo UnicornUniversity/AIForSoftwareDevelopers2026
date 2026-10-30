@@ -1,0 +1,24 @@
+{
+  "topN": 8,
+  "theme": "Artificial intelligence, software engineering and the technology industry.",
+  "fetch": {
+    "timeoutMs": 15000,
+    "maxBytes": 5000000,
+    "maxRedirects": 5,
+    "concurrency": 4,
+    "perHostDelayMs": 1000,
+    "respectRobotsTxt": true,
+    "userAgent": "BlogDigester/0.1 (course project; politely fetching one page per host every second)"
+  },
+  "llm": {
+    "rankingCandidates": 40,
+    "summaryConcurrency": 3,
+    "timeoutMs": 45000,
+    "maxTokens": 8000,
+    "temperature": 0.4
+  },
+  "output": {
+    "dir": "output",
+    "file": "index.html"
+  }
+}

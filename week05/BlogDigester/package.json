@@ -1,0 +1,28 @@
+{
+  "name": "blog-digester",
+  "version": "0.1.0",
+  "description": "Collect blog article URLs, archive them as Markdown, rank them with DeepSeek and render a 1920s-style newspaper front page",
+  "main": "src/index.js",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test",
+    "test:online": "node scripts/run-online-tests.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.6.0",
+    "express": "^5.3.0",
+    "jsdom": "^26.1.0",
+    "openai": "^4.104.0",
+    "p-limit": "^7.3.3",
+    "turndown": "^7.2.4"
+  }
+}

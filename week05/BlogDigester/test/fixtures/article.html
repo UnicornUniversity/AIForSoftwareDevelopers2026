@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>How a Small Team Shipped a Compiler | Example Journal</title>
+  <meta property="og:site_name" content="Example Journal">
+  <meta property="og:title" content="How a Small Team Shipped a Compiler">
+  <meta property="article:published_time" content="2026-05-01T09:30:00Z">
+  <meta name="author" content="Ada Lovelace">
+</head>
+<body>
+  <nav><a href="/">Home</a> <a href="/about">About</a> Navigation junk that must not appear.</nav>
+
+  <article>
+    <h1>How a Small Team Shipped a Compiler</h1>
+    <p class="byline">By Ada Lovelace</p>
+
+    <p>When the team began work on the compiler, nobody believed that four engineers could produce a
+    production-quality toolchain in a single year. The project started as an experiment in
+    incremental delivery: every week the compiler had to compile something real, even if that
+    something was a single arithmetic expression. That constraint changed the architecture. Instead
+    of building an elaborate intermediate representation first and a parser later, the team built a
+    thin vertical slice and let the representation grow with the language.</p>
+
+    <p>The second lesson was about testing. The team wrote hundreds of small programs that were
+    expected to fail to compile, and every one of them carried a diagnostic message that a person
+    could understand. Error messages became the user interface, and the team treated them with the
+    same care as generated code. A confusing message, they argued, is a bug in the compiler just as
+    surely as a miscompiled branch is.</p>
+
+    <p>Finally, the team invested early in reproducible builds. Read the <a href="/notes/reproducible-builds">build notes</a>
+    for the details. <a href="javascript:alert('nope')">This link should be neutralised</a> and this
+    sentence keeps the paragraph long enough to be considered real article content by any reasonable
+    extractor. The compiler shipped on time, with fewer defects than the previous project, and the
+    team attributed the result to the weekly slice, the diagnostics, and the builds.</p>
+
+    <figure>
+      <img src="/images/team.jpg" alt="The four engineers at a whiteboard">
+      <figcaption>The team at work.</figcaption>
+    </figure>
+
+    <form action="/subscribe"><input type="email" name="email"><button>Subscribe</button></form>
+  </article>
+
+  <aside>Related links that are not part of the article.</aside>
+  <footer>Copyright Example Journal. Footer junk.</footer>
+
+  <script>alert('script junk');</script>
+</body>
+</html>

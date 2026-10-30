@@ -21,5 +21,5 @@ test('the app exposes its routes', async () => {
     .filter((layer) => layer.route)
     .map((layer) => `${Object.keys(layer.route.methods)[0].toUpperCase()} ${layer.route.path}`);
 
-  assert.deepEqual(routes, ['GET /health', 'POST /api/chat']);
+  assert.deepEqual(routes, ['GET /health', 'POST /api/chat', 'POST /api/tool-chat']);
 });

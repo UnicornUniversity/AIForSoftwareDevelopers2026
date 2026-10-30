@@ -1,0 +1,20 @@
+{
+  "name": "franklin-chat",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Week 05 — FranklinChat: a chatbot that impersonates Benjamin Franklin, grounded in his Autobiography. Demonstrates persona prompting, conversation memory, intent classification via tool-calls, and a streaming web UI.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node --env-file=.env server/server.js",
+    "dev": "node --env-file=.env --watch server/server.js",
+    "cli": "node --env-file=.env scripts/cli.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.30.1",
+    "express": "^4.21.1",
+    "openai": "^4.73.0"
+  }
+}

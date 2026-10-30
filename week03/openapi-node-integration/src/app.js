@@ -1,6 +1,7 @@
 import express from 'express';
 
 import { chat, defaultModel, deepseekBaseURL } from './deepseek.js';
+import { askWithTools } from './tool-call.js';
 
 export function createApp() {
   const app = express();
@@ -29,6 +30,28 @@ export function createApp() {
     }
 
     res.json(await chat(history, { model, temperature, json }));
+  });
+
+  // Same model, but with the stub weather tool available. The response carries
+  // the calls the model made, so a caller can see the tool loop that happened.
+  app.post('/api/tool-chat', async (req, res) => {
+    const { prompt, maxRounds } = req.body ?? {};
+
+    if (typeof prompt !== 'string' || prompt.trim() === '') {
+      return res.status(400).json({ error: 'Provide "prompt" (non-empty string).' });
+    }
+
+    const result = await askWithTools(prompt, { maxRounds });
+
+    res.json({
+      content: result.answer,
+      toolCalls: result.toolCalls,
+      rounds: result.rounds,
+      exhausted: result.exhausted,
+      model: result.model,
+      usage: result.usage,
+      elapsedMs: result.elapsedMs,
+    });
   });
 
   app.use((req, res) => {
