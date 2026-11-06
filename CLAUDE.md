@@ -71,9 +71,10 @@ The repo-root `.venv` holds the notebook dependencies (`requirements.txt`). `ana
 `make_html.py` need none of them. `analysis.py` exits non-zero if any asserted invariant moves, so
 a change to the CSV cannot silently invalidate the prose.
 
-### week06/chunking — chunk-size study (Python)
+### week06/RomanEmpireRAG/chunking — chunk-size study (Python)
 
 ```bash
+cd week06/RomanEmpireRAG/chunking
 python chunking.py    # -> out/stats.json, out/volumes_view.json, out/chunks.jsonl.gz
 python make_html.py   # -> report.html (result table plus the whole corpus, chunk-coloured)
 ```
@@ -83,45 +84,47 @@ corpus and that every volume view neither drops nor repeats a sentence; a segmen
 fails the run instead of producing a plausible report. `report.html` is generated, not hand-edited
 — change the generators and rebuild.
 
-### week06 ChromaDB (optional, Python)
+### week06/RomanEmpireRAG ChromaDB (optional, Python)
 
 ```bash
-python -m pip install -r week06/requirements.txt   # chromadb into the repo-root .venv
-python week06/ingest.py    # all six volumes -> week06/chroma (5,772 chunks, ~1 min)
-python week06/query.py "Why did the Western Empire fall?" -k 3
+python -m pip install -r week06/RomanEmpireRAG/requirements.txt   # chromadb into the repo-root .venv
+python week06/RomanEmpireRAG/ingest.py    # six volumes -> week06/RomanEmpireRAG/chroma (5,772 chunks, ~1 min)
+python week06/RomanEmpireRAG/query.py "Why did the Western Empire fall?" -k 3
 ```
 
-`ingest.py` imports the segmenter from `week06/chunking/chunking.py`; the chunks are identical to
-`out/chunks.jsonl.gz`. Embeddings are Chroma's local all-MiniLM model (no key). The store is
-gitignored, and it is what the Node app retrieves from. `week06/CLAUDE.md` has the details.
+`ingest.py` imports the segmenter from `week06/RomanEmpireRAG/chunking/chunking.py`; the chunks
+are identical to `out/chunks.jsonl.gz`. Embeddings are Chroma's local all-MiniLM model (no key).
+The store is gitignored, and it is what the Node app retrieves from.
+`week06/RomanEmpireRAG/CLAUDE.md` has the details.
 
-### week06/rag-app — Roman history RAG (Node + React)
+### week06/RomanEmpireRAG/rag-app — Roman history RAG (Node + React)
 
 ```bash
 # once: build the Chroma store the backend reads (it never ingests)
-cd week06 && .venv/Scripts/python.exe ingest.py
+.venv/Scripts/python.exe week06/RomanEmpireRAG/ingest.py
 
 # backend (http://localhost:8788)
-cd week06/rag-app/backend && npm ci && cp .env.example .env   # key optional
+cd week06/RomanEmpireRAG/rag-app/backend && npm ci && cp .env.example .env   # key optional
 npm start        # node src/index.js
-npm test         # 33 tests, no network, key, Python or store
+npm test         # 34 tests, no network, key, Python or store
 
 # frontend (http://localhost:5174)
-cd week06/rag-app/frontend && npm ci
+cd week06/RomanEmpireRAG/rag-app/frontend && npm ci
 npm run dev
 npm test         # 6 tests for the pure highlight helpers
 ```
 
-Implements `week06/specs/ui.md`: question input, read-only answer textarea, ranked retrieved
-passages. The backend reads `week06/chroma` (the one hard dependency) through a small Python JSON
-bridge, and answers through DeepSeek when `DEEPSEEK_API_KEY` is set, otherwise by quoting the
-retrieved passages. An upstream failure never becomes a 5xx; a dead retrieval bridge is a scrubbed
-503. `week06/CLAUDE.md` has the module map and the HTTP contract.
+Implements `week06/RomanEmpireRAG/specs/ui.md`: question input, read-only answer textarea, ranked
+retrieved passages. The backend reads `week06/RomanEmpireRAG/chroma` (the one hard dependency)
+through a small Python JSON bridge, and answers through DeepSeek when `DEEPSEEK_API_KEY` is set,
+otherwise by quoting the retrieved passages. An upstream failure never becomes a 5xx; a dead
+retrieval bridge is a scrubbed 503. `week06/RomanEmpireRAG/CLAUDE.md` has the module map and the
+HTTP contract.
 
 ### week06/diabetes — diabetes knowledge-base RAG (Node + React)
 
-Same architecture as `week06/rag-app`, but the corpus is 12 short structured Markdown documents,
-so the retrieval unit is the `##` section (48 chunks), not a character window.
+Same architecture as `week06/RomanEmpireRAG/rag-app`, but the corpus is 12 short structured
+Markdown documents, so the retrieval unit is the `##` section (48 chunks), not a character window.
 `RETRIEVAL_MODE=section` (default) sends the top-ranked sections; `document` loads every section
 of up to `DOC_TOP_K` matched documents (parent-document retrieval). `npm run compare` measures both
 on the same questions.

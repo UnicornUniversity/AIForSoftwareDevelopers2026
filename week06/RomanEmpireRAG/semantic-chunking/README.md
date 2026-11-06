@@ -263,15 +263,11 @@ One JSON object per line. The fields used by `rag-app` are present with the same
 `overlap_chars`, `text`. Semantic extras: `chapter_id`, `chapter_heading`, `content_chars`,
 `sentence_count`, `boundary_distance`, `threshold`, `backend`.
 
-To point the RAG app at this corpus instead of the sibling study's:
-
-```bash
-cd week06/rag-app/backend
-CHUNKS_PATH=../../semantic-chunking/out/chunks.jsonl.gz npm start
-```
-
-The two corpora have different ids and chunk boundaries, so retrieval results will differ. Do not
-mix them in one index.
+This corpus is not wired into the RAG app. The app retrieves from the ChromaDB store built by
+`../ingest.py`, which imports the sibling size study's segmenter; the backend has no
+`CHUNKS_PATH` switch. To compare the corpora in retrieval, build a separate Chroma collection
+from this `chunks.jsonl.gz` and point `CHROMA_DB` / `CHROMA_COLLECTION` at it. The two corpora
+have different ids and chunk boundaries, so do not mix them in one index.
 
 ### `out/volumes_view.json`
 

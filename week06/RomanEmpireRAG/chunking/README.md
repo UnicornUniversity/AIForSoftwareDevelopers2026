@@ -23,7 +23,7 @@ winner, so an operational constraint may legitimately pick another point in that
 ## Reproducing
 
 ```bash
-cd week06/chunking
+cd week06/RomanEmpireRAG/chunking
 python chunking.py      # -> out/stats.json, out/chunks.jsonl.gz
 python make_html.py     # -> report.html
 ```

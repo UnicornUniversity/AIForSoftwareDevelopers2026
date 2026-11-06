@@ -14,7 +14,7 @@ configured, and quoted from the retrieved text otherwise.
 
 ```
 Browser (React + Vite, :5174) ──/api──> Express (:8788) ──JSON lines──> Python bridge
-                                         ├─ ChromaDB vector search          └─ week06/chroma
+                                         ├─ ChromaDB vector search          └─ chroma/
                                          ├─ DeepSeek answer synthesis   (if a key is set)
                                          └─ extractive quoted answer    (otherwise)
 ```
@@ -24,11 +24,12 @@ Browser (React + Vite, :5174) ──/api──> Express (:8788) ──JSON lines
 The ChromaDB store is built **once, by a separate command** — the backend only reads it:
 
 ```bash
-# from the repository root, with a Python that has chromadb (see week06/requirements.txt)
-.venv/Scripts/python.exe week06/ingest.py      # or: python week06/ingest.py
+# from the repository root, with a Python that has chromadb
+# (see week06/RomanEmpireRAG/requirements.txt)
+.venv/Scripts/python.exe week06/RomanEmpireRAG/ingest.py   # or: python week06/RomanEmpireRAG/ingest.py
 ```
 
-Then, two terminals, both from `week06/rag-app`:
+Then, two terminals, both from `week06/RomanEmpireRAG/rag-app`:
 
 ```bash
 # 1 — backend, http://localhost:8788
@@ -72,12 +73,12 @@ command that builds it.
 question -> Chroma bridge -> all-MiniLM-L6-v2 embedding -> cosine search -> top 6 chunks
 ```
 
-- **The vectors are local.** `week06/ingest.py` embedded every chunk with Chroma's
+- **The vectors are local.** `ingest.py` embedded every chunk with Chroma's
   default embedding function (all-MiniLM-L6-v2 through ONNX), so retrieval needs no API
   key and no network after the model is cached.
 - **One embedding function.** A question must be embedded exactly like the passages.
   That function lives in Python, so the Node service keeps one bridge process alive and
-  sends it `{id, question, k}` per line. The bridge talks to `week06/chroma` and returns
+  sends it `{id, question, k}` per line. The bridge talks to `chroma/` and returns
   ids, text, metadata and distances.
 - **Cosine similarity.** The collection was created with `hnsw:space = cosine`, so the
   score shown in the UI is `1 - distance`, clamped at zero. Chroma's row order is the
@@ -144,7 +145,7 @@ All values are optional except the store itself; see
 | `ANSWER_MODE` | `auto` | `extractive` never calls the model |
 | `LLM_TIMEOUT_MS` | `40000` | one answer attempt; a timeout falls back, it is not an error |
 | `LLM_MAX_RETRIES` | `1` | SDK retries for connection errors, 429 and 5xx |
-| `CHROMA_DB` | `../../chroma` | store built by `week06/ingest.py` |
+| `CHROMA_DB` | `../../chroma` | store built by `ingest.py` |
 | `CHROMA_COLLECTION` | `gibbon` | collection name |
 | `CHROMA_PYTHON` | detected venv | interpreter with `chromadb` |
 | `CHROMA_TIMEOUT_MS` | `30000` | bridge start-up and one query |
@@ -157,7 +158,7 @@ to 40 seconds" hint while waiting rather than looking frozen.
 ## Tests
 
 ```bash
-cd backend && npm test     # 33 tests, no network, no API key, no ChromaDB
+cd backend && npm test     # 34 tests, no network, no API key, no ChromaDB
 cd frontend && npm test    # 6 tests for the highlight helpers
 ```
 
@@ -167,8 +168,8 @@ OpenAI client, so the HTTP shape, the Chroma framing/mapping and every model pat
 
 ## Corpus provenance
 
-The passages are `week06/chunking`'s output at roughly 1,500 characters per chunk with
-100 characters of requested overlap. `week06/ingest.py` segments the same corpus with the
+The passages are `../chunking`'s output at roughly 1,500 characters per chunk with
+100 characters of requested overlap. `../ingest.py` segments the same corpus with the
 same code and refuses to embed chunks that differ from `chunking/out/chunks.jsonl.gz`.
 Regenerating the chunks changes what the app retrieves: re-run the ingest and restart the
 backend.

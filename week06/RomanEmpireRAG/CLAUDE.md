@@ -1,9 +1,10 @@
-# CLAUDE.md — week06
+# CLAUDE.md — week06/RomanEmpireRAG
 
-Guidance for Claude Code when working in `week06/`. The repository-root `CLAUDE.md` still applies;
-this file narrows it to this week.
+Guidance for Claude Code when working in `week06/RomanEmpireRAG/`. The repository-root
+`CLAUDE.md` still applies; this file narrows it to this project. `README.md` is the
+human-facing overview.
 
-## What this week is
+## What this project is
 
 Two course deliverables, one per spec, plus one shared ChromaDB store:
 
@@ -35,7 +36,7 @@ parameters must not be propagated across. `semantic-chunking/README.md` is the r
 ### chunking — Python, standard library only
 
 ```bash
-cd week06/chunking
+cd week06/RomanEmpireRAG/chunking
 python chunking.py               # -> out/stats.json, out/volumes_view.json, out/chunks.jsonl.gz
 python chunking.py --no-chunks   # skip the ~3 MB compressed chunk file
 python chunking.py --explain     # print the segmentation decision for each volume
@@ -50,31 +51,32 @@ double-click.
 ### ChromaDB ingestion — Python, needs `chromadb`
 
 ```bash
-python -m pip install -r week06/requirements.txt   # into the repo-root .venv
-python week06/ingest.py                            # all six volumes -> week06/chroma
-python week06/ingest.py --volumes 1                # one volume, same chunk ids as the full run
-python week06/ingest.py --append                   # upsert into an existing collection
-python week06/ingest.py --stats                    # chunks per volume, distinct chapters
-python week06/query.py "Why did the Western Empire fall?" -k 3
-python week06/query.py --volume 4 "Who was Belisarius?"
-python week06/query.py --chapter "Last Victory" "Belisarius" -k 2
-python week06/query.py --json "Who was Belisarius?"
+python -m pip install -r week06/RomanEmpireRAG/requirements.txt   # into the repo-root .venv
+python week06/RomanEmpireRAG/ingest.py            # all six volumes -> week06/RomanEmpireRAG/chroma
+python week06/RomanEmpireRAG/ingest.py --volumes 1  # one volume, same chunk ids as the full run
+python week06/RomanEmpireRAG/ingest.py --append     # upsert into an existing collection
+python week06/RomanEmpireRAG/ingest.py --stats      # chunks per volume, distinct chapters
+python week06/RomanEmpireRAG/query.py "Why did the Western Empire fall?" -k 3
+python week06/RomanEmpireRAG/query.py --volume 4 "Who was Belisarius?"
+python week06/RomanEmpireRAG/query.py --chapter "Last Victory" "Belisarius" -k 2
+python week06/RomanEmpireRAG/query.py --json "Who was Belisarius?"
 ```
 
 Defaults come from the study: target/overlap are read from `chunking/out/stats.json` (`best`), and
 fall back to 1,500/100 if it has not been generated. The full run is 5,772 chunks and takes about a
 minute once Chroma's MiniLM model is cached (`~/.cache/chroma/onnx_models`, ~79 MB downloaded on
-first use). The store lands in `week06/chroma` (~89 MB, gitignored); `--db` changes it. A normal run
-replaces the collection, `--append` upserts into it.
+first use). The store lands in `week06/RomanEmpireRAG/chroma` (~126 MB on this checkout,
+gitignored); `--db` changes it. A normal run replaces the collection, `--append` upserts
+into it.
 
-On this checkout the repo-root `.venv` already has `chromadb`; on Windows invoke it directly:
-`.venv/Scripts/python.exe week06/ingest.py`.
+On this checkout the repo-root `.venv` already has `chromadb`; on Windows invoke it
+directly: `.venv/Scripts/python.exe week06/RomanEmpireRAG/ingest.py`.
 
 ### rag-app backend — Node >= 20.12, ESM
 
 ```bash
-cd week06
-.venv/Scripts/python.exe ingest.py   # once: build week06/chroma (the backend only reads it)
+cd week06/RomanEmpireRAG
+.venv/Scripts/python.exe ingest.py   # once: build chroma/ (the backend only reads it)
 cd rag-app/backend
 npm ci
 cp .env.example .env             # optional; with no .env the service answers extractively
@@ -83,9 +85,9 @@ npm run dev                      # same with node --watch
 npm test                         # node --test "test/**/*.test.js"; 34 tests, no network
 ```
 
-The one hard dependency is `week06/chroma`: `npm start` exits with the path and the `ingest.py`
+The one hard dependency is `week06/RomanEmpireRAG/chroma`: `npm start` exits with the path and the `ingest.py`
 command if it is missing. The backend spawns `bridge/chroma_bridge.py` with the first interpreter
-that has `chromadb` (`week06/.venv`, repo-root `.venv`, then `PATH`; override with `CHROMA_PYTHON`).
+it finds (`week06/.venv`, then the repo-root `.venv`, then `PATH`; override with `CHROMA_PYTHON`).
 
 `DEEPSEEK_API_KEY` is optional. A missing key, a timeout, a rate limit or an unusable model reply
 all degrade to an extractive answer; the server must not return 5xx because an upstream is
@@ -104,7 +106,7 @@ simply omits the flag where it does not exist.
 ### rag-app frontend — React 19 + Vite
 
 ```bash
-cd week06/rag-app/frontend
+cd week06/RomanEmpireRAG/rag-app/frontend
 npm ci
 npm run dev                      # http://localhost:5174, proxies /api to 8788
 npm test                         # node --test; 6 tests for src/lib/highlight.js
@@ -176,7 +178,7 @@ data/*.txt -> ingest.load_volume -> flatten -> pack  (all imported from chunking
                                                        |
                                         Chroma PersistentClient (cosine, collection "gibbon")
                                                        |
-                                        week06/chroma/  <- query.py                  (CLI check)
+                          week06/RomanEmpireRAG/chroma/  <- query.py                  (CLI check)
                                                        <- rag-app bridge/chroma_bridge.py
                                                              <- Express /api/ask   (the UI)
 ```
@@ -220,7 +222,7 @@ data/*.txt -> ingest.load_volume -> flatten -> pack  (all imported from chunking
 POST /api/ask -> app.js -> chroma.js search -> services/answerer.js
                               | (JSON lines)        |-> services/llm.js (DeepSeek)
                               v                     \-> services/extractive.js (fallback)
-                    bridge/chroma_bridge.py -> week06/chroma
+                    bridge/chroma_bridge.py -> week06/RomanEmpireRAG/chroma
 ```
 
 - `src/index.js` — startup. Starts the Chroma bridge (the one hard dependency: fail with the store
@@ -297,5 +299,5 @@ expansion). `src/lib/highlight.js` returns text segments rendered as text nodes;
 - HTTPS to DeepSeek may pass through a TLS-inspecting proxy. Node cannot trust it from the OS store
   before Node 24, so use `npm start` (which adds `--use-system-ca` where available) rather than
   calling `node src/index.js` directly, or set `NODE_EXTRA_CA_CERTS` in the shell before launch.
-- Generated files (`chunking/out/*`, `chunking/report.html`, `week06/chroma/`) are rebuilt, not
+- Generated files (`chunking/out/*`, `chunking/report.html`, `chroma/`) are rebuilt, not
   edited. Data files are committed as-is; do not reformat them.
