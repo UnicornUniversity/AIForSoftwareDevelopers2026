@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5196b435-ba40-431f-9f86-e5682302810d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/week06.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RomanEmpireRAG/specs/chunks1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RomanEmpireRAG/specs/ui.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diabetes/data/01_diabetes_diagnosis.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diabetes/data/02_hba1c.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diabetes/data/03_blood_glucose.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diabetes/data/04_screening.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diabetes/data/05_type1_diabetes.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diabetes/data/06_type2_diabetes.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diabetes/data/07_gestational_diabetes.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diabetes/data/08_prediabetes.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diabetes/data/09_diabetic_ketoacidosis.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diabetes/data/10_hypoglycemia.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diabetes/data/11_diabetes_complications.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diabetes/data/12_medications.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/../CLAUDE.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="3LjIZITvV29JyfuIGIrIdG0Mcq6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-PY-262.8665.369" />
+        <option value="bundled-python-sdk-6fa658e1df1a-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.8665.369" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5196b435-ba40-431f-9f86-e5682302810d" name="Changes" comment="" />
+      <created>1793961103821</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1793961103821</updated>
+      <workItem from="1793961105003" duration="393000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

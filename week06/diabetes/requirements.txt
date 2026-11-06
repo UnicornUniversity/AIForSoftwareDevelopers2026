@@ -1,0 +1,3 @@
+# ChromaDB ingestion for the diabetes knowledge base (see ingest.py / query.py).
+# Only ingest.py, query.py and rag-app/backend/bridge/chroma_bridge.py import it.
+chromadb>=1.5.9,<2

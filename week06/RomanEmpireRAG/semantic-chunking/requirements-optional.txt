@@ -1,0 +1,26 @@
+# Optional dependencies for week06/semantic-chunking.
+#
+# The core pipeline (python semantic_chunking.py --backend tfidf) is standard
+# library only. Install this file only for the semantic backends and the
+# LlamaIndex comparison.
+#
+#   pip install -r requirements-optional.txt
+#   python -m spacy download en_core_web_lg
+#
+# On Windows, the spaCy model download is a separate command rather than a pip
+# requirement; it is listed here only as a comment because its wheel URL is
+# platform-independent but versioned separately from spaCy.
+
+# --- Local sentence vectors (no API key) ------------------------------------
+spacy>=3.8,<4
+numpy>=1.26
+# After installing: python -m spacy download en_core_web_lg
+
+# --- Optional transformer backend (downloads a model on first use) ----------
+sentence-transformers>=3.0
+
+# --- LlamaIndex alternative -------------------------------------------------
+llama-index-core>=0.12
+llama-index-embeddings-huggingface>=0.4
+# Only for `llamaindex_pipeline.py --backend openai`:
+# llama-index-embeddings-openai>=0.3

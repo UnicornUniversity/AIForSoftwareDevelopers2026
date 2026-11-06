@@ -1,0 +1,8 @@
+# Local environment and generated artefacts.
+.env
+__pycache__/
+*.pyc
+
+# Dense sentence-embedding cache: ~66 MB for the six-volume corpus and fully
+# regenerable with `python semantic_chunking.py` (about 40 s on CPU).
+out/cache/

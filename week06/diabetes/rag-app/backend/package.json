@@ -1,0 +1,21 @@
+{
+  "name": "diabetes-rag-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Retrieval-augmented Q&A over a diabetes educational knowledge base",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "scripts": {
+    "start": "node scripts/start.js",
+    "dev": "node scripts/start.js --watch",
+    "test": "node --test \"test/**/*.test.js\"",
+    "compare": "node scripts/compare-retrieval.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "openai": "^4.104.0"
+  }
+}

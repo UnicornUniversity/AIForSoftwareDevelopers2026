@@ -1,0 +1,3 @@
+# ChromaDB ingestion for week06 (see ingest.py / query.py).
+# The chunking study itself stays standard-library only.
+chromadb>=1.5.9,<2

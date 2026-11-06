@@ -227,6 +227,24 @@ __marimo__/
 /week03/sunset-chaser-copilot/backend/node_modules
 /week03/sunset-chaser-copilot/frontend/node_modules
 
+# week06/rag-app
+/week06/rag-app/backend/node_modules
+/week06/rag-app/frontend/node_modules
+/week06/rag-app/frontend/dist
+
+# week06: generated ChromaDB store (week06/ingest.py) and local test stores
+/week06/chroma
+/week06/chroma-test
+
+# week06/diabetes: generated ChromaDB store and Node artefacts
+/week06/diabetes/chroma
+/week06/diabetes/rag-app/backend/node_modules
+/week06/diabetes/rag-app/frontend/node_modules
+/week06/diabetes/rag-app/frontend/dist
+
 # week04/kangaroo-skill: extraction cache and Word lock files
 /week04/kangaroo-skill/book/.work/
 ~$*.docx
+/week06/RomanEmpireRAG/chroma
+/week06/RomanEmpireRAG/rag-app/backend/node_modules
+/week06/RomanEmpireRAG/rag-app/frontend/node_modules
