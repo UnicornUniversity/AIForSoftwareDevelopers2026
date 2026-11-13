@@ -1,0 +1,14 @@
+# Meeting Voice AI Lab — TTS stage (prompt 02)
+# Python 3.11 (WhisperX/pyannote in prompt 03 is happier below 3.13).
+#
+# Pinned to versions installed and exercised on 2026-11-12.
+# Re-check https://aistudio.google.com/docs/speech-generation before bumping
+# google-genai, and re-run the offline test suite after any bump.
+
+google-genai==3.2.0
+numpy==2.4.6
+python-dotenv==1.2.4
+soundfile==0.14.0
+
+# Test-only; kept here so a clean install can run the full offline suite.
+pytest==9.2.0

@@ -1,0 +1,8 @@
+numpy
+librosa
+pydub
+sounddevice
+onnxruntime
+scipy
+matplotlib
+pygame

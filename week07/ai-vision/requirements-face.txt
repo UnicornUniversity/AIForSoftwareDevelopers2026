@@ -1,0 +1,14 @@
+# Optional: face detection + verification demo (face_match.py).
+#
+# This is the torch-free subset of requirements.txt: opencv-contrib-python
+# contains everything in opencv-python plus the face module (FaceDetectorYN,
+# FaceRecognizerSF), so this file is all face_match.py needs. requirements.txt
+# pins the same contrib wheel, so installing both in either order is safe.
+#
+# Never keep opencv-python and opencv-contrib-python side by side: they provide
+# the same cv2 module and the last one installed wins. If one is already there:
+#
+#   python -m pip uninstall -y opencv-python opencv-contrib-python
+#   python -m pip install -r requirements-face.txt
+opencv-contrib-python~=4.12.0.88
+numpy~=2.2.6

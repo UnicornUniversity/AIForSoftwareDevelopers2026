@@ -1,0 +1,214 @@
+{
+  "schema_version": "1.0",
+  "fixture_id": "controlled-sdlc-review-en",
+  "meeting_id": "sdlc-review-2026-11-12",
+  "language": "en-US",
+  "derived_from": "meeting_script.json",
+  "participant_ids": [
+    "ANN",
+    "BOB",
+    "GREG"
+  ],
+  "turn_count": 39,
+  "turns": [
+    {
+      "index": 1,
+      "speaker_id": "ANN",
+      "text": "All right, let's start. The goal today is to decide whether we're ready to release 2.4 on Thursday, and to put every blocker on the record."
+    },
+    {
+      "index": 2,
+      "speaker_id": "BOB",
+      "text": "On functionality, the picture is this: the catalog, cart, and order history are done. What's left is notifications and the external API integration."
+    },
+    {
+      "index": 3,
+      "speaker_id": "ANN",
+      "text": "How ready is the integration?"
+    },
+    {
+      "index": 4,
+      "speaker_id": "BOB",
+      "text": "Of the twenty-two REST API endpoints, eighteen are stable. No, let me correct that: seventeen are stable, and five are still in progress."
+    },
+    {
+      "index": 5,
+      "speaker_id": "GREG",
+      "text": "\"Still in progress\" is not a status. What exactly isn't working?"
+    },
+    {
+      "index": 6,
+      "speaker_id": "BOB",
+      "text": "Authentication and token refresh. The main flow works, but the refresh token occasionally returns a 401 under load."
+    },
+    {
+      "index": 7,
+      "speaker_id": "GREG",
+      "text": "Is that a blocker?"
+    },
+    {
+      "index": 8,
+      "speaker_id": "BOB",
+      "text": "Well, for external suppliers, yes. Internal users go through a session, so this issue doesn't affect them."
+    },
+    {
+      "index": 9,
+      "speaker_id": "ANN",
+      "text": "Then we can put the external integration behind a feature flag and turn it on after stabilization."
+    },
+    {
+      "index": 10,
+      "speaker_id": "GREG",
+      "text": "We can, but first find out whether the two big suppliers need the API on Thursday or just by the end of the month. If they need it Thursday, a flag won't save us."
+    },
+    {
+      "index": 11,
+      "speaker_id": "ANN",
+      "text": "Fine, I'll check with them today."
+    },
+    {
+      "index": 12,
+      "speaker_id": "BOB",
+      "text": "One more thing: the contractor promised to finish refresh by Wednesday, but so far they've only sent a test environment."
+    },
+    {
+      "index": 13,
+      "speaker_id": "GREG",
+      "text": "So the risk isn't only technical, it's contractual. Keep that in the minutes."
+    },
+    {
+      "index": 14,
+      "speaker_id": "ANN",
+      "text": "We will. What about the database?"
+    },
+    {
+      "index": 15,
+      "speaker_id": "BOB",
+      "text": "The migration from MySQL to PostgreSQL is on track. We moved the reference data and orders, about 1.2 million records. Payments and audit are left."
+    },
+    {
+      "index": 16,
+      "speaker_id": "GREG",
+      "text": "How long did the transfer to staging take?"
+    },
+    {
+      "index": 17,
+      "speaker_id": "BOB",
+      "text": "Last time... forty minutes. But the cache was cold, and on production it may take longer."
+    },
+    {
+      "index": 18,
+      "speaker_id": "ANN",
+      "text": "We need a full-volume rehearsal. Otherwise we'll discover the problem at four in the morning on Thursday."
+    },
+    {
+      "index": 19,
+      "speaker_id": "GREG",
+      "text": "Agreed. And a related question: do we have a rollback plan?"
+    },
+    {
+      "index": 20,
+      "speaker_id": "BOB",
+      "text": "We do. The old database stays read-only, and we switch traffic back with a feature flag. We tested it twice on staging."
+    },
+    {
+      "index": 21,
+      "speaker_id": "ANN",
+      "text": "And regression testing?"
+    },
+    {
+      "index": 22,
+      "speaker_id": "BOB",
+      "text": "CI/CD doesn't pass everything. Of four hundred and twenty cases, seven fail."
+    },
+    {
+      "index": 23,
+      "speaker_id": "GREG",
+      "text": "Which ones? If it's payments or authentication, that's a different conversation."
+    },
+    {
+      "index": 24,
+      "speaker_id": "BOB",
+      "text": "Two in notifications, three in reports, and two in export. Seven total. Payments and authentication are green."
+    },
+    {
+      "index": 25,
+      "speaker_id": "ANN",
+      "text": "So there are no blocking failures?"
+    },
+    {
+      "index": 26,
+      "speaker_id": "BOB",
+      "text": "In my assessment, no. But the reports are visible to accounting, and that will be noticed right after the release."
+    },
+    {
+      "index": 27,
+      "speaker_id": "GREG",
+      "text": "Visible is bad. I suggest we don't turn reports off, but document it in the release notes and schedule the fix for the first day after deployment."
+    },
+    {
+      "index": 28,
+      "speaker_id": "BOB",
+      "text": "Then we need someone to check the export on Friday morning. Otherwise the task just sits there."
+    },
+    {
+      "index": 29,
+      "speaker_id": "GREG",
+      "text": "Agreed. Support can handle it, but the owner has to be from the team."
+    },
+    {
+      "index": 30,
+      "speaker_id": "ANN",
+      "text": "I'll record that as a separate item. On deployment: we need a window with no load."
+    },
+    {
+      "index": 31,
+      "speaker_id": "BOB",
+      "text": "I suggest Thursday, from two to four in the morning. The Docker images are built and checked on staging. Well, assuming everything goes to plan."
+    },
+    {
+      "index": 32,
+      "speaker_id": "GREG",
+      "text": "Who's on duty?"
+    },
+    {
+      "index": 33,
+      "speaker_id": "ANN",
+      "text": "I'll be available, along with the on-call engineer from the team and support."
+    },
+    {
+      "index": 34,
+      "speaker_id": "BOB",
+      "text": "After deployment we run smoke tests and separately check authentication on production."
+    },
+    {
+      "index": 35,
+      "speaker_id": "GREG",
+      "text": "Good. I'm recording the decision: release on Thursday, external API behind the flag, reports fixed right after, migration rehearsed on Monday. Everything else goes into 2.4.1."
+    },
+    {
+      "index": 36,
+      "speaker_id": "ANN",
+      "text": "Agreed. I'll circulate the minutes and update the release checklist."
+    },
+    {
+      "index": 37,
+      "speaker_id": "BOB",
+      "text": "Then I'll close the refresh-token task today and send the contractor status."
+    },
+    {
+      "index": 38,
+      "speaker_id": "GREG",
+      "text": "Good. If it's quiet by Wednesday, we escalate."
+    },
+    {
+      "index": 39,
+      "speaker_id": "ANN",
+      "text": "All right, that's a wrap. Thank you."
+    }
+  ],
+  "notes": [
+    "Exact spoken text and speaker IDs; the reference for WER and speaker-attribution evaluation.",
+    "Do not pass this file, the participant names, or the turn map to either ASR system during a blind run."
+  ]
+}

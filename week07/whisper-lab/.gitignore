@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+
+# Downloaded model weights (faster-whisper / CTranslate2 cache)
+models/
+
+# Uploaded audio and generated transcripts
+jobs/
+
+# Benchmark output
+benchmark-results.json
+*.log

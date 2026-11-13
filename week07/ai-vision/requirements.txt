@@ -1,0 +1,37 @@
+# opencv-contrib-python, not opencv-python: contrib is a superset of the base
+# wheel and the only one that ships the face module (FaceDetectorYN,
+# FaceRecognizerSF) used by src/face_verifier.py. One cv2 provider for the whole
+# project, so this file and requirements-face.txt are installable in any order.
+opencv-contrib-python~=4.12.0.88
+numpy~=2.2.6
+torch~=2.9.1
+# torchvision is a dependency of ultralytics; pinning it here keeps the CUDA
+# build matched to torch instead of letting a CPU wheel slip in from PyPI.
+torchvision~=0.24.1
+ultralytics~=8.3.235
+# ultralytics declares opencv-python>=4.6.0, so pip/uv drops the base wheel on
+# top of contrib and both end up owning cv2/. Reinstall contrib last, then drop
+# the base package:
+#
+#     pip uninstall -y opencv-python
+#     pip install --force-reinstall opencv-contrib-python~=4.12.0.88
+#
+# Check with: python -c "import cv2; print(cv2.__version__, cv2.version.contrib)"
+# -> must print 4.12.0 True. Anything else means the face module is gone.
+
+# Note on torch + CUDA:
+# `pip install torch` from PyPI installs the CPU-only build. The motion detector
+# (`src/move_detector.py`) requires CUDA and will hard-fail without it.
+# To install a CUDA-enabled build, use the official PyTorch index for the tag
+# that matches your GPU and driver, e.g. CUDA 12.8 (Blackwell / RTX 50xx):
+#
+#     pip install -r requirements.txt \
+#         --index-url https://download.pytorch.org/whl/cu128 \
+#         --extra-index-url https://pypi.org/simple
+#
+# Older cards use cu121 or cu124. See https://pytorch.org/get-started/locally/
+# for the current matrix. With uv, put the PyTorch index first:
+#
+#     uv pip install -r requirements.txt \
+#         --index https://download.pytorch.org/whl/cu128 \
+#         --index https://pypi.org/simple

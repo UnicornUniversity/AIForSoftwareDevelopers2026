@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5196b435-ba40-431f-9f86-e5682302810d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/week06.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RomanEmpireRAG/specs/chunks1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RomanEmpireRAG/specs/ui.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diabetes/data/01_diabetes_diagnosis.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diabetes/data/02_hba1c.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diabetes/data/03_blood_glucose.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diabetes/data/04_screening.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diabetes/data/05_type1_diabetes.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diabetes/data/06_type2_diabetes.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diabetes/data/07_gestational_diabetes.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diabetes/data/08_prediabetes.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diabetes/data/09_diabetic_ketoacidosis.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diabetes/data/10_hypoglycemia.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diabetes/data/11_diabetes_complications.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diabetes/data/12_medications.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/../CLAUDE.md" afterDir="false" />
-    </list>
+    <list default="true" id="5196b435-ba40-431f-9f86-e5682302810d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,29 +13,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="3LjIZITvV29JyfuIGIrIdG0Mcq6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -73,6 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1793961103821</updated>
       <workItem from="1793961105003" duration="393000" />
+      <workItem from="1794128939227" duration="577000" />
     </task>
     <servers />
   </component>

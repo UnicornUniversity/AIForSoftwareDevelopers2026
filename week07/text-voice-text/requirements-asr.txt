@@ -1,0 +1,17 @@
+# Local ASR route (prompt 03): WhisperX + pyannote.
+#
+# Verified on 2026-11-12 with Python 3.11 / Windows 11. The resolved stack was:
+#   whisperx 3.8.6, pyannote-audio 4.0.7, torch 2.8.0, torchaudio 2.8.0,
+#   torchcodec 0.7.0, faster-whisper 1.2.1, ctranslate2 4.9.0,
+#   transformers 4.57.6, numpy 2.4.6.
+#
+# This installs the CPU PyTorch build on Windows. For CUDA, install the CUDA
+# 12.8 build of torch/torchaudio 2.8.0 from https://pytorch.org/get-started/locally/
+# first, verify `torch.cuda.is_available()`, then install this file.
+#
+# torchcodec warns that it cannot load libtorchcodec without FFmpeg. That is
+# harmless here: the lab passes an in-memory 16 kHz waveform to WhisperX and
+# pyannote, so neither decodes a file. Install FFmpeg only if you intend to run
+# the upstream `whisperx` CLI directly on non-WAV audio.
+-r requirements.txt
+whisperx==3.8.6

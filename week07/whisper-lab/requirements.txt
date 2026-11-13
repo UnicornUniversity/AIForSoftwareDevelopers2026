@@ -1,0 +1,9 @@
+faster-whisper>=1.2.0
+# PyAV 19 removed the metadata_errors argument that faster-whisper 1.2.x still
+# passes, which breaks every decode with "unexpected keyword argument
+# 'metadata_errors'". 16.0.1 is the version this lab is tested with.
+av==16.0.1
+fastapi>=0.115.0
+uvicorn>=0.34.0
+python-multipart>=0.0.20
+jiwer>=3.1.0

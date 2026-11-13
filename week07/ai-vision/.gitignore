@@ -1,0 +1,28 @@
+# Virtual environments
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# YOLO / ultralytics training outputs
+runs/
+
+# Downloaded face models (python download_face_models.py)
+models/face_detection_yunet_2023mar.onnx
+models/face_recognition_sface_2021dec.onnx
+
+# Local detection / capture artifacts
+detections/
+saved_frames/
+motion_frames/
+
+# IDE
+.gigaide/
+.idea/
+*.iml
+
+# Jupyter
+.ipynb_checkpoints/

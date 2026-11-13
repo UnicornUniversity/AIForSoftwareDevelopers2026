@@ -1,0 +1,1 @@
+Welcome to Whisper Lab. This sample was generated on a Windows computer so you can try speech recognition without downloading any audio. Whisper turns speech into text, detects the language, and can translate into English. In this lab you will compare model sizes and send the transcript to a local language model. Unicorn University, autumn semester

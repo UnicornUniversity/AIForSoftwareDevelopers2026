@@ -1,0 +1,31 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Virtual environment
+.venv/
+venv/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Generated audio and run outputs (regenerable; may contain private recordings)
+audio/
+outputs/
+runs/
+jobs/
+
+# Model weights and caches (prompt 03)
+models/
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.bin
+.cache/
+.huggingface/

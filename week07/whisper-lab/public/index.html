@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Whisper Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+        <rect x="3" y="13" width="3" height="6" rx="1.5"></rect>
+        <rect x="9" y="9" width="3" height="14" rx="1.5"></rect>
+        <rect x="15" y="5" width="3" height="22" rx="1.5"></rect>
+        <rect x="21" y="10" width="3" height="12" rx="1.5"></rect>
+        <rect x="27" y="14" width="2" height="4" rx="1"></rect>
+      </svg>
+      <div>
+        <h1>Whisper Lab</h1>
+        <p>Local speech-to-text with faster-whisper</p>
+      </div>
+    </div>
+    <div class="pills">
+      <span id="device-pill" class="pill muted">Checking device…</span>
+      <span id="llm-pill" class="pill muted">Checking Ollama…</span>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="card controls" aria-label="Transcription settings">
+      <h2>Audio</h2>
+
+      <label id="dropzone" class="dropzone" for="file-input">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 16V4m0 0L7 9m5-5 5 5M5 20h14"></path>
+        </svg>
+        <span class="drop-title">Drop a file here</span>
+        <span class="drop-hint">or click to browse — audio and video, up to <span id="max-size">200</span> MB</span>
+        <input id="file-input" type="file" accept="audio/*,video/*">
+      </label>
+
+      <div id="file-chip" class="file-chip" hidden>
+        <span class="file-name"></span>
+        <button type="button" class="icon-button" data-action="clear-file" aria-label="Remove file">×</button>
+      </div>
+
+      <div id="samples" class="samples" hidden>
+        <span class="samples-label">No file handy?</span>
+        <div id="sample-list" class="sample-list"></div>
+      </div>
+
+      <h2>Settings</h2>
+
+      <div class="field">
+        <label for="model">Model</label>
+        <select id="model"></select>
+        <p id="model-hint" class="hint"></p>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="language">Language</label>
+          <select id="language"></select>
+        </div>
+        <div class="field">
+          <label for="task">Task</label>
+          <select id="task">
+            <option value="transcribe">Transcribe</option>
+            <option value="translate">Translate to English</option>
+          </select>
+        </div>
+      </div>
+
+      <label class="check"><input id="vad" type="checkbox" checked> Skip silence (VAD)</label>
+      <label class="check"><input id="words" type="checkbox"> Word-level timestamps</label>
+
+      <button id="start" class="primary" type="button" disabled>Transcribe</button>
+      <p id="error" class="error" role="alert" hidden></p>
+
+      <div id="progress-wrap" class="progress-wrap" hidden>
+        <div class="progress-meta">
+          <span id="phase">Queued…</span>
+          <span id="progress-percent"></span>
+        </div>
+        <div class="progress-track"><div id="progress-bar" class="progress-bar"></div></div>
+      </div>
+    </section>
+
+    <section class="card results" aria-label="Results">
+      <div class="results-head">
+        <div class="tabs" role="tablist">
+          <button id="tab-transcript" class="tab active" role="tab" aria-selected="true" type="button">Transcript</button>
+          <button id="tab-summary" class="tab" role="tab" aria-selected="false" type="button">Notes</button>
+        </div>
+        <div id="job-meta" class="job-meta"></div>
+      </div>
+
+      <div id="empty" class="empty">
+        <p>Your transcript will appear here.</p>
+        <p class="hint">Pick the sample recording or drop your own file, then press <strong>Transcribe</strong>.</p>
+      </div>
+
+      <div id="panel-transcript" class="panel" hidden>
+        <div class="transcript-toolbar">
+          <button type="button" class="ghost" data-action="copy">Copy text</button>
+          <div class="downloads">
+            <a data-download="txt" class="ghost" href="#">TXT</a>
+            <a data-download="srt" class="ghost" href="#">SRT</a>
+            <a data-download="vtt" class="ghost" href="#">VTT</a>
+            <a data-download="json" class="ghost" href="#">JSON</a>
+          </div>
+        </div>
+        <div id="segments" class="segments"></div>
+      </div>
+
+      <div id="panel-summary" class="panel" hidden>
+        <div class="summary-controls">
+          <input id="focus" type="text" placeholder="Optional focus, e.g. “pull out the action items”">
+          <button id="summarize" type="button" class="secondary">Summarize with Ollama</button>
+        </div>
+        <p id="summary-hint" class="hint"></p>
+        <div id="summary-output" class="summary-output md" hidden></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

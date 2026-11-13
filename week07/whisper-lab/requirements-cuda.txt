@@ -1,0 +1,7 @@
+# Optional: GPU acceleration on Windows.
+# Install only if you have an NVIDIA GPU with a recent driver:
+#     python -m pip install -r requirements-cuda.txt
+# These wheels are large (about 1.5 GB) and are not needed on CPU or macOS.
+nvidia-cublas-cu12
+nvidia-cudnn-cu12
+nvidia-cuda-runtime-cu12

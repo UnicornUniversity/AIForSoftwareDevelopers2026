@@ -1,0 +1,288 @@
+{
+  "schema_version": "1.0",
+  "fixture_id": "controlled-sdlc-review-en",
+  "meeting_id": "sdlc-review-2026-11-12",
+  "title": "Release 2.4 readiness review",
+  "language": "en-US",
+  "fictional": true,
+  "participant_ids": [
+    "ANN",
+    "BOB",
+    "GREG"
+  ],
+  "turns": [
+    {
+      "index": 1,
+      "speaker_id": "ANN",
+      "text": "All right, let's start. The goal today is to decide whether we're ready to release 2.4 on Thursday, and to put every blocker on the record.",
+      "delivery": "calm",
+      "section": "Status and integration"
+    },
+    {
+      "index": 2,
+      "speaker_id": "BOB",
+      "text": "On functionality, the picture is this: the catalog, cart, and order history are done. What's left is notifications and the external API integration.",
+      "delivery": "calm",
+      "section": "Status and integration"
+    },
+    {
+      "index": 3,
+      "speaker_id": "ANN",
+      "text": "How ready is the integration?",
+      "delivery": "calm",
+      "section": "Status and integration"
+    },
+    {
+      "index": 4,
+      "speaker_id": "BOB",
+      "text": "Of the twenty-two REST API endpoints, eighteen are stable. No, let me correct that: seventeen are stable, and five are still in progress.",
+      "delivery": "thoughtful",
+      "section": "Status and integration"
+    },
+    {
+      "index": 5,
+      "speaker_id": "GREG",
+      "text": "\"Still in progress\" is not a status. What exactly isn't working?",
+      "delivery": "firm",
+      "section": "Status and integration"
+    },
+    {
+      "index": 6,
+      "speaker_id": "BOB",
+      "text": "Authentication and token refresh. The main flow works, but the refresh token occasionally returns a 401 under load.",
+      "delivery": "thoughtful",
+      "section": "Status and integration"
+    },
+    {
+      "index": 7,
+      "speaker_id": "GREG",
+      "text": "Is that a blocker?",
+      "delivery": "firm",
+      "section": "Status and integration"
+    },
+    {
+      "index": 8,
+      "speaker_id": "BOB",
+      "text": "Well, for external suppliers, yes. Internal users go through a session, so this issue doesn't affect them.",
+      "delivery": "calm",
+      "section": "Status and integration"
+    },
+    {
+      "index": 9,
+      "speaker_id": "ANN",
+      "text": "Then we can put the external integration behind a feature flag and turn it on after stabilization.",
+      "delivery": "calm",
+      "section": "Status and integration"
+    },
+    {
+      "index": 10,
+      "speaker_id": "GREG",
+      "text": "We can, but first find out whether the two big suppliers need the API on Thursday or just by the end of the month. If they need it Thursday, a flag won't save us.",
+      "delivery": "firm",
+      "section": "Status and integration"
+    },
+    {
+      "index": 11,
+      "speaker_id": "ANN",
+      "text": "Fine, I'll check with them today.",
+      "delivery": "calm",
+      "section": "Status and integration"
+    },
+    {
+      "index": 12,
+      "speaker_id": "BOB",
+      "text": "One more thing: the contractor promised to finish refresh by Wednesday, but so far they've only sent a test environment.",
+      "delivery": "thoughtful",
+      "section": "Status and integration"
+    },
+    {
+      "index": 13,
+      "speaker_id": "GREG",
+      "text": "So the risk isn't only technical, it's contractual. Keep that in the minutes.",
+      "delivery": "firm",
+      "section": "Status and integration"
+    },
+    {
+      "index": 14,
+      "speaker_id": "ANN",
+      "text": "We will. What about the database?",
+      "delivery": "calm",
+      "section": "Database migration"
+    },
+    {
+      "index": 15,
+      "speaker_id": "BOB",
+      "text": "The migration from MySQL to PostgreSQL is on track. We moved the reference data and orders, about 1.2 million records. Payments and audit are left.",
+      "delivery": "thoughtful",
+      "section": "Database migration"
+    },
+    {
+      "index": 16,
+      "speaker_id": "GREG",
+      "text": "How long did the transfer to staging take?",
+      "delivery": "firm",
+      "section": "Database migration"
+    },
+    {
+      "index": 17,
+      "speaker_id": "BOB",
+      "text": "Last time... forty minutes. But the cache was cold, and on production it may take longer.",
+      "delivery": "calm",
+      "section": "Database migration"
+    },
+    {
+      "index": 18,
+      "speaker_id": "ANN",
+      "text": "We need a full-volume rehearsal. Otherwise we'll discover the problem at four in the morning on Thursday.",
+      "delivery": "calm",
+      "section": "Database migration"
+    },
+    {
+      "index": 19,
+      "speaker_id": "GREG",
+      "text": "Agreed. And a related question: do we have a rollback plan?",
+      "delivery": "firm",
+      "section": "Database migration"
+    },
+    {
+      "index": 20,
+      "speaker_id": "BOB",
+      "text": "We do. The old database stays read-only, and we switch traffic back with a feature flag. We tested it twice on staging.",
+      "delivery": "confident",
+      "section": "Database migration"
+    },
+    {
+      "index": 21,
+      "speaker_id": "ANN",
+      "text": "And regression testing?",
+      "delivery": "calm",
+      "section": "Testing and risks"
+    },
+    {
+      "index": 22,
+      "speaker_id": "BOB",
+      "text": "CI/CD doesn't pass everything. Of four hundred and twenty cases, seven fail.",
+      "delivery": "thoughtful",
+      "section": "Testing and risks"
+    },
+    {
+      "index": 23,
+      "speaker_id": "GREG",
+      "text": "Which ones? If it's payments or authentication, that's a different conversation.",
+      "delivery": "firm",
+      "section": "Testing and risks"
+    },
+    {
+      "index": 24,
+      "speaker_id": "BOB",
+      "text": "Two in notifications, three in reports, and two in export. Seven total. Payments and authentication are green.",
+      "delivery": "thoughtful",
+      "section": "Testing and risks"
+    },
+    {
+      "index": 25,
+      "speaker_id": "ANN",
+      "text": "So there are no blocking failures?",
+      "delivery": "calm",
+      "section": "Testing and risks"
+    },
+    {
+      "index": 26,
+      "speaker_id": "BOB",
+      "text": "In my assessment, no. But the reports are visible to accounting, and that will be noticed right after the release.",
+      "delivery": "thoughtful",
+      "section": "Testing and risks"
+    },
+    {
+      "index": 27,
+      "speaker_id": "GREG",
+      "text": "Visible is bad. I suggest we don't turn reports off, but document it in the release notes and schedule the fix for the first day after deployment.",
+      "delivery": "firm",
+      "section": "Testing and risks"
+    },
+    {
+      "index": 28,
+      "speaker_id": "BOB",
+      "text": "Then we need someone to check the export on Friday morning. Otherwise the task just sits there.",
+      "delivery": "thoughtful",
+      "section": "Testing and risks"
+    },
+    {
+      "index": 29,
+      "speaker_id": "GREG",
+      "text": "Agreed. Support can handle it, but the owner has to be from the team.",
+      "delivery": "firm",
+      "section": "Testing and risks"
+    },
+    {
+      "index": 30,
+      "speaker_id": "ANN",
+      "text": "I'll record that as a separate item. On deployment: we need a window with no load.",
+      "delivery": "calm",
+      "section": "Deployment and decision"
+    },
+    {
+      "index": 31,
+      "speaker_id": "BOB",
+      "text": "I suggest Thursday, from two to four in the morning. The Docker images are built and checked on staging. Well, assuming everything goes to plan.",
+      "delivery": "confident",
+      "section": "Deployment and decision"
+    },
+    {
+      "index": 32,
+      "speaker_id": "GREG",
+      "text": "Who's on duty?",
+      "delivery": "firm",
+      "section": "Deployment and decision"
+    },
+    {
+      "index": 33,
+      "speaker_id": "ANN",
+      "text": "I'll be available, along with the on-call engineer from the team and support.",
+      "delivery": "calm",
+      "section": "Deployment and decision"
+    },
+    {
+      "index": 34,
+      "speaker_id": "BOB",
+      "text": "After deployment we run smoke tests and separately check authentication on production.",
+      "delivery": "thoughtful",
+      "section": "Deployment and decision"
+    },
+    {
+      "index": 35,
+      "speaker_id": "GREG",
+      "text": "Good. I'm recording the decision: release on Thursday, external API behind the flag, reports fixed right after, migration rehearsed on Monday. Everything else goes into 2.4.1.",
+      "delivery": "firm",
+      "section": "Deployment and decision"
+    },
+    {
+      "index": 36,
+      "speaker_id": "ANN",
+      "text": "Agreed. I'll circulate the minutes and update the release checklist.",
+      "delivery": "calm",
+      "section": "Deployment and decision"
+    },
+    {
+      "index": 37,
+      "speaker_id": "BOB",
+      "text": "Then I'll close the refresh-token task today and send the contractor status.",
+      "delivery": "confident",
+      "section": "Deployment and decision"
+    },
+    {
+      "index": 38,
+      "speaker_id": "GREG",
+      "text": "Good. If it's quiet by Wednesday, we escalate.",
+      "delivery": "firm",
+      "section": "Deployment and decision"
+    },
+    {
+      "index": 39,
+      "speaker_id": "ANN",
+      "text": "All right, that's a wrap. Thank you.",
+      "delivery": "calm",
+      "section": "Deployment and decision"
+    }
+  ]
+}

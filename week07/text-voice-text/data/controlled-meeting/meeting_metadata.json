@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "fixture_id": "controlled-sdlc-review-en",
+  "meeting_id": "sdlc-review-2026-11-12",
+  "title": "Release 2.4 readiness review",
+  "language": "en-US",
+  "fictional": true,
+  "disclaimer": "All names, organization names, technical details, dates, and numbers in this script are fictional and were created solely for the teaching demo.",
+  "created": "2026-11-12",
+  "meeting_date": "2026-11-12",
+  "planned_release": "2026-11-19",
+  "location": "Conference Room B, Brightline Components HQ / Hybrid",
+  "plain_text_transcript": "data/meeting-transcript.txt",
+  "duration_target_seconds": [
+    180,
+    300
+  ],
+  "estimated_duration_seconds": [
+    222,
+    294
+  ],
+  "duration_estimate_basis": "586 spoken words at 160-120 words per minute",
+  "turn_count": 39,
+  "word_count_estimate": 586,
+  "project": {
+    "name": "Atlas Procurement Portal",
+    "company": "Brightline Components Ltd.",
+    "release": "2.4",
+    "topic": "SDLC release-readiness review: implementation, API integration, database migration, testing, risks, and deployment"
+  },
+  "participants": [
+    {
+      "id": "ANN",
+      "full_name": "Ann Smith",
+      "role": "Project manager",
+      "gender": "female",
+      "meeting_role": "Chairs the meeting, tracks decisions and action items.",
+      "delivery_notes": "Calm, organized, concise. Keeps the meeting moving.",
+      "voice_requirements": {
+        "gender": "female",
+        "character": "clear, calm, mid-range",
+        "constraint": "Use a synthetic prebuilt voice. Do not clone or imitate a real person."
+      }
+    },
+    {
+      "id": "BOB",
+      "full_name": "Bob Hawkins",
+      "role": "Senior software engineer",
+      "gender": "male",
+      "meeting_role": "Explains implementation, API integration, database migration, and testing status.",
+      "delivery_notes": "Thoughtful and detailed; occasionally hesitates or corrects himself.",
+      "voice_requirements": {
+        "gender": "male",
+        "character": "measured, lower-mid range, clearly distinct from Greg",
+        "constraint": "Use a synthetic prebuilt voice. Distinguish the two male speakers through voice settings, not exaggerated accents."
+      }
+    },
+    {
+      "id": "GREG",
+      "full_name": "Greg Cox",
+      "role": "Technical director",
+      "gender": "male",
+      "meeting_role": "Challenges assumptions, assesses risk, and makes the release decision.",
+      "delivery_notes": "Firm, direct, decision-oriented.",
+      "voice_requirements": {
+        "gender": "male",
+        "character": "firmer, lower range, clearly distinct from Bob",
+        "constraint": "Use a synthetic prebuilt voice. Distinguish the two male speakers through voice settings, not exaggerated accents."
+      }
+    }
+  ],
+  "agenda": [
+    "Implementation status and external integration",
+    "Database migration",
+    "Regression testing and risks",
+    "Deployment window and on-call coverage",
+    "Release scope decision"
+  ],
+  "technical_terms_covered": {
+    "API": [
+      2,
+      4,
+      10,
+      35
+    ],
+    "REST": [
+      4
+    ],
+    "PostgreSQL": [
+      15
+    ],
+    "Docker": [
+      31
+    ],
+    "CI/CD": [
+      22
+    ],
+    "staging": [
+      16,
+      20,
+      31
+    ],
+    "deployment": [
+      27,
+      30,
+      34
+    ],
+    "regression testing": [
+      21
+    ],
+    "authentication": [
+      6,
+      23,
+      24,
+      34
+    ]
+  },
+  "recording_notes": [
+    "No overlapping speech in the primary fixture.",
+    "Participant names never appear inside spoken utterances.",
+    "Speaker labels are explicit on every turn.",
+    "Delivery notes describe tone only and do not change the words.",
+    "Do not generate audio until the TTS step (prompt 02)."
+  ]
+}
