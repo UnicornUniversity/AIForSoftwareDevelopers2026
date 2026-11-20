@@ -1,0 +1,22 @@
+{
+  "concept_name": "Customer",
+  "description": "A person who buys from the store.",
+  "attributes": [
+    {
+      "attribute": "identifier",
+      "column_names": ["customer_id"]
+    },
+    {
+      "attribute": "name",
+      "column_names": ["full_name"]
+    },
+    {
+      "attribute": "email",
+      "column_names": ["email"]
+    },
+    {
+      "attribute": "active",
+      "column_names": ["is_active"]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+[project]
+name = "uda"
+version = "0.5.0"
+description = "Universal Database Access - classroom schema-to-concept candidate demo"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "langchain-core>=0.3.0",
+    "langgraph>=0.2.0",
+    "pydantic>=2.9.0",
+]
+
+[project.optional-dependencies]
+llm = [
+    "langchain-openai>=0.2.0",
+]
+sqlserver = [
+    "pyodbc>=5.0.0",
+    "sqlalchemy>=2.0.0",
+]
+
+[project.scripts]
+uda = "uda.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.0",
+    "ruff>=0.6.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/uda"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

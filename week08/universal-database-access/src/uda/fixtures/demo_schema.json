@@ -1,0 +1,143 @@
+{
+  "fixture_version": 1,
+  "tables": [
+    {
+      "schema_name": "dbo",
+      "table_name": "Products",
+      "columns": [
+        {
+          "name": "ProductID",
+          "sql_type": "int",
+          "nullable": false,
+          "is_primary_key": true
+        },
+        {
+          "name": "ProductName",
+          "sql_type": "nvarchar(40)",
+          "nullable": false,
+          "is_primary_key": false
+        },
+        {
+          "name": "SupplierID",
+          "sql_type": "int",
+          "nullable": true,
+          "is_primary_key": false
+        },
+        {
+          "name": "CategoryID",
+          "sql_type": "int",
+          "nullable": true,
+          "is_primary_key": false
+        },
+        {
+          "name": "QuantityPerUnit",
+          "sql_type": "nvarchar(20)",
+          "nullable": true,
+          "is_primary_key": false
+        },
+        {
+          "name": "UnitPrice",
+          "sql_type": "money",
+          "nullable": true,
+          "is_primary_key": false
+        },
+        {
+          "name": "UnitsInStock",
+          "sql_type": "smallint",
+          "nullable": true,
+          "is_primary_key": false
+        },
+        {
+          "name": "UnitsOnOrder",
+          "sql_type": "smallint",
+          "nullable": true,
+          "is_primary_key": false
+        },
+        {
+          "name": "ReorderLevel",
+          "sql_type": "smallint",
+          "nullable": true,
+          "is_primary_key": false
+        },
+        {
+          "name": "Discontinued",
+          "sql_type": "bit",
+          "nullable": false,
+          "is_primary_key": false
+        }
+      ]
+    },
+    {
+      "schema_name": "dbo",
+      "table_name": "Categories",
+      "columns": [
+        {
+          "name": "CategoryID",
+          "sql_type": "int",
+          "nullable": false,
+          "is_primary_key": true
+        },
+        {
+          "name": "CategoryName",
+          "sql_type": "nvarchar(15)",
+          "nullable": false,
+          "is_primary_key": false
+        },
+        {
+          "name": "Description",
+          "sql_type": "ntext",
+          "nullable": true,
+          "is_primary_key": false
+        },
+        {
+          "name": "Picture",
+          "sql_type": "image",
+          "nullable": true,
+          "is_primary_key": false
+        }
+      ]
+    },
+    {
+      "schema_name": "dbo",
+      "table_name": "Customer",
+      "columns": [
+        {
+          "name": "customer_id",
+          "sql_type": "int",
+          "nullable": false,
+          "is_primary_key": true
+        },
+        {
+          "name": "full_name",
+          "sql_type": "nvarchar(200)",
+          "nullable": false,
+          "is_primary_key": false
+        },
+        {
+          "name": "email",
+          "sql_type": "nvarchar(320)",
+          "nullable": true,
+          "is_primary_key": false
+        },
+        {
+          "name": "loyalty_tier",
+          "sql_type": "nvarchar(20)",
+          "nullable": true,
+          "is_primary_key": false
+        },
+        {
+          "name": "signup_date",
+          "sql_type": "date",
+          "nullable": false,
+          "is_primary_key": false
+        },
+        {
+          "name": "is_active",
+          "sql_type": "bit",
+          "nullable": false,
+          "is_primary_key": false
+        }
+      ]
+    }
+  ]
+}
