@@ -8,6 +8,7 @@ from uda.models import (
     Column,
     ConceptProposal,
     TableSchema,
+    proposal_json_schema,
 )
 from uda.provider import ProviderConfigurationError, build_deepseek_model
 from uda.schema import (
@@ -64,6 +65,7 @@ __all__ = [
     "inspect_table",
     "load_demo_schema",
     "load_fixture_catalog",
+    "proposal_json_schema",
     "run_workflow",
     "save_candidate",
     "schema_version",

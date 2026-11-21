@@ -108,6 +108,7 @@ def canonicalize_proposal(
         attributes.append(
             AttributeMapping(
                 attribute=mapping.attribute,
+                description=mapping.description,
                 column_names=tuple(names),
             )
         )

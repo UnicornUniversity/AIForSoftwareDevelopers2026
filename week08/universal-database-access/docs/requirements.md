@@ -51,7 +51,7 @@ output, validation, and persistence explicit and testable.
 | **FR-1** | The CLI accepts a table name. The initial example table is `Products`; the default schema source is a local JSON fixture. |
 | **FR-2** | A schema contains the schema-qualified table name, columns, SQL type per column, nullability per column, and a primary-key flag when known. |
 | **FR-3** | The selected table receives a deterministic schema version derived from its canonical metadata. |
-| **FR-4** | The LLM returns structured output: exactly one concept, a description, and at least one attribute. Each attribute references one or more physical columns. |
+| **FR-4** | The LLM returns structured output: exactly one concept, a description, and at least one attribute. Each attribute has a name, a short description, and references one or more physical columns. |
 | **FR-5** | Every proposed table and column reference is validated against the selected schema. Unknown references are rejected. |
 | **FR-6** | A valid proposal is saved with a candidate ID, UTC timestamp, source table, schema version, `pending_review` status, and the concept. |
 | **FR-7** | Candidate files are written once, atomically, and never overwritten. A failed run writes no candidate. |
@@ -94,6 +94,7 @@ catalog metadata and sets `null` only when primary-key information cannot be rea
 | Field | Required | Description |
 |---|---|---|
 | `attribute` | yes | Semantic attribute name, unique within the concept (case-insensitive). |
+| `description` | yes | Short natural-language description of the attribute. |
 | `column_names` | yes | One or more physical column names; each must resolve to a column of the selected table. |
 
 A mapping may cover a composite attribute, for example
@@ -125,9 +126,21 @@ Example shape:
     "concept_name": "Product",
     "description": "An item offered for sale.",
     "attributes": [
-      {"attribute": "identifier", "column_names": ["ProductID"]},
-      {"attribute": "name", "column_names": ["ProductName"]},
-      {"attribute": "price", "column_names": ["UnitPrice"]}
+      {
+        "attribute": "identifier",
+        "description": "The product's unique identifier.",
+        "column_names": ["ProductID"]
+      },
+      {
+        "attribute": "name",
+        "description": "The product's display name.",
+        "column_names": ["ProductName"]
+      },
+      {
+        "attribute": "price",
+        "description": "The current unit price.",
+        "column_names": ["UnitPrice"]
+      }
     ]
   }
 }
@@ -156,9 +169,10 @@ label. It is computed at schema-load time and copied into the candidate.
 | **V-4** | An attribute must reference at least one column; no duplicate names inside one mapping. | Malformed mapping: reject. |
 | **V-5** | Two different attributes must not reuse the same physical column in this slice. | Duplicate physical usage: reject. |
 | **V-6** | Attribute names must be unique within the concept, case-insensitively. | Duplicate attribute: reject. |
-| **V-7** | The concept has exactly one name, one description, and at least one attribute; extra model fields are forbidden. | Malformed proposal: reject. |
+| **V-7** | The concept has exactly one name, one description, and at least one attribute with a non-empty description; missing required fields and extra model fields are forbidden. | Malformed proposal: reject. |
 | **V-8** | Only `pending_review` is constructible and persistable; storage revalidates before writing. | Any other status is impossible. |
 | **V-9** | No rule may be bypassed by retrying or by direct persistence. | Every candidate passes the same validator. |
+| **V-10** | Structural bounds: at most 50 attributes per concept, at most 20 columns per attribute, and at most 200 characters per string. | Oversized proposal: reject at the model boundary. |
 
 If any rule fails, no candidate file is written.
 

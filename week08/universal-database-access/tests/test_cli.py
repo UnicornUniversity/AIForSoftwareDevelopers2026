@@ -16,8 +16,16 @@ def _valid_response() -> str:
             "concept_name": "Customer",
             "description": "A person who buys from the store.",
             "attributes": [
-                {"attribute": "identifier", "column": "customer_id"},
-                {"attribute": "name", "column": "full_name"},
+                {
+                    "attribute": "identifier",
+                    "description": "The customer's unique identifier.",
+                    "column": "customer_id",
+                },
+                {
+                    "attribute": "name",
+                    "description": "The customer's full name.",
+                    "column": "full_name",
+                },
             ],
         }
     )
@@ -50,7 +58,11 @@ def test_cli_returns_rejected_for_unknown_column(tmp_path, capsys) -> None:
                 "concept_name": "Customer",
                 "description": "A person.",
                 "attributes": [
-                    {"attribute": "identifier", "column": "customer_key"}
+                    {
+                        "attribute": "identifier",
+                        "description": "The customer's unique identifier.",
+                        "column": "customer_key",
+                    }
                 ],
             }
         ),

@@ -5,11 +5,14 @@ import pytest
 from pydantic import ValidationError
 
 from uda.models import (
+    MAX_ATTRIBUTES,
+    MAX_COLUMNS_PER_ATTRIBUTE,
     AttributeMapping,
     Candidate,
     Column,
     ConceptProposal,
     TableSchema,
+    proposal_json_schema,
 )
 
 SCHEMA_VERSION = "sha256:" + "0" * 64
@@ -28,7 +31,11 @@ def _proposal(**overrides: object) -> ConceptProposal:
         "concept_name": "Customer",
         "description": "A person who buys from the store.",
         "attributes": (
-            AttributeMapping(attribute="identifier", column="customer_id"),
+            AttributeMapping(
+                attribute="identifier",
+                description="The customer's unique identifier.",
+                column="customer_id",
+            ),
         ),
     }
     data.update(overrides)
@@ -61,7 +68,7 @@ def test_names_are_stripped_and_cannot_be_blank() -> None:
 
 
 def test_proposal_requires_at_least_one_attribute() -> None:
-    with pytest.raises(ValidationError, match="at least one attribute"):
+    with pytest.raises(ValidationError, match="at least 1 item"):
         _proposal(attributes=())
 
 
@@ -69,8 +76,16 @@ def test_proposal_rejects_duplicate_attribute_names() -> None:
     with pytest.raises(ValidationError, match="duplicate attribute names: identifier"):
         _proposal(
             attributes=(
-                AttributeMapping(attribute="identifier", column="customer_id"),
-                AttributeMapping(attribute="Identifier", column="email"),
+                AttributeMapping(
+                    attribute="identifier",
+                    description="The customer's unique identifier.",
+                    column="customer_id",
+                ),
+                AttributeMapping(
+                    attribute="Identifier",
+                    description="The customer's email address.",
+                    column="email",
+                ),
             )
         )
 
@@ -137,7 +152,11 @@ def test_candidate_timestamp_must_be_timezone_aware() -> None:
 
 
 def test_attribute_mapping_accepts_legacy_single_column() -> None:
-    mapping = AttributeMapping(attribute="identifier", column="customer_id")
+    mapping = AttributeMapping(
+        attribute="identifier",
+        description="The customer's unique identifier.",
+        column="customer_id",
+    )
 
     assert mapping.column_names == ("customer_id",)
     assert mapping.column == "customer_id"
@@ -146,6 +165,7 @@ def test_attribute_mapping_accepts_legacy_single_column() -> None:
 def test_attribute_mapping_accepts_multiple_columns() -> None:
     mapping = AttributeMapping(
         attribute="contact",
+        description="How to reach the customer.",
         column_names=["full_name", "email"],
     )
 
@@ -154,9 +174,27 @@ def test_attribute_mapping_accepts_multiple_columns() -> None:
         _ = mapping.column
 
 
+def test_attribute_mapping_requires_description() -> None:
+    with pytest.raises(ValidationError, match="description"):
+        AttributeMapping(attribute="identifier", column="customer_id")
+
+
+def test_attribute_description_cannot_be_blank() -> None:
+    with pytest.raises(ValidationError):
+        AttributeMapping(
+            attribute="identifier",
+            description="   ",
+            column="customer_id",
+        )
+
+
 def test_attribute_mapping_rejects_no_columns() -> None:
-    with pytest.raises(ValidationError, match="at least one column"):
-        AttributeMapping(attribute="identifier", column_names=[])
+    with pytest.raises(ValidationError, match="at least 1 item"):
+        AttributeMapping(
+            attribute="identifier",
+            description="The customer's unique identifier.",
+            column_names=[],
+        )
 
 
 def test_attribute_mapping_rejects_duplicate_columns() -> None:
@@ -165,8 +203,52 @@ def test_attribute_mapping_rejects_duplicate_columns() -> None:
     ):
         AttributeMapping(
             attribute="identifier",
+            description="The customer's unique identifier.",
             column_names=["customer_id", "Customer_ID"],
         )
+
+
+def test_proposal_rejects_too_many_attributes() -> None:
+    attributes = [
+        AttributeMapping(
+            attribute=f"attribute_{index}",
+            description="A mapped attribute.",
+            column_names=["customer_id"],
+        )
+        for index in range(MAX_ATTRIBUTES + 1)
+    ]
+
+    with pytest.raises(ValidationError, match="at most"):
+        _proposal(attributes=tuple(attributes))
+
+
+def test_attribute_rejects_too_many_columns() -> None:
+    with pytest.raises(ValidationError, match="at most"):
+        AttributeMapping(
+            attribute="contact",
+            description="How to reach the customer.",
+            column_names=[
+                f"column_{index}"
+                for index in range(MAX_COLUMNS_PER_ATTRIBUTE + 1)
+            ],
+        )
+
+
+def test_proposal_json_schema_is_exposed_for_structured_output() -> None:
+    schema = proposal_json_schema()
+
+    assert schema["additionalProperties"] is False
+    assert schema["properties"]["attributes"]["minItems"] == 1
+    assert schema["properties"]["attributes"]["maxItems"] == MAX_ATTRIBUTES
+
+    mapping = schema["$defs"]["AttributeMapping"]
+    assert mapping["additionalProperties"] is False
+    assert set(mapping["required"]) == {"attribute", "description", "column_names"}
+    assert mapping["properties"]["column_names"]["minItems"] == 1
+    assert (
+        mapping["properties"]["column_names"]["maxItems"]
+        == MAX_COLUMNS_PER_ATTRIBUTE
+    )
 
 
 def test_extra_fields_are_rejected() -> None:

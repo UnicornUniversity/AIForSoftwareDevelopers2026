@@ -1,4 +1,7 @@
+import json
+
 from uda.fixtures import load_demo_schema
+from uda.models import proposal_json_schema
 from uda.prompt import SYSTEM_PROMPT, build_messages, render_table
 
 
@@ -25,7 +28,14 @@ def test_messages_are_system_then_table() -> None:
     assert "JSON only" in SYSTEM_PROMPT
     assert "pending review" in SYSTEM_PROMPT
     assert '"column_names"' in SYSTEM_PROMPT
+    assert '"additionalProperties": false' in SYSTEM_PROMPT
     assert "customer_id" in messages[1].content
+
+
+def test_prompt_embeds_the_proposal_json_schema() -> None:
+    schema_json = json.dumps(proposal_json_schema(), indent=2, sort_keys=True)
+
+    assert schema_json in SYSTEM_PROMPT
 
 
 def test_prompt_is_deterministic_and_has_no_secret_material() -> None:

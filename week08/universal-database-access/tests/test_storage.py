@@ -25,6 +25,7 @@ def _candidate(physical_table: str = "dbo.Customer") -> Candidate:
             attributes=(
                 AttributeMapping(
                     attribute="identifier",
+                    description="The customer's unique identifier.",
                     column_names=["customer_id"],
                 ),
             ),

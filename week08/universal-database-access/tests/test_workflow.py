@@ -16,8 +16,16 @@ def _valid_payload() -> str:
             "concept_name": "Customer",
             "description": "A person who buys from the store.",
             "attributes": [
-                {"attribute": "identifier", "column": "customer_id"},
-                {"attribute": "name", "column": "full_name"},
+                {
+                    "attribute": "identifier",
+                    "description": "The customer's unique identifier.",
+                    "column": "customer_id",
+                },
+                {
+                    "attribute": "name",
+                    "description": "The customer's full name.",
+                    "column": "full_name",
+                },
             ],
         }
     )
@@ -65,7 +73,13 @@ def test_unknown_column_is_reported_and_not_built() -> None:
         {
             "concept_name": "Customer",
             "description": "A person.",
-            "attributes": [{"attribute": "identifier", "column": "customer_key"}],
+            "attributes": [
+                {
+                    "attribute": "identifier",
+                    "description": "The customer's unique identifier.",
+                    "column": "customer_key",
+                }
+            ],
         }
     )
 
@@ -85,6 +99,7 @@ def test_multi_column_mapping_builds_candidate() -> None:
             "attributes": [
                 {
                     "attribute": "contact",
+                    "description": "How to reach the customer.",
                     "column_names": ["full_name", "email"],
                 }
             ],
@@ -107,8 +122,16 @@ def test_duplicate_mapping_is_reported_and_not_built() -> None:
             "concept_name": "Customer",
             "description": "A person.",
             "attributes": [
-                {"attribute": "identifier", "column": "customer_id"},
-                {"attribute": "key", "column": "Customer_ID"},
+                {
+                    "attribute": "identifier",
+                    "description": "The customer's unique identifier.",
+                    "column": "customer_id",
+                },
+                {
+                    "attribute": "key",
+                    "description": "A second reference to the identifier.",
+                    "column": "Customer_ID",
+                },
             ],
         }
     )

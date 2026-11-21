@@ -25,7 +25,11 @@ def _schema() -> TableSchema:
 
 
 def _mapping(attribute: str, column: str) -> AttributeMapping:
-    return AttributeMapping(attribute=attribute, column=column)
+    return AttributeMapping(
+        attribute=attribute,
+        description="A mapped attribute.",
+        column=column,
+    )
 
 
 def _proposal(*attributes: AttributeMapping) -> ConceptProposal:
@@ -82,6 +86,7 @@ def test_build_candidate_supports_multi_column_attributes() -> None:
     proposal = _proposal(
         AttributeMapping(
             attribute="contact",
+            description="How to reach the customer.",
             column_names=["full_name", "customer_id"],
         )
     )

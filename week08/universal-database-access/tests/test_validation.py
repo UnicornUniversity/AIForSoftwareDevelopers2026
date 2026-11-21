@@ -24,12 +24,24 @@ SCHEMA = TableSchema(
 )
 
 
-def _mapping(attribute: str, column: str) -> AttributeMapping:
-    return AttributeMapping(attribute=attribute, column=column)
+def _mapping(
+    attribute: str,
+    column: str,
+    description: str = "A mapped attribute.",
+) -> AttributeMapping:
+    return AttributeMapping(
+        attribute=attribute,
+        description=description,
+        column=column,
+    )
 
 
 def _multi_mapping(attribute: str, *columns: str) -> AttributeMapping:
-    return AttributeMapping(attribute=attribute, column_names=list(columns))
+    return AttributeMapping(
+        attribute=attribute,
+        description="A composite attribute.",
+        column_names=list(columns),
+    )
 
 
 def _proposal(*attributes: AttributeMapping) -> ConceptProposal:

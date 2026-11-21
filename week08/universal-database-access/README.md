@@ -70,16 +70,26 @@ configuration or model-output error. The default output is `out/candidate.json`
 `run_workflow(schema, model)` accepts any LangChain chat model and runs
 `propose -> validate -> finalize`. Unparsable model output becomes
 `WorkflowResult.error`; physical-reference issues stop the run before a candidate
-is built. Tests inject `FakeListChatModel`, so they need no API key or network.
-The real DeepSeek provider is optional (`--extra llm`); offline runs use
-`--response-file`.
+is built. The proposal contract is `ConceptProposal`; `proposal_json_schema()`
+exposes its JSON Schema, and the prompt embeds that schema so model guidance and
+validation cannot drift. Tests inject `FakeListChatModel`, so they need no API key
+or network. The real DeepSeek provider is optional (`--extra llm`); offline runs
+use `--response-file`.
 
 ## Validation rules
 
+- Structural checks (Pydantic): required fields, no extra fields, non-empty
+  attributes/proposals, at most 50 attributes, at most 20 columns per attribute,
+  and at most 200 characters per string.
+- Each attribute has a short description alongside its name and column mapping.
 - Every mapped column must exist in the table (case-insensitive, SQL Server default).
 - One physical column may be mapped by at most one attribute.
 - A candidate's table reference must match the schema's qualified name.
 - A proposal with any issue is rejected; candidates are only built as `pending_review`.
+
+Structural validity is not physical correctness: a proposal can be valid JSON and
+a valid `ConceptProposal` while naming a column that does not exist. Only the
+separate physical validator makes it a candidate.
 
 ## Safety
 

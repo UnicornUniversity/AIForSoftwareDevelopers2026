@@ -121,7 +121,8 @@ database access.
    primary-key flags.
 5. The schema version is computed from canonical metadata.
 6. LangGraph receives the schema and version.
-7. `propose` renders a prompt and calls the LangChain structured-output adapter.
+7. `propose` renders a prompt that embeds the JSON Schema from
+   `proposal_json_schema()` and calls the LangChain structured-output adapter.
 8. `validate` checks every mapping against the schema.
 9. `finalize` builds a `Candidate` with UUID, UTC timestamp, source table, schema
    version, and `pending_review`.
@@ -242,10 +243,31 @@ an error; it is never coerced into a candidate.
 |---|---|---|
 | **Table selection** | Schema provider | Unknown table, before any model call |
 | **Schema shape** | Pydantic contracts | Missing table/columns, empty or duplicate columns, malformed PK flag |
-| **Model output** | LangChain structured output plus Pydantic | Missing fields, extra fields, empty attributes, duplicate attribute names |
+| **Model output** | LangChain structured output plus Pydantic | Missing fields, extra fields, empty attributes, missing attribute descriptions, duplicate attribute names, oversized strings or lists |
 | **Physical references** | Independent validator | Unknown columns, duplicate columns in one mapping, column reuse across attributes |
 | **Status** | Candidate model | Any status other than `pending_review` |
 | **Persistence** | Candidate store | Invalid candidate, existing target file, partial write |
+
+### 8.1 Three kinds of validity
+
+The pipeline separates three checks that are easy to conflate:
+
+1. **Valid JSON** - the response parses as JSON. This guarantees nothing about
+   shape: `{"concept_name": 1}` is valid JSON.
+2. **Valid Pydantic object** - the parsed response satisfies `ConceptProposal`:
+   required fields, types, non-empty and bounded attribute/column lists, unique
+   names, no extra fields. The object can still be physically wrong because the
+   model does not know the database.
+3. **Semantically correct proposal** - the object passes `validate_proposal()`
+   against the selected `TableSchema`: every column exists, no column is reused,
+   and names are canonicalized to the schema's exact spelling.
+
+A proposal such as `{"attribute": "id", "description": "...",
+"column_names": ["not_a_column"]}` is valid JSON and a valid Pydantic object, and
+is still rejected as an unknown physical reference. Only the third check makes a
+`pending_review` candidate possible. `proposal_json_schema()` exposes the
+Pydantic contract for structured-output adapters, while physical validation stays
+in application code.
 
 Case-insensitive resolution is used for table and column names, matching SQL Server's
 default collation. Accepted names are canonicalized to the schema's exact spelling
