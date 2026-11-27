@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "northwind": {
+      "command": "${NORTHWIND_PYTHON:-python}",
+      "args": ["week09/northwind-mcp-example/server.py"],
+      "env": {
+        "NORTHWIND_CONN": "${NORTHWIND_CONN}"
+      }
+    },
+    "northwind-raw": {
+      "command": "${NORTHWIND_PYTHON:-python}",
+      "args": ["week09/northwind-mcp-example/raw_sql_server.py"],
+      "env": {
+        "NORTHWIND_CONN": "${NORTHWIND_CONN}"
+      }
+    }
+  }
+}

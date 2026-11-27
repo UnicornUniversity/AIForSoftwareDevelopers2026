@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "northwind": {
+      "command": "python",
+      "args": ["C:\\ABSOLUTE\\PATH\\TO\\northwind-mcp-example\\server.py"],
+      "env": {
+        "NORTHWIND_CONN": "Driver={ODBC Driver 18 for SQL Server};Server=localhost;Database=Northwind;UID=northwind_ro;PWD=ChangeMe!Local42;TrustServerCertificate=yes"
+      }
+    },
+    "northwind-raw": {
+      "command": "python",
+      "args": ["C:\\ABSOLUTE\\PATH\\TO\\northwind-mcp-example\\raw_sql_server.py"],
+      "env": {
+        "NORTHWIND_CONN": "Driver={ODBC Driver 18 for SQL Server};Server=localhost;Database=Northwind;UID=northwind_ro;PWD=ChangeMe!Local42;TrustServerCertificate=yes"
+      }
+    }
+  }
+}

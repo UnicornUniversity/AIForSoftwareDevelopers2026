@@ -1,0 +1,64 @@
+# /etc/promtail/promtail.yml
+# Ships host logs to Loki. See docs/10-monitoring-stack.md.
+
+server:
+  http_listen_port: 9080
+  grpc_listen_port: 0
+
+positions:
+  filename: /var/lib/promtail/positions.yaml
+
+clients:
+  - url: http://loki.monitoring.svc:3100/loki/api/v1/push
+
+scrape_configs:
+  - job_name: journal
+    journal:
+      max_age: 12h
+      labels:
+        job: systemd-journal
+    relabel_configs:
+      - source_labels: ['__journal__systemd_unit']
+        target_label: 'unit'
+      - source_labels: ['__journal__hostname']
+        target_label: 'host'
+
+  - job_name: nginx
+    static_configs:
+      - targets: [localhost]
+        labels:
+          job: nginx
+          app: nginx
+          __path__: /var/log/nginx/*.log
+    pipeline_stages:
+      - match:
+          selector: '{app="nginx"}'
+          stages:
+            - regex:
+                expression: '^(?P<remote>\S+) - (?P<user>\S+) \[(?P<ts>[^\]]+)\] "(?P<method>\S+) (?P<path>\S+) (?P<proto>\S+)" (?P<status>\d+) (?P<size>\d+)'
+            - labels:
+                status:
+                method:
+      # Drop health-check noise so we don't bill Loki for uptime probes
+      - drop:
+          source: path
+          expression: '^/(healthz|health|status)$'
+
+  - job_name: postgres
+    static_configs:
+      - targets: [localhost]
+        labels:
+          job: postgres
+          __path__: /var/log/postgresql/*.log
+
+  - job_name: docker
+    docker_sd_configs:
+      - host: unix:///var/run/docker.sock
+    relabel_configs:
+      - source_labels: ['__meta_docker_container_name']
+        regex: '/(.*)'
+        target_label: 'container'
+      - source_labels: ['__meta_docker_container_label_pch_service']
+        target_label: 'service'
+      - source_labels: ['__meta_docker_container_label_pch_tenant']
+        target_label: 'tenant'

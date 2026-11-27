@@ -1,0 +1,56 @@
+# /opt/pch-ansible/roles/legacy-app/files/docker-compose.yml
+# Used on legacy-app-01, legacy-app-02 by the Ansible deploy playbook.
+# NOTE: legacy-app-01 still runs Docker 20.10 — see known_issues/docker-issues.md.
+#
+# Not for new services. See docs/03-deployment-guide.md for the current
+# (ArgoCD-based) deployment path.
+
+version: "3.8"
+
+services:
+  billing-api:
+    image: registry.prg1.pchosting.internal/billing-api:${BILLING_API_TAG:-latest}
+    container_name: billing-api
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    env_file:
+      - /etc/pch/billing-api.env
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:8080/healthz"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+    logging:
+      driver: json-file
+      options:
+        max-size: "50m"
+        max-file: "5"
+    networks:
+      - pch-legacy
+
+  old-portal:
+    image: registry.prg1.pchosting.internal/old-portal:${OLD_PORTAL_TAG:-latest}
+    container_name: old-portal
+    restart: unless-stopped
+    ports:
+      - "8081:80"
+    depends_on:
+      - billing-api
+    env_file:
+      - /etc/pch/old-portal.env
+    logging:
+      driver: json-file
+      options:
+        max-size: "50m"
+        max-file: "5"
+    networks:
+      - pch-legacy
+
+networks:
+  pch-legacy:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.99.10.0/24

@@ -1,0 +1,3344 @@
+{
+  "fixture_version": "1.0",
+  "format": "uda.database-metadata",
+  "metadata": {
+    "identity": {
+      "database": "Northwind",
+      "platform": "sqlserver"
+    },
+    "issues": [],
+    "objects": [
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": true,
+            "name": "CategoryID",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/table/Categories/column/CategoryID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CategoryName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/table/Categories/column/CategoryName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NTEXT",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Description",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 3,
+            "physical_id": "sqlserver/Northwind/dbo/table/Categories/column/Description"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "IMAGE",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Picture",
+            "normalized_type": "binary",
+            "nullable": true,
+            "ordinal": 4,
+            "physical_id": "sqlserver/Northwind/dbo/table/Categories/column/Picture"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [],
+        "indexes": [
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Categories/column/CategoryName"
+            ],
+            "columns": [
+              "CategoryName"
+            ],
+            "name": "CategoryName",
+            "physical_id": "sqlserver/Northwind/dbo/table/Categories/index/CategoryName",
+            "source": "index",
+            "unique": false
+          }
+        ],
+        "name": "Categories",
+        "object_type": "table",
+        "physical_id": "sqlserver/Northwind/dbo/table/Categories",
+        "primary_key": {
+          "column_ids": [
+            "sqlserver/Northwind/dbo/table/Categories/column/CategoryID"
+          ],
+          "columns": [
+            "CategoryID"
+          ],
+          "name": "PK_Categories",
+          "physical_id": "sqlserver/Northwind/dbo/table/Categories/primary_key/PK_Categories"
+        },
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "NCHAR(5) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CustomerID",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/table/CustomerCustomerDemo/column/CustomerID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NCHAR(10) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CustomerTypeID",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/table/CustomerCustomerDemo/column/CustomerTypeID"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/CustomerCustomerDemo/column/CustomerTypeID"
+            ],
+            "columns": [
+              "CustomerTypeID"
+            ],
+            "name": "FK_CustomerCustomerDemo",
+            "physical_id": "sqlserver/Northwind/dbo/table/CustomerCustomerDemo/foreign_key/FK_CustomerCustomerDemo",
+            "referred_column_ids": [
+              "sqlserver/Northwind/dbo/table/CustomerDemographics/column/CustomerTypeID"
+            ],
+            "referred_columns": [
+              "CustomerTypeID"
+            ],
+            "referred_object_id": "sqlserver/Northwind/dbo/table/CustomerDemographics",
+            "referred_schema": "dbo",
+            "referred_table": "CustomerDemographics"
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/CustomerCustomerDemo/column/CustomerID"
+            ],
+            "columns": [
+              "CustomerID"
+            ],
+            "name": "FK_CustomerCustomerDemo_Customers",
+            "physical_id": "sqlserver/Northwind/dbo/table/CustomerCustomerDemo/foreign_key/FK_CustomerCustomerDemo_Customers",
+            "referred_column_ids": [
+              "sqlserver/Northwind/dbo/table/Customers/column/CustomerID"
+            ],
+            "referred_columns": [
+              "CustomerID"
+            ],
+            "referred_object_id": "sqlserver/Northwind/dbo/table/Customers",
+            "referred_schema": "dbo",
+            "referred_table": "Customers"
+          }
+        ],
+        "indexes": [],
+        "name": "CustomerCustomerDemo",
+        "object_type": "table",
+        "physical_id": "sqlserver/Northwind/dbo/table/CustomerCustomerDemo",
+        "primary_key": {
+          "column_ids": [
+            "sqlserver/Northwind/dbo/table/CustomerCustomerDemo/column/CustomerID",
+            "sqlserver/Northwind/dbo/table/CustomerCustomerDemo/column/CustomerTypeID"
+          ],
+          "columns": [
+            "CustomerID",
+            "CustomerTypeID"
+          ],
+          "name": "PK_CustomerCustomerDemo",
+          "physical_id": "sqlserver/Northwind/dbo/table/CustomerCustomerDemo/primary_key/PK_CustomerCustomerDemo"
+        },
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "NCHAR(10) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CustomerTypeID",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/table/CustomerDemographics/column/CustomerTypeID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NTEXT",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CustomerDesc",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/table/CustomerDemographics/column/CustomerDesc"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [],
+        "indexes": [],
+        "name": "CustomerDemographics",
+        "object_type": "table",
+        "physical_id": "sqlserver/Northwind/dbo/table/CustomerDemographics",
+        "primary_key": {
+          "column_ids": [
+            "sqlserver/Northwind/dbo/table/CustomerDemographics/column/CustomerTypeID"
+          ],
+          "columns": [
+            "CustomerTypeID"
+          ],
+          "name": "PK_CustomerDemographics",
+          "physical_id": "sqlserver/Northwind/dbo/table/CustomerDemographics/primary_key/PK_CustomerDemographics"
+        },
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "NCHAR(5) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CustomerID",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/table/Customers/column/CustomerID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(40) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CompanyName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/table/Customers/column/CompanyName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(30) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ContactName",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 3,
+            "physical_id": "sqlserver/Northwind/dbo/table/Customers/column/ContactName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(30) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ContactTitle",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 4,
+            "physical_id": "sqlserver/Northwind/dbo/table/Customers/column/ContactTitle"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(60) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Address",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 5,
+            "physical_id": "sqlserver/Northwind/dbo/table/Customers/column/Address"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "City",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 6,
+            "physical_id": "sqlserver/Northwind/dbo/table/Customers/column/City"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Region",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 7,
+            "physical_id": "sqlserver/Northwind/dbo/table/Customers/column/Region"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(10) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "PostalCode",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 8,
+            "physical_id": "sqlserver/Northwind/dbo/table/Customers/column/PostalCode"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Country",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 9,
+            "physical_id": "sqlserver/Northwind/dbo/table/Customers/column/Country"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(24) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Phone",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 10,
+            "physical_id": "sqlserver/Northwind/dbo/table/Customers/column/Phone"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(24) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Fax",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 11,
+            "physical_id": "sqlserver/Northwind/dbo/table/Customers/column/Fax"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [],
+        "indexes": [
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Customers/column/City"
+            ],
+            "columns": [
+              "City"
+            ],
+            "name": "City",
+            "physical_id": "sqlserver/Northwind/dbo/table/Customers/index/City",
+            "source": "index",
+            "unique": false
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Customers/column/CompanyName"
+            ],
+            "columns": [
+              "CompanyName"
+            ],
+            "name": "CompanyName",
+            "physical_id": "sqlserver/Northwind/dbo/table/Customers/index/CompanyName",
+            "source": "index",
+            "unique": false
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Customers/column/PostalCode"
+            ],
+            "columns": [
+              "PostalCode"
+            ],
+            "name": "PostalCode",
+            "physical_id": "sqlserver/Northwind/dbo/table/Customers/index/PostalCode",
+            "source": "index",
+            "unique": false
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Customers/column/Region"
+            ],
+            "columns": [
+              "Region"
+            ],
+            "name": "Region",
+            "physical_id": "sqlserver/Northwind/dbo/table/Customers/index/Region",
+            "source": "index",
+            "unique": false
+          }
+        ],
+        "name": "Customers",
+        "object_type": "table",
+        "physical_id": "sqlserver/Northwind/dbo/table/Customers",
+        "primary_key": {
+          "column_ids": [
+            "sqlserver/Northwind/dbo/table/Customers/column/CustomerID"
+          ],
+          "columns": [
+            "CustomerID"
+          ],
+          "name": "PK_Customers",
+          "physical_id": "sqlserver/Northwind/dbo/table/Customers/primary_key/PK_Customers"
+        },
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": true,
+            "name": "EmployeeID",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/table/Employees/column/EmployeeID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(20) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "LastName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/table/Employees/column/LastName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(10) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "FirstName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 3,
+            "physical_id": "sqlserver/Northwind/dbo/table/Employees/column/FirstName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(30) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Title",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 4,
+            "physical_id": "sqlserver/Northwind/dbo/table/Employees/column/Title"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(25) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "TitleOfCourtesy",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 5,
+            "physical_id": "sqlserver/Northwind/dbo/table/Employees/column/TitleOfCourtesy"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "DATETIME",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "BirthDate",
+            "normalized_type": "datetime",
+            "nullable": true,
+            "ordinal": 6,
+            "physical_id": "sqlserver/Northwind/dbo/table/Employees/column/BirthDate"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "DATETIME",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "HireDate",
+            "normalized_type": "datetime",
+            "nullable": true,
+            "ordinal": 7,
+            "physical_id": "sqlserver/Northwind/dbo/table/Employees/column/HireDate"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(60) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Address",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 8,
+            "physical_id": "sqlserver/Northwind/dbo/table/Employees/column/Address"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "City",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 9,
+            "physical_id": "sqlserver/Northwind/dbo/table/Employees/column/City"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Region",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 10,
+            "physical_id": "sqlserver/Northwind/dbo/table/Employees/column/Region"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(10) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "PostalCode",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 11,
+            "physical_id": "sqlserver/Northwind/dbo/table/Employees/column/PostalCode"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Country",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 12,
+            "physical_id": "sqlserver/Northwind/dbo/table/Employees/column/Country"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(24) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "HomePhone",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 13,
+            "physical_id": "sqlserver/Northwind/dbo/table/Employees/column/HomePhone"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(4) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Extension",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 14,
+            "physical_id": "sqlserver/Northwind/dbo/table/Employees/column/Extension"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "IMAGE",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Photo",
+            "normalized_type": "binary",
+            "nullable": true,
+            "ordinal": 15,
+            "physical_id": "sqlserver/Northwind/dbo/table/Employees/column/Photo"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NTEXT",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Notes",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 16,
+            "physical_id": "sqlserver/Northwind/dbo/table/Employees/column/Notes"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ReportsTo",
+            "normalized_type": "integer",
+            "nullable": true,
+            "ordinal": 17,
+            "physical_id": "sqlserver/Northwind/dbo/table/Employees/column/ReportsTo"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(255) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "PhotoPath",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 18,
+            "physical_id": "sqlserver/Northwind/dbo/table/Employees/column/PhotoPath"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Employees/column/ReportsTo"
+            ],
+            "columns": [
+              "ReportsTo"
+            ],
+            "name": "FK_Employees_Employees",
+            "physical_id": "sqlserver/Northwind/dbo/table/Employees/foreign_key/FK_Employees_Employees",
+            "referred_column_ids": [
+              "sqlserver/Northwind/dbo/table/Employees/column/EmployeeID"
+            ],
+            "referred_columns": [
+              "EmployeeID"
+            ],
+            "referred_object_id": "sqlserver/Northwind/dbo/table/Employees",
+            "referred_schema": "dbo",
+            "referred_table": "Employees"
+          }
+        ],
+        "indexes": [
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Employees/column/LastName"
+            ],
+            "columns": [
+              "LastName"
+            ],
+            "name": "LastName",
+            "physical_id": "sqlserver/Northwind/dbo/table/Employees/index/LastName",
+            "source": "index",
+            "unique": false
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Employees/column/PostalCode"
+            ],
+            "columns": [
+              "PostalCode"
+            ],
+            "name": "PostalCode",
+            "physical_id": "sqlserver/Northwind/dbo/table/Employees/index/PostalCode",
+            "source": "index",
+            "unique": false
+          }
+        ],
+        "name": "Employees",
+        "object_type": "table",
+        "physical_id": "sqlserver/Northwind/dbo/table/Employees",
+        "primary_key": {
+          "column_ids": [
+            "sqlserver/Northwind/dbo/table/Employees/column/EmployeeID"
+          ],
+          "columns": [
+            "EmployeeID"
+          ],
+          "name": "PK_Employees",
+          "physical_id": "sqlserver/Northwind/dbo/table/Employees/primary_key/PK_Employees"
+        },
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "EmployeeID",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/table/EmployeeTerritories/column/EmployeeID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(20) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "TerritoryID",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/table/EmployeeTerritories/column/TerritoryID"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/EmployeeTerritories/column/EmployeeID"
+            ],
+            "columns": [
+              "EmployeeID"
+            ],
+            "name": "FK_EmployeeTerritories_Employees",
+            "physical_id": "sqlserver/Northwind/dbo/table/EmployeeTerritories/foreign_key/FK_EmployeeTerritories_Employees",
+            "referred_column_ids": [
+              "sqlserver/Northwind/dbo/table/Employees/column/EmployeeID"
+            ],
+            "referred_columns": [
+              "EmployeeID"
+            ],
+            "referred_object_id": "sqlserver/Northwind/dbo/table/Employees",
+            "referred_schema": "dbo",
+            "referred_table": "Employees"
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/EmployeeTerritories/column/TerritoryID"
+            ],
+            "columns": [
+              "TerritoryID"
+            ],
+            "name": "FK_EmployeeTerritories_Territories",
+            "physical_id": "sqlserver/Northwind/dbo/table/EmployeeTerritories/foreign_key/FK_EmployeeTerritories_Territories",
+            "referred_column_ids": [
+              "sqlserver/Northwind/dbo/table/Territories/column/TerritoryID"
+            ],
+            "referred_columns": [
+              "TerritoryID"
+            ],
+            "referred_object_id": "sqlserver/Northwind/dbo/table/Territories",
+            "referred_schema": "dbo",
+            "referred_table": "Territories"
+          }
+        ],
+        "indexes": [],
+        "name": "EmployeeTerritories",
+        "object_type": "table",
+        "physical_id": "sqlserver/Northwind/dbo/table/EmployeeTerritories",
+        "primary_key": {
+          "column_ids": [
+            "sqlserver/Northwind/dbo/table/EmployeeTerritories/column/EmployeeID",
+            "sqlserver/Northwind/dbo/table/EmployeeTerritories/column/TerritoryID"
+          ],
+          "columns": [
+            "EmployeeID",
+            "TerritoryID"
+          ],
+          "name": "PK_EmployeeTerritories",
+          "physical_id": "sqlserver/Northwind/dbo/table/EmployeeTerritories/primary_key/PK_EmployeeTerritories"
+        },
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "OrderID",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/table/Order%20Details/column/OrderID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ProductID",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/table/Order%20Details/column/ProductID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "MONEY",
+            "default": "((0))",
+            "is_computed": false,
+            "is_identity": false,
+            "name": "UnitPrice",
+            "normalized_type": "decimal",
+            "nullable": false,
+            "ordinal": 3,
+            "physical_id": "sqlserver/Northwind/dbo/table/Order%20Details/column/UnitPrice"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "SMALLINT",
+            "default": "((1))",
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Quantity",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 4,
+            "physical_id": "sqlserver/Northwind/dbo/table/Order%20Details/column/Quantity"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "REAL",
+            "default": "((0))",
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Discount",
+            "normalized_type": "float",
+            "nullable": false,
+            "ordinal": 5,
+            "physical_id": "sqlserver/Northwind/dbo/table/Order%20Details/column/Discount"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Order%20Details/column/OrderID"
+            ],
+            "columns": [
+              "OrderID"
+            ],
+            "name": "FK_Order_Details_Orders",
+            "physical_id": "sqlserver/Northwind/dbo/table/Order%20Details/foreign_key/FK_Order_Details_Orders",
+            "referred_column_ids": [
+              "sqlserver/Northwind/dbo/table/Orders/column/OrderID"
+            ],
+            "referred_columns": [
+              "OrderID"
+            ],
+            "referred_object_id": "sqlserver/Northwind/dbo/table/Orders",
+            "referred_schema": "dbo",
+            "referred_table": "Orders"
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Order%20Details/column/ProductID"
+            ],
+            "columns": [
+              "ProductID"
+            ],
+            "name": "FK_Order_Details_Products",
+            "physical_id": "sqlserver/Northwind/dbo/table/Order%20Details/foreign_key/FK_Order_Details_Products",
+            "referred_column_ids": [
+              "sqlserver/Northwind/dbo/table/Products/column/ProductID"
+            ],
+            "referred_columns": [
+              "ProductID"
+            ],
+            "referred_object_id": "sqlserver/Northwind/dbo/table/Products",
+            "referred_schema": "dbo",
+            "referred_table": "Products"
+          }
+        ],
+        "indexes": [
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Order%20Details/column/OrderID"
+            ],
+            "columns": [
+              "OrderID"
+            ],
+            "name": "OrderID",
+            "physical_id": "sqlserver/Northwind/dbo/table/Order%20Details/index/OrderID",
+            "source": "index",
+            "unique": false
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Order%20Details/column/OrderID"
+            ],
+            "columns": [
+              "OrderID"
+            ],
+            "name": "OrdersOrder_Details",
+            "physical_id": "sqlserver/Northwind/dbo/table/Order%20Details/index/OrdersOrder_Details",
+            "source": "index",
+            "unique": false
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Order%20Details/column/ProductID"
+            ],
+            "columns": [
+              "ProductID"
+            ],
+            "name": "ProductID",
+            "physical_id": "sqlserver/Northwind/dbo/table/Order%20Details/index/ProductID",
+            "source": "index",
+            "unique": false
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Order%20Details/column/ProductID"
+            ],
+            "columns": [
+              "ProductID"
+            ],
+            "name": "ProductsOrder_Details",
+            "physical_id": "sqlserver/Northwind/dbo/table/Order%20Details/index/ProductsOrder_Details",
+            "source": "index",
+            "unique": false
+          }
+        ],
+        "name": "Order Details",
+        "object_type": "table",
+        "physical_id": "sqlserver/Northwind/dbo/table/Order%20Details",
+        "primary_key": {
+          "column_ids": [
+            "sqlserver/Northwind/dbo/table/Order%20Details/column/OrderID",
+            "sqlserver/Northwind/dbo/table/Order%20Details/column/ProductID"
+          ],
+          "columns": [
+            "OrderID",
+            "ProductID"
+          ],
+          "name": "PK_Order_Details",
+          "physical_id": "sqlserver/Northwind/dbo/table/Order%20Details/primary_key/PK_Order_Details"
+        },
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": true,
+            "name": "OrderID",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/column/OrderID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NCHAR(5) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CustomerID",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/column/CustomerID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "EmployeeID",
+            "normalized_type": "integer",
+            "nullable": true,
+            "ordinal": 3,
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/column/EmployeeID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "DATETIME",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "OrderDate",
+            "normalized_type": "datetime",
+            "nullable": true,
+            "ordinal": 4,
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/column/OrderDate"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "DATETIME",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "RequiredDate",
+            "normalized_type": "datetime",
+            "nullable": true,
+            "ordinal": 5,
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/column/RequiredDate"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "DATETIME",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShippedDate",
+            "normalized_type": "datetime",
+            "nullable": true,
+            "ordinal": 6,
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/column/ShippedDate"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShipVia",
+            "normalized_type": "integer",
+            "nullable": true,
+            "ordinal": 7,
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/column/ShipVia"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "MONEY",
+            "default": "((0))",
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Freight",
+            "normalized_type": "decimal",
+            "nullable": true,
+            "ordinal": 8,
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/column/Freight"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(40) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShipName",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 9,
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/column/ShipName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(60) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShipAddress",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 10,
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/column/ShipAddress"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShipCity",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 11,
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/column/ShipCity"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShipRegion",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 12,
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/column/ShipRegion"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(10) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShipPostalCode",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 13,
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/column/ShipPostalCode"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShipCountry",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 14,
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/column/ShipCountry"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Orders/column/CustomerID"
+            ],
+            "columns": [
+              "CustomerID"
+            ],
+            "name": "FK_Orders_Customers",
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/foreign_key/FK_Orders_Customers",
+            "referred_column_ids": [
+              "sqlserver/Northwind/dbo/table/Customers/column/CustomerID"
+            ],
+            "referred_columns": [
+              "CustomerID"
+            ],
+            "referred_object_id": "sqlserver/Northwind/dbo/table/Customers",
+            "referred_schema": "dbo",
+            "referred_table": "Customers"
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Orders/column/EmployeeID"
+            ],
+            "columns": [
+              "EmployeeID"
+            ],
+            "name": "FK_Orders_Employees",
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/foreign_key/FK_Orders_Employees",
+            "referred_column_ids": [
+              "sqlserver/Northwind/dbo/table/Employees/column/EmployeeID"
+            ],
+            "referred_columns": [
+              "EmployeeID"
+            ],
+            "referred_object_id": "sqlserver/Northwind/dbo/table/Employees",
+            "referred_schema": "dbo",
+            "referred_table": "Employees"
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Orders/column/ShipVia"
+            ],
+            "columns": [
+              "ShipVia"
+            ],
+            "name": "FK_Orders_Shippers",
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/foreign_key/FK_Orders_Shippers",
+            "referred_column_ids": [
+              "sqlserver/Northwind/dbo/table/Shippers/column/ShipperID"
+            ],
+            "referred_columns": [
+              "ShipperID"
+            ],
+            "referred_object_id": "sqlserver/Northwind/dbo/table/Shippers",
+            "referred_schema": "dbo",
+            "referred_table": "Shippers"
+          }
+        ],
+        "indexes": [
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Orders/column/CustomerID"
+            ],
+            "columns": [
+              "CustomerID"
+            ],
+            "name": "CustomerID",
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/index/CustomerID",
+            "source": "index",
+            "unique": false
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Orders/column/CustomerID"
+            ],
+            "columns": [
+              "CustomerID"
+            ],
+            "name": "CustomersOrders",
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/index/CustomersOrders",
+            "source": "index",
+            "unique": false
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Orders/column/EmployeeID"
+            ],
+            "columns": [
+              "EmployeeID"
+            ],
+            "name": "EmployeeID",
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/index/EmployeeID",
+            "source": "index",
+            "unique": false
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Orders/column/EmployeeID"
+            ],
+            "columns": [
+              "EmployeeID"
+            ],
+            "name": "EmployeesOrders",
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/index/EmployeesOrders",
+            "source": "index",
+            "unique": false
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Orders/column/OrderDate"
+            ],
+            "columns": [
+              "OrderDate"
+            ],
+            "name": "OrderDate",
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/index/OrderDate",
+            "source": "index",
+            "unique": false
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Orders/column/ShippedDate"
+            ],
+            "columns": [
+              "ShippedDate"
+            ],
+            "name": "ShippedDate",
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/index/ShippedDate",
+            "source": "index",
+            "unique": false
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Orders/column/ShipVia"
+            ],
+            "columns": [
+              "ShipVia"
+            ],
+            "name": "ShippersOrders",
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/index/ShippersOrders",
+            "source": "index",
+            "unique": false
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Orders/column/ShipPostalCode"
+            ],
+            "columns": [
+              "ShipPostalCode"
+            ],
+            "name": "ShipPostalCode",
+            "physical_id": "sqlserver/Northwind/dbo/table/Orders/index/ShipPostalCode",
+            "source": "index",
+            "unique": false
+          }
+        ],
+        "name": "Orders",
+        "object_type": "table",
+        "physical_id": "sqlserver/Northwind/dbo/table/Orders",
+        "primary_key": {
+          "column_ids": [
+            "sqlserver/Northwind/dbo/table/Orders/column/OrderID"
+          ],
+          "columns": [
+            "OrderID"
+          ],
+          "name": "PK_Orders",
+          "physical_id": "sqlserver/Northwind/dbo/table/Orders/primary_key/PK_Orders"
+        },
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": true,
+            "name": "ProductID",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/table/Products/column/ProductID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(40) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ProductName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/table/Products/column/ProductName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "SupplierID",
+            "normalized_type": "integer",
+            "nullable": true,
+            "ordinal": 3,
+            "physical_id": "sqlserver/Northwind/dbo/table/Products/column/SupplierID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CategoryID",
+            "normalized_type": "integer",
+            "nullable": true,
+            "ordinal": 4,
+            "physical_id": "sqlserver/Northwind/dbo/table/Products/column/CategoryID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(20) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "QuantityPerUnit",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 5,
+            "physical_id": "sqlserver/Northwind/dbo/table/Products/column/QuantityPerUnit"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "MONEY",
+            "default": "((0))",
+            "is_computed": false,
+            "is_identity": false,
+            "name": "UnitPrice",
+            "normalized_type": "decimal",
+            "nullable": true,
+            "ordinal": 6,
+            "physical_id": "sqlserver/Northwind/dbo/table/Products/column/UnitPrice"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "SMALLINT",
+            "default": "((0))",
+            "is_computed": false,
+            "is_identity": false,
+            "name": "UnitsInStock",
+            "normalized_type": "integer",
+            "nullable": true,
+            "ordinal": 7,
+            "physical_id": "sqlserver/Northwind/dbo/table/Products/column/UnitsInStock"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "SMALLINT",
+            "default": "((0))",
+            "is_computed": false,
+            "is_identity": false,
+            "name": "UnitsOnOrder",
+            "normalized_type": "integer",
+            "nullable": true,
+            "ordinal": 8,
+            "physical_id": "sqlserver/Northwind/dbo/table/Products/column/UnitsOnOrder"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "SMALLINT",
+            "default": "((0))",
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ReorderLevel",
+            "normalized_type": "integer",
+            "nullable": true,
+            "ordinal": 9,
+            "physical_id": "sqlserver/Northwind/dbo/table/Products/column/ReorderLevel"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "BIT",
+            "default": "((0))",
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Discontinued",
+            "normalized_type": "boolean",
+            "nullable": false,
+            "ordinal": 10,
+            "physical_id": "sqlserver/Northwind/dbo/table/Products/column/Discontinued"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Products/column/CategoryID"
+            ],
+            "columns": [
+              "CategoryID"
+            ],
+            "name": "FK_Products_Categories",
+            "physical_id": "sqlserver/Northwind/dbo/table/Products/foreign_key/FK_Products_Categories",
+            "referred_column_ids": [
+              "sqlserver/Northwind/dbo/table/Categories/column/CategoryID"
+            ],
+            "referred_columns": [
+              "CategoryID"
+            ],
+            "referred_object_id": "sqlserver/Northwind/dbo/table/Categories",
+            "referred_schema": "dbo",
+            "referred_table": "Categories"
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Products/column/SupplierID"
+            ],
+            "columns": [
+              "SupplierID"
+            ],
+            "name": "FK_Products_Suppliers",
+            "physical_id": "sqlserver/Northwind/dbo/table/Products/foreign_key/FK_Products_Suppliers",
+            "referred_column_ids": [
+              "sqlserver/Northwind/dbo/table/Suppliers/column/SupplierID"
+            ],
+            "referred_columns": [
+              "SupplierID"
+            ],
+            "referred_object_id": "sqlserver/Northwind/dbo/table/Suppliers",
+            "referred_schema": "dbo",
+            "referred_table": "Suppliers"
+          }
+        ],
+        "indexes": [
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Products/column/CategoryID"
+            ],
+            "columns": [
+              "CategoryID"
+            ],
+            "name": "CategoriesProducts",
+            "physical_id": "sqlserver/Northwind/dbo/table/Products/index/CategoriesProducts",
+            "source": "index",
+            "unique": false
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Products/column/CategoryID"
+            ],
+            "columns": [
+              "CategoryID"
+            ],
+            "name": "CategoryID",
+            "physical_id": "sqlserver/Northwind/dbo/table/Products/index/CategoryID",
+            "source": "index",
+            "unique": false
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Products/column/ProductName"
+            ],
+            "columns": [
+              "ProductName"
+            ],
+            "name": "ProductName",
+            "physical_id": "sqlserver/Northwind/dbo/table/Products/index/ProductName",
+            "source": "index",
+            "unique": false
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Products/column/SupplierID"
+            ],
+            "columns": [
+              "SupplierID"
+            ],
+            "name": "SupplierID",
+            "physical_id": "sqlserver/Northwind/dbo/table/Products/index/SupplierID",
+            "source": "index",
+            "unique": false
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Products/column/SupplierID"
+            ],
+            "columns": [
+              "SupplierID"
+            ],
+            "name": "SuppliersProducts",
+            "physical_id": "sqlserver/Northwind/dbo/table/Products/index/SuppliersProducts",
+            "source": "index",
+            "unique": false
+          }
+        ],
+        "name": "Products",
+        "object_type": "table",
+        "physical_id": "sqlserver/Northwind/dbo/table/Products",
+        "primary_key": {
+          "column_ids": [
+            "sqlserver/Northwind/dbo/table/Products/column/ProductID"
+          ],
+          "columns": [
+            "ProductID"
+          ],
+          "name": "PK_Products",
+          "physical_id": "sqlserver/Northwind/dbo/table/Products/primary_key/PK_Products"
+        },
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "RegionID",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/table/Region/column/RegionID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "RegionDescription",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/table/Region/column/RegionDescription"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [],
+        "indexes": [],
+        "name": "Region",
+        "object_type": "table",
+        "physical_id": "sqlserver/Northwind/dbo/table/Region",
+        "primary_key": {
+          "column_ids": [
+            "sqlserver/Northwind/dbo/table/Region/column/RegionID"
+          ],
+          "columns": [
+            "RegionID"
+          ],
+          "name": "PK_Region",
+          "physical_id": "sqlserver/Northwind/dbo/table/Region/primary_key/PK_Region"
+        },
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": true,
+            "name": "ShipperID",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/table/Shippers/column/ShipperID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(40) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CompanyName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/table/Shippers/column/CompanyName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(24) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Phone",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 3,
+            "physical_id": "sqlserver/Northwind/dbo/table/Shippers/column/Phone"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [],
+        "indexes": [],
+        "name": "Shippers",
+        "object_type": "table",
+        "physical_id": "sqlserver/Northwind/dbo/table/Shippers",
+        "primary_key": {
+          "column_ids": [
+            "sqlserver/Northwind/dbo/table/Shippers/column/ShipperID"
+          ],
+          "columns": [
+            "ShipperID"
+          ],
+          "name": "PK_Shippers",
+          "physical_id": "sqlserver/Northwind/dbo/table/Shippers/primary_key/PK_Shippers"
+        },
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": true,
+            "name": "SupplierID",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/table/Suppliers/column/SupplierID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(40) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CompanyName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/table/Suppliers/column/CompanyName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(30) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ContactName",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 3,
+            "physical_id": "sqlserver/Northwind/dbo/table/Suppliers/column/ContactName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(30) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ContactTitle",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 4,
+            "physical_id": "sqlserver/Northwind/dbo/table/Suppliers/column/ContactTitle"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(60) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Address",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 5,
+            "physical_id": "sqlserver/Northwind/dbo/table/Suppliers/column/Address"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "City",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 6,
+            "physical_id": "sqlserver/Northwind/dbo/table/Suppliers/column/City"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Region",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 7,
+            "physical_id": "sqlserver/Northwind/dbo/table/Suppliers/column/Region"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(10) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "PostalCode",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 8,
+            "physical_id": "sqlserver/Northwind/dbo/table/Suppliers/column/PostalCode"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Country",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 9,
+            "physical_id": "sqlserver/Northwind/dbo/table/Suppliers/column/Country"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(24) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Phone",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 10,
+            "physical_id": "sqlserver/Northwind/dbo/table/Suppliers/column/Phone"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(24) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Fax",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 11,
+            "physical_id": "sqlserver/Northwind/dbo/table/Suppliers/column/Fax"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NTEXT",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "HomePage",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 12,
+            "physical_id": "sqlserver/Northwind/dbo/table/Suppliers/column/HomePage"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [],
+        "indexes": [
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Suppliers/column/CompanyName"
+            ],
+            "columns": [
+              "CompanyName"
+            ],
+            "name": "CompanyName",
+            "physical_id": "sqlserver/Northwind/dbo/table/Suppliers/index/CompanyName",
+            "source": "index",
+            "unique": false
+          },
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Suppliers/column/PostalCode"
+            ],
+            "columns": [
+              "PostalCode"
+            ],
+            "name": "PostalCode",
+            "physical_id": "sqlserver/Northwind/dbo/table/Suppliers/index/PostalCode",
+            "source": "index",
+            "unique": false
+          }
+        ],
+        "name": "Suppliers",
+        "object_type": "table",
+        "physical_id": "sqlserver/Northwind/dbo/table/Suppliers",
+        "primary_key": {
+          "column_ids": [
+            "sqlserver/Northwind/dbo/table/Suppliers/column/SupplierID"
+          ],
+          "columns": [
+            "SupplierID"
+          ],
+          "name": "PK_Suppliers",
+          "physical_id": "sqlserver/Northwind/dbo/table/Suppliers/primary_key/PK_Suppliers"
+        },
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(20) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "TerritoryID",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/table/Territories/column/TerritoryID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "TerritoryDescription",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/table/Territories/column/TerritoryDescription"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "RegionID",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 3,
+            "physical_id": "sqlserver/Northwind/dbo/table/Territories/column/RegionID"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [
+          {
+            "column_ids": [
+              "sqlserver/Northwind/dbo/table/Territories/column/RegionID"
+            ],
+            "columns": [
+              "RegionID"
+            ],
+            "name": "FK_Territories_Region",
+            "physical_id": "sqlserver/Northwind/dbo/table/Territories/foreign_key/FK_Territories_Region",
+            "referred_column_ids": [
+              "sqlserver/Northwind/dbo/table/Region/column/RegionID"
+            ],
+            "referred_columns": [
+              "RegionID"
+            ],
+            "referred_object_id": "sqlserver/Northwind/dbo/table/Region",
+            "referred_schema": "dbo",
+            "referred_table": "Region"
+          }
+        ],
+        "indexes": [],
+        "name": "Territories",
+        "object_type": "table",
+        "physical_id": "sqlserver/Northwind/dbo/table/Territories",
+        "primary_key": {
+          "column_ids": [
+            "sqlserver/Northwind/dbo/table/Territories/column/TerritoryID"
+          ],
+          "columns": [
+            "TerritoryID"
+          ],
+          "name": "PK_Territories",
+          "physical_id": "sqlserver/Northwind/dbo/table/Territories/primary_key/PK_Territories"
+        },
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ProductID",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/view/Alphabetical%20list%20of%20products/column/ProductID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(40) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ProductName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/view/Alphabetical%20list%20of%20products/column/ProductName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "SupplierID",
+            "normalized_type": "integer",
+            "nullable": true,
+            "ordinal": 3,
+            "physical_id": "sqlserver/Northwind/dbo/view/Alphabetical%20list%20of%20products/column/SupplierID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CategoryID",
+            "normalized_type": "integer",
+            "nullable": true,
+            "ordinal": 4,
+            "physical_id": "sqlserver/Northwind/dbo/view/Alphabetical%20list%20of%20products/column/CategoryID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(20) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "QuantityPerUnit",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 5,
+            "physical_id": "sqlserver/Northwind/dbo/view/Alphabetical%20list%20of%20products/column/QuantityPerUnit"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "MONEY",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "UnitPrice",
+            "normalized_type": "decimal",
+            "nullable": true,
+            "ordinal": 6,
+            "physical_id": "sqlserver/Northwind/dbo/view/Alphabetical%20list%20of%20products/column/UnitPrice"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "SMALLINT",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "UnitsInStock",
+            "normalized_type": "integer",
+            "nullable": true,
+            "ordinal": 7,
+            "physical_id": "sqlserver/Northwind/dbo/view/Alphabetical%20list%20of%20products/column/UnitsInStock"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "SMALLINT",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "UnitsOnOrder",
+            "normalized_type": "integer",
+            "nullable": true,
+            "ordinal": 8,
+            "physical_id": "sqlserver/Northwind/dbo/view/Alphabetical%20list%20of%20products/column/UnitsOnOrder"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "SMALLINT",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ReorderLevel",
+            "normalized_type": "integer",
+            "nullable": true,
+            "ordinal": 9,
+            "physical_id": "sqlserver/Northwind/dbo/view/Alphabetical%20list%20of%20products/column/ReorderLevel"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "BIT",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Discontinued",
+            "normalized_type": "boolean",
+            "nullable": false,
+            "ordinal": 10,
+            "physical_id": "sqlserver/Northwind/dbo/view/Alphabetical%20list%20of%20products/column/Discontinued"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CategoryName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 11,
+            "physical_id": "sqlserver/Northwind/dbo/view/Alphabetical%20list%20of%20products/column/CategoryName"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [],
+        "indexes": [],
+        "name": "Alphabetical list of products",
+        "object_type": "view",
+        "physical_id": "sqlserver/Northwind/dbo/view/Alphabetical%20list%20of%20products",
+        "primary_key": null,
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CategoryName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/view/Category%20Sales%20for%201997/column/CategoryName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "MONEY",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CategorySales",
+            "normalized_type": "decimal",
+            "nullable": true,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/view/Category%20Sales%20for%201997/column/CategorySales"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [],
+        "indexes": [],
+        "name": "Category Sales for 1997",
+        "object_type": "view",
+        "physical_id": "sqlserver/Northwind/dbo/view/Category%20Sales%20for%201997",
+        "primary_key": null,
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": true,
+            "name": "ProductID",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/view/Current%20Product%20List/column/ProductID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(40) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ProductName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/view/Current%20Product%20List/column/ProductName"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [],
+        "indexes": [],
+        "name": "Current Product List",
+        "object_type": "view",
+        "physical_id": "sqlserver/Northwind/dbo/view/Current%20Product%20List",
+        "primary_key": null,
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "City",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/view/Customer%20and%20Suppliers%20by%20City/column/City"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(40) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CompanyName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/view/Customer%20and%20Suppliers%20by%20City/column/CompanyName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(30) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ContactName",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 3,
+            "physical_id": "sqlserver/Northwind/dbo/view/Customer%20and%20Suppliers%20by%20City/column/ContactName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "VARCHAR(9) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Relationship",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 4,
+            "physical_id": "sqlserver/Northwind/dbo/view/Customer%20and%20Suppliers%20by%20City/column/Relationship"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [],
+        "indexes": [],
+        "name": "Customer and Suppliers by City",
+        "object_type": "view",
+        "physical_id": "sqlserver/Northwind/dbo/view/Customer%20and%20Suppliers%20by%20City",
+        "primary_key": null,
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(40) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShipName",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/ShipName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(60) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShipAddress",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/ShipAddress"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShipCity",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 3,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/ShipCity"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShipRegion",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 4,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/ShipRegion"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(10) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShipPostalCode",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 5,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/ShipPostalCode"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShipCountry",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 6,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/ShipCountry"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NCHAR(5) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CustomerID",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 7,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/CustomerID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(40) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CustomerName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 8,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/CustomerName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(60) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Address",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 9,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/Address"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "City",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 10,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/City"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Region",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 11,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/Region"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(10) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "PostalCode",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 12,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/PostalCode"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Country",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 13,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/Country"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(31) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Salesperson",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 14,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/Salesperson"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "OrderID",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 15,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/OrderID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "DATETIME",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "OrderDate",
+            "normalized_type": "datetime",
+            "nullable": true,
+            "ordinal": 16,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/OrderDate"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "DATETIME",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "RequiredDate",
+            "normalized_type": "datetime",
+            "nullable": true,
+            "ordinal": 17,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/RequiredDate"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "DATETIME",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShippedDate",
+            "normalized_type": "datetime",
+            "nullable": true,
+            "ordinal": 18,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/ShippedDate"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(40) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShipperName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 19,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/ShipperName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ProductID",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 20,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/ProductID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(40) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ProductName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 21,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/ProductName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "MONEY",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "UnitPrice",
+            "normalized_type": "decimal",
+            "nullable": false,
+            "ordinal": 22,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/UnitPrice"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "SMALLINT",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Quantity",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 23,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/Quantity"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "REAL",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Discount",
+            "normalized_type": "float",
+            "nullable": false,
+            "ordinal": 24,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/Discount"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "MONEY",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ExtendedPrice",
+            "normalized_type": "decimal",
+            "nullable": true,
+            "ordinal": 25,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/ExtendedPrice"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "MONEY",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Freight",
+            "normalized_type": "decimal",
+            "nullable": true,
+            "ordinal": 26,
+            "physical_id": "sqlserver/Northwind/dbo/view/Invoices/column/Freight"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [],
+        "indexes": [],
+        "name": "Invoices",
+        "object_type": "view",
+        "physical_id": "sqlserver/Northwind/dbo/view/Invoices",
+        "primary_key": null,
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "OrderID",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/view/Order%20Details%20Extended/column/OrderID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ProductID",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/view/Order%20Details%20Extended/column/ProductID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(40) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ProductName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 3,
+            "physical_id": "sqlserver/Northwind/dbo/view/Order%20Details%20Extended/column/ProductName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "MONEY",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "UnitPrice",
+            "normalized_type": "decimal",
+            "nullable": false,
+            "ordinal": 4,
+            "physical_id": "sqlserver/Northwind/dbo/view/Order%20Details%20Extended/column/UnitPrice"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "SMALLINT",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Quantity",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 5,
+            "physical_id": "sqlserver/Northwind/dbo/view/Order%20Details%20Extended/column/Quantity"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "REAL",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Discount",
+            "normalized_type": "float",
+            "nullable": false,
+            "ordinal": 6,
+            "physical_id": "sqlserver/Northwind/dbo/view/Order%20Details%20Extended/column/Discount"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "MONEY",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ExtendedPrice",
+            "normalized_type": "decimal",
+            "nullable": true,
+            "ordinal": 7,
+            "physical_id": "sqlserver/Northwind/dbo/view/Order%20Details%20Extended/column/ExtendedPrice"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [],
+        "indexes": [],
+        "name": "Order Details Extended",
+        "object_type": "view",
+        "physical_id": "sqlserver/Northwind/dbo/view/Order%20Details%20Extended",
+        "primary_key": null,
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "OrderID",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/view/Order%20Subtotals/column/OrderID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "MONEY",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Subtotal",
+            "normalized_type": "decimal",
+            "nullable": true,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/view/Order%20Subtotals/column/Subtotal"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [],
+        "indexes": [],
+        "name": "Order Subtotals",
+        "object_type": "view",
+        "physical_id": "sqlserver/Northwind/dbo/view/Order%20Subtotals",
+        "primary_key": null,
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "OrderID",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/view/Orders%20Qry/column/OrderID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NCHAR(5) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CustomerID",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/view/Orders%20Qry/column/CustomerID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "EmployeeID",
+            "normalized_type": "integer",
+            "nullable": true,
+            "ordinal": 3,
+            "physical_id": "sqlserver/Northwind/dbo/view/Orders%20Qry/column/EmployeeID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "DATETIME",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "OrderDate",
+            "normalized_type": "datetime",
+            "nullable": true,
+            "ordinal": 4,
+            "physical_id": "sqlserver/Northwind/dbo/view/Orders%20Qry/column/OrderDate"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "DATETIME",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "RequiredDate",
+            "normalized_type": "datetime",
+            "nullable": true,
+            "ordinal": 5,
+            "physical_id": "sqlserver/Northwind/dbo/view/Orders%20Qry/column/RequiredDate"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "DATETIME",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShippedDate",
+            "normalized_type": "datetime",
+            "nullable": true,
+            "ordinal": 6,
+            "physical_id": "sqlserver/Northwind/dbo/view/Orders%20Qry/column/ShippedDate"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShipVia",
+            "normalized_type": "integer",
+            "nullable": true,
+            "ordinal": 7,
+            "physical_id": "sqlserver/Northwind/dbo/view/Orders%20Qry/column/ShipVia"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "MONEY",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Freight",
+            "normalized_type": "decimal",
+            "nullable": true,
+            "ordinal": 8,
+            "physical_id": "sqlserver/Northwind/dbo/view/Orders%20Qry/column/Freight"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(40) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShipName",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 9,
+            "physical_id": "sqlserver/Northwind/dbo/view/Orders%20Qry/column/ShipName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(60) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShipAddress",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 10,
+            "physical_id": "sqlserver/Northwind/dbo/view/Orders%20Qry/column/ShipAddress"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShipCity",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 11,
+            "physical_id": "sqlserver/Northwind/dbo/view/Orders%20Qry/column/ShipCity"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShipRegion",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 12,
+            "physical_id": "sqlserver/Northwind/dbo/view/Orders%20Qry/column/ShipRegion"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(10) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShipPostalCode",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 13,
+            "physical_id": "sqlserver/Northwind/dbo/view/Orders%20Qry/column/ShipPostalCode"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShipCountry",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 14,
+            "physical_id": "sqlserver/Northwind/dbo/view/Orders%20Qry/column/ShipCountry"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(40) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CompanyName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 15,
+            "physical_id": "sqlserver/Northwind/dbo/view/Orders%20Qry/column/CompanyName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(60) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Address",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 16,
+            "physical_id": "sqlserver/Northwind/dbo/view/Orders%20Qry/column/Address"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "City",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 17,
+            "physical_id": "sqlserver/Northwind/dbo/view/Orders%20Qry/column/City"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Region",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 18,
+            "physical_id": "sqlserver/Northwind/dbo/view/Orders%20Qry/column/Region"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(10) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "PostalCode",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 19,
+            "physical_id": "sqlserver/Northwind/dbo/view/Orders%20Qry/column/PostalCode"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Country",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 20,
+            "physical_id": "sqlserver/Northwind/dbo/view/Orders%20Qry/column/Country"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [],
+        "indexes": [],
+        "name": "Orders Qry",
+        "object_type": "view",
+        "physical_id": "sqlserver/Northwind/dbo/view/Orders%20Qry",
+        "primary_key": null,
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CategoryName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/view/Product%20Sales%20for%201997/column/CategoryName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(40) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ProductName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/view/Product%20Sales%20for%201997/column/ProductName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "MONEY",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ProductSales",
+            "normalized_type": "decimal",
+            "nullable": true,
+            "ordinal": 3,
+            "physical_id": "sqlserver/Northwind/dbo/view/Product%20Sales%20for%201997/column/ProductSales"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [],
+        "indexes": [],
+        "name": "Product Sales for 1997",
+        "object_type": "view",
+        "physical_id": "sqlserver/Northwind/dbo/view/Product%20Sales%20for%201997",
+        "primary_key": null,
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(40) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ProductName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/view/Products%20Above%20Average%20Price/column/ProductName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "MONEY",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "UnitPrice",
+            "normalized_type": "decimal",
+            "nullable": true,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/view/Products%20Above%20Average%20Price/column/UnitPrice"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [],
+        "indexes": [],
+        "name": "Products Above Average Price",
+        "object_type": "view",
+        "physical_id": "sqlserver/Northwind/dbo/view/Products%20Above%20Average%20Price",
+        "primary_key": null,
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CategoryName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/view/Products%20by%20Category/column/CategoryName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(40) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ProductName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/view/Products%20by%20Category/column/ProductName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(20) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "QuantityPerUnit",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 3,
+            "physical_id": "sqlserver/Northwind/dbo/view/Products%20by%20Category/column/QuantityPerUnit"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "SMALLINT",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "UnitsInStock",
+            "normalized_type": "integer",
+            "nullable": true,
+            "ordinal": 4,
+            "physical_id": "sqlserver/Northwind/dbo/view/Products%20by%20Category/column/UnitsInStock"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "BIT",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Discontinued",
+            "normalized_type": "boolean",
+            "nullable": false,
+            "ordinal": 5,
+            "physical_id": "sqlserver/Northwind/dbo/view/Products%20by%20Category/column/Discontinued"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [],
+        "indexes": [],
+        "name": "Products by Category",
+        "object_type": "view",
+        "physical_id": "sqlserver/Northwind/dbo/view/Products%20by%20Category",
+        "primary_key": null,
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "NCHAR(5) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CustomerID",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/view/Quarterly%20Orders/column/CustomerID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(40) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CompanyName",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/view/Quarterly%20Orders/column/CompanyName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "City",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 3,
+            "physical_id": "sqlserver/Northwind/dbo/view/Quarterly%20Orders/column/City"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Country",
+            "normalized_type": "string",
+            "nullable": true,
+            "ordinal": 4,
+            "physical_id": "sqlserver/Northwind/dbo/view/Quarterly%20Orders/column/Country"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [],
+        "indexes": [],
+        "name": "Quarterly Orders",
+        "object_type": "view",
+        "physical_id": "sqlserver/Northwind/dbo/view/Quarterly%20Orders",
+        "primary_key": null,
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CategoryID",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/view/Sales%20by%20Category/column/CategoryID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(15) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CategoryName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/view/Sales%20by%20Category/column/CategoryName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(40) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ProductName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 3,
+            "physical_id": "sqlserver/Northwind/dbo/view/Sales%20by%20Category/column/ProductName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "MONEY",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ProductSales",
+            "normalized_type": "decimal",
+            "nullable": true,
+            "ordinal": 4,
+            "physical_id": "sqlserver/Northwind/dbo/view/Sales%20by%20Category/column/ProductSales"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [],
+        "indexes": [],
+        "name": "Sales by Category",
+        "object_type": "view",
+        "physical_id": "sqlserver/Northwind/dbo/view/Sales%20by%20Category",
+        "primary_key": null,
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "MONEY",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "SaleAmount",
+            "normalized_type": "decimal",
+            "nullable": true,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/view/Sales%20Totals%20by%20Amount/column/SaleAmount"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "OrderID",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/view/Sales%20Totals%20by%20Amount/column/OrderID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "NVARCHAR(40) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "CompanyName",
+            "normalized_type": "string",
+            "nullable": false,
+            "ordinal": 3,
+            "physical_id": "sqlserver/Northwind/dbo/view/Sales%20Totals%20by%20Amount/column/CompanyName"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "DATETIME",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShippedDate",
+            "normalized_type": "datetime",
+            "nullable": true,
+            "ordinal": 4,
+            "physical_id": "sqlserver/Northwind/dbo/view/Sales%20Totals%20by%20Amount/column/ShippedDate"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [],
+        "indexes": [],
+        "name": "Sales Totals by Amount",
+        "object_type": "view",
+        "physical_id": "sqlserver/Northwind/dbo/view/Sales%20Totals%20by%20Amount",
+        "primary_key": null,
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "DATETIME",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShippedDate",
+            "normalized_type": "datetime",
+            "nullable": true,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/view/Summary%20of%20Sales%20by%20Quarter/column/ShippedDate"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "OrderID",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/view/Summary%20of%20Sales%20by%20Quarter/column/OrderID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "MONEY",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Subtotal",
+            "normalized_type": "decimal",
+            "nullable": true,
+            "ordinal": 3,
+            "physical_id": "sqlserver/Northwind/dbo/view/Summary%20of%20Sales%20by%20Quarter/column/Subtotal"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [],
+        "indexes": [],
+        "name": "Summary of Sales by Quarter",
+        "object_type": "view",
+        "physical_id": "sqlserver/Northwind/dbo/view/Summary%20of%20Sales%20by%20Quarter",
+        "primary_key": null,
+        "schema": "dbo"
+      },
+      {
+        "columns": [
+          {
+            "computed_expression": null,
+            "data_type": "DATETIME",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "ShippedDate",
+            "normalized_type": "datetime",
+            "nullable": true,
+            "ordinal": 1,
+            "physical_id": "sqlserver/Northwind/dbo/view/Summary%20of%20Sales%20by%20Year/column/ShippedDate"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "INTEGER",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "OrderID",
+            "normalized_type": "integer",
+            "nullable": false,
+            "ordinal": 2,
+            "physical_id": "sqlserver/Northwind/dbo/view/Summary%20of%20Sales%20by%20Year/column/OrderID"
+          },
+          {
+            "computed_expression": null,
+            "data_type": "MONEY",
+            "default": null,
+            "is_computed": false,
+            "is_identity": false,
+            "name": "Subtotal",
+            "normalized_type": "decimal",
+            "nullable": true,
+            "ordinal": 3,
+            "physical_id": "sqlserver/Northwind/dbo/view/Summary%20of%20Sales%20by%20Year/column/Subtotal"
+          }
+        ],
+        "description": null,
+        "foreign_keys": [],
+        "indexes": [],
+        "name": "Summary of Sales by Year",
+        "object_type": "view",
+        "physical_id": "sqlserver/Northwind/dbo/view/Summary%20of%20Sales%20by%20Year",
+        "primary_key": null,
+        "schema": "dbo"
+      }
+    ],
+    "schemas": [
+      {
+        "is_system": false,
+        "name": "dbo",
+        "physical_id": "sqlserver/Northwind/schema/dbo"
+      }
+    ]
+  }
+}

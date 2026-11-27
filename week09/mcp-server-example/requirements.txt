@@ -1,0 +1,2 @@
+# No external dependencies for this minimal example
+# Just Python 3.8+

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "northwind": {
+      "command": "${NORTHWIND_PYTHON:-python}",
+      "args": ["./server.py"],
+      "env": {
+        "NORTHWIND_CONN": "${NORTHWIND_CONN}"
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+# Prometheus alerting rules
+# Loaded from /etc/prometheus/rules/*.yml
+# See runbooks/monitoring.md for the operational procedures.
+
+groups:
+  - name: pch-infra
+    interval: 30s
+    rules:
+      - alert: EdgeNginxDown
+        expr: up{job="nginx-edge"} == 0
+        for: 2m
+        labels:
+          severity: critical
+          team: platform
+        annotations:
+          summary: "Edge Nginx {{ $labels.instance }} is down"
+          runbook: https://kb.pch/runbooks/monitoring
+
+      - alert: KubeletDown
+        expr: up{job="kubelet"} == 0
+        for: 5m
+        labels:
+          severity: critical
+          team: platform
+
+      - alert: DiskFillPredicted6h
+        expr: predict_linear(node_filesystem_avail_bytes{fstype!~"tmpfs|overlay"}[6h], 6 * 3600) < 0
+        for: 30m
+        labels:
+          severity: warning
+          team: platform
+        annotations:
+          summary: "Disk on {{ $labels.instance }} predicted to fill within 6h"
+
+      - alert: HighNginx5xxRate
+        expr: |
+          sum by (server) (rate(nginx_http_requests_total{status=~"5.."}[5m]))
+          /
+          sum by (server) (rate(nginx_http_requests_total[5m]))
+          > 0.02
+        for: 5m
+        labels:
+          severity: warning
+          team: platform
+
+  - name: pch-postgres
+    interval: 30s
+    rules:
+      - alert: PostgresDown
+        expr: up{job="postgres"} == 0
+        for: 2m
+        labels:
+          severity: critical
+          team: database
+
+      - alert: PostgresReplicationLagHigh
+        expr: pg_replication_lag_bytes > 5e7
+        for: 5m
+        labels:
+          severity: warning
+          team: database
+
+      - alert: PostgresWalArchiveFallingBehind
+        # Tightened from 30m to 5m after 2024-11-05 incident
+        expr: pg_stat_archiver_last_failed_time_seconds > 0
+        for: 5m
+        labels:
+          severity: warning
+          team: database
+
+      - alert: PostgresConnectionsHigh
+        expr: |
+          sum by (tenant) (pg_stat_activity_count)
+          /
+          max by (tenant) (pg_settings_max_connections)
+          > 0.85
+        for: 10m
+        labels:
+          severity: warning
+          team: database
+
+  - name: pch-ssl
+    interval: 5m
+    rules:
+      - alert: CertExpiryImminent
+        expr: (probe_ssl_earliest_cert_expiry - time()) / 86400 < 21
+        for: 1h
+        labels:
+          severity: warning
+          team: platform
+        annotations:
+          summary: "Cert for {{ $labels.instance }} expires in <21d"
+
+      - alert: CertExpiryCritical
+        expr: (probe_ssl_earliest_cert_expiry - time()) / 86400 < 7
+        for: 15m
+        labels:
+          severity: critical
+          team: platform

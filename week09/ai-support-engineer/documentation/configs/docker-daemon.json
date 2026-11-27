@@ -1,0 +1,32 @@
+{
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "50m",
+    "max-file": "5",
+    "labels": "pch.service,pch.tenant"
+  },
+  "storage-driver": "overlay2",
+  "storage-opts": [
+    "overlay2.override_kernel_check=true"
+  ],
+  "bip": "10.99.0.1/16",
+  "default-address-pools": [
+    { "base": "10.98.0.0/16", "size": 24 }
+  ],
+  "mtu": 1420,
+  "registry-mirrors": [
+    "https://mirror.prg1.pchosting.internal"
+  ],
+  "insecure-registries": [],
+  "live-restore": true,
+  "userland-proxy": false,
+  "no-new-privileges": true,
+  "default-ulimits": {
+    "nofile": { "Name": "nofile", "Hard": 65535, "Soft": 65535 }
+  },
+  "metrics-addr": "127.0.0.1:9323",
+  "experimental": false,
+  "features": {
+    "buildkit": true
+  }
+}

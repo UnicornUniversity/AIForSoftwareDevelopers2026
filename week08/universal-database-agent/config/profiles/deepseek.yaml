@@ -1,0 +1,22 @@
+# Default UDA profile. Non-secret values only; secrets come from the environment.
+profile: deepseek
+
+database:
+  host: localhost
+  port: 1433
+  name: Northwind
+  user: uda_readonly
+  driver: "ODBC Driver 18 for SQL Server"
+  schema: dbo
+  timeout_seconds: 30
+  row_limit: 1000
+
+llm:
+  provider: deepseek
+  base_url: https://api.deepseek.com/v1
+  model: deepseek-chat
+  temperature: 0.0
+  max_tokens: 1024
+
+observability:
+  tracer: noop

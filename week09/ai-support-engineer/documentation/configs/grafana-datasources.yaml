@@ -1,0 +1,54 @@
+# /etc/grafana/provisioning/datasources/datasources.yaml
+# Provisioned datasources for the PCH Grafana instance.
+# See docs/10-monitoring-stack.md.
+
+apiVersion: 1
+
+datasources:
+  - name: Prometheus
+    type: prometheus
+    access: proxy
+    url: http://prometheus-server.monitoring.svc:9090
+    isDefault: true
+    jsonData:
+      timeInterval: "30s"
+      exemplarTraceIdDestinations:
+        - name: trace_id
+          datasourceUid: tempo-uid
+
+  - name: Prometheus-LongTerm
+    type: prometheus
+    access: proxy
+    url: http://thanos-query.monitoring.svc:9090
+    jsonData:
+      timeInterval: "60s"
+
+  - name: Loki
+    type: loki
+    access: proxy
+    url: http://loki.monitoring.svc:3100
+    jsonData:
+      maxLines: 5000
+      derivedFields:
+        - matcherRegex: "trace_id=([a-f0-9]+)"
+          name: TraceID
+          url: "$${__value.raw}"
+
+  - name: Alertmanager
+    type: alertmanager
+    access: proxy
+    url: http://alertmanager.monitoring.svc:9093
+    jsonData:
+      implementation: prometheus
+
+  - name: PostgreSQL-Metrics
+    type: postgres
+    access: proxy
+    url: pg-metrics.internal:5432
+    database: metrics
+    user: grafana_ro
+    secureJsonData:
+      password: REDACTED
+    jsonData:
+      sslmode: require
+      postgresVersion: 1500

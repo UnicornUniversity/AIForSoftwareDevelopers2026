@@ -1,0 +1,80 @@
+# PCH backup schedule (authoritative)
+# See runbooks/backup-procedures.md.
+#
+# Format: consumed by our internal `pch-cron` orchestrator plus systemd timers
+# on individual hosts. NOT plain cron — do not paste directly into crontab.
+
+version: 2
+updated: 2025-02-04
+owner: miroslav.b@pchosting.cz
+
+schedules:
+  postgres:
+    - stanza: pg-acme
+      full:
+        cron: "0 2 * * 0"          # weekly Sun 02:00 CET
+        retention: 8                # 8 weekly fulls kept
+      incremental:
+        cron: "0 2 * * 1-6"        # Mon-Sat 02:00 CET
+        retention: 4
+      wal:
+        mode: continuous            # via archive_command
+        target: s3://pch-backups/pgbackrest/pg-acme/wal
+        retention_days: 14
+
+    - stanza: pg-mediastar-02
+      full:
+        cron: "0 3 * * 0"
+        retention: 8
+      incremental:
+        cron: "0 3 * * 1-6"
+      wal:
+        mode: continuous
+        target: s3://pch-backups/pgbackrest/pg-mediastar-02/wal
+        retention_days: 14
+
+    # Legacy pg_dump nightly (deprecated) — see
+    # known_issues/postgres-backup-legacy.md
+    - stanza: pg-shared-01
+      legacy_pg_dump:
+        cron: "30 3 * * *"
+        target: /var/lib/postgresql/backups
+        rsync_to: rsync://backup.brn1.pchosting.internal/pg-shared-01
+        retention_days: 7
+      wal:
+        mode: none                  # no PITR on shared-tenant instances
+
+  vps:
+    lvm_snapshots:
+      cron: "0 3 * * *"             # daily 03:00 CET
+      retention_days: 7
+      ship_to: backup.brn1.pchosting.internal
+    monthly_full:
+      cron: "0 4 1 * *"             # first of month
+      retention_months: 3
+
+  k8s:
+    velero:
+      cron: "0 1 * * *"
+      include_namespaces:
+        - prod-*
+      exclude_resources:
+        - events
+      retention: 14d
+
+  configs:
+    git_state:
+      cron: "*/30 * * * *"          # every 30 min
+      target: s3://pch-backups/configs
+      retention_days: 90
+
+  offsite_hetzner:
+    # Manual monthly copy — see known_issues/pending-projects.md KI-PROJ-005
+    schedule_note: "First of each month, run by hand"
+    target: sftp://storagebox.hetzner.pchosting/offsite
+
+restore_drills:
+  cadence: monthly
+  target_day: first_tuesday
+  scope: one_random_pro_tier_db
+  # See runbooks/backup-procedures.md, section "Restore drill"

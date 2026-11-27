@@ -1,0 +1,59 @@
+# /etc/alertmanager/alertmanager.yml
+# See runbooks/monitoring.md.
+
+global:
+  resolve_timeout: 5m
+  slack_api_url: 'https://hooks.slack.com/services/REDACTED/REDACTED/REDACTED'
+
+route:
+  receiver: 'default-slack'
+  group_by: ['alertname', 'cluster', 'team']
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 4h
+  routes:
+    - matchers:
+        - severity="critical"
+      receiver: 'pagerduty-oncall'
+      continue: true
+    - matchers:
+        - team="database"
+      receiver: 'db-slack'
+    - matchers:
+        - team="platform"
+      receiver: 'platform-slack'
+
+receivers:
+  - name: 'default-slack'
+    slack_configs:
+      - channel: '#alerts'
+        send_resolved: true
+        title: '{{ .GroupLabels.alertname }} — {{ .Status }}'
+        text: >-
+          {{ range .Alerts }}
+          *Summary:* {{ .Annotations.summary }}
+          *Instance:* {{ .Labels.instance }}
+          *Runbook:* {{ .Annotations.runbook }}
+          {{ end }}
+
+  - name: 'db-slack'
+    slack_configs:
+      - channel: '#alerts-database'
+        send_resolved: true
+
+  - name: 'platform-slack'
+    slack_configs:
+      - channel: '#alerts-platform'
+        send_resolved: true
+
+  - name: 'pagerduty-oncall'
+    pagerduty_configs:
+      - service_key: REDACTED
+        severity: '{{ .CommonLabels.severity }}'
+
+inhibit_rules:
+  - source_matchers:
+      - severity="critical"
+    target_matchers:
+      - severity="warning"
+    equal: ['alertname', 'instance']

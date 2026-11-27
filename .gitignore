@@ -248,3 +248,7 @@ __marimo__/
 /week06/RomanEmpireRAG/chroma
 /week06/RomanEmpireRAG/rag-app/backend/node_modules
 /week06/RomanEmpireRAG/rag-app/frontend/node_modules
+/week08/universal-database-agent/data/knowledge
+week08/universal-database-access/uv.lock
+/week08/universal-database-agent/docs
+week08/universal-database-agent/uv.lock

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Movie Finder AI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="app-header">
+        <div class="brand">
+          <h1>Movie Finder AI</h1>
+          <p class="subtitle">LangChain.js · LangGraph.js · LangSmith</p>
+        </div>
+        <button id="new-conversation" class="btn btn-ghost" type="button">
+          New conversation
+        </button>
+      </header>
+
+      <main class="layout">
+        <!-- Left column: the conversation -->
+        <section class="chat-panel" aria-label="Conversation">
+          <div id="messages" class="messages" aria-live="polite"></div>
+
+          <div id="loading" class="loading" hidden>
+            <span class="spinner" aria-hidden="true"></span>
+            <span>Thinking…</span>
+          </div>
+
+          <form id="composer" class="composer">
+            <label class="sr-only" for="message-input">Your message</label>
+            <textarea
+              id="message-input"
+              rows="1"
+              placeholder="Tell me what you feel like watching…"
+            ></textarea>
+            <button class="btn" type="submit" id="send-button">Send</button>
+          </form>
+        </section>
+
+        <!-- Right column: what the agent currently remembers -->
+        <aside class="prefs-panel" aria-label="Preference slots">
+          <h2>Preferences</h2>
+          <p class="hint">
+            These slots live in the LangGraph State for this conversation.
+          </p>
+          <dl id="preferences" class="prefs"></dl>
+
+          <h2>Selected movie</h2>
+          <p id="selected-movie" class="selected">Not specified</p>
+
+          <h2>Conversation</h2>
+          <p id="thread-id" class="thread-id">–</p>
+        </aside>
+      </main>
+    </div>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
